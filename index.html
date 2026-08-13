@@ -12,7 +12,7 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
-        body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1500px; margin: auto; }
+        body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1700px; margin: auto; }
         
         /* POKEBALL HEADER */
         header { text-align: center; margin-bottom: 1.5rem; }
@@ -44,12 +44,12 @@
         .intel-text li { margin-bottom: 6px; color: #d1d5db; }
         .intel-text b { color: #f0f6fc; }
 
-        /* DASHBOARD LAYOUT */
-        .dashboard-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-        @media (max-width: 1100px) { .dashboard-container { grid-template-columns: 1fr 1fr; } }
+        /* 4 COLUMNS DASHBOARD */
+        .dashboard-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+        @media (max-width: 1400px) { .dashboard-container { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) { .dashboard-container { grid-template-columns: 1fr; } }
 
-        /* SCROLLABLE FEED CONTAINERS (Fixes Mobile Length!) */
+        /* SCROLLABLE FEED CONTAINERS */
         .scroll-container {
             max-height: 800px;
             overflow-y: auto;
@@ -90,11 +90,11 @@
 <body>
     <header>
         <h1>Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
-        <p>Pokémon TCG Drop & Restock Intelligence</p>
+        <p>DropDrop?</p>
     </header>
 
     <div class="intel-banner" id="intelBanner">
-        <h2>⚡ Market Intel Brief & Schedule</h2>
+        <h2>Market Intel Brief & Schedule</h2>
         <div class="intel-text" id="intelText">Warming up market radar...</div>
     </div>
 
@@ -127,10 +127,19 @@
         <!-- TWITTER COLUMN -->
         <aside class="radar-panel" style="border-color: #1da1f2;">
             <div class="radar-header">
-                <div class="radar-title" style="color: #1da1f2;">🐦 X / Twitter Radar</div>
+                <div class="radar-title" style="color: #1da1f2;">🐦 Targeted X Radar</div>
             </div>
             <div class="scroll-container" id="xFeed"></div>
         </aside>
+
+        <!-- POKEBEACH COLUMN -->
+        <aside class="radar-panel" style="border-color: var(--accent-purple);">
+            <div class="radar-header">
+                <div class="radar-title" style="color: var(--accent-purple);">🏖️ PokeBeach News</div>
+            </div>
+            <div class="scroll-container" id="pokebeachFeed"></div>
+        </aside>
+
     </div>
 
     <script>
@@ -141,7 +150,6 @@
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 
-                // Read the actual script generation time, not the page load time!
                 let syncDate = new Date();
                 if (data.last_run) {
                     syncDate = new Date(data.last_run);
@@ -163,6 +171,7 @@
                 renderDrops(currentFilter); 
                 renderNews(data.articles || [], 'newsFeed');
                 renderNews(data.tweets || [], 'xFeed');
+                renderNews(data.pokebeach || [], 'pokebeachFeed'); // Render the 4th column!
             } catch (error) {
                 console.error("Error loading data:", error);
                 document.getElementById('dropGrid').innerHTML = `<p style="color: #e74c3c;">Error loading data.json.</p>`;
@@ -238,7 +247,6 @@
                     if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
                 } catch(e) {}
 
-                // Dynamic Color Coding based on AI Category!
                 let borderColor = 'transparent';
                 let badgeHTML = '';
                 
