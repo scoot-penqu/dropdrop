@@ -135,6 +135,13 @@
                     displayDate = new Date(drop.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
                 } catch(e) {}
 
+                // Safely convert UTC time to User's Local Timezone
+                let displayDate = "Recent";
+                try {
+                    const localDate = new Date(drop.date);
+                    displayDate = localDate.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+                } catch(e) {}
+
                 card.innerHTML = `
                     <div class="card-img-container">
                         <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.src='https://via.placeholder.com/200x150?text=No+Thumbnail'">
@@ -146,11 +153,11 @@
                         </div>
                         <h2 class="card-title">${drop.title}</h2>
                         <div class="price">${drop.price}</div>
-                        <div class="countdown">Found: ${displayDate}</div>
+                        <div class="countdown">🕒 Posted: ${displayDate}</div>
                         
                         <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;">
-                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">View Description & Links</summary>
-                            <div style="line-height: 1.4;">${drop.desc}</div>
+                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">✨ View AI Summary & Links</summary>
+                            <div style="line-height: 1.4; color: #f0f6fc;">${drop.desc}</div>
                         </details>
                         
                         <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 1rem;">
@@ -167,9 +174,9 @@
             if(!container) return; 
             container.innerHTML = news.map(n => `
                 <div class="news-card">
-                    <div class="news-source">
+                    <<div class="news-source">
                         <span>${n.source}</span>
-                        <span>${n.date}</span>
+                        <span>${new Date(n.date).toLocaleDateString(undefined, {month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit'})}</span>
                     </div>
                     <a href="${n.link}" target="_blank" style="text-decoration:none;">
                         <div class="news-title">${n.title}</div>
