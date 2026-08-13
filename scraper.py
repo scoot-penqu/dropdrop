@@ -63,12 +63,13 @@ def call_gemini(prompt):
     try:
         client = genai.Client()
         
-        # Call the new Interactions API endpoint
-        interaction = client.create(
+        # Call the new Interactions API endpoint using the correct namespace
+        interaction = client.interactions.create(
             model=AVAILABLE_MODEL,
             input=prompt
         )
             
+        # Extract the string using the built-in helper
         clean_text = interaction.output_text.strip()
         
         # Clean up markdown code blocks if the model outputs them
