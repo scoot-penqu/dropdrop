@@ -8,7 +8,7 @@
         :root {
             --bg: #0b0e14; --surface: #161b22; --border: #30363d; --text: #f0f6fc;
             --accent-yellow: #f1c40f; --accent-blue: #3498db; --accent-green: #2ecc71;
-            --accent-purple: #9b59b6; --accent-orange: #e67e22; --accent-red: #e74c3c;
+            --accent-orange: #e67e22; --accent-red: #e74c3c;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
@@ -44,96 +44,70 @@
         .intel-text li { margin-bottom: 6px; color: #d1d5db; }
         .intel-text b { color: #f0f6fc; }
 
-        .dashboard-container { display: grid; grid-template-columns: 1fr 320px 320px; gap: 1.5rem; }
-        @media (max-width: 1250px) { .dashboard-container { grid-template-columns: 1fr 1fr; } }
-        @media (max-width: 900px) { .dashboard-container { grid-template-columns: 1fr; } }
+        /* 3 EQUAL COLUMNS DASHBOARD */
+        .dashboard-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        @media (max-width: 1100px) { .dashboard-container { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) { .dashboard-container { grid-template-columns: 1fr; } }
 
-        .filters { display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center; }
-        .filter-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; transition: 0.2s; font-size: 0.85rem; }
-        .filter-btn.active, .filter-btn:hover { background: var(--accent-yellow); color: #000; font-weight: bold; }
-        
-        .sync-container { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-        .last-sync { font-size: 0.75rem; color: #8b949e; font-family: monospace; }
-        
-        /* HORIZONTAL DROP CARDS */
-        .drop-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-        .card { 
-            background: var(--surface); border: 1px solid var(--border); border-radius: 8px; 
-            display: flex; flex-direction: row; overflow: hidden; transition: border-color 0.2s; 
-        }
-        .card:hover { border-color: #484f58; }
-        .card-img-container { 
-            width: 120px; min-width: 120px; background: #0d1117; display: flex; 
-            align-items: center; justify-content: center; padding: 10px; border-right: 1px solid var(--border); 
-        }
-        .card-img { max-width: 100%; max-height: 100px; object-fit: contain; border-radius: 4px; }
-        .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;}
-        
-        .card-header-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;}
-        .card-title { font-size: 0.95rem; line-height: 1.3; font-weight: 600; flex: 1; margin-right: 15px;}
-        .countdown { font-family: monospace; font-size: 0.75rem; color: var(--accent-yellow); text-align: right; white-space: nowrap;}
-        
-        .badge { font-size: 0.65rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; margin-right: 5px; display: inline-block;}
-        .badge-domain { background: var(--border); color: #fff; }
-        
-        .buy-btn { display: inline-block; margin-top: 8px; background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.35rem 0.7rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.75rem; width: fit-content; transition: 0.2s;}
-        .buy-btn:hover { background: var(--border); }
-        
-        /* SIDEBAR RADARS */
+        /* SIDEBAR RADARS (UNIFIED STYLING) */
         .radar-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; height: fit-content; }
-        .radar-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; margin-bottom: 1rem; }
+        .radar-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; margin-bottom: 1rem; flex-wrap: wrap; gap: 10px;}
         .radar-title { font-size: 1rem; color: #3498db; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;}
         
-        .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 0.8rem; margin-bottom: 0.8rem; }
-        .news-source { font-size: 0.65rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.4rem; text-transform: uppercase; }
-        .news-title { font-size: 0.85rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.4rem; }
-        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 6px; margin-top: 4px; }
-        .drop-alert { color: var(--accent-green); font-weight: bold; font-size: 0.65rem; display: inline-block; margin-bottom: 4px; }
+        .sync-container { display: flex; align-items: center; gap: 10px; }
+        .last-sync { font-size: 0.75rem; color: #8b949e; font-family: monospace; }
+        
+        /* FILTERS */
+        .filters { display: flex; gap: 0.6rem; width: 100%; margin-top: 5px;}
+        .filter-btn { background: #0d1117; border: 1px solid var(--border); color: var(--text); padding: 0.3rem 0.8rem; border-radius: 20px; cursor: pointer; transition: 0.2s; font-size: 0.75rem; }
+        .filter-btn.active, .filter-btn:hover { background: var(--accent-yellow); color: #000; font-weight: bold; }
+        
+        /* UNIFIED CARD STYLING (REDDIT + NEWS) */
+        .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 0.8rem; margin-bottom: 0.8rem; transition: border-color 0.2s;}
+        .news-card:hover { border-color: #484f58; }
+        .news-source { font-size: 0.65rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.6rem; text-transform: uppercase; font-weight: 600;}
+        .news-title { font-size: 0.85rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.6rem; }
+        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 8px; margin-top: 4px; }
+        .drop-alert { font-weight: bold; font-size: 0.65rem; display: inline-block; margin-bottom: 6px; padding: 2px 6px; border-radius: 4px; background: #161b22;}
+        
+        /* REDDIT SPECIFIC TWEAKS */
+        .card-img-container { background: #0b0e14; padding: 8px; border-radius: 4px; display: flex; justify-content: center; align-items: center; margin-bottom: 0.8rem; height: 120px; border: 1px solid var(--border);}
+        .card-img { max-height: 100px; max-width: 100%; object-fit: contain; }
+        .buy-btn { display: inline-block; margin-top: 8px; background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.35rem 0.7rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.75rem; transition: 0.2s;}
+        .buy-btn:hover { background: var(--border); }
 
-        /* MOBILE FIX */
-        @media (max-width: 768px) {
-            body { padding: 1rem; }
-            .card { flex-direction: column; }
-            .card-img-container { 
-                width: 100%; height: 140px; border-right: none; 
-                border-bottom: 1px solid var(--border); padding: 15px;
-            }
-            .card-img { max-height: 120px; }
-            .card-header-row { flex-direction: column; margin-bottom: 8px; }
-            .card-title { margin-right: 0; margin-bottom: 6px; }
-            .countdown { text-align: left; }
-            .intel-banner { padding: 1rem; }
-            .sync-container { margin-left: 0; width: 100%; justify-content: space-between; margin-top: 10px; }
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
-        <p>Pokémon TCG Drop & Restock Intelligence</p>
+        <p>DropDrop?</p>
     </header>
 
     <div class="intel-banner" id="intelBanner">
-        <h2>⚡ Market Intel Brief & Schedule</h2>
+        <h2>Intel Brief & Schedule</h2>
         <div class="intel-text" id="intelText">Warming up market radar...</div>
     </div>
 
     <div class="dashboard-container">
-        <main>
-            <div class="filters">
-                <button class="filter-btn active" id="btn-all" onclick="filterDrops('all')">All Intel</button>
-                <button class="filter-btn" id="btn-online" onclick="filterDrops('ONLINE')">🌐 Online Drops</button>
-                <button class="filter-btn" id="btn-in-store" onclick="filterDrops('IN-STORE')">🏪 In-Store</button>
-                <button class="filter-btn" id="btn-unknown" onclick="filterDrops('UNKNOWN')">💬 Discussions</button>
-                
+        
+        <!-- REDDIT COLUMN -->
+        <aside class="radar-panel" style="border-color: #f1c40f;">
+            <div class="radar-header">
+                <div class="radar-title" style="color: #f1c40f;">🔥 Reddit Radar</div>
                 <div class="sync-container">
-                    <span class="last-sync" id="lastSyncTime">Checking for updates...</span>
-                    <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; border-color: var(--accent-blue);">🔄 Sync Latest</button>
+                    <span class="last-sync" id="lastSyncTime">Checking...</span>
+                    <button class="buy-btn" onclick="loadLiveData()" style="margin:0;">🔄 Sync</button>
+                </div>
+                <div class="filters">
+                    <button class="filter-btn active" id="btn-all" onclick="filterDrops('all')">All Intel</button>
+                    <button class="filter-btn" id="btn-online" onclick="filterDrops('ONLINE')">🌐 Online Drops</button>
                 </div>
             </div>
-            <div class="drop-grid" id="dropGrid"></div>
-        </main>
+            <div id="dropGrid"></div>
+        </aside>
         
+        <!-- GOOGLE NEWS COLUMN -->
         <aside class="radar-panel">
             <div class="radar-header">
                 <div class="radar-title">📰 Web Search Radar</div>
@@ -141,6 +115,7 @@
             <div id="newsFeed"></div>
         </aside>
 
+        <!-- TWITTER COLUMN -->
         <aside class="radar-panel" style="border-color: #1da1f2;">
             <div class="radar-header">
                 <div class="radar-title" style="color: #1da1f2;">🐦 X / Twitter Radar</div>
@@ -157,18 +132,15 @@
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 
-                // Update Last Sync Time
                 const now = new Date();
-                document.getElementById('lastSyncTime').innerText = "Last updated: " + now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'});
+                document.getElementById('lastSyncTime').innerText = "Updated: " + now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 
-                // Render Intel Brief HTML
                 if (data.intel_brief) {
                     document.getElementById('intelText').innerHTML = data.intel_brief;
                 }
 
                 allDrops = data.drops || [];
                 
-                // Keep current filter active during refresh, default to 'all'
                 const activeFilterBtn = document.querySelector('.filters .filter-btn.active');
                 let currentFilter = 'all';
                 if(activeFilterBtn && activeFilterBtn.id.replace('btn-', '') !== 'all') {
@@ -186,7 +158,6 @@
         }
 
         function filterDrops(filter) {
-            // Update active button state
             document.querySelectorAll('.filters .filter-btn').forEach(btn => {
                 if (btn.id === 'btn-' + filter.toLowerCase()) btn.classList.add('active');
                 else if (btn.id && btn.id.startsWith('btn-')) btn.classList.remove('active');
@@ -198,58 +169,45 @@
             const container = document.getElementById('dropGrid');
             container.innerHTML = '';
             
-            // Filter the drops based on the AI 'type' attribute
             const filtered = allDrops.filter(d => {
                 if (filter === 'all' || filter === 'ALL') return true;
                 return d.type === filter;
             });
 
             if (filtered.length === 0) {
-                container.innerHTML = `<p style="color: #8b949e; padding: 1rem;">No drops found for this category.</p>`;
+                container.innerHTML = `<p style="color: #8b949e; font-size: 0.85rem;">No active drops for this filter.</p>`;
                 return;
             }
 
             filtered.forEach(drop => {
-                const card = document.createElement('div');
-                card.className = 'card';
-
-                let typeBadgeHTML = '';
-                if (drop.type === 'ONLINE') typeBadgeHTML = `<span class="badge" style="background: var(--accent-blue); color: white;">🌐 ONLINE</span>`;
-                else if (drop.type === 'IN-STORE') typeBadgeHTML = `<span class="badge" style="background: var(--accent-orange); color: white;">🏪 IN-STORE</span>`;
-                else typeBadgeHTML = `<span class="badge" style="background: var(--border); color: white;">💬 INFO</span>`;
-                
                 let displayDate = "Recent";
                 try {
                     const localDate = new Date(drop.date);
-                    if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { weekday: 'short', hour: '2-digit', minute:'2-digit' });
+                    if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
                 } catch(e) {}
 
-                card.innerHTML = `
+                let typeBadgeHTML = '';
+                if (drop.type === 'ONLINE') typeBadgeHTML = `<div class="drop-alert" style="color: var(--accent-blue); border: 1px solid var(--accent-blue);">🌐 ONLINE DROP</div>`;
+                else if (drop.type === 'IN-STORE') typeBadgeHTML = `<div class="drop-alert" style="color: var(--accent-orange); border: 1px solid var(--accent-orange);">🏪 IN-STORE</div>`;
+                
+                const cardHTML = `
+                <div class="news-card">
+                    <div class="news-source">
+                        <span>r/${drop.sub || 'Reddit'} • ${drop.retailer || 'Store'}</span>
+                        <span style="color: var(--accent-yellow);">${displayDate}</span>
+                    </div>
+                    ${typeBadgeHTML}
                     <div class="card-img-container">
-                        <img src="${drop.image}" alt="Retailer Image" class="card-img" onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=reddit.com&sz=256';">
+                        <img src="${drop.image}" alt="Img" class="card-img" onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=reddit.com&sz=256';">
                     </div>
-                    <div class="card-body">
-                        <div>
-                            <div class="card-header-row">
-                                <h2 class="card-title">${drop.title}</h2>
-                                <div class="countdown">🕒 ${displayDate}</div>
-                            </div>
-                            <div style="margin-bottom: 8px;">
-                                ${typeBadgeHTML}
-                                <span class="badge badge-domain">${drop.retailer || 'Store'}</span>
-                            </div>
-                            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
-                                ${drop.desc || 'No description available.'}
-                            </div>
-                        </div>
-                        <div>
-                            <a href="${drop.source_link || '#'}" target="_blank" class="buy-btn">
-                                ${drop.source_link && drop.source_link.includes('reddit.com') ? '💬 Reddit Discussion' : '🔗 View Source'}
-                            </a>
-                        </div>
-                    </div>
+                    <div class="news-title">${drop.title}</div>
+                    <div class="news-desc">${drop.desc || ''}</div>
+                    <a href="${drop.source_link || '#'}" target="_blank" class="buy-btn">
+                        ${drop.source_link && drop.source_link.includes('reddit.com') ? '💬 Read Discussion' : '🔗 View Deal'}
+                    </a>
+                </div>
                 `;
-                container.appendChild(card);
+                container.innerHTML += cardHTML;
             });
         }
 
@@ -271,9 +229,9 @@
                 <div class="news-card" style="${n.is_drop === 'YES' ? 'border-left: 3px solid var(--accent-green);' : ''}">
                     <div class="news-source">
                         <span>${n.source}</span>
-                        <span style="color: var(--accent-yellow); font-weight: bold;">${displayDate}</span>
+                        <span style="color: var(--accent-yellow);">${displayDate}</span>
                     </div>
-                    ${n.is_drop === 'YES' ? `<div class="drop-alert">🚨 RESTOCK ALERT</div>` : ''}
+                    ${n.is_drop === 'YES' ? `<div class="drop-alert" style="color: var(--accent-green); border: 1px solid var(--accent-green);">🚨 RESTOCK ALERT</div>` : ''}
                     <a href="${n.link}" target="_blank" style="text-decoration:none;">
                         <div class="news-title">${n.title}</div>
                     </a>
