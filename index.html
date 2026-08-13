@@ -38,14 +38,13 @@
         .card-img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
         .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; }
         
-        .tags { display: flex; gap: 0.4rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+        .tags { display: flex; gap: 0.4rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
         .badge { font-size: 0.7rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; }
-        .badge-live { background: var(--accent-green); color: #000; }
-        .badge-past { background: var(--accent-red); color: #fff; }
-        .badge-domain { background: var(--accent-blue); color: #fff; }
+        .badge-domain { background: var(--border); color: #fff; }
         
-        .card-title { font-size: 1rem; margin-bottom: 0.4rem; line-height: 1.3; }
-        .price { color: var(--accent-yellow); font-size: 0.95rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .stats-row { font-size: 0.75rem; color: #8b949e; margin-bottom: 0.6rem; display: flex; gap: 12px; font-weight: bold; }
+        
+        .card-title { font-size: 1rem; margin-bottom: 0.6rem; line-height: 1.3; }
         .countdown { margin-top: auto; font-family: monospace; font-size: 0.8rem; background: #0d1117; padding: 0.4rem; border-radius: 6px; text-align: center; color: #8b949e; border: 1px solid #21262d; }
         .buy-btn { display: block; margin-top: 0.8rem; text-align: center; background: var(--accent-yellow); color: #000; padding: 0.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
         
@@ -53,9 +52,11 @@
         .radar-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; margin-bottom: 1rem; }
         .radar-title { font-size: 1.1rem; color: #3498db; display: flex; align-items: center; gap: 0.5rem; }
         
-        .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 0.8rem; margin-bottom: 0.8rem; }
+        .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 0.8rem; margin-bottom: 0.8rem; position: relative; overflow: hidden; }
         .news-source { font-size: 0.7rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.4rem; text-transform: uppercase; }
-        .news-title { font-size: 0.9rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; }
+        .news-title { font-size: 0.9rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.5rem; }
+        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 5px; }
+        .drop-alert { color: var(--accent-green); font-weight: bold; font-size: 0.7rem; display: inline-block; margin-bottom: 5px; }
     </style>
 </head>
 <body>
@@ -66,17 +67,16 @@
     <div class="dashboard-container">
         <main>
             <div class="filters">
-                <button class="filter-btn active" onclick="filterDrops('all')">All Active Deals</button>
+                <button class="filter-btn active" onclick="filterDrops('all')">All Deals</button>
                 <button class="filter-btn" onclick="filterDrops('today')">Added Today</button>
                 <button class="filter-btn" onclick="filterDrops('week')">This Week</button>
-                <button class="filter-btn" onclick="filterDrops('past')">Expired / Past</button>
                 <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; margin-left: auto;">🔄 Sync Latest Data</button>
             </div>
             <div class="drop-grid" id="dropGrid"></div>
         </main>
         <aside class="radar-panel">
             <div class="radar-header">
-                <div class="radar-title">📰 Web News Radar</div>
+                <div class="radar-title">📰 Web & X Radar</div>
             </div>
             <div id="newsFeed"></div>
         </aside>
@@ -90,7 +90,6 @@
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 allDrops = data.drops || [];
-                
                 renderDrops('all'); 
                 renderNews(data.news || []);
             } catch (error) {
@@ -107,13 +106,8 @@
             const filtered = allDrops.filter(d => {
                 const dropDate = new Date(d.date || now);
                 const hoursDiff = isNaN(dropDate) ? 0 : (now - dropDate) / (1000 * 60 * 60);
-                
-                if (filter === 'past') return d.status === 'past';
-                if (d.status === 'past') return false; 
-                
                 if (filter === 'today') return hoursDiff <= 24;
                 if (filter === 'week') return hoursDiff <= 168; 
-                
                 return true; 
             });
 
@@ -123,20 +117,21 @@
             }
 
             filtered.forEach(drop => {
-                const isPast = drop.status === 'past';
                 const card = document.createElement('div');
                 card.className = 'card';
-                card.style.opacity = isPast ? '0.7' : '1'; 
 
-                let btnLabel = drop.retailer && drop.retailer.includes('r/') ? '💬 View Thread' : '📰 View Article';
-                let badgeHTML = isPast ? `<span class="badge badge-past">EXPIRED / OOS</span>` : `<span class="badge badge-live">ACTIVE DEAL</span>`;
+                // AI Classification Badge (Online vs In-Store)
+                let typeBadgeHTML = '';
+                if (drop.type === 'ONLINE') {
+                    typeBadgeHTML = `<span class="badge" style="background: var(--accent-blue); color: white;">🌐 ONLINE</span>`;
+                } else if (drop.type === 'IN-STORE') {
+                    typeBadgeHTML = `<span class="badge" style="background: var(--accent-orange); color: white;">🏪 IN-STORE</span>`;
+                }
                 
                 let displayDate = "Recent";
                 try {
                     const localDate = new Date(drop.date || now);
-                    if (!isNaN(localDate)) {
-                        displayDate = localDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
-                    }
+                    if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
                 } catch(e) {}
 
                 card.innerHTML = `
@@ -145,20 +140,25 @@
                     </div>
                     <div class="card-body">
                         <div class="tags">
-                            ${badgeHTML}
+                            ${typeBadgeHTML}
                             <span class="badge badge-domain">${drop.retailer || 'Store'}</span>
                         </div>
+                        
+                        <div class="stats-row">
+                            <span>👍 ${drop.score !== undefined ? drop.score : '-'} Votes</span>
+                            <span>💬 ${drop.comments !== undefined ? drop.comments : '-'} Comments</span>
+                        </div>
+                        
                         <h2 class="card-title">${drop.title || 'Untitled Drop'}</h2>
-                        <div class="price">${drop.price || 'Check Link'}</div>
                         <div class="countdown">🕒 Posted: ${displayDate}</div>
                         
                         <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;">
-                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">View Description & Links</summary>
-                            <div style="line-height: 1.4; color: #f0f6fc;">${drop.desc || 'No description available.'}</div>
+                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">✨ View Products & Links</summary>
+                            <div style="line-height: 1.4;">${drop.desc || 'No description available.'}</div>
                         </details>
                         
                         <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 1rem;">
-                            <a href="${drop.source_link || drop.link || '#'}" target="_blank" class="buy-btn" style="flex: 1; background: #3498db; color: white;">${btnLabel}</a>
+                            <a href="${drop.source_link || '#'}" target="_blank" class="buy-btn" style="flex: 1; background: #3498db; color: white;">💬 View Source</a>
                         </div>
                     </div>
                 `;
@@ -170,14 +170,15 @@
             const container = document.getElementById('newsFeed');
             if(!container) return; 
             container.innerHTML = news.map(n => `
-                <div class="news-card">
+                <div class="news-card" style="${n.is_drop === 'YES' ? 'border-left: 4px solid var(--accent-green);' : ''}">
                     <div class="news-source">
                         <span>${n.source}</span>
-                        <span>${n.date}</span>
                     </div>
+                    ${n.is_drop === 'YES' ? `<div class="drop-alert">🚨 RESTOCK ALERT</div>` : ''}
                     <a href="${n.link}" target="_blank" style="text-decoration:none;">
                         <div class="news-title">${n.title}</div>
                     </a>
+                    <div class="news-desc">✨ ${n.desc}</div>
                 </div>
             `).join('');
         }
