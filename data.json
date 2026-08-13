@@ -1,141 +1,157 @@
 {
     "drops": [
         {
+            "title": "Mega Evolution\u2014Ascended Heroes Tin",
+            "price": "$21.99 (MSRP)",
+            "retailer": "Official Release",
+            "date": "2026-08-28T00:00:00",
+            "status": "upcoming",
+            "image": "https://tcg.pokemon.com/assets/img/mega-evolution/ascended-heroes-tin.png",
+            "link": "https://www.pokemoncenter.com",
+            "reddit_link": "",
+            "desc": "Official upcoming Pok\u00e9mon TCG release. Check preferred retailers for pre-orders."
+        },
+        {
+            "title": "30th Anniversary Celebration ETB",
+            "price": "$49.99 (MSRP)",
+            "retailer": "Official Release",
+            "date": "2026-09-16T10:00:00",
+            "status": "upcoming",
+            "image": "https://images.pokemontcg.io/cel25/logo.png",
+            "link": "https://www.pokemoncenter.com",
+            "reddit_link": "",
+            "desc": "Official upcoming Pok\u00e9mon TCG release. Check preferred retailers for pre-orders."
+        },
+        {
+            "title": "Delta Reign Booster Box",
+            "price": "$161.64 (MSRP)",
+            "retailer": "Official Release",
+            "date": "2026-11-06T00:00:00",
+            "status": "upcoming",
+            "image": "https://images.pokemontcg.io/sv1/logo.png",
+            "link": "https://www.pokemoncenter.com",
+            "reddit_link": "",
+            "desc": "Official upcoming Pok\u00e9mon TCG release. Check preferred retailers for pre-orders."
+        },
+        {
             "title": "Walmart Wednesday!",
-            "price": "Check Retailer Link",
+            "price": "Check Link for Price",
             "retailer": "Walmart",
             "date": "2026-08-13",
-            "type": "online",
             "status": "live",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/",
+            "desc": "\n  \n  Ascended Tins :  link     Destined Rivals ETBs :  link     Pitch Black ETBs :  link     Pitch Black Blisters :  link     Charizard Collection Bo..."
         },
         {
             "title": "Pitch black Bundles up on amazon!",
-            "price": "Check Retailer Link",
-            "retailer": "Target",
+            "price": "Check Link for Price",
+            "retailer": "Amazon",
             "date": "2026-08-13",
-            "type": "online",
             "status": "live",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmvtfc/pitch_black_bundles_up_on_amazon/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmvtfc/pitch_black_bundles_up_on_amazon/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmvtfc/pitch_black_bundles_up_on_amazon/",
+            "desc": "\n  \n # ad    Very similar price to Walmart / target   Note price to look for is 31.99 anything else isnt it   \n    submitted by     /u/Chippyrs      [..."
         },
         {
             "title": "Make sure to enter this on Bestbuy! more invites going out soon!",
-            "price": "Check Retailer Link",
+            "price": "Check Link for Price",
             "retailer": "Bestbuy",
             "date": "2026-08-11",
-            "type": "online",
             "status": "past",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vltsfk/make_sure_to_enter_this_on_bestbuy_more_invites/"
+            "link": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-booster-box-36-packs/JJG2TL8C7R",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vltsfk/make_sure_to_enter_this_on_bestbuy_more_invites/",
+            "desc": "\n  \n Giveaways going on in our discord, a Destined Rivals booster box!  https://discord.gg/pkmntcgdeals    \n    submitted by     /u/Chippyrs      [lin..."
         },
         {
             "title": "POTENTIAL TARGET DROP TONIGHT Midnight PST , 3am EST",
-            "price": "Check Retailer Link",
+            "price": "Check Link for Price",
             "retailer": "Target",
             "date": "2026-08-10",
-            "type": "online",
             "status": "past",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vkssyn/potential_target_drop_tonight_midnight_pst_3am_est/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vkssyn/potential_target_drop_tonight_midnight_pst_3am_est/",
+            "desc": "\n  \n  Target Drop Guide    Drop List    Prismatic Evolutions Super Premium Collection     Mega Evolution Chaos Rising Elite Trainer Box     Mega Evolu..."
         },
         {
             "title": "POTENTIAL TARGET DROP TONIGHT midnight PST 3am EST",
-            "price": "Check Retailer Link",
+            "price": "Check Link for Price",
             "retailer": "Target",
             "date": "2026-08-06",
-            "type": "online",
             "status": "past",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vhjpuv/potential_target_drop_tonight_midnight_pst_3am_est/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vhjpuv/potential_target_drop_tonight_midnight_pst_3am_est/",
+            "desc": "\n  \n  Link to our Target Guide.     https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/      First Partner Illustration Collecti..."
         },
         {
             "title": "Pitch black booster bundle",
-            "price": "Check Retailer Link",
-            "retailer": "Walmart",
+            "price": "Check Link for Price",
+            "retailer": "Reddit Post",
             "date": "2026-08-06",
-            "type": "online",
             "status": "past",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgwu95/pitch_black_booster_bundle/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgwu95/pitch_black_booster_bundle/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgwu95/pitch_black_booster_bundle/",
+            "desc": "\n  \n From Walmart today  Mega Evolution 5 Pitch Black Booster Bundle    #ad   STILL IN STOCK AND YOU CAN CHECK THIS OUT   \n    submitted by     /u/Chi..."
         },
         {
             "title": "Walmart Wednesday",
-            "price": "Check Retailer Link",
+            "price": "Check Link for Price",
             "retailer": "Walmart",
             "date": "2026-08-06",
-            "type": "online",
             "status": "live",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgpoce/walmart_wednesday/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgpoce/walmart_wednesday/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgpoce/walmart_wednesday/",
+            "desc": "\n  \n Happening at 9 EST!    First Partner Illustration Collection 3     Destined Rivals Elite Trainer Box     Charizard Ex Special Collection     Firs..."
         },
         {
             "title": "TARGET DROP LIKELY TONIGHT MIDNIGHT PST , 3AM EST",
-            "price": "Check Retailer Link",
+            "price": "Check Link for Price",
             "retailer": "Target",
             "date": "2026-08-04",
-            "type": "online",
             "status": "past",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vewcg4/target_drop_likely_tonight_midnight_pst_3am_est/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vewcg4/target_drop_likely_tonight_midnight_pst_3am_est/",
+            "desc": "\n  \n Link to our Target guide!     https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/      First Partner Illustration Collectio..."
         },
         {
             "title": "Pitch Black ETB price drop on amazon 69.99",
-            "price": "Check Retailer Link",
+            "price": "Check Link for Price",
             "retailer": "Amazon",
             "date": "2026-08-03",
-            "type": "online",
             "status": "live",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1ve64ew/pitch_black_etb_price_drop_on_amazon_6999/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1ve64ew/pitch_black_etb_price_drop_on_amazon_6999/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1ve64ew/pitch_black_etb_price_drop_on_amazon_6999/",
+            "desc": "\n  \n # ad   USE YOUR REWARD POINTS   \n    submitted by     /u/Chippyrs      [link]       [comments]  \n..."
         },
         {
             "title": "Monthly Amazon / Informational post!",
-            "price": "Check Retailer Link",
-            "retailer": "Target",
+            "price": "Check Link for Price",
+            "retailer": "Amazon",
             "date": "2026-08-01",
-            "type": "online",
             "status": "past",
             "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
-            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vco7gf/monthly_amazon_informational_post/"
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vco7gf/monthly_amazon_informational_post/",
+            "reddit_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vco7gf/monthly_amazon_informational_post/",
+            "desc": "\n  \n Our Target hitting guide  https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/      Amazon Stock Notifications     Mega Zyga..."
         }
     ],
     "rumors": [
         {
-            "title": "According to Shpeshal Nick, R/S/E are planned for around late Sep...",
-            "source": "r/PokeLeaks",
-            "date": "2026-08-12",
-            "desc": "Community leak report. Click post link on feed for details.",
-            "confidence": "\ud83d\udc40 Unconfirmed"
-        },
-        {
-            "title": "BallGuy: Winds and Waves directed by Mr. Hiroyuki Tani with Co-Di...",
-            "source": "r/PokeLeaks",
-            "date": "2026-08-11",
-            "desc": "Community leak report. Click post link on feed for details.",
-            "confidence": "\ud83d\udc40 Unconfirmed"
-        },
-        {
-            "title": "New Book...",
-            "source": "r/PokeLeaks",
-            "date": "2026-08-09",
-            "desc": "Community leak report. Click post link on feed for details.",
-            "confidence": "\ud83d\udc40 Unconfirmed"
-        },
-        {
-            "title": "r/PokeLeaks Discussion Megathread - August 01, 2026...",
-            "source": "r/PokeLeaks",
-            "date": "2026-08-01",
-            "desc": "Community leak report. Click post link on feed for details.",
-            "confidence": "\ud83d\udc40 Unconfirmed"
-        },
-        {
-            "title": "New Pokemon Winds and Waves Gameplay from teraleak...",
-            "source": "r/PokeLeaks",
-            "date": "2026-07-31",
-            "desc": "Community leak report. Click post link on feed for details.",
-            "confidence": "\ud83d\udc40 Unconfirmed"
+            "title": "No recent TCG news detected",
+            "source": "System",
+            "date": "Today",
+            "desc": "Radar active.",
+            "link": "#",
+            "confidence": "-"
         }
     ]
 }
