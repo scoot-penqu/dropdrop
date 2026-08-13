@@ -1,15 +1,19 @@
 import json
 import urllib.request
 import urllib.parse
-import urllib.error
 import re
 import os
 import time
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
+import google.generativeai as genai
 
+# --- INITIALIZE GOOGLE AI SDK ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
 
+# --- BULLETPROOF GOOGLE LOGO SERVERS ---
 RETAILER_LOGOS = {
     'Target': 'https://www.google.com/s2/favicons?domain=target.com&sz=256',
     'Walmart': 'https://www.google.com/s2/favicons?domain=walmart.com&sz=256',
@@ -46,28 +50,27 @@ def is_spam(title, content, link):
     return False
 
 def call_gemini(prompt):
-    if not GEMINI_API_KEY: 
-        print("Missing GEMINI_API_KEY!")
-        return None
-        
-    # Switched to the ultra-stable gemini-1.5-flash model
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
-    data = json.dumps({
-        "contents": [{"parts":[{"text": prompt}]}],
-        "generationConfig": {"responseMimeType": "application/json"}
-    }).encode('utf-8')
-    req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
-    
+    """Uses the official Google SDK to guarantee a valid JSON response without URL 404 errors."""
+    if not GEMINI_API_KEY: return None
     try:
-        with urllib.request.urlopen(req) as response:
-            ai_text = json.loads(response.read().decode())['candidates'][0]['content']['parts'][0]['text'].strip()
-            return json.loads(ai_text)
-    except urllib.error.HTTPError as e:
-        # This will now print the EXACT reason Google rejected the API call
-        print(f"Gemini API HTTP Error {e.code}: {e.read().decode()}")
-        return None
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.GenerationConfig(
+                response_mime_type="application/json"
+            )
+        )
+        
+        # Clean any potential markdown wrapping the SDK might return
+        clean_text = response.text.strip()
+        if clean_text.startswith("```json"):
+            clean_text = clean_text[7:-3].strip()
+        elif clean_text.startswith("```"):
+            clean_text = clean_text[3:-3].strip()
+            
+        return json.loads(clean_text)
     except Exception as e:
-        print(f"Gemini API Generic Error: {e}")
+        print(f"SDK Error: {e}")
         return None
 
 def evaluate_drop_with_ai(title, content, comments_text):
@@ -268,4 +271,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("1.5-Flash Stable Engine successfully generated!")
+print("SDK-Powered AI Engine successfully generated!")
