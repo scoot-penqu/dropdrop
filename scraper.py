@@ -1,62 +1,36 @@
 import json
 import urllib.request
-import xml.etree.ElementTree as ET
 from datetime import datetime
-import re
 
 # Retailers to look for
 RETAILERS = ['pokemoncenter', 'target', 'walmart', 'amazon', 'gamestop', 'samsclub', 'costco', 'bestbuy']
 BANNED_WORDS = ['single', 'psa', 'cgc', 'slab', 'grading', 'card only']
 
-def fetch_reddit_rss(subreddit):
-    """Fetches posts using Reddit's RSS feed (bypasses datacenter JSON blocks)."""
-    url = f"https://www.reddit.com/r/{subreddit}/new.rss?limit=25"
-    req = urllib.request.Request(
-        url, 
-        headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
-    )
+def fetch_reddit_proxy(subreddit):
+    """Uses a proxy to completely bypass Reddit's datacenter blocks."""
+    # We use rss2json as a free proxy to fetch Reddit's RSS feed safely
+    proxy_url = f"https://api.rss2json.com/v1/api.json?rss_url=https://www.reddit.com/r/{subreddit}/new.rss"
+    req = urllib.request.Request(proxy_url, headers={'User-Agent': 'Mozilla/5.0'})
     
-    entries = []
     try:
         with urllib.request.urlopen(req) as response:
-            xml_data = response.read()
-            root = ET.fromstring(xml_data)
-            
-            # Parse Atom XML feed namespace
-            ns = {'atom': 'http://www.w3.org/2005/Atom'}
-            for entry in root.findall('atom:entry', ns):
-                title = entry.find('atom:title', ns).text if entry.find('atom:title', ns) is not None else ''
-                link_elem = entry.find('atom:link', ns)
-                link = link_elem.attrib['href'] if link_elem is not None else ''
-                published = entry.find('atom:published', ns).text if entry.find('atom:published', ns) is not None else ''
-                
-                # Extract external links inside the post content HTML if available
-                content_elem = entry.find('atom:content', ns)
-                content_html = content_elem.text if content_elem is not None else ''
-                
-                entries.append({
-                    'title': title,
-                    'link': link,
-                    'published': published,
-                    'content': content_html
-                })
-        print(f"Successfully fetched {len(entries)} items from r/{subreddit}")
+            data = json.loads(response.read().decode())
+            return data.get('items', [])
     except Exception as e:
-        print(f"Error fetching r/{subreddit} RSS: {e}")
-        
-    return entries
+        print(f"Error fetching r/{subreddit} via proxy: {e}")
+        return []
 
 def build_drops():
     drops = []
-    raw_posts = fetch_reddit_rss('PKMNTCGDeals')
+    items = fetch_reddit_proxy('PKMNTCGDeals')
     
-    for post in raw_posts:
-        title = post['title']
+    for post in items:
+        title = post.get('title', '')
         title_lower = title.lower()
-        content = post['content'].lower()
-        link = post['link']
+        content = post.get('content', '').lower()
+        link = post.get('link', '')
         
-        # 1. Skip banned keywords (singles, slabs, etc.)
+        # 1. Skip banned keywords
         if any(w in title_lower for w in BANNED_WORDS):
             continue
             
@@ -74,7 +48,7 @@ def build_drops():
         is_past = any(term in title_lower or term in content for term in ['expired', 'out of stock', 'sold out', 'oos'])
         
         # Clean up date format
-        date_str = post['published'][:10] if post['published'] else "Recent"
+        date_str = post.get('pubDate', '')[:10] if post.get('pubDate') else "Recent"
         
         drops.append({
             "title": title[:70] + "..." if len(title) > 70 else title,
@@ -91,13 +65,13 @@ def build_drops():
 
 def build_rumors():
     rumors = []
-    raw_posts = fetch_reddit_rss('PokeLeaks')
+    items = fetch_reddit_proxy('PokeLeaks')
     
-    for post in raw_posts[:5]:
+    for post in items[:5]:
         rumors.append({
-            "title": post['title'][:65] + "..." if len(post['title']) > 65 else post['title'],
+            "title": post.get('title', '')[:65] + "...",
             "source": "r/PokeLeaks",
-            "date": post['published'][:10] if post['published'] else "Recent",
+            "date": post.get('pubDate', '')[:10] if post.get('pubDate') else "Recent",
             "desc": "Community leak report. Click post link on feed for details.",
             "confidence": "👀 Unconfirmed"
         })
