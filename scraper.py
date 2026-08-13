@@ -1,35 +1,52 @@
-name: Auto Scan Pokemon Drops
+import json
+import urllib.request
+import xml.etree.ElementTree as ET
 
-on:
-  schedule:
-    - cron: '*/15 * * * *' # Runs automatically every 15 minutes
-  workflow_dispatch: # Allows manual trigger anytime from GitHub
+def fetch_pokebeach_rss():
+    """Fetches the latest news & leak items from PokéBeach RSS feed."""
+    url = "https://www.pokebeach.com/feed"
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    
+    rumors = []
+    try:
+        with urllib.request.urlopen(req) as response:
+            xml_data = response.read()
+            root = ET.fromstring(xml_data)
+            
+            for item in root.findall('./channel/item')[:5]: # Take top 5 latest
+                title = item.find('title').text
+                link = item.find('link').text
+                rumors.append({
+                    "title": title,
+                    "source": "PokéBeach RSS Feed",
+                    "date": "Recent News",
+                    "desc": f"Latest update from PokéBeach. Check full article at: {link}",
+                    "confidence": "⚡ High Likelihood (News Source)"
+                })
+    except Exception as e:
+        print(f"Error fetching RSS: {e}")
+    
+    return rumors
 
-# THIS IS THE FIX FOR EXIT CODE 128
-permissions:
-  contents: write 
+# Build the JSON file structure
+data = {
+    "drops": [
+        {
+            "title": "Mega Evolution—Ascended Heroes Tin",
+            "price": "$21.99 (MSRP)",
+            "retailer": "Pokémon Center / Target / Walmart",
+            "date": "2026-08-28T00:00:00",
+            "type": "online & in-store",
+            "status": "confirmed",
+            "image": "https://images.pokemontcg.io/me1/1_hires.png",
+            "link": "https://www.pokemon.com/us/pokemon-tcg"
+        }
+    ],
+    "rumors": fetch_pokebeach_rss()
+}
 
-jobs:
-  scrape-and-update:
-    runs-on: ubuntu-latest
-    steps:
-      # THIS IS THE FIX FOR THE NODE.JS WARNING (Updated to v4)
-      - name: Check out repo
-        uses: actions/checkout@v4
+# Save output to data.json
+with open('data.json', 'w') as f:
+    json.dump(data, f, indent=4)
 
-      # THIS IS THE FIX FOR THE NODE.JS WARNING (Updated to v5)
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-            python-version: '3.x'
-
-      - name: Run Scraper Script
-        run: python scraper.py
-
-      - name: Commit and push updated data.json
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data.json
-          git commit -m "Auto-updated drop data [skip ci]" || exit 0
-          git push
+print("data.json successfully updated!")
