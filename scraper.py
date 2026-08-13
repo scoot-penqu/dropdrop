@@ -8,30 +8,29 @@ import xml.etree.ElementTree as ET
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
+# --- BULLETPROOF GOOGLE LOGO SERVERS ---
 RETAILER_LOGOS = {
-    'Target': 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Target_Corporation_logo_%28vector%29.svg',
-    'Walmart': 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg',
-    'Amazon': 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
-    'Pokemoncenter': 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pok%C3%A9mon_Center_logo.svg/512px-Pok%C3%A9mon_Center_logo.svg.png',
-    'Gamestop': 'https://upload.wikimedia.org/wikipedia/commons/0/05/GameStop_Logo.svg',
-    'Bestbuy': 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Best_Buy_logo.svg',
-    'Samsclub': 'https://upload.wikimedia.org/wikipedia/commons/1/14/Sams_Club_Logo.svg',
-    'Costco': 'https://upload.wikimedia.org/wikipedia/commons/5/59/Costco_Wholesale_logo_2010-10-26.svg',
-    'Ebay': 'https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg',
-    'Tcgplayer': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/TCGplayer_logo.svg/512px-TCGplayer_logo.svg.png',
-    'Reddit': 'https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg'
+    'Target': 'https://www.google.com/s2/favicons?domain=target.com&sz=256',
+    'Walmart': 'https://www.google.com/s2/favicons?domain=walmart.com&sz=256',
+    'Amazon': 'https://www.google.com/s2/favicons?domain=amazon.com&sz=256',
+    'Pokemoncenter': 'https://www.google.com/s2/favicons?domain=pokemoncenter.com&sz=256',
+    'Gamestop': 'https://www.google.com/s2/favicons?domain=gamestop.com&sz=256',
+    'Bestbuy': 'https://www.google.com/s2/favicons?domain=bestbuy.com&sz=256',
+    'Samsclub': 'https://www.google.com/s2/favicons?domain=samsclub.com&sz=256',
+    'Costco': 'https://www.google.com/s2/favicons?domain=costco.com&sz=256',
+    'Ebay': 'https://www.google.com/s2/favicons?domain=ebay.com&sz=256',
+    'Tcgplayer': 'https://www.google.com/s2/favicons?domain=tcgplayer.com&sz=256',
+    'Reddit': 'https://www.google.com/s2/favicons?domain=reddit.com&sz=256'
 }
 RETAILERS = [k.lower() for k in RETAILER_LOGOS.keys() if k != 'Reddit']
 SUBREDDITS = ['PKMNTCGDeals', 'PokemonRestocks', 'PokemonDropNotify', 'pokemonrestockr', 'PokemonTCGRestocks']
 
-# --- STRICT STORE WHITELIST ---
 STORE_DOMAINS = [
     'target.com', 'walmart.com', 'amazon.com', 'pokemoncenter.com', 'gamestop.com', 
     'bestbuy.com', 'samsclub.com', 'costco.com', 'tcgplayer.com', 'ebay.com', 
     'forgeandfiregaming.com', 'safari-zone.com', 'zulusgames.com', 'smokeandmirrorshobby.com', 'gamenerdz.com'
 ]
 
-# --- SPAM & PERSONAL HAUL BLOCKERS ---
 BLOCKED_DOMAINS = ["temu.com", "trackalacker.com", "whatnot.com", "tiktok.com", "aliexpress.com", "dhgate.com"]
 BLOCKED_KEYWORDS = [
     "temu", "trackalacker", "free card box", "spin to win", "referral code", "use my link", "sign up bonus",
@@ -150,11 +149,10 @@ def build_drops():
             title = post.get('title', '')
             content_raw = post.get('content', '')
             source_link = post.get('link', '') 
-            guid = post.get('guid', '') # This is the reddit thread permalink
+            guid = post.get('guid', '') 
             
-            # 1. SPAM / HAUL BLOCKER
+            # 1. SPAM BLOCKER
             if is_spam(title, content_raw, source_link):
-                print(f"Blocked Junk Keyword: {title}")
                 continue
                 
             # 2. EXTRACT & VERIFY STORE LINKS
@@ -181,17 +179,15 @@ def build_drops():
                 link_count += 1
                 
             if link_count == 0:
-                print(f"Trashed (No Verified Store Links): {title}")
                 continue
                 
             extracted_links_html += "</ul></div>"
             
-            # 3. FETCH COMMUNITY COMMENTS VIA RSS PROXY
+            # 3. FETCH COMMUNITY COMMENTS 
             comments_text = ""
             if guid and "reddit.com" in guid:
                 comment_url = guid + ".rss" if not guid.endswith(".rss") else guid
                 comment_feed = fetch_rss_proxy(comment_url)
-                # Skip the first item (the main post), grab the top 4 comments
                 for c in comment_feed[1:5]:
                     clean_c = re.sub(r'<[^>]+>', ' ', c.get('content', '')).strip()
                     if clean_c: comments_text += f"- {clean_c[:150]}\n"
@@ -200,14 +196,12 @@ def build_drops():
             is_valid_drop, drop_type, ai_summary, ai_items = evaluate_drop_with_ai(title, content_raw, comments_text)
             
             if not is_valid_drop:
-                print(f"AI Filtered Out: {title}")
                 continue
 
             if detected_retailer == "Reddit":
                 title_has_retailer = next((r.capitalize() for r in RETAILERS if r in title.lower()), None)
                 if title_has_retailer: detected_retailer = title_has_retailer
 
-            # Compile description
             sub_badge = f"<div style='margin-bottom:8px;'><span style='background:#ff4500; color:#ffffff; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:600; display:inline-block;'>r/{sub}</span></div>"
             final_desc = f"{sub_badge}<div style='color:#f0f6fc; margin-bottom:10px; line-height: 1.5; white-space: pre-line;'>{ai_summary}</div>"
             if ai_items: final_desc += f"<div style='white-space: pre-line; color:#a8b2bd; font-family: monospace; margin-bottom:10px;'>{ai_items}</div>"
@@ -241,7 +235,7 @@ def build_drops():
             "date": datetime.now(timezone.utc).isoformat(),
             "type": "SYSTEM",
             "image": RETAILER_LOGOS['Reddit'],
-            "source_link": "#", "desc": "Monitoring prioritized subreddits for new drops. The AI and Link Verifier is actively blocking spam and haul posts."
+            "source_link": "#", "desc": "Monitoring prioritized subreddits for new drops."
         })
 
     drops.sort(key=lambda x: x['date'], reverse=True)
@@ -278,7 +272,7 @@ def fetch_google_news(query, source_type):
                 })
                 if len(news_list) >= 6: break
     except Exception as e:
-        print(f"Error fetching {source_type}: {e}")
+        pass
     
     return news_list
 
@@ -295,4 +289,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("Comment-Reading JSON AI successfully generated!")
+print("Logos Fixed! JSON AI successfully generated!")
