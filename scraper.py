@@ -1,6 +1,7 @@
 import json
 import urllib.request
 import urllib.parse
+import urllib.error
 import re
 import os
 import time
@@ -45,19 +46,28 @@ def is_spam(title, content, link):
     return False
 
 def call_gemini(prompt):
-    if not GEMINI_API_KEY: return None
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    if not GEMINI_API_KEY: 
+        print("Missing GEMINI_API_KEY!")
+        return None
+        
+    # Switched to the ultra-stable gemini-1.5-flash model
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
     data = json.dumps({
         "contents": [{"parts":[{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json"}
     }).encode('utf-8')
     req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
+    
     try:
         with urllib.request.urlopen(req) as response:
             ai_text = json.loads(response.read().decode())['candidates'][0]['content']['parts'][0]['text'].strip()
             return json.loads(ai_text)
+    except urllib.error.HTTPError as e:
+        # This will now print the EXACT reason Google rejected the API call
+        print(f"Gemini API HTTP Error {e.code}: {e.read().decode()}")
+        return None
     except Exception as e:
-        print(f"Gemini API Error: {e}")
+        print(f"Gemini API Generic Error: {e}")
         return None
 
 def evaluate_drop_with_ai(title, content, comments_text):
@@ -241,14 +251,13 @@ def fetch_google_news(query, source_type):
     return news_list
 
 def build_news():
-    # ONE mega-query replacing 8 separate queries to prevent Google 429 Bans
     master_query = 'Pokemon TCG (restock OR preorder OR drop OR "Prismatic Evolutions" OR "Ascended Heroes" OR "30th Celebrations")'
     
     web_query = f"{master_query} -site:twitter.com -site:x.com when:3d"
     x_query = f"{master_query} (site:twitter.com OR site:x.com) when:3d"
     
     articles = fetch_google_news(web_query, "Google News")
-    time.sleep(2) # Enforce a 2-second sleep so Google doesn't ban us
+    time.sleep(2) 
     tweets = fetch_google_news(x_query, "X / Twitter")
     
     intel_brief = generate_global_intel_brief(articles + tweets)
@@ -259,4 +268,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("Rate-Limit-Proof AI Engine successfully generated!")
+print("1.5-Flash Stable Engine successfully generated!")
