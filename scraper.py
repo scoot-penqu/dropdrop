@@ -52,7 +52,7 @@ BLOCKED_KEYWORDS = [
 def is_spam(title, content, link):
     full_text = f"{title} {content} {link}".lower()
     if any(kw in full_text for kw in BLOCKED_KEYWORDS): return True
-    if any(domain in full_text for domain in BLOCKED_DOMAINS): return True
+    if any(domain in link.lower() for domain in BLOCKED_DOMAINS): return True
     return False
 
 def call_gemini(prompt, retries=3):
@@ -127,7 +127,6 @@ def generate_global_intel_brief(drops, news_items):
     """
     res = call_gemini(prompt)
     if res: 
-        # Scrub out mark tags just in case the AI hallucinates them
         clean_brief = res.get("brief", "<b>⚡ Intel Brief:</b><br>Radar currently clear.").replace("<mark>", "").replace("</mark>", "")
         return clean_brief
     return "<b>⚡ Intel Brief:</b><br>Radar currently clear."
@@ -222,46 +221,18 @@ def fetch_google_news(query, source_type):
     news_list.sort(key=lambda x: x['date'], reverse=True)
     return news_list
 
-def process_pokebeach_item(item):
-    title_elem, link_elem = item.find('title'), item.find('link')
-    if title_elem is None or link_elem is None: return None
-    
-    title, link = title_elem.text, link_elem.text
-    desc_elem = item.find('description')
-    desc = re.sub(r'<[^>]+>', ' ', desc_elem.text if desc_elem is not None else '')[:800]
-    
-    if 'pocket' in title.lower() or is_spam(title, desc, link): return None
-    
-    category, ai_summary = evaluate_news_with_ai(title, desc)
-    try: iso_date = datetime.strptime(item.find('pubDate').text[:25].strip(), "%a, %d %b %Y %H:%M:%S").isoformat() + "Z"
-    except: iso_date = datetime.now(timezone.utc).isoformat()
-    return {"title": title[:70] + "...", "source": "PokeBeach", "date": iso_date, "desc": ai_summary, "link": link, "category": category}
-
-def fetch_pokebeach_direct():
-    news_list = []
-    req = urllib.request.Request("https://www.pokebeach.com/feed", headers={'User-Agent': 'Mozilla/5.0'})
-    try:
-        with urllib.request.urlopen(req) as response:
-            items = ET.fromstring(response.read()).findall('./channel/item')[:8]
-            with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-                futures = [executor.submit(process_pokebeach_item, i) for i in items]
-                for f in concurrent.futures.as_completed(futures):
-                    if r := f.result(): news_list.append(r)
-    except Exception as e:
-        print(f"PokeBeach Direct XML Error: {e}")
-    news_list.sort(key=lambda x: x['date'], reverse=True)
-    return news_list
-
 def build_news(drops_data):
-    # Standard query for Web Radar
     web_query = 'Pokemon TCG (restock OR preorder OR drop OR "Prismatic Evolutions" OR "30th Anniversary") -site:twitter.com -site:x.com when:3d'
     
-    # Restoring the working Twitter format, safely layered with handles so Google doesn't crash
-    x_query = '(Pokemon TCG OR @PokemonDealsTCG OR @TCGTRACKER OR @pokebeach) (site:twitter.com OR site:x.com) when:2d'
+    # Enhanced Twitter query using target keywords and accounts
+    x_query = '("upcoming pokemon drops" OR "pokemon tcg drops" OR @PokemonDealsTCG OR @TCGTRACKER OR @PokemonRestocks) (site:twitter.com OR site:x.com) when:2d'
+    
+    # PokeBeach Google RSS workaround (bypasses Cloudflare 403 Forbidden)
+    pokebeach_query = 'site:pokebeach.com when:7d'
     
     articles = fetch_google_news(web_query, "Google News")
     tweets = fetch_google_news(x_query, "X / Twitter")
-    pokebeach_news = fetch_pokebeach_direct() # Directly reads XML!
+    pokebeach_news = fetch_google_news(pokebeach_query, "PokeBeach")
     
     intel_brief = generate_global_intel_brief(drops_data, articles + tweets + pokebeach_news)
     return {"articles": articles, "tweets": tweets, "pokebeach": pokebeach_news, "intel_brief": intel_brief}
