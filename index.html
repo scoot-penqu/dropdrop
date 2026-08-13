@@ -12,11 +12,14 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1400px; margin: auto; }
+        body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1500px; margin: auto; }
         header { text-align: center; margin-bottom: 2rem; }
         header h1 { font-size: 2.2rem; color: var(--accent-yellow); margin-bottom: 0.5rem; }
         header p { color: #8b949e; }
-        .dashboard-container { display: grid; grid-template-columns: 1fr 340px; gap: 1.5rem; }
+        
+        /* 3-COLUMN GRID SYSTEM */
+        .dashboard-container { display: grid; grid-template-columns: 1fr 280px 280px; gap: 1.5rem; }
+        @media (max-width: 1100px) { .dashboard-container { grid-template-columns: 1fr; } }
         
         .pokeball {
             display: inline-block; width: 0.8em; height: 0.8em; border-radius: 50%;
@@ -38,14 +41,12 @@
         .card-img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
         .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; }
         
-        .tags { display: flex; gap: 0.4rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
+        .tags { display: flex; gap: 0.4rem; margin-bottom: 0.8rem; flex-wrap: wrap; }
         .badge { font-size: 0.7rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; }
         .badge-domain { background: var(--border); color: #fff; }
         
-        .stats-row { font-size: 0.75rem; color: #8b949e; margin-bottom: 0.6rem; display: flex; gap: 12px; font-weight: bold; }
-        
         .card-title { font-size: 1rem; margin-bottom: 0.6rem; line-height: 1.3; }
-        .countdown { margin-top: auto; font-family: monospace; font-size: 0.8rem; background: #0d1117; padding: 0.4rem; border-radius: 6px; text-align: center; color: #8b949e; border: 1px solid #21262d; }
+        .countdown { margin-top: auto; font-family: monospace; font-size: 0.8rem; background: #0d1117; padding: 0.4rem; border-radius: 6px; text-align: center; color: var(--accent-yellow); border: 1px solid #21262d; font-weight: bold; }
         .buy-btn { display: block; margin-top: 0.8rem; text-align: center; background: var(--accent-yellow); color: #000; padding: 0.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
         
         .radar-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; height: fit-content; }
@@ -61,8 +62,8 @@
 </head>
 <body>
     <header>
-        <h1>Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
-        <p>DropDrop?</p>
+        <h1>⚡ Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
+        <p>Prioritizing newest drops & restocks straight from the community.</p>
     </header>
     <div class="dashboard-container">
         <main>
@@ -74,11 +75,19 @@
             </div>
             <div class="drop-grid" id="dropGrid"></div>
         </main>
+        
         <aside class="radar-panel">
             <div class="radar-header">
-                <div class="radar-title">📰 Web & X Radar</div>
+                <div class="radar-title">📰 Web Search Radar</div>
             </div>
             <div id="newsFeed"></div>
+        </aside>
+
+        <aside class="radar-panel" style="border-color: #1da1f2;">
+            <div class="radar-header">
+                <div class="radar-title" style="color: #1da1f2;">🐦 X / Twitter Radar</div>
+            </div>
+            <div id="xFeed"></div>
         </aside>
     </div>
 
@@ -90,11 +99,13 @@
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 allDrops = data.drops || [];
+                
                 renderDrops('all'); 
-                renderNews(data.news || []);
+                renderNews(data.articles || [], 'newsFeed');
+                renderNews(data.tweets || [], 'xFeed');
             } catch (error) {
                 console.error("Error loading data:", error);
-                document.getElementById('dropGrid').innerHTML = `<p style="color: #e74c3c; grid-column: 1/-1; text-align:center;">Error loading data.json. Check GitHub Actions!</p>`;
+                document.getElementById('dropGrid').innerHTML = `<p style="color: #e74c3c; grid-column: 1/-1; text-align:center;">Error loading data.json.</p>`;
             }
         }
 
@@ -120,7 +131,6 @@
                 const card = document.createElement('div');
                 card.className = 'card';
 
-                // AI Classification Badge (Online vs In-Store)
                 let typeBadgeHTML = '';
                 if (drop.type === 'ONLINE') {
                     typeBadgeHTML = `<span class="badge" style="background: var(--accent-blue); color: white;">🌐 ONLINE</span>`;
@@ -144,16 +154,11 @@
                             <span class="badge badge-domain">${drop.retailer || 'Store'}</span>
                         </div>
                         
-                        <div class="stats-row">
-                            <span>👍 ${drop.score !== undefined ? drop.score : '-'} Votes</span>
-                            <span>💬 ${drop.comments !== undefined ? drop.comments : '-'} Comments</span>
-                        </div>
-                        
                         <h2 class="card-title">${drop.title || 'Untitled Drop'}</h2>
                         <div class="countdown">🕒 Posted: ${displayDate}</div>
                         
-                        <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;">
-                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">✨ View Products & Links</summary>
+                        <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;" open>
+                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">✨ AI Extract & Links</summary>
                             <div style="line-height: 1.4;">${drop.desc || 'No description available.'}</div>
                         </details>
                         
@@ -166,13 +171,30 @@
             });
         }
 
-        function renderNews(news) {
-            const container = document.getElementById('newsFeed');
+        function renderNews(feedData, containerId) {
+            const container = document.getElementById(containerId);
             if(!container) return; 
-            container.innerHTML = news.map(n => `
+            
+            if (feedData.length === 0) {
+                container.innerHTML = `<p style="color:#8b949e; font-size: 0.85rem;">No recent alerts found.</p>`;
+                return;
+            }
+
+            // Force sort by Exact Date, newest on top!
+            feedData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            container.innerHTML = feedData.map(n => {
+                let displayDate = "Recent";
+                try {
+                    const localDate = new Date(n.date);
+                    if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+                } catch(e) {}
+
+                return `
                 <div class="news-card" style="${n.is_drop === 'YES' ? 'border-left: 4px solid var(--accent-green);' : ''}">
                     <div class="news-source">
                         <span>${n.source}</span>
+                        <span style="color: var(--accent-yellow); font-weight: bold;">${displayDate}</span>
                     </div>
                     ${n.is_drop === 'YES' ? `<div class="drop-alert">🚨 RESTOCK ALERT</div>` : ''}
                     <a href="${n.link}" target="_blank" style="text-decoration:none;">
@@ -180,7 +202,7 @@
                     </a>
                     <div class="news-desc">✨ ${n.desc}</div>
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         function filterDrops(type) {
