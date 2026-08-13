@@ -2,18 +2,22 @@ name: Auto Scan Pokemon Drops
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs automatically every 1 hour
-  workflow_dispatch: # Allows manual trigger anytime from GitHub
+    - cron: '*/15 * * * *' # Runs every 15 minutes
+  workflow_dispatch:
+
+# Gives the bot permission to save the JSON file
+permissions:
+  contents: write 
 
 jobs:
   scrape-and-update:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
             python-version: '3.x'
 
