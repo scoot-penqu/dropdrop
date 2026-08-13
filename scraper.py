@@ -44,98 +44,108 @@ def is_spam(title, content, link):
     if any(domain in link.lower() for domain in BLOCKED_DOMAINS): return True
     return False
 
-def evaluate_drop_with_ai(title, content, comments_text):
-    if not GEMINI_API_KEY:
-        return True, "UNKNOWN", title, ""
-        
+def call_gemini(prompt):
+    """Helper function to call Gemini API and return the JSON object."""
+    if not GEMINI_API_KEY: return None
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
-    
-    clean_body = re.sub(r'<[^>]+>', ' ', content)
-    clean_body = ' '.join(clean_body.split())[:1000]
-
-    prompt = f"""
-    You are an AI deal filtering assistant for a Pokémon TCG alert website.
-    
-    Title: "{title}"
-    Post Body: "{clean_body}"
-    Top Community Comments:
-    {comments_text if comments_text else "No comments yet."}
-
-    STRICT REJECTION RULES:
-    - REJECT if this is a personal haul, "mail day", pack pulls, or showing off a personal collection.
-    - REJECT if this is about finding an item at a specific local store after they bought it.
-    - REJECT if it is a discussion, question, or rumor.
-    
-    ACCEPT CRITERIA:
-    - ONLY ACCEPT if it is an active online restock/pre-order alert or a nationwide stock drop.
-
-    SUMMARY RULES:
-    - Write 2-3 detailed sentences synthesizing the title, body, and comments. 
-    - CRITICAL: Read the comments! If the community says "OOS", "Sold out", "Expired", "Scam", or "Fake", you MUST state that explicitly in your summary.
-    - If the community confirms it's a great deal, mention the positive reaction.
-    - NEVER just repeat the title.
-
-    You MUST return ONLY a valid JSON object. Do not include markdown formatting.
-    {{
-        "status": "VALID", 
-        "type": "ONLINE", 
-        "summary": "Your detailed 2-3 sentence summary here.",
-        "items": "- Item name ($Price)" 
-    }}
-    """
-    
     data = json.dumps({
         "contents": [{"parts":[{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json"}
     }).encode('utf-8')
-    
     req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
-    
     try:
         with urllib.request.urlopen(req) as response:
             ai_text = json.loads(response.read().decode())['candidates'][0]['content']['parts'][0]['text'].strip()
-            parsed = json.loads(ai_text)
-            
-            is_valid = parsed.get("status", "INVALID").upper() == "VALID"
-            drop_type = parsed.get("type", "UNKNOWN").upper()
-            summary = parsed.get("summary", title)
-            items = parsed.get("items", "")
-            
-            if not summary or summary.strip() == "":
-                summary = title
-
-            return is_valid, drop_type, summary, items
+            return json.loads(ai_text)
     except Exception as e:
         print(f"Gemini API Error: {e}")
-        return True, "UNKNOWN", title, ""
+        return None
+
+def evaluate_drop_with_ai(title, content, comments_text):
+    clean_body = ' '.join(re.sub(r'<[^>]+>', ' ', content).split())[:1000]
+    prompt = f"""
+    Analyze this Pokémon TCG Reddit deal post.
+    Title: "{title}"
+    Body: "{clean_body}"
+    Comments: {comments_text}
+
+    REJECT if personal haul, discussion, local find, or showing off cards.
+    ACCEPT ONLY if active online restock or nationwide drop.
+
+    SUMMARY RULES: Write 2-3 dense sentences. NEVER repeat the title. Include specific prices, stock limits, and what the community is saying in the comments (e.g., "Sold Out quickly", "Still active").
+
+    Return valid JSON ONLY:
+    {{
+        "status": "VALID" or "INVALID",
+        "type": "ONLINE" or "IN-STORE",
+        "summary": "Dense 2-3 sentence summary.",
+        "items": "- Item Name ($Price)"
+    }}
+    """
+    res = call_gemini(prompt)
+    if res:
+        is_valid = res.get("status", "INVALID").upper() == "VALID"
+        return is_valid, res.get("type", "UNKNOWN").upper(), res.get("summary", title), res.get("items", "")
+    return True, "UNKNOWN", title, ""
 
 def evaluate_news_with_ai(title, content):
-    if not GEMINI_API_KEY: return "NO", title
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    """Forces Gemini to extract prices and exact times from news/tweets."""
+    clean_body = ' '.join(re.sub(r'<[^>]+>', ' ', content).split())[:1000]
+    prompt = f"""
+    Analyze this Pokémon TCG news/tweet.
+    Title: "{title}"
+    Content: "{clean_body}"
     
-    prompt = f"""Analyze this Web/Twitter News post: Title: "{title}" Content: "{content[:1000]}"
-    Return ONLY valid JSON.
+    Task: Is this an actionable product restock, drop announcement, or preorder?
+    If yes, summarize what it is. CRITICAL: If a price (e.g. $49.99) or an expected drop time (e.g. 10 AM EST) is mentioned, you MUST include it in the summary. Do not just copy the title.
+
+    Return valid JSON ONLY:
     {{
         "is_drop": "YES" or "NO",
-        "summary": "Your 1 sentence summary here."
-    }}"""
+        "summary": "Dense summary with price and time if available.",
+        "price": "Extracted price or 'N/A'",
+        "time": "Extracted time or 'N/A'"
+    }}
+    """
+    res = call_gemini(prompt)
+    if res:
+        summary = res.get("summary", title)
+        # Append price/time if found and not already in the summary
+        if res.get("price") != "N/A" and res.get("price") not in summary:
+            summary += f" | 💰 {res.get('price')}"
+        if res.get("time") != "N/A" and res.get("time") not in summary:
+            summary += f" | 🕒 {res.get('time')}"
+        return res.get("is_drop", "NO").upper(), summary
+    return "NO", title
+
+def generate_global_intel_brief(news_items):
+    """Reads ALL gathered news/tweets and writes a single overarching summary."""
+    if not news_items or not GEMINI_API_KEY: return "Gathering data for next intel brief..."
     
-    data = json.dumps({
-        "contents": [{"parts":[{"text": prompt}]}],
-        "generationConfig": {"responseMimeType": "application/json"}
-    }).encode('utf-8')
+    # Combine the top 15 news headlines/summaries to feed to Gemini
+    context = "\n".join([f"- {item['title']}: {item['desc']}" for item in news_items[:15]])
     
-    req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
-    try:
-        with urllib.request.urlopen(req) as response:
-            ai_text = json.loads(response.read().decode())['candidates'][0]['content']['parts'][0]['text'].strip()
-            parsed = json.loads(ai_text)
-            return parsed.get("is_drop", "NO").upper(), parsed.get("summary", title)
-    except: return "NO", title
+    prompt = f"""
+    You are an expert Pokémon TCG Market Analyst. Below is a raw feed of today's news and restock tweets.
+    Read them and synthesize a "Global Intel Brief" summarizing the current state of the market right now.
+    
+    Focus on: What major sets are actively dropping (e.g., Prismatic Evolutions, 30th Anniversary)? Where are they dropping? Are there any expected times?
+    Write a cohesive, professional 2-3 paragraph executive summary. Do not list individual tweets.
+    
+    Raw Feed:
+    {context}
+    
+    Return valid JSON ONLY:
+    {{
+        "brief": "Your multi-paragraph executive summary here."
+    }}
+    """
+    res = call_gemini(prompt)
+    if res: return res.get("brief", "Monitoring active markets...")
+    return "Monitoring active markets..."
 
 def fetch_rss_proxy(url):
-    proxy_url = f"https://api.rss2json.com/v1/api.json?rss_url={url}"
-    req = urllib.request.Request(proxy_url, headers={'User-Agent': 'Mozilla/5.0'})
+    req = urllib.request.Request(f"https://api.rss2json.com/v1/api.json?rss_url={url}", headers={'User-Agent': 'Mozilla/5.0'})
     try:
         with urllib.request.urlopen(req) as response:
             return json.loads(response.read().decode()).get('items', [])
@@ -146,147 +156,120 @@ def build_drops():
     for sub in SUBREDDITS:
         items = fetch_rss_proxy(f'https://www.reddit.com/r/{sub}/new.rss')
         for post in items:
-            title = post.get('title', '')
-            content_raw = post.get('content', '')
-            source_link = post.get('link', '') 
-            guid = post.get('guid', '') 
+            title, content_raw, source_link, guid = post.get('title', ''), post.get('content', ''), post.get('link', ''), post.get('guid', '')
             
-            # 1. SPAM BLOCKER
-            if is_spam(title, content_raw, source_link):
-                continue
+            if is_spam(title, content_raw, source_link): continue
                 
-            # 2. EXTRACT & VERIFY STORE LINKS
-            extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>🛒 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
+            extracted_links_html = "<div style='margin-top: 8px; padding-top: 8px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>🛒 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'>"
             link_count = 0
-            detected_retailer = "Reddit"
-            extracted_image = None
+            detected_retailer, extracted_image = "Reddit", None
             
             all_urls = re.findall(r'(https?://[^\s)\]"\']+)', content_raw)
             for url in set(all_urls):
                 if any(ext in url.lower() for ext in ['.jpg', '.png', '.jpeg', 'i.redd.it', 'imgur.com']):
                     if not extracted_image: extracted_image = url
                     continue 
-                
-                is_store_link = any(domain in url.lower() for domain in STORE_DOMAINS)
-                if not is_store_link:
-                    continue
+                if not any(domain in url.lower() for domain in STORE_DOMAINS): continue
                 
                 matched_retailer = next((r.capitalize() for r in RETAILERS if r in url.lower()), None)
                 if matched_retailer: detected_retailer = matched_retailer
                 
-                link_text = url.split('?')[0][:45] + "..."
-                extracted_links_html += f"<li style='margin-bottom: 6px;'><a href='{url}' target='_blank' style='color: #3498db; text-decoration: none;'>{link_text}</a></li>"
+                link_text = url.split('?')[0][:40] + "..."
+                extracted_links_html += f"<li style='margin-bottom: 3px;'><a href='{url}' target='_blank' style='color: #3498db; text-decoration: none;'>{link_text}</a></li>"
                 link_count += 1
                 
-            if link_count == 0:
-                continue
-                
+            if link_count == 0: continue
             extracted_links_html += "</ul></div>"
             
-            # 3. FETCH COMMUNITY COMMENTS 
             comments_text = ""
             if guid and "reddit.com" in guid:
-                comment_url = guid + ".rss" if not guid.endswith(".rss") else guid
-                comment_feed = fetch_rss_proxy(comment_url)
-                for c in comment_feed[1:5]:
+                comment_feed = fetch_rss_proxy(guid + ".rss" if not guid.endswith(".rss") else guid)
+                for c in comment_feed[1:4]:
                     clean_c = re.sub(r'<[^>]+>', ' ', c.get('content', '')).strip()
-                    if clean_c: comments_text += f"- {clean_c[:150]}\n"
+                    if clean_c: comments_text += f"- {clean_c[:100]}\n"
 
-            # 4. AI GATEKEEPER
             is_valid_drop, drop_type, ai_summary, ai_items = evaluate_drop_with_ai(title, content_raw, comments_text)
-            
-            if not is_valid_drop:
-                continue
+            if not is_valid_drop: continue
 
             if detected_retailer == "Reddit":
                 title_has_retailer = next((r.capitalize() for r in RETAILERS if r in title.lower()), None)
                 if title_has_retailer: detected_retailer = title_has_retailer
 
-            sub_badge = f"<div style='margin-bottom:8px;'><span style='background:#ff4500; color:#ffffff; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:600; display:inline-block;'>r/{sub}</span></div>"
-            final_desc = f"{sub_badge}<div style='color:#f0f6fc; margin-bottom:10px; line-height: 1.5; white-space: pre-line;'>{ai_summary}</div>"
-            if ai_items: final_desc += f"<div style='white-space: pre-line; color:#a8b2bd; font-family: monospace; margin-bottom:10px;'>{ai_items}</div>"
+            sub_badge = f"<span style='background:#ff4500; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:10px; font-weight:bold; display:inline-block; margin-bottom: 6px;'>r/{sub}</span>"
+            final_desc = f"{sub_badge}<div style='color:#f0f6fc; margin-bottom:6px; line-height: 1.4; font-size: 0.85rem;'>{ai_summary}</div>"
+            if ai_items: final_desc += f"<div style='white-space: pre-line; color:#a8b2bd; font-family: monospace; font-size: 0.8rem; margin-bottom:6px;'>{ai_items}</div>"
             final_desc += extracted_links_html
 
             try:
                 raw_date = post.get('pubDate', '')[:25].strip()
-                date_obj = datetime.strptime(raw_date, "%Y-%m-%d %H:%M:%S")
-                date_str = date_obj.replace(tzinfo=timezone.utc).isoformat()
-            except:
-                date_str = datetime.now(timezone.utc).isoformat()
+                date_str = datetime.strptime(raw_date, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc).isoformat()
+            except: date_str = datetime.now(timezone.utc).isoformat()
 
-            product_image = extracted_image if extracted_image else RETAILER_LOGOS.get(detected_retailer, RETAILER_LOGOS['Reddit'])
-            
             drops.append({
-                "title": title[:70] + "..." if len(title) > 70 else title,
-                "price": "Check Retailer Links",
-                "retailer": detected_retailer,
-                "subreddit": f"r/{sub}",
-                "date": date_str,
-                "type": drop_type,
-                "image": product_image,
-                "source_link": source_link, 
-                "desc": final_desc
+                "title": title[:65] + "..." if len(title) > 65 else title,
+                "price": "Check Links", "retailer": detected_retailer, "date": date_str, "type": drop_type,
+                "image": extracted_image if extracted_image else RETAILER_LOGOS.get(detected_retailer, RETAILER_LOGOS['Reddit']),
+                "source_link": source_link, "desc": final_desc
             })
-
-    if not drops:
-        drops.append({
-            "title": "Radar Active: Waiting for verified drops...",
-            "price": "N/A", "retailer": "DropDrop AI", "subreddit": "System Alert",
-            "date": datetime.now(timezone.utc).isoformat(),
-            "type": "SYSTEM",
-            "image": RETAILER_LOGOS['Reddit'],
-            "source_link": "#", "desc": "Monitoring prioritized subreddits for new drops."
-        })
 
     drops.sort(key=lambda x: x['date'], reverse=True)
     return drops
 
-def fetch_google_news(query, source_type):
+def fetch_google_news(queries, source_type):
+    """Iterates through multiple granular search queries and aggregates results."""
     news_list = []
-    url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=en-US&gl=US&ceid=US:en"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    try:
-        with urllib.request.urlopen(req) as response:
-            root = ET.fromstring(response.read())
-            for item in root.findall('./channel/item'):
-                title = item.find('title').text
-                desc = item.find('description').text or ''
-                if 'pocket' in title.lower() or 'pocket' in desc.lower(): continue
-                
-                is_drop, ai_summary = evaluate_news_with_ai(title, desc)
-                
-                try:
-                    raw_date = item.find('pubDate').text[:25].strip()
-                    date_obj = datetime.strptime(raw_date, "%a, %d %b %Y %H:%M:%S")
-                    iso_date = date_obj.isoformat() + "Z"
-                except:
-                    iso_date = datetime.now(timezone.utc).isoformat()
-                
-                news_list.append({
-                    "title": title[:75] + "...",
-                    "source": source_type,
-                    "date": iso_date,
-                    "desc": ai_summary,
-                    "link": item.find('link').text,
-                    "is_drop": is_drop
-                })
-                if len(news_list) >= 6: break
-    except Exception as e:
-        pass
+    seen_links = set()
     
-    return news_list
+    for query in queries:
+        url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=en-US&gl=US&ceid=US:en"
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        try:
+            with urllib.request.urlopen(req) as response:
+                root = ET.fromstring(response.read())
+                for item in root.findall('./channel/item')[:4]: # Top 4 per granular query
+                    title = item.find('title').text
+                    link = item.find('link').text
+                    desc = item.find('description').text or ''
+                    if 'pocket' in title.lower() or link in seen_links: continue
+                    seen_links.add(link)
+                    
+                    is_drop, ai_summary = evaluate_news_with_ai(title, desc)
+                    
+                    try:
+                        raw_date = item.find('pubDate').text[:25].strip()
+                        iso_date = datetime.strptime(raw_date, "%a, %d %b %Y %H:%M:%S").isoformat() + "Z"
+                    except: iso_date = datetime.now(timezone.utc).isoformat()
+                    
+                    news_list.append({
+                        "title": title[:70] + "...", "source": source_type, "date": iso_date,
+                        "desc": ai_summary, "link": link, "is_drop": is_drop
+                    })
+        except: pass
+    
+    news_list.sort(key=lambda x: x['date'], reverse=True)
+    return news_list[:10] # Return Top 10 aggregated
 
 def build_news():
-    google_news_query = "Pokemon TCG (restock OR preorder OR drop) -site:twitter.com -site:x.com when:7d"
-    x_news_query = "Pokemon TCG (restock OR preorder OR drop) (site:twitter.com OR site:x.com) when:7d"
+    # Targeted Granular Queries
+    base_query = "Pokemon TCG (restock OR preorder OR drop)"
+    granular_queries = [
+        "Prismatic evolutions restock",
+        "Ascended heroes drop target walmart",
+        "30th celebrations pokemon drops news"
+    ]
     
-    articles = fetch_google_news(google_news_query, "Google News")
-    tweets = fetch_google_news(x_news_query, "X / Twitter")
+    web_queries = [f"{q} -site:twitter.com -site:x.com when:3d" for q in [base_query] + granular_queries]
+    x_queries = [f"{q} (site:twitter.com OR site:x.com) when:3d" for q in [base_query] + granular_queries]
     
-    return {"articles": articles, "tweets": tweets}
+    articles = fetch_google_news(web_queries, "Google News")
+    tweets = fetch_google_news(x_queries, "X / Twitter")
+    
+    intel_brief = generate_global_intel_brief(articles + tweets)
+    
+    return {"articles": articles, "tweets": tweets, "intel_brief": intel_brief}
 
 output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("Logos Fixed! JSON AI successfully generated!")
+print("Granular AI Engine successfully generated!")
