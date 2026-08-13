@@ -118,13 +118,18 @@ def generate_global_intel_brief(drops, news_items):
     
     prompt = f"""
     Synthesize the raw feed of active Reddit deals and news alerts below into a single "Upcoming Drop & Release Schedule" brief.
-    Format using bullet points. Bold the set/item names. Highlight dates, times, and retailers.
+    Format using bullet points. 
+    Use bolding (<b> tags) to emphasize set/item names, dates, times, and retailers. 
+    DO NOT use highlight tags, HTML colors, or <mark> tags. Strictly use bolding only.
     Raw Feed: {context}
     Return valid JSON ONLY:
-    {{"brief": "<b>⚡ Active & Upcoming Schedule:</b><ul style='margin-top: 6px; padding-left: 18px; line-height: 1.5;'><li><b>Set / Item Name</b> - Date / Time (Retailer): Status</li></ul>"}}
+    {{"brief": "<b>⚡ Active & Upcoming Schedule:</b><ul style='margin-top: 6px; padding-left: 18px; line-height: 1.5;'><li><b>Set / Item Name</b> - <b>Date / Time (Retailer):</b> Status</li></ul>"}}
     """
     res = call_gemini(prompt)
-    if res: return res.get("brief", "<b>⚡ Intel Brief:</b><br>Radar currently clear.")
+    if res: 
+        # Scrub out mark tags just in case the AI hallucinates them
+        clean_brief = res.get("brief", "<b>⚡ Intel Brief:</b><br>Radar currently clear.").replace("<mark>", "").replace("</mark>", "")
+        return clean_brief
     return "<b>⚡ Intel Brief:</b><br>Radar currently clear."
 
 def fetch_rss_proxy(url):
@@ -186,21 +191,18 @@ def build_drops():
     drops.sort(key=lambda x: x['date'], reverse=True)
     return drops
 
-def fetch_direct_news(url, source_name):
-    news_list = []
-    for item in fetch_rss_proxy(url)[:8]:
-        title, link = item.get('title', ''), item.get('link', '')
-        desc = re.sub(r'<[^>]+>', ' ', item.get('content', '') or item.get('description', ''))[:800]
-        category, ai_summary = evaluate_news_with_ai(title, desc)
-        try: iso_date = datetime.strptime(item.get('pubDate', '')[:25].strip(), "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc).isoformat()
-        except: iso_date = datetime.now(timezone.utc).isoformat()
-        news_list.append({"title": title[:70] + "...", "source": source_name, "date": iso_date, "desc": ai_summary, "link": link, "category": category})
-    return news_list
-
 def process_single_news_item(item, source_type):
-    title, link, desc = item.find('title').text, item.find('link').text, item.find('description').text or ''
+    title_elem, link_elem = item.find('title'), item.find('link')
+    if title_elem is None or link_elem is None: return None
+    
+    title, link = title_elem.text, link_elem.text
+    desc_elem = item.find('description')
+    desc = desc_elem.text if desc_elem is not None else ''
+    
     if 'pocket' in title.lower() or is_spam(title, desc, link): return None
+    
     category, ai_summary = evaluate_news_with_ai(title, desc)
+    
     try: iso_date = datetime.strptime(item.find('pubDate').text[:25].strip(), "%a, %d %b %Y %H:%M:%S").isoformat() + "Z"
     except: iso_date = datetime.now(timezone.utc).isoformat()
     return {"title": title[:70] + "...", "source": source_type, "date": iso_date, "desc": ai_summary, "link": link, "category": category}
@@ -215,21 +217,51 @@ def fetch_google_news(query, source_type):
                 futures = [executor.submit(process_single_news_item, i, source_type) for i in items if i.find('link').text not in seen_links and not seen_links.add(i.find('link').text)]
                 for f in concurrent.futures.as_completed(futures):
                     if r := f.result(): news_list.append(r)
-    except: pass
+    except Exception as e:
+        print(f"Google Search Blocked ({source_type}) - Query: {query} Error: {e}")
+    news_list.sort(key=lambda x: x['date'], reverse=True)
+    return news_list
+
+def process_pokebeach_item(item):
+    title_elem, link_elem = item.find('title'), item.find('link')
+    if title_elem is None or link_elem is None: return None
+    
+    title, link = title_elem.text, link_elem.text
+    desc_elem = item.find('description')
+    desc = re.sub(r'<[^>]+>', ' ', desc_elem.text if desc_elem is not None else '')[:800]
+    
+    if 'pocket' in title.lower() or is_spam(title, desc, link): return None
+    
+    category, ai_summary = evaluate_news_with_ai(title, desc)
+    try: iso_date = datetime.strptime(item.find('pubDate').text[:25].strip(), "%a, %d %b %Y %H:%M:%S").isoformat() + "Z"
+    except: iso_date = datetime.now(timezone.utc).isoformat()
+    return {"title": title[:70] + "...", "source": "PokeBeach", "date": iso_date, "desc": ai_summary, "link": link, "category": category}
+
+def fetch_pokebeach_direct():
+    news_list = []
+    req = urllib.request.Request("https://www.pokebeach.com/feed", headers={'User-Agent': 'Mozilla/5.0'})
+    try:
+        with urllib.request.urlopen(req) as response:
+            items = ET.fromstring(response.read()).findall('./channel/item')[:8]
+            with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+                futures = [executor.submit(process_pokebeach_item, i) for i in items]
+                for f in concurrent.futures.as_completed(futures):
+                    if r := f.result(): news_list.append(r)
+    except Exception as e:
+        print(f"PokeBeach Direct XML Error: {e}")
     news_list.sort(key=lambda x: x['date'], reverse=True)
     return news_list
 
 def build_news(drops_data):
+    # Standard query for Web Radar
     web_query = 'Pokemon TCG (restock OR preorder OR drop OR "Prismatic Evolutions" OR "30th Anniversary") -site:twitter.com -site:x.com when:3d'
     
-    # Force Google to hit the targeted accounts in the last 24 hours
-    drop_accounts = '("PokemonDealsTCG" OR "TCGTRACKER" OR "PokemonTCGDrops" OR "PokeTCGAlerts" OR "PokemonRestocks" OR "CardPurchases" OR "TCGRestockAlerts")'
-    news_accounts = '("pokebeach" OR "PokeGuardian" OR "PokemonTCG")'
-    x_query = f'({drop_accounts} OR {news_accounts}) (site:twitter.com OR site:x.com) when:1d'
+    # Restoring the working Twitter format, safely layered with handles so Google doesn't crash
+    x_query = '(Pokemon TCG OR @PokemonDealsTCG OR @TCGTRACKER OR @pokebeach) (site:twitter.com OR site:x.com) when:2d'
     
     articles = fetch_google_news(web_query, "Google News")
     tweets = fetch_google_news(x_query, "X / Twitter")
-    pokebeach_news = fetch_direct_news("https://www.pokebeach.com/feed", "PokeBeach")
+    pokebeach_news = fetch_pokebeach_direct() # Directly reads XML!
     
     intel_brief = generate_global_intel_brief(drops_data, articles + tweets + pokebeach_news)
     return {"articles": articles, "tweets": tweets, "pokebeach": pokebeach_news, "intel_brief": intel_brief}
