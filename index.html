@@ -77,13 +77,14 @@
 <body>
     <header>
         <h1>⚡ Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
-        <p>Auto-scraping reliable retailers for MSRP drops & recent restocks.</p>
+        <p>DropDrop?</p>
     </header>
     <div class="dashboard-container">
         <main>
             <div class="filters">
-                <button class="filter-btn active" onclick="filterDrops('live')">Active Drops</button>
-                <button class="filter-btn" onclick="filterDrops('past')">Recent / Past Drops</button>
+                <button class="filter-btn active" onclick="filterDrops('upcoming')">Upcoming Drops</button>
+                <button class="filter-btn" onclick="filterDrops('live')">Active Deals</button>
+                <button class="filter-btn" onclick="filterDrops('past')">Past Deals</button>
                 <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; margin-left: auto;">🔄 Sync Latest Data</button>
             </div>
             <div class="drop-grid" id="dropGrid"></div>
@@ -105,7 +106,7 @@
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 allDrops = data.drops;
-                renderDrops('live'); // Default to showing active drops
+                renderDrops('upcoming'); // Default to showing active drops
                 renderRumors(data.rumors);
             } catch (error) {
                 console.error("Error loading data:", error);
@@ -116,19 +117,37 @@
             const container = document.getElementById('dropGrid');
             container.innerHTML = '';
             
-            // Filter out items based on status (live vs past)
             const filtered = allDrops.filter(d => d.status === filter);
 
             if (filtered.length === 0) {
-                container.innerHTML = `<p style="color: #8b949e; grid-column: 1/-1; text-align:center;">No ${filter} drops found in the recent scan.</p>`;
+                container.innerHTML = `<p style="color: #8b949e; grid-column: 1/-1; text-align:center;">No ${filter} drops found.</p>`;
                 return;
             }
 
             filtered.forEach(drop => {
                 const isPast = drop.status === 'past';
+                const isUpcoming = drop.status === 'upcoming';
                 const card = document.createElement('div');
                 card.className = 'card';
-                card.style.opacity = isPast ? '0.7' : '1'; // Dim past drops slightly
+                card.style.opacity = isPast ? '0.7' : '1'; 
+
+                // Dynamic buttons based on type
+                let buttonsHTML = '';
+                if (isUpcoming) {
+                    buttonsHTML = `<a href="${drop.link}" target="_blank" class="buy-btn">Search Retailers</a>`;
+                } else {
+                    buttonsHTML = `
+                        <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                            <a href="${drop.link}" target="_blank" class="buy-btn" style="flex: 1; ${isPast ? 'background: #8b949e;' : ''}">🛒 Deal Link</a>
+                            <a href="${drop.reddit_link}" target="_blank" class="buy-btn" style="flex: 1; background: #ff4500; color: white;">💬 Reddit</a>
+                        </div>`;
+                }
+
+                // Dynamic badges
+                let badgeHTML = '';
+                if (isUpcoming) badgeHTML = `<span class="badge badge-confirmed">UPCOMING</span>`;
+                else if (isPast) badgeHTML = `<span class="badge badge-past">EXPIRED / OOS</span>`;
+                else badgeHTML = `<span class="badge badge-live">ACTIVE DEAL</span>`;
 
                 card.innerHTML = `
                     <div class="card-img-container">
@@ -136,17 +155,24 @@
                     </div>
                     <div class="card-body">
                         <div class="tags">
-                            <span class="badge ${isPast ? 'badge-past' : 'badge-live'}">${isPast ? 'EXPIRED / OOS' : 'ACTIVE DROP'}</span>
+                            ${badgeHTML}
                             <span class="badge badge-domain">${drop.retailer}</span>
                         </div>
                         <h2 class="card-title">${drop.title}</h2>
                         <div class="price">${drop.price}</div>
-                        <div class="countdown">Found: ${new Date(drop.date).toLocaleDateString()}</div>
-                        <a href="${drop.link}" target="_blank" class="buy-btn" style="${isPast ? 'background: #8b949e;' : ''}">View on ${drop.retailer.split('.')[0]}</a>
+                        ${isUpcoming ? `<div class="countdown" data-date="${drop.date}">Calculating...</div>` : `<div class="countdown">Found: ${drop.date}</div>`}
+                        
+                        <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;">
+                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px;">View Description</summary>
+                            <div style="line-height: 1.4;">${drop.desc}</div>
+                        </details>
+                        
+                        ${buttonsHTML}
                     </div>
                 `;
                 container.appendChild(card);
             });
+            updateCountdowns(); // Re-trigger the timers
         }
 
         function renderRumors(rumors) {
@@ -154,12 +180,32 @@
             container.innerHTML = rumors.map(r => `
                 <div class="rumor-card">
                     <div class="rumor-source"><span>${r.source}</span></div>
-                    <div class="rumor-title">${r.title}</div>
+                    <a href="${r.link}" target="_blank" style="text-decoration:none;">
+                        <div class="rumor-title" style="color: #3498db; margin-bottom: 0.3rem;">${r.title}</div>
+                    </a>
                     <div class="rumor-desc">${r.desc}</div>
                     <div class="rumor-confidence">${r.confidence}</div>
                 </div>
             `).join('');
         }
+
+        // Add the timer function back for upcoming drops
+        function updateCountdowns() {
+            document.querySelectorAll('.countdown[data-date]').forEach(elem => {
+                const dropTime = new Date(elem.getAttribute('data-date')).getTime();
+                const diff = dropTime - new Date().getTime();
+                if (diff < 0) {
+                    elem.innerHTML = "🚨 DROP IS LIVE";
+                    elem.style.color = "#2ecc71";
+                    return;
+                }
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                elem.innerHTML = `⏳ Drop in: ${days}d ${hours}h`;
+            });
+        }
+        
+        setInterval(updateCountdowns, 60000);
 
         function filterDrops(type) {
             document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
