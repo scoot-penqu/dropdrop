@@ -43,13 +43,13 @@
 
         .dashboard-container { display: grid; grid-template-columns: 1fr 300px 300px; gap: 1.5rem; }
         @media (max-width: 1200px) { .dashboard-container { grid-template-columns: 1fr 1fr; } }
-        @media (max-width: 800px) { .dashboard-container { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .dashboard-container { grid-template-columns: 1fr; } }
 
         .filters { display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
         .filter-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; transition: 0.2s; font-size: 0.85rem; }
         .filter-btn.active, .filter-btn:hover { background: var(--accent-yellow); color: #000; font-weight: bold; }
         
-        /* COMPRESSED HORIZONTAL DROP CARDS */
+        /* COMPRESSED HORIZONTAL DROP CARDS (DESKTOP) */
         .drop-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
         .card { 
             background: var(--surface); border: 1px solid var(--border); border-radius: 8px; 
@@ -81,6 +81,21 @@
         .news-title { font-size: 0.85rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.5rem; }
         .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.5; border-top: 1px dashed var(--border); padding-top: 6px; }
         .drop-alert { color: var(--accent-green); font-weight: bold; font-size: 0.65rem; display: inline-block; margin-bottom: 4px; }
+
+        /* 📱 MOBILE FIX: Flips cards back to vertical when screen is small */
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            .card { flex-direction: column; }
+            .card-img-container { 
+                width: 100%; height: 160px; border-right: none; 
+                border-bottom: 1px solid var(--border); padding: 15px;
+            }
+            .card-img { max-height: 140px; }
+            .card-header-row { flex-direction: column; margin-bottom: 12px; }
+            .card-title { margin-right: 0; margin-bottom: 8px; }
+            .countdown { text-align: left; }
+            .intel-banner { padding: 1.2rem; }
+        }
     </style>
 </head>
 <body>
@@ -91,7 +106,7 @@
 
     <div class="intel-banner" id="intelBanner">
         <h2>Intel Brief</h2>
-        <div class="intel-text" id="intelText">Loading market analysis...</div>
+        <div class="intel-text" id="intelText">Warming up market radar...</div>
     </div>
 
     <div class="dashboard-container">
