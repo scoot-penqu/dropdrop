@@ -1,11 +1,242 @@
 {
-    "drops": [],
+    "drops": [
+        {
+            "title": "Walmart Wednesday!",
+            "price": "Check Retailer Link",
+            "retailer": "Walmart",
+            "date": "2026-08-13",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/"
+        },
+        {
+            "title": "Pitch black Bundles up on amazon!",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-08-13",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmvtfc/pitch_black_bundles_up_on_amazon/"
+        },
+        {
+            "title": "Make sure to enter this on Bestbuy! more invites going out soon!",
+            "price": "Check Retailer Link",
+            "retailer": "Bestbuy",
+            "date": "2026-08-11",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vltsfk/make_sure_to_enter_this_on_bestbuy_more_invites/"
+        },
+        {
+            "title": "POTENTIAL TARGET DROP TONIGHT Midnight PST , 3am EST",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-08-10",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vkssyn/potential_target_drop_tonight_midnight_pst_3am_est/"
+        },
+        {
+            "title": "POTENTIAL TARGET DROP TONIGHT midnight PST 3am EST",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-08-06",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vhjpuv/potential_target_drop_tonight_midnight_pst_3am_est/"
+        },
+        {
+            "title": "Pitch black booster bundle",
+            "price": "Check Retailer Link",
+            "retailer": "Walmart",
+            "date": "2026-08-06",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgwu95/pitch_black_booster_bundle/"
+        },
+        {
+            "title": "Walmart Wednesday",
+            "price": "Check Retailer Link",
+            "retailer": "Walmart",
+            "date": "2026-08-06",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgpoce/walmart_wednesday/"
+        },
+        {
+            "title": "TARGET DROP LIKELY TONIGHT MIDNIGHT PST , 3AM EST",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-08-04",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vewcg4/target_drop_likely_tonight_midnight_pst_3am_est/"
+        },
+        {
+            "title": "Pitch Black ETB price drop on amazon 69.99",
+            "price": "Check Retailer Link",
+            "retailer": "Amazon",
+            "date": "2026-08-03",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1ve64ew/pitch_black_etb_price_drop_on_amazon_6999/"
+        },
+        {
+            "title": "Monthly Amazon / Informational post!",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-08-01",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vco7gf/monthly_amazon_informational_post/"
+        },
+        {
+            "title": "Target drop has started!",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-07-31",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vbjyi7/target_drop_has_started/"
+        },
+        {
+            "title": "Pretty Likely drop tonight with some big items! (target Midnight pst 3...",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-07-31",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vbf5ja/pretty_likely_drop_tonight_with_some_big_items/"
+        },
+        {
+            "title": "Walmart Wednesday!",
+            "price": "Check Retailer Link",
+            "retailer": "Walmart",
+            "date": "2026-07-30",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vaf120/walmart_wednesday/"
+        },
+        {
+            "title": "Target Drop likely tonight",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-07-24",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1v52trk/target_drop_likely_tonight/"
+        },
+        {
+            "title": "Walmart Wednesday Links LIVE NOW",
+            "price": "Check Retailer Link",
+            "retailer": "Walmart",
+            "date": "2026-07-23",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1v3ywgi/walmart_wednesday_links_live_now/"
+        },
+        {
+            "title": "Pokemon Center Queue!",
+            "price": "Check Retailer Link",
+            "retailer": "Pokemoncenter",
+            "date": "2026-07-22",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1v3m7us/pokemon_center_queue/"
+        },
+        {
+            "title": "SAMS CLUB JUST WENT LIVE AGAIN GET BACK IN THERE",
+            "price": "Check Retailer Link",
+            "retailer": "Samsclub",
+            "date": "2026-07-22",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1v37dck/sams_club_just_went_live_again_get_back_in_there/"
+        },
+        {
+            "title": "Drop! Sam\u2019s Club",
+            "price": "Check Retailer Link",
+            "retailer": "Samsclub",
+            "date": "2026-07-22",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1v33s6p/drop_sams_club/"
+        },
+        {
+            "title": "Pokemon Center Queue is up!",
+            "price": "Check Retailer Link",
+            "retailer": "Pokemoncenter",
+            "date": "2026-07-20",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1v1rlab/pokemon_center_queue_is_up/"
+        },
+        {
+            "title": "HUGE POKEMON DROP TONIGHT ON TARGET MIDNIGHT PST 3AM EST",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-07-17",
+            "type": "online",
+            "status": "past",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1uyrxjw/huge_pokemon_drop_tonight_on_target_midnight_pst/"
+        },
+        {
+            "title": "Pokemon Center Queue is up!",
+            "price": "Check Retailer Link",
+            "retailer": "Pokemoncenter",
+            "date": "2026-07-15",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1ux8k9m/pokemon_center_queue_is_up/"
+        },
+        {
+            "title": "ASCENDED HEROS Focused Fighters Premium Collection drops on Samsclub J...",
+            "price": "Check Retailer Link",
+            "retailer": "Samsclub",
+            "date": "2026-07-14",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1uwmezn/ascended_heros_focused_fighters_premium/"
+        },
+        {
+            "title": "MEGA ZYGARDE COLLECTION LIVE ON TARGET",
+            "price": "Check Retailer Link",
+            "retailer": "Target",
+            "date": "2026-07-14",
+            "type": "online",
+            "status": "live",
+            "image": "https://via.placeholder.com/300x180?text=Sealed+Product",
+            "link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1uw1jqo/mega_zygarde_collection_live_on_target/"
+        }
+    ],
     "rumors": [
         {
-            "title": "No recent rumors found.",
+            "title": "No recent leaks detected",
             "source": "System",
             "date": "Today",
-            "desc": "Radar is quiet.",
+            "desc": "Radar active and waiting for new reports.",
             "confidence": "-"
         }
     ]
