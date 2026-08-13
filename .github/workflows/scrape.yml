@@ -23,6 +23,8 @@ jobs:
 
       - name: Run Scraper Script
         run: python scraper.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Commit and push updated data.json
         run: |
