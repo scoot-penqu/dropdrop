@@ -13,13 +13,11 @@
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1500px; margin: auto; }
-        header { text-align: center; margin-bottom: 2rem; }
+        
+        /* YOUR CUSTOM POKEBALL HEADER */
+        header { text-align: center; margin-bottom: 1.5rem; }
         header h1 { font-size: 2.2rem; color: var(--accent-yellow); margin-bottom: 0.5rem; }
         header p { color: #8b949e; }
-        
-        .dashboard-container { display: grid; grid-template-columns: 1fr 280px 280px; gap: 1.5rem; }
-        @media (max-width: 1100px) { .dashboard-container { grid-template-columns: 1fr; } }
-        
         .pokeball {
             display: inline-block; width: 0.8em; height: 0.8em; border-radius: 50%;
             background: linear-gradient(to bottom, #e74c3c 45%, #161b22 45%, #161b22 55%, #f0f6fc 55%);
@@ -29,47 +27,78 @@
             content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
             width: 0.25em; height: 0.25em; background: #f0f6fc; border-radius: 50%; border: 0.08em solid #161b22;
         }
+        
+        /* THE AI INTEL BRIEF BANNER */
+        .intel-banner {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            border: 1px solid #3b82f6;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .intel-banner h2 { font-size: 1.2rem; color: #3b82f6; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 8px;}
+        .intel-text { color: #e5e7eb; font-size: 0.95rem; line-height: 1.6; white-space: pre-line; }
+
+        .dashboard-container { display: grid; grid-template-columns: 1fr 300px 300px; gap: 1.5rem; }
+        @media (max-width: 1200px) { .dashboard-container { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 800px) { .dashboard-container { grid-template-columns: 1fr; } }
 
         .filters { display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
         .filter-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; transition: 0.2s; font-size: 0.85rem; }
         .filter-btn.active, .filter-btn:hover { background: var(--accent-yellow); color: #000; font-weight: bold; }
         
-        .drop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
-        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s; }
-        .card-img-container { width: 100%; height: 180px; background: #0d1117; display: flex; align-items: center; justify-content: center; padding: 1.5rem; border-bottom: 1px solid var(--border); }
-        .card-img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
-        .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; }
+        /* COMPRESSED HORIZONTAL DROP CARDS */
+        .drop-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        .card { 
+            background: var(--surface); border: 1px solid var(--border); border-radius: 8px; 
+            display: flex; flex-direction: row; overflow: hidden; transition: transform 0.2s; 
+        }
+        .card-img-container { 
+            width: 120px; min-width: 120px; background: #0d1117; display: flex; 
+            align-items: center; justify-content: center; padding: 10px; border-right: 1px solid var(--border); 
+        }
+        .card-img { max-width: 100%; max-height: 100px; object-fit: contain; border-radius: 4px; }
+        .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center;}
         
-        .tags { display: flex; gap: 0.4rem; margin-bottom: 0.8rem; flex-wrap: wrap; }
-        .badge { font-size: 0.7rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; }
+        .card-header-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;}
+        .card-title { font-size: 1rem; line-height: 1.3; font-weight: 600; flex: 1; margin-right: 15px;}
+        .countdown { font-family: monospace; font-size: 0.75rem; color: var(--accent-yellow); text-align: right; white-space: nowrap;}
+        
+        .badge { font-size: 0.65rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; margin-right: 5px;}
         .badge-domain { background: var(--border); color: #fff; }
         
-        .card-title { font-size: 1rem; margin-bottom: 0.6rem; line-height: 1.3; }
-        .countdown { margin-top: auto; font-family: monospace; font-size: 0.8rem; background: #0d1117; padding: 0.4rem; border-radius: 6px; text-align: center; color: var(--accent-yellow); border: 1px solid #21262d; font-weight: bold; }
-        .buy-btn { display: block; margin-top: 0.8rem; text-align: center; background: var(--accent-yellow); color: #000; padding: 0.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .buy-btn { display: inline-block; margin-top: 10px; background: var(--accent-yellow); color: #000; padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.8rem; width: fit-content;}
         
+        /* SIDEBAR RADARS */
         .radar-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; height: fit-content; }
         .radar-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; margin-bottom: 1rem; }
-        .radar-title { font-size: 1.1rem; color: #3498db; display: flex; align-items: center; gap: 0.5rem; }
+        .radar-title { font-size: 1.1rem; color: #3498db; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;}
         
-        .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 0.8rem; margin-bottom: 0.8rem; position: relative; overflow: hidden; }
-        .news-source { font-size: 0.7rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.4rem; text-transform: uppercase; }
-        .news-title { font-size: 0.9rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.5rem; }
-        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 5px; }
-        .drop-alert { color: var(--accent-green); font-weight: bold; font-size: 0.7rem; display: inline-block; margin-bottom: 5px; }
+        .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 0.8rem; margin-bottom: 0.8rem; }
+        .news-source { font-size: 0.65rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.4rem; text-transform: uppercase; }
+        .news-title { font-size: 0.85rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.5rem; }
+        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.5; border-top: 1px dashed var(--border); padding-top: 6px; }
+        .drop-alert { color: var(--accent-green); font-weight: bold; font-size: 0.65rem; display: inline-block; margin-bottom: 4px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
+        <h1>Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p Radar</h1>
         <p>DropDrop?</p>
     </header>
+
+    <div class="intel-banner" id="intelBanner">
+        <h2>🧠 Global Intel Brief</h2>
+        <div class="intel-text" id="intelText">Loading market analysis...</div>
+    </div>
+
     <div class="dashboard-container">
         <main>
             <div class="filters">
                 <button class="filter-btn active" onclick="filterDrops('all')">All Deals</button>
                 <button class="filter-btn" onclick="filterDrops('today')">Added Today</button>
-                <button class="filter-btn" onclick="filterDrops('week')">This Week</button>
                 <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; margin-left: auto;">🔄 Sync Latest Data</button>
             </div>
             <div class="drop-grid" id="dropGrid"></div>
@@ -97,14 +126,19 @@
             try {
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
-                allDrops = data.drops || [];
                 
+                // Load Intel Brief
+                if(data.intel_brief) {
+                    document.getElementById('intelText').innerText = data.intel_brief;
+                }
+
+                allDrops = data.drops || [];
                 renderDrops('all'); 
                 renderNews(data.articles || [], 'newsFeed');
                 renderNews(data.tweets || [], 'xFeed');
             } catch (error) {
                 console.error("Error loading data:", error);
-                document.getElementById('dropGrid').innerHTML = `<p style="color: #e74c3c; grid-column: 1/-1; text-align:center;">Error loading data.json.</p>`;
+                document.getElementById('dropGrid').innerHTML = `<p style="color: #e74c3c;">Error loading data.json.</p>`;
             }
         }
 
@@ -117,12 +151,11 @@
                 const dropDate = new Date(d.date || now);
                 const hoursDiff = isNaN(dropDate) ? 0 : (now - dropDate) / (1000 * 60 * 60);
                 if (filter === 'today') return hoursDiff <= 24;
-                if (filter === 'week') return hoursDiff <= 168; 
                 return true; 
             });
 
             if (filtered.length === 0) {
-                container.innerHTML = `<p style="color: #8b949e; grid-column: 1/-1; text-align:center;">No drops found for this filter.</p>`;
+                container.innerHTML = `<p style="color: #8b949e;">No drops found for this filter.</p>`;
                 return;
             }
 
@@ -131,40 +164,32 @@
                 card.className = 'card';
 
                 let typeBadgeHTML = '';
-                if (drop.type === 'ONLINE') {
-                    typeBadgeHTML = `<span class="badge" style="background: var(--accent-blue); color: white;">🌐 ONLINE</span>`;
-                } else if (drop.type === 'IN-STORE') {
-                    typeBadgeHTML = `<span class="badge" style="background: var(--accent-orange); color: white;">🏪 IN-STORE</span>`;
-                }
+                if (drop.type === 'ONLINE') typeBadgeHTML = `<span class="badge" style="background: var(--accent-blue); color: white;">🌐 ONLINE</span>`;
+                else if (drop.type === 'IN-STORE') typeBadgeHTML = `<span class="badge" style="background: var(--accent-orange); color: white;">🏪 IN-STORE</span>`;
                 
                 let displayDate = "Recent";
                 try {
                     const localDate = new Date(drop.date || now);
-                    if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+                    if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { weekday: 'short', hour: '2-digit', minute:'2-digit' });
                 } catch(e) {}
 
-                // Safely injecting the new Google Favicon fallback instead of Wikipedia
                 card.innerHTML = `
                     <div class="card-img-container">
-                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=reddit.com&sz=256';">
+                        <img src="${drop.image}" alt="Img" class="card-img" onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=reddit.com&sz=256';">
                     </div>
                     <div class="card-body">
-                        <div class="tags">
+                        <div class="card-header-row">
+                            <h2 class="card-title">${drop.title}</h2>
+                            <div class="countdown">🕒 ${displayDate}</div>
+                        </div>
+                        <div style="margin-bottom: 6px;">
                             ${typeBadgeHTML}
                             <span class="badge badge-domain">${drop.retailer || 'Store'}</span>
                         </div>
-                        
-                        <h2 class="card-title">${drop.title || 'Untitled Drop'}</h2>
-                        <div class="countdown">🕒 Posted: ${displayDate}</div>
-                        
-                        <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;" open>
-                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">✨ AI Extract & Links</summary>
-                            <div style="line-height: 1.4;">${drop.desc || 'No description available.'}</div>
-                        </details>
-                        
-                        <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 1rem;">
-                            <a href="${drop.source_link || '#'}" target="_blank" class="buy-btn" style="flex: 1; background: #3498db; color: white;">💬 View Source</a>
+                        <div style="font-size: 0.85rem; color: #8b949e; line-height: 1.4;">
+                            ${drop.desc || 'No description available.'}
                         </div>
+                        <a href="${drop.source_link || '#'}" target="_blank" class="buy-btn">💬 Source</a>
                     </div>
                 `;
                 container.appendChild(card);
@@ -174,14 +199,10 @@
         function renderNews(feedData, containerId) {
             const container = document.getElementById(containerId);
             if(!container) return; 
-            
             if (feedData.length === 0) {
                 container.innerHTML = `<p style="color:#8b949e; font-size: 0.85rem;">No recent alerts found.</p>`;
                 return;
             }
-
-            feedData.sort((a, b) => new Date(b.date) - new Date(a.date));
-
             container.innerHTML = feedData.map(n => {
                 let displayDate = "Recent";
                 try {
@@ -190,7 +211,7 @@
                 } catch(e) {}
 
                 return `
-                <div class="news-card" style="${n.is_drop === 'YES' ? 'border-left: 4px solid var(--accent-green);' : ''}">
+                <div class="news-card" style="${n.is_drop === 'YES' ? 'border-left: 3px solid var(--accent-green);' : ''}">
                     <div class="news-source">
                         <span>${n.source}</span>
                         <span style="color: var(--accent-yellow); font-weight: bold;">${displayDate}</span>
@@ -202,12 +223,6 @@
                     <div class="news-desc">✨ ${n.desc}</div>
                 </div>
             `}).join('');
-        }
-
-        function filterDrops(type) {
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            renderDrops(type);
         }
 
         loadLiveData();
