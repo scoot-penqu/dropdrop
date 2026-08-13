@@ -96,12 +96,13 @@
         </aside>
     </div>
 
-    <script>
+   <script>
         let allDrops = [];
 
         async function loadLiveData() {
             try {
-                const response = await fetch('data.json');
+                // The '?v=' + timestamp forces the browser to ignore its cache!
+                const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 allDrops = data.drops;
                 renderDrops('live'); // Default to showing active drops
