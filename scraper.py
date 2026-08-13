@@ -25,7 +25,6 @@ RETAILERS = [k.lower() for k in RETAILER_LOGOS.keys() if k != 'Reddit']
 SUBREDDITS = ['PKMNTCGDeals', 'PokemonRestocks', 'PokemonDropNotify', 'pokemonrestockr', 'PokemonTCGRestocks']
 
 # --- STRICT STORE WHITELIST ---
-# ONLY links to these domains will be shown. Expanded to include trusted TCG sites!
 STORE_DOMAINS = [
     'target.com', 'walmart.com', 'amazon.com', 'pokemoncenter.com', 'gamestop.com', 
     'bestbuy.com', 'samsclub.com', 'costco.com', 'tcgplayer.com', 'ebay.com', 
@@ -46,20 +45,22 @@ def is_spam(title, content, link):
     if any(domain in link.lower() for domain in BLOCKED_DOMAINS): return True
     return False
 
-def evaluate_drop_with_ai(title, content):
+def evaluate_drop_with_ai(title, content, comments_text):
     if not GEMINI_API_KEY:
         return True, "UNKNOWN", title, ""
         
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     
     clean_body = re.sub(r'<[^>]+>', ' ', content)
-    clean_body = ' '.join(clean_body.split())[:1500]
+    clean_body = ' '.join(clean_body.split())[:1000]
 
     prompt = f"""
     You are an AI deal filtering assistant for a Pokémon TCG alert website.
     
     Title: "{title}"
-    Body Content: "{clean_body}"
+    Post Body: "{clean_body}"
+    Top Community Comments:
+    {comments_text if comments_text else "No comments yet."}
 
     STRICT REJECTION RULES:
     - REJECT if this is a personal haul, "mail day", pack pulls, or showing off a personal collection.
@@ -70,7 +71,10 @@ def evaluate_drop_with_ai(title, content):
     - ONLY ACCEPT if it is an active online restock/pre-order alert or a nationwide stock drop.
 
     SUMMARY RULES:
-    - Write 2-3 detailed sentences. State the product, retailer, price, and stock limits. NEVER just repeat the title.
+    - Write 2-3 detailed sentences synthesizing the title, body, and comments. 
+    - CRITICAL: Read the comments! If the community says "OOS", "Sold out", "Expired", "Scam", or "Fake", you MUST state that explicitly in your summary.
+    - If the community confirms it's a great deal, mention the positive reaction.
+    - NEVER just repeat the title.
 
     You MUST return ONLY a valid JSON object. Do not include markdown formatting.
     {{
@@ -81,7 +85,6 @@ def evaluate_drop_with_ai(title, content):
     }}
     """
     
-    # Corrected Google API key: responseMimeType (CamelCase)
     data = json.dumps({
         "contents": [{"parts":[{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json"}
@@ -104,7 +107,7 @@ def evaluate_drop_with_ai(title, content):
 
             return is_valid, drop_type, summary, items
     except Exception as e:
-        print(f"Gemini API JSON Error: {e}")
+        print(f"Gemini API Error: {e}")
         return True, "UNKNOWN", title, ""
 
 def evaluate_news_with_ai(title, content):
@@ -147,13 +150,14 @@ def build_drops():
             title = post.get('title', '')
             content_raw = post.get('content', '')
             source_link = post.get('link', '') 
+            guid = post.get('guid', '') # This is the reddit thread permalink
             
             # 1. SPAM / HAUL BLOCKER
             if is_spam(title, content_raw, source_link):
                 print(f"Blocked Junk Keyword: {title}")
                 continue
                 
-            # 2. EXTRACT & VERIFY STORE LINKS FIRST
+            # 2. EXTRACT & VERIFY STORE LINKS
             extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>🛒 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
             link_count = 0
             detected_retailer = "Reddit"
@@ -165,7 +169,6 @@ def build_drops():
                     if not extracted_image: extracted_image = url
                     continue 
                 
-                # STRICT WHITELIST: ONLY keep links to verified retail stores!
                 is_store_link = any(domain in url.lower() for domain in STORE_DOMAINS)
                 if not is_store_link:
                     continue
@@ -177,16 +180,24 @@ def build_drops():
                 extracted_links_html += f"<li style='margin-bottom: 6px;'><a href='{url}' target='_blank' style='color: #3498db; text-decoration: none;'>{link_text}</a></li>"
                 link_count += 1
                 
-            # THE ULTIMATE FILTER: If there are ZERO verified store links in the post, THROW IT IN THE TRASH!
             if link_count == 0:
-                print(f"Trashed (No Verified Links): {title}")
+                print(f"Trashed (No Verified Store Links): {title}")
                 continue
                 
             extracted_links_html += "</ul></div>"
             
-            # 3. AI GATEKEEPER (Now that we know it has a valid link)
-            full_text = f"{content_raw} \n Links: {source_link}"
-            is_valid_drop, drop_type, ai_summary, ai_items = evaluate_drop_with_ai(title, full_text)
+            # 3. FETCH COMMUNITY COMMENTS VIA RSS PROXY
+            comments_text = ""
+            if guid and "reddit.com" in guid:
+                comment_url = guid + ".rss" if not guid.endswith(".rss") else guid
+                comment_feed = fetch_rss_proxy(comment_url)
+                # Skip the first item (the main post), grab the top 4 comments
+                for c in comment_feed[1:5]:
+                    clean_c = re.sub(r'<[^>]+>', ' ', c.get('content', '')).strip()
+                    if clean_c: comments_text += f"- {clean_c[:150]}\n"
+
+            # 4. AI GATEKEEPER
+            is_valid_drop, drop_type, ai_summary, ai_items = evaluate_drop_with_ai(title, content_raw, comments_text)
             
             if not is_valid_drop:
                 print(f"AI Filtered Out: {title}")
@@ -284,4 +295,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("Link-Enforced JSON AI successfully generated!")
+print("Comment-Reading JSON AI successfully generated!")
