@@ -303,52 +303,12 @@
     ],
     "news": [
         {
-            "title": "Two Pokemon TCG Restocks Are Live On Amazon\u2014Catch \u2018Em Before They\u2019re Gone -...",
-            "source": "VICE",
-            "date": "Recent",
-            "desc": "Recent Web Article",
-            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qVWhCOFd1RGMyZFFyN2xkSThDQWhtTVYzSXN5SHpsU1h4YW9ES1hwRjdjQWZmXzR6MkpUYjlXaVJDclJVRmVneXluTGY3VlNYZjZxNGRzc2E5c0dFZFhVNXFTOVdsdw?oc=5",
-            "confidence": "\ud83d\udcf0 News"
-        },
-        {
-            "title": "Best Pok\u00e9mon TCG deal: Score almost 40% off the Mega Greninja ex Premium Co...",
-            "source": "Mashable",
-            "date": "Recent",
-            "desc": "Recent Web Article",
-            "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZjhicWJhQkNSMklOYXlFam5YVEF2YzhTQ3dtVjhXWEVNeVJkak10ZGRfSU5OR3drclZMSFhfelo3TFE2OXFfVHRUY1k4U1JJMW85ekpfV3FwbVpteHpSTG45UXlMamhZbzhmMUt4RkFVTk9DdDZwTko3RmtpU2NETDVsX05RbmU2RmpNN3hR?oc=5",
-            "confidence": "\ud83d\udcf0 News"
-        },
-        {
-            "title": "Pok\u00e9mon TCG: First Partner Illustration Collection\u2014Series 3 - Pokemon.com...",
-            "source": "Pokemon.com",
-            "date": "Recent",
-            "desc": "Recent Web Article",
-            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNb19waW8ybGR6S2RXQi1XNTlXWC0wTFNUY0lJUF9OdGxnelBJanZsMTlPelRmcFAxYmpWYlZ5MEdRREZKemx3eUp4MTBkMkJDR2JHTVIzRTBJZ3hNd1VhYzNOZE1hMXQ1aV9xRDVsNmJpbHcxcFpKT0ZFakZrMkZLZ0dvMVhFYm0wb0hkX1ZiNkV4ZUFUbGhWeEM2RG9ZWW8wSDZv?oc=5",
-            "confidence": "\ud83d\udcf0 News"
-        },
-        {
-            "title": "How Pok\u00e9mon Tcg fans avoid getting cooked on Walmart Wednesday - imdb.com...",
-            "source": "imdb.com",
-            "date": "Recent",
-            "desc": "Recent Web Article",
-            "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KUm85dzFXWGxySzRQTEp5Vzd3WXZjQnllNV9ubFJBOXpRV3k2eFl3TTgzcElpMlktaWZxYXZLMzF3empZRGdBVHJEVlBIM1lwZmdHaG93UkZET1dscjhRMw?oc=5",
-            "confidence": "\ud83d\udcf0 News"
-        },
-        {
-            "title": "Today\u2019s Top Deals: Pok\u00e9mon TCG Chaos Rising Booster Bundle, AMD Ryzen 7 980...",
-            "source": "IGN",
-            "date": "Recent",
-            "desc": "Recent Web Article",
-            "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5WWldGazM2UzdpaGR0c0ViWjF0X0dqRjRBM2ZEaTZWb0lHRkpZR1RtSWlEcTIyNWN1YkZVY3NETVkybktiWVFROXY0a0M4eDg5SXBJOWNjLVhabGNLeFgyODlwa3BlLW5q?oc=5",
-            "confidence": "\ud83d\udcf0 News"
-        },
-        {
-            "title": "Customers strategize to find Pok\u00e9mon cards on store shelves before scalpers...",
-            "source": "PennLive.com",
-            "date": "Recent",
-            "desc": "Recent Web Article",
-            "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZFhzemRlck1qb2hJakh0WmFpbWxFNWg1azVTcU95SVlFT0I1Mk9QbVY0YWdYcnR3clhqZnBIUFlEeUZvNkxHclpyclMtcHdrV2JPOXduT29mMTBNeVhtblNrWFlWSDlaOTJiTlB0RVF6VTVTcGlrN2tqV3pIYzRNVE5QSUNCcklCNTJHaFlLNTYxeXI0RFBLMXU0aUkzY2VzeVFzbS1SZExFbjNYT3pmX1NMSWVCelM10gHMAUFVX3lxTE1jLVRkVlN5X3VKcFBIOGNhWkM1b2xWYzBpSnRJdnNnRGUtM1RVSWdBUVpfYmFSeVBwRXh1ODAzQnc4WlV6cEpaVkFqa3lFVlMyNVg3UnIyalhEOHQ4UDFpQld6aDBDYWE0RVZDelc1Y09sZnVDM2toOHRucnoxQk9jd0o0R1dhNG5Ld2JzN2cxcXZ1d0ktUlJQTmxBcV9lMHlGYzd4RjdZdk1URDlDUzAxSTl6WlZLS0VYclczM1djT1VDZGl4YlpPM0x1Rg?oc=5",
-            "confidence": "\ud83d\udcf0 News"
+            "title": "Radar active and monitoring TCG news.",
+            "source": "System",
+            "date": "Today",
+            "desc": "",
+            "link": "#",
+            "confidence": "-"
         }
     ]
 }
