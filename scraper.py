@@ -58,30 +58,41 @@ def is_spam(title, content, link):
     if any(domain in link.lower() for domain in BLOCKED_DOMAINS): return True
     return False
 
-def call_gemini(prompt):
+def call_gemini(prompt, retries=3):
     if not GEMINI_API_KEY: return None
-    try:
-        client = genai.Client()
-        
-        # Call the new Interactions API endpoint using the correct namespace
-        interaction = client.interactions.create(
-            model=AVAILABLE_MODEL,
-            input=prompt
-        )
+    
+    for attempt in range(retries):
+        try:
+            client = genai.Client()
             
-        # Extract the string using the built-in helper
-        clean_text = interaction.output_text.strip()
-        
-        # Clean up markdown code blocks if the model outputs them
-        if clean_text.startswith("```json"):
-            clean_text = clean_text[7:-3].strip()
-        elif clean_text.startswith("```"):
-            clean_text = clean_text[3:-3].strip()
+            # Call the new Interactions API endpoint
+            interaction = client.interactions.create(
+                model=AVAILABLE_MODEL,
+                input=prompt
+            )
+                
+            clean_text = interaction.output_text.strip()
             
-        return json.loads(clean_text)
-    except Exception as e:
-        print(f"SDK Error with {AVAILABLE_MODEL}: {e}")
-        return None
+            # Clean up markdown code blocks if the model outputs them
+            if clean_text.startswith("```json"):
+                clean_text = clean_text[7:-3].strip()
+            elif clean_text.startswith("```"):
+                clean_text = clean_text[3:-3].strip()
+                
+            return json.loads(clean_text)
+            
+        except Exception as e:
+            error_msg = str(e).lower()
+            # Check if the error is a rate limit (429)
+            if '429' in error_msg or 'quota' in error_msg or 'too_many_requests' in error_msg:
+                print(f"⚠️ Rate limit hit. Pausing script for 60 seconds (Retry {attempt + 1} of {retries})...")
+                time.sleep(60)
+            else:
+                print(f"SDK Error with {AVAILABLE_MODEL}: {e}")
+                return None
+                
+    print("❌ Max retries reached for this item. Skipping.")
+    return None
 
 def evaluate_drop_with_ai(title, content, comments_text):
     clean_body = ' '.join(re.sub(r'<[^>]+>', ' ', content).split())[:1000]
