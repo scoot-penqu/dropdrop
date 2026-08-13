@@ -22,6 +22,16 @@ RETAILER_LOGOS = {
 RETAILERS = [k.lower() for k in RETAILER_LOGOS.keys() if k != 'Reddit']
 SUBREDDITS = ['PKMNTCGDeals', 'PokemonRestocks', 'PokemonDropNotify', 'pokemonrestockr', 'PokemonTCGRestocks']
 
+# --- SPAM BLOCKERS ---
+BLOCKED_DOMAINS = ["temu.com", "trackalacker.com", "whatnot.com", "tiktok.com", "aliexpress.com", "dhgate.com"]
+BLOCKED_KEYWORDS = ["temu", "trackalacker", "free card box", "spin to win", "referral code", "use my link", "sign up bonus"]
+
+def is_spam(title, content, link):
+    full_text = f"{title} {content} {link}".lower()
+    if any(kw in full_text for kw in BLOCKED_KEYWORDS): return True
+    if any(domain in link.lower() for domain in BLOCKED_DOMAINS): return True
+    return False
+
 def evaluate_drop_with_ai(title, content):
     if not GEMINI_API_KEY:
         return True, "UNKNOWN", f"Summary: {title}", ""
@@ -32,15 +42,15 @@ def evaluate_drop_with_ai(title, content):
     Title: "{title}"
     Content: "{content[:1500]}"
 
-    Task 1: Is this a legitimate product drop, restock, or preorder alert? (REJECT and reply INVALID if it's speculation, questions, or collection showcases).
+    Task 1: Is this a legitimate product drop, restock, or preorder alert? (REJECT and reply INVALID if it's speculation, questions, spam, or collection showcases).
     Task 2: Is it ONLINE or IN-STORE?
-    Task 3: Write a 1-sentence summary of the drop.
+    Task 3: Write a rich, 2-3 sentence summary of the drop. Include the specific product, the retailer, and any stock/limit notes mentioned in the body. Do not just repeat the title. 
     Task 4: List the specific products and prices mentioned as clean bullet points.
 
     Format EXACTLY like this:
     [STATUS]: VALID or INVALID
     [TYPE]: ONLINE or IN-STORE or UNKNOWN
-    [SUMMARY]: (Your summary here)
+    [SUMMARY]: (Your detailed multi-sentence summary here)
     [ITEMS]:
     - Item 1 ($Price)
     """
@@ -54,11 +64,12 @@ def evaluate_drop_with_ai(title, content):
             drop_type = "UNKNOWN"
             summary, items = "", ""
             
+            # Parse response
             lines = ai_text.split('\n')
             for i, line in enumerate(lines):
-                if "[TYPE]:" in line: drop_type = line.replace("[TYPE]:", "").strip()
-                elif "[SUMMARY]:" in line: summary = line.replace("[SUMMARY]:", "").strip()
-                elif "[ITEMS]:" in line: items = "\n".join(lines[i+1:]).strip()
+                if line.startswith("[TYPE]:"): drop_type = line.replace("[TYPE]:", "").strip()
+                elif line.startswith("[SUMMARY]:"): summary = line.replace("[SUMMARY]:", "").strip()
+                elif line.startswith("[ITEMS]:"): items = "\n".join(lines[i+1:]).strip()
 
             return is_valid, drop_type, summary, items
     except:
@@ -100,8 +111,15 @@ def build_drops():
             title = post.get('title', '')
             content_raw = post.get('content', '')
             source_link = post.get('link', '') 
+            
+            # 1. SPAM GATEKEEPER
+            if is_spam(title, content_raw, source_link):
+                print(f"Blocked Spam: {title}")
+                continue
+                
             full_text = f"{content_raw} \n Links: {source_link}"
             
+            # 2. AI GATEKEEPER
             is_valid_drop, drop_type, ai_summary, ai_items = evaluate_drop_with_ai(title, full_text)
             if not is_valid_drop: continue
                 
@@ -115,6 +133,9 @@ def build_drops():
                 if any(ext in url.lower() for ext in ['.jpg', '.png', '.jpeg', 'i.redd.it', 'imgur.com']):
                     if not extracted_image: extracted_image = url
                     continue 
+                
+                # Check link against blacklist again just to be safe
+                if any(domain in url.lower() for domain in BLOCKED_DOMAINS): continue
                 
                 matched_retailer = next((r.capitalize() for r in RETAILERS if r in url.lower()), None)
                 if matched_retailer: detected_retailer = matched_retailer
@@ -130,7 +151,8 @@ def build_drops():
                 title_has_retailer = next((r.capitalize() for r in RETAILERS if r in title.lower()), None)
                 if title_has_retailer: detected_retailer = title_has_retailer
 
-            final_desc = f"<div style='color:#f0f6fc; margin-bottom:10px;'>{ai_summary}</div>"
+            # Format the output with the new multi-line descriptions
+            final_desc = f"<div style='color:#f0f6fc; margin-bottom:10px; line-height: 1.5; white-space: pre-line;'>{ai_summary}</div>"
             if ai_items: final_desc += f"<div style='white-space: pre-line; color:#a8b2bd; font-family: monospace; margin-bottom:10px;'>{ai_items}</div>"
             final_desc += extracted_links_html
 
@@ -164,7 +186,6 @@ def build_drops():
             "source_link": "#", "desc": "Monitoring prioritized subreddits for new drops."
         })
 
-    # Sort dynamically from newest to oldest
     drops.sort(key=lambda x: x['date'], reverse=True)
     return drops
 
@@ -204,7 +225,6 @@ def fetch_google_news(query, source_type):
     return news_list
 
 def build_news():
-    # Strict separation: Articles vs X
     google_news_query = "Pokemon TCG (restock OR preorder OR drop) -site:twitter.com -site:x.com when:7d"
     x_news_query = "Pokemon TCG (restock OR preorder OR drop) (site:twitter.com OR site:x.com) when:7d"
     
@@ -217,4 +237,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("3-Column Sorted JSON successfully generated!")
+print("3-Column Filtered JSON successfully generated!")
