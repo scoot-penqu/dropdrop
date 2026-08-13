@@ -17,20 +17,27 @@ RETAILER_LOGOS = {
     'Bestbuy': 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Best_Buy_logo.svg',
     'Samsclub': 'https://upload.wikimedia.org/wikipedia/commons/1/14/Sams_Club_Logo.svg',
     'Costco': 'https://upload.wikimedia.org/wikipedia/commons/5/59/Costco_Wholesale_logo_2010-10-26.svg',
+    'Ebay': 'https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg',
+    'Tcgplayer': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/TCGplayer_logo.svg/512px-TCGplayer_logo.svg.png',
     'Reddit': 'https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg'
 }
 RETAILERS = [k.lower() for k in RETAILER_LOGOS.keys() if k != 'Reddit']
 SUBREDDITS = ['PKMNTCGDeals', 'PokemonRestocks', 'PokemonDropNotify', 'pokemonrestockr', 'PokemonTCGRestocks']
 
 # --- STRICT STORE WHITELIST ---
-STORE_DOMAINS = ['target.com', 'walmart.com', 'amazon.com', 'pokemoncenter.com', 'gamestop.com', 'bestbuy.com', 'samsclub.com', 'costco.com']
+# ONLY links to these domains will be shown. Expanded to include trusted TCG sites!
+STORE_DOMAINS = [
+    'target.com', 'walmart.com', 'amazon.com', 'pokemoncenter.com', 'gamestop.com', 
+    'bestbuy.com', 'samsclub.com', 'costco.com', 'tcgplayer.com', 'ebay.com', 
+    'forgeandfiregaming.com', 'safari-zone.com', 'zulusgames.com', 'smokeandmirrorshobby.com', 'gamenerdz.com'
+]
 
 # --- SPAM & PERSONAL HAUL BLOCKERS ---
 BLOCKED_DOMAINS = ["temu.com", "trackalacker.com", "whatnot.com", "tiktok.com", "aliexpress.com", "dhgate.com"]
 BLOCKED_KEYWORDS = [
     "temu", "trackalacker", "free card box", "spin to win", "referral code", "use my link", "sign up bonus",
     "opening with", "my kids", "my kid", "mail day", "look what i found", "finally got", "pulled", "my local target",
-    "my local walmart", "tin haul", "pack opening"
+    "my local walmart", "tin haul", "pack opening", "in store find", "just picked up"
 ]
 
 def is_spam(title, content, link):
@@ -48,7 +55,6 @@ def evaluate_drop_with_ai(title, content):
     clean_body = re.sub(r'<[^>]+>', ' ', content)
     clean_body = ' '.join(clean_body.split())[:1500]
 
-    # Forcing Gemini to output pure JSON prevents formatting crashes
     prompt = f"""
     You are an AI deal filtering assistant for a Pokémon TCG alert website.
     
@@ -68,17 +74,17 @@ def evaluate_drop_with_ai(title, content):
 
     You MUST return ONLY a valid JSON object. Do not include markdown formatting.
     {{
-        "status": "VALID", (or "INVALID")
-        "type": "ONLINE", (or "IN-STORE", or "UNKNOWN")
+        "status": "VALID", 
+        "type": "ONLINE", 
         "summary": "Your detailed 2-3 sentence summary here.",
-        "items": "- Item name ($Price)" (or empty string if none)
+        "items": "- Item name ($Price)" 
     }}
     """
     
-    # We ask for JSON response format explicitly
+    # Corrected Google API key: responseMimeType (CamelCase)
     data = json.dumps({
         "contents": [{"parts":[{"text": prompt}]}],
-        "generationConfig": {"response_mime_type": "application/json"}
+        "generationConfig": {"responseMimeType": "application/json"}
     }).encode('utf-8')
     
     req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
@@ -86,8 +92,6 @@ def evaluate_drop_with_ai(title, content):
     try:
         with urllib.request.urlopen(req) as response:
             ai_text = json.loads(response.read().decode())['candidates'][0]['content']['parts'][0]['text'].strip()
-            
-            # Parse the pure JSON response
             parsed = json.loads(ai_text)
             
             is_valid = parsed.get("status", "INVALID").upper() == "VALID"
@@ -116,7 +120,7 @@ def evaluate_news_with_ai(title, content):
     
     data = json.dumps({
         "contents": [{"parts":[{"text": prompt}]}],
-        "generationConfig": {"response_mime_type": "application/json"}
+        "generationConfig": {"responseMimeType": "application/json"}
     }).encode('utf-8')
     
     req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
@@ -146,35 +150,26 @@ def build_drops():
             
             # 1. SPAM / HAUL BLOCKER
             if is_spam(title, content_raw, source_link):
-                print(f"Blocked Junk Post: {title}")
+                print(f"Blocked Junk Keyword: {title}")
                 continue
                 
-            full_text = f"{content_raw} \n Links: {source_link}"
-            
-            # 2. AI GATEKEEPER
-            is_valid_drop, drop_type, ai_summary, ai_items = evaluate_drop_with_ai(title, full_text)
-            if not is_valid_drop:
-                print(f"AI Filtered Out non-drop post: {title}")
-                continue
-                
-            extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>🛒 Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
+            # 2. EXTRACT & VERIFY STORE LINKS FIRST
+            extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>🛒 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
             link_count = 0
             detected_retailer = "Reddit"
             extracted_image = None
             
             all_urls = re.findall(r'(https?://[^\s)\]"\']+)', content_raw)
             for url in set(all_urls):
-                # Grab images for the card thumbnail
                 if any(ext in url.lower() for ext in ['.jpg', '.png', '.jpeg', 'i.redd.it', 'imgur.com']):
                     if not extracted_image: extracted_image = url
                     continue 
                 
-                # STRICT WHITELIST: ONLY display links to verified retail stores!
+                # STRICT WHITELIST: ONLY keep links to verified retail stores!
                 is_store_link = any(domain in url.lower() for domain in STORE_DOMAINS)
                 if not is_store_link:
                     continue
                 
-                # Figure out retailer for the badge
                 matched_retailer = next((r.capitalize() for r in RETAILERS if r in url.lower()), None)
                 if matched_retailer: detected_retailer = matched_retailer
                 
@@ -182,9 +177,21 @@ def build_drops():
                 extracted_links_html += f"<li style='margin-bottom: 6px;'><a href='{url}' target='_blank' style='color: #3498db; text-decoration: none;'>{link_text}</a></li>"
                 link_count += 1
                 
+            # THE ULTIMATE FILTER: If there are ZERO verified store links in the post, THROW IT IN THE TRASH!
+            if link_count == 0:
+                print(f"Trashed (No Verified Links): {title}")
+                continue
+                
             extracted_links_html += "</ul></div>"
-            if link_count == 0: extracted_links_html = "" # Hide the links section if there are no store links
             
+            # 3. AI GATEKEEPER (Now that we know it has a valid link)
+            full_text = f"{content_raw} \n Links: {source_link}"
+            is_valid_drop, drop_type, ai_summary, ai_items = evaluate_drop_with_ai(title, full_text)
+            
+            if not is_valid_drop:
+                print(f"AI Filtered Out: {title}")
+                continue
+
             if detected_retailer == "Reddit":
                 title_has_retailer = next((r.capitalize() for r in RETAILERS if r in title.lower()), None)
                 if title_has_retailer: detected_retailer = title_has_retailer
@@ -223,7 +230,7 @@ def build_drops():
             "date": datetime.now(timezone.utc).isoformat(),
             "type": "SYSTEM",
             "image": RETAILER_LOGOS['Reddit'],
-            "source_link": "#", "desc": "Monitoring prioritized subreddits for new drops."
+            "source_link": "#", "desc": "Monitoring prioritized subreddits for new drops. The AI and Link Verifier is actively blocking spam and haul posts."
         })
 
     drops.sort(key=lambda x: x['date'], reverse=True)
@@ -277,4 +284,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("JSON-Structured AI successfully generated!")
+print("Link-Enforced JSON AI successfully generated!")
