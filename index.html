@@ -10,30 +10,7 @@
             --accent-yellow: #f1c40f; --accent-blue: #3498db; --accent-green: #2ecc71;
             --accent-purple: #9b59b6; --accent-orange: #e67e22; --accent-red: #e74c3c;
         }
-/* Custom Pokéball Letter 'O' */
-        .pokeball {
-            display: inline-block;
-            width: 0.8em;
-            height: 0.8em;
-            border-radius: 50%;
-            background: linear-gradient(to bottom, #e74c3c 45%, #161b22 45%, #161b22 55%, #f0f6fc 55%);
-            border: 0.08em solid #f0f6fc;
-            position: relative;
-            vertical-align: -0.05em;
-            margin: 0 0.05em;
-        }
-        .pokeball::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 0.25em;
-            height: 0.25em;
-            background: #f0f6fc;
-            border-radius: 50%;
-            border: 0.08em solid #161b22;
-        }
+
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1400px; margin: auto; }
         header { text-align: center; margin-bottom: 2rem; }
@@ -41,6 +18,17 @@
         header p { color: #8b949e; }
         .dashboard-container { display: grid; grid-template-columns: 1fr 340px; gap: 1.5rem; }
         
+        /* Custom Pokéball Letter 'O' */
+        .pokeball {
+            display: inline-block; width: 0.8em; height: 0.8em; border-radius: 50%;
+            background: linear-gradient(to bottom, #e74c3c 45%, #161b22 45%, #161b22 55%, #f0f6fc 55%);
+            border: 0.08em solid #f0f6fc; position: relative; vertical-align: -0.05em; margin: 0 0.05em;
+        }
+        .pokeball::after {
+            content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 0.25em; height: 0.25em; background: #f0f6fc; border-radius: 50%; border: 0.08em solid #161b22;
+        }
+
         .filters { display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
         .filter-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; transition: 0.2s; font-size: 0.85rem; }
         .filter-btn.active, .filter-btn:hover { background: var(--accent-yellow); color: #000; font-weight: bold; }
@@ -98,42 +86,41 @@
         </aside>
     </div>
 
-   <script>
+    <script>
         let allDrops = [];
 
         async function loadLiveData() {
             try {
-                // The '?v=' + timestamp forces the browser to ignore its cache!
+                // Fetch new data and bypass cache
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
-                allDrops = data.drops;
-                renderDrops('all'); // Default to showing active drops
-                renderRumors(data.rumors);
+                allDrops = data.drops || [];
+                
+                // Ensure BOTH renders are called
+                renderDrops('all'); 
+                renderRumors(data.rumors || []);
             } catch (error) {
                 console.error("Error loading data:", error);
+                document.getElementById('dropGrid').innerHTML = `<p style="color: #e74c3c; grid-column: 1/-1; text-align:center;">Error loading data.json. Check GitHub Actions!</p>`;
             }
         }
 
         function renderDrops(filter) {
             const container = document.getElementById('dropGrid');
             container.innerHTML = '';
-            
             const now = new Date();
             
-            // Apply the Time and Status Filters
             const filtered = allDrops.filter(d => {
                 const dropDate = new Date(d.date);
                 const hoursDiff = (now - dropDate) / (1000 * 60 * 60);
                 
                 if (filter === 'past') return d.status === 'past';
-                
-                // For all other filters, hide past drops
                 if (d.status === 'past') return false; 
                 
                 if (filter === 'today') return hoursDiff <= 24;
-                if (filter === 'week') return hoursDiff <= 168; // 24 * 7
+                if (filter === 'week') return hoursDiff <= 168; 
                 
-                return true; // 'all' active deals
+                return true; 
             });
 
             if (filtered.length === 0) {
@@ -147,13 +134,14 @@
                 card.className = 'card';
                 card.style.opacity = isPast ? '0.7' : '1'; 
 
-                // Determine button label based on source
                 let btnLabel = drop.retailer.includes('r/') ? '💬 View Thread' : '📰 View Article';
-
                 let badgeHTML = isPast ? `<span class="badge badge-past">EXPIRED / OOS</span>` : `<span class="badge badge-live">ACTIVE DEAL</span>`;
                 
-                // Format the date for display
-                let displayDate = new Date(drop.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+                // Safe date formatting
+                let displayDate = "Recent";
+                try {
+                    displayDate = new Date(drop.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+                } catch(e) {}
 
                 card.innerHTML = `
                     <div class="card-img-container">
@@ -182,59 +170,9 @@
             });
         }
 
-            filtered.forEach(drop => {
-                const isPast = drop.status === 'past';
-                const isUpcoming = drop.status === 'upcoming';
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.opacity = isPast ? '0.7' : '1'; 
-
-                // Dynamic buttons based on type
-                let buttonsHTML = '';
-                if (isUpcoming) {
-                    buttonsHTML = `<a href="${drop.link}" target="_blank" class="buy-btn">Search Retailers</a>`;
-                } else {
-                    buttonsHTML = `
-                        <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-                            <a href="${drop.link}" target="_blank" class="buy-btn" style="flex: 1; ${isPast ? 'background: #8b949e;' : ''}">🛒 Deal Link</a>
-                            <a href="${drop.reddit_link}" target="_blank" class="buy-btn" style="flex: 1; background: #ff4500; color: white;">💬 Reddit</a>
-                        </div>`;
-                }
-
-                // Dynamic badges
-                let badgeHTML = '';
-                if (isUpcoming) badgeHTML = `<span class="badge badge-confirmed">UPCOMING</span>`;
-                else if (isPast) badgeHTML = `<span class="badge badge-past">EXPIRED / OOS</span>`;
-                else badgeHTML = `<span class="badge badge-live">ACTIVE DEAL</span>`;
-
-                card.innerHTML = `
-                    <div class="card-img-container">
-                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.src='https://via.placeholder.com/200x150?text=No+Thumbnail'">
-                    </div>
-                    <div class="card-body">
-                        <div class="tags">
-                            ${badgeHTML}
-                            <span class="badge badge-domain">${drop.retailer}</span>
-                        </div>
-                        <h2 class="card-title">${drop.title}</h2>
-                        <div class="price">${drop.price}</div>
-                        ${isUpcoming ? `<div class="countdown" data-date="${drop.date}">Calculating...</div>` : `<div class="countdown">Found: ${drop.date}</div>`}
-                        
-                        <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;">
-                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px;">View Description</summary>
-                            <div style="line-height: 1.4;">${drop.desc}</div>
-                        </details>
-                        
-                        ${buttonsHTML}
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-            updateCountdowns(); // Re-trigger the timers
-        }
-
         function renderRumors(rumors) {
             const container = document.getElementById('rumorFeed');
+            if(!container) return; // Prevent crashes
             container.innerHTML = rumors.map(r => `
                 <div class="rumor-card">
                     <div class="rumor-source"><span>${r.source}</span></div>
@@ -247,30 +185,13 @@
             `).join('');
         }
 
-        // Add the timer function back for upcoming drops
-        function updateCountdowns() {
-            document.querySelectorAll('.countdown[data-date]').forEach(elem => {
-                const dropTime = new Date(elem.getAttribute('data-date')).getTime();
-                const diff = dropTime - new Date().getTime();
-                if (diff < 0) {
-                    elem.innerHTML = "🚨 DROP IS LIVE";
-                    elem.style.color = "#2ecc71";
-                    return;
-                }
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                elem.innerHTML = `⏳ Drop in: ${days}d ${hours}h`;
-            });
-        }
-        
-        setInterval(updateCountdowns, 60000);
-
         function filterDrops(type) {
             document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             renderDrops(type);
         }
 
+        // Initialize
         loadLiveData();
     </script>
 </body>
