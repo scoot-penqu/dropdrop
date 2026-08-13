@@ -6,30 +6,21 @@ import os
 import time
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
-import google.generativeai as genai
 
-# --- INITIALIZE GOOGLE AI & AUTO-DISCOVER MODEL ---
+# Import the new Google GenAI SDK for the Interactions API
+from google import genai
+
+# --- INITIALIZE GOOGLE AI & MODEL ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-AVAILABLE_MODEL = "gemini-1.5-flash" # Fallback
+AVAILABLE_MODEL = "gemini-3.6-flash" # Updated to modern Interactions API model
 
 if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
     try:
-        # Ask Google for exactly what models this API key is allowed to use
-        valid_models = [m.name.replace('models/', '') for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
-        
-        # Pick the smartest, fastest model available on the list
-        if 'gemini-2.0-flash' in valid_models: AVAILABLE_MODEL = 'gemini-2.0-flash'
-        elif 'gemini-2.0-flash-exp' in valid_models: AVAILABLE_MODEL = 'gemini-2.0-flash-exp'
-        elif 'gemini-1.5-flash' in valid_models: AVAILABLE_MODEL = 'gemini-1.5-flash'
-        elif 'gemini-1.5-flash-latest' in valid_models: AVAILABLE_MODEL = 'gemini-1.5-flash-latest'
-        elif 'gemini-1.5-pro' in valid_models: AVAILABLE_MODEL = 'gemini-1.5-pro'
-        elif 'gemini-pro' in valid_models: AVAILABLE_MODEL = 'gemini-pro'
-        elif len(valid_models) > 0: AVAILABLE_MODEL = valid_models[0]
-        
-        print(f"✅ AI Initialized. Auto-selected guaranteed model: {AVAILABLE_MODEL}")
+        # Initialize the modern Interactions API client (automatically picks up GEMINI_API_KEY env var)
+        client = genai.Client()
+        print(f"✅ AI Initialized using Interactions API. Defaulting to: {AVAILABLE_MODEL}")
     except Exception as e:
-        print(f"⚠️ Auto-detect failed, using fallback. Error: {e}")
+        print(f"⚠️ Initialization failed. Error: {e}")
 
 # --- ASSETS & WHITELISTS ---
 RETAILER_LOGOS = {
@@ -70,18 +61,15 @@ def is_spam(title, content, link):
 def call_gemini(prompt):
     if not GEMINI_API_KEY: return None
     try:
-        model = genai.GenerativeModel(AVAILABLE_MODEL)
+        client = genai.Client()
         
-        # Older models (like gemini-pro) don't support forced JSON, so we handle it dynamically
-        if "1.5" in AVAILABLE_MODEL or "2.0" in AVAILABLE_MODEL:
-            response = model.generate_content(
-                prompt,
-                generation_config=genai.GenerationConfig(response_mime_type="application/json")
-            )
-        else:
-            response = model.generate_content(prompt)
+        # Call the new Interactions API endpoint
+        interaction = client.create(
+            model=AVAILABLE_MODEL,
+            input=prompt
+        )
             
-        clean_text = response.text.strip()
+        clean_text = interaction.output_text.strip()
         
         # Clean up markdown code blocks if the model outputs them
         if clean_text.startswith("```json"):
