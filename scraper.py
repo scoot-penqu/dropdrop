@@ -22,6 +22,9 @@ RETAILER_LOGOS = {
 RETAILERS = [k.lower() for k in RETAILER_LOGOS.keys() if k != 'Reddit']
 SUBREDDITS = ['PKMNTCGDeals', 'PokemonRestocks', 'PokemonDropNotify', 'pokemonrestockr', 'PokemonTCGRestocks']
 
+# --- STRICT STORE WHITELIST ---
+STORE_DOMAINS = ['target.com', 'walmart.com', 'amazon.com', 'pokemoncenter.com', 'gamestop.com', 'bestbuy.com', 'samsclub.com', 'costco.com']
+
 # --- SPAM & PERSONAL HAUL BLOCKERS ---
 BLOCKED_DOMAINS = ["temu.com", "trackalacker.com", "whatnot.com", "tiktok.com", "aliexpress.com", "dhgate.com"]
 BLOCKED_KEYWORDS = [
@@ -38,7 +41,6 @@ def is_spam(title, content, link):
 
 def evaluate_drop_with_ai(title, content):
     if not GEMINI_API_KEY:
-        print("WARNING: GEMINI_API_KEY not found!")
         return True, "UNKNOWN", title, ""
         
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
@@ -46,6 +48,7 @@ def evaluate_drop_with_ai(title, content):
     clean_body = re.sub(r'<[^>]+>', ' ', content)
     clean_body = ' '.join(clean_body.split())[:1500]
 
+    # Forcing Gemini to output pure JSON prevents formatting crashes
     prompt = f"""
     You are an AI deal filtering assistant for a Pokémon TCG alert website.
     
@@ -53,65 +56,75 @@ def evaluate_drop_with_ai(title, content):
     Body Content: "{clean_body}"
 
     STRICT REJECTION RULES:
-    - REJECT (mark INVALID) if this is a personal haul, "mail day", opening cards/boxes with family or kids, showing off pack pulls, or personal collection photos.
-    - REJECT (mark INVALID) if this is a post about someone finding an item at their specific local store after they bought it.
-    - REJECT (mark INVALID) if it is a discussion, question, trade request, or rumor without links/proof.
+    - REJECT if this is a personal haul, "mail day", pack pulls, or showing off a personal collection.
+    - REJECT if this is about finding an item at a specific local store after they bought it.
+    - REJECT if it is a discussion, question, or rumor.
     
     ACCEPT CRITERIA:
-    - ONLY ACCEPT (mark VALID) if it is an active online restock/pre-order alert with links, or an active nationwide stock drop.
+    - ONLY ACCEPT if it is an active online restock/pre-order alert or a nationwide stock drop.
 
     SUMMARY RULES:
-    - Summarize what specific product is dropping/restocked, where, and any stock limits mentioned.
-    - Write 2-3 detailed, distinct sentences. NEVER just copy or repeat the post title.
+    - Write 2-3 detailed sentences. State the product, retailer, price, and stock limits. NEVER just repeat the title.
 
-    Return EXACTLY in this format:
-    STATUS: [VALID or INVALID]
-    TYPE: [ONLINE or IN-STORE or UNKNOWN]
-    SUMMARY: [Your 2-3 sentence summary]
-    ITEMS:
-    - Item name ($Price)
+    You MUST return ONLY a valid JSON object. Do not include markdown formatting.
+    {{
+        "status": "VALID", (or "INVALID")
+        "type": "ONLINE", (or "IN-STORE", or "UNKNOWN")
+        "summary": "Your detailed 2-3 sentence summary here.",
+        "items": "- Item name ($Price)" (or empty string if none)
+    }}
     """
-    data = json.dumps({"contents": [{"parts":[{"text": prompt}]}]}).encode('utf-8')
+    
+    # We ask for JSON response format explicitly
+    data = json.dumps({
+        "contents": [{"parts":[{"text": prompt}]}],
+        "generationConfig": {"response_mime_type": "application/json"}
+    }).encode('utf-8')
+    
     req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
     
     try:
         with urllib.request.urlopen(req) as response:
             ai_text = json.loads(response.read().decode())['candidates'][0]['content']['parts'][0]['text'].strip()
             
-            # Robust Regex Parsing
-            status_m = re.search(r'STATUS\]?:\s*(VALID|INVALID)', ai_text, re.IGNORECASE)
-            type_m = re.search(r'TYPE\]?:\s*(ONLINE|IN-STORE|UNKNOWN)', ai_text, re.IGNORECASE)
-            summary_m = re.search(r'SUMMARY\]?:\s*(.*?)(?=\n\s*\[?ITEMS\]?:|$)', ai_text, re.IGNORECASE | re.DOTALL)
-            items_m = re.search(r'ITEMS\]?:\s*(.*)', ai_text, re.IGNORECASE | re.DOTALL)
-
-            is_valid = bool(status_m and status_m.group(1).upper() == "VALID")
-            drop_type = type_m.group(1).upper() if type_m else "UNKNOWN"
-            summary = summary_m.group(1).strip() if summary_m else title
-            items = items_m.group(1).strip() if items_m else ""
+            # Parse the pure JSON response
+            parsed = json.loads(ai_text)
+            
+            is_valid = parsed.get("status", "INVALID").upper() == "VALID"
+            drop_type = parsed.get("type", "UNKNOWN").upper()
+            summary = parsed.get("summary", title)
+            items = parsed.get("items", "")
+            
+            if not summary or summary.strip() == "":
+                summary = title
 
             return is_valid, drop_type, summary, items
     except Exception as e:
-        print(f"Gemini API Error: {e}")
+        print(f"Gemini API JSON Error: {e}")
         return True, "UNKNOWN", title, ""
 
 def evaluate_news_with_ai(title, content):
     if not GEMINI_API_KEY: return "NO", title
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    
     prompt = f"""Analyze this Web/Twitter News post: Title: "{title}" Content: "{content[:1000]}"
-    Task 1: Is this announcing a specific product restock or drop? (YES or NO)
-    Task 2: Summarize it in 1 short sentence.
-    Format EXACTLY:
-    STATUS: YES or NO
-    SUMMARY: Summary here"""
+    Return ONLY valid JSON.
+    {{
+        "is_drop": "YES" or "NO",
+        "summary": "Your 1 sentence summary here."
+    }}"""
+    
+    data = json.dumps({
+        "contents": [{"parts":[{"text": prompt}]}],
+        "generationConfig": {"response_mime_type": "application/json"}
+    }).encode('utf-8')
+    
+    req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
     try:
-        data = json.dumps({"contents": [{"parts":[{"text": prompt}]}]}).encode('utf-8')
-        req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
         with urllib.request.urlopen(req) as response:
             ai_text = json.loads(response.read().decode())['candidates'][0]['content']['parts'][0]['text'].strip()
-            is_drop = "YES" if "STATUS: YES" in ai_text.upper() else "NO"
-            summary_m = re.search(r'SUMMARY:\s*(.*)', ai_text, re.IGNORECASE)
-            summary = summary_m.group(1).strip() if summary_m else title
-            return is_drop, summary
+            parsed = json.loads(ai_text)
+            return parsed.get("is_drop", "NO").upper(), parsed.get("summary", title)
     except: return "NO", title
 
 def fetch_rss_proxy(url):
@@ -120,8 +133,7 @@ def fetch_rss_proxy(url):
     try:
         with urllib.request.urlopen(req) as response:
             return json.loads(response.read().decode()).get('items', [])
-    except:
-        return []
+    except: return []
 
 def build_drops():
     drops = []
@@ -134,7 +146,7 @@ def build_drops():
             
             # 1. SPAM / HAUL BLOCKER
             if is_spam(title, content_raw, source_link):
-                print(f"Blocked Post: {title}")
+                print(f"Blocked Junk Post: {title}")
                 continue
                 
             full_text = f"{content_raw} \n Links: {source_link}"
@@ -145,19 +157,24 @@ def build_drops():
                 print(f"AI Filtered Out non-drop post: {title}")
                 continue
                 
-            extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>🔗 Extracted Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
+            extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>🛒 Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
             link_count = 0
             detected_retailer = "Reddit"
             extracted_image = None
             
             all_urls = re.findall(r'(https?://[^\s)\]"\']+)', content_raw)
             for url in set(all_urls):
+                # Grab images for the card thumbnail
                 if any(ext in url.lower() for ext in ['.jpg', '.png', '.jpeg', 'i.redd.it', 'imgur.com']):
                     if not extracted_image: extracted_image = url
                     continue 
                 
-                if any(domain in url.lower() for domain in BLOCKED_DOMAINS): continue
+                # STRICT WHITELIST: ONLY display links to verified retail stores!
+                is_store_link = any(domain in url.lower() for domain in STORE_DOMAINS)
+                if not is_store_link:
+                    continue
                 
+                # Figure out retailer for the badge
                 matched_retailer = next((r.capitalize() for r in RETAILERS if r in url.lower()), None)
                 if matched_retailer: detected_retailer = matched_retailer
                 
@@ -166,15 +183,14 @@ def build_drops():
                 link_count += 1
                 
             extracted_links_html += "</ul></div>"
-            if link_count == 0: extracted_links_html = ""
+            if link_count == 0: extracted_links_html = "" # Hide the links section if there are no store links
             
             if detected_retailer == "Reddit":
                 title_has_retailer = next((r.capitalize() for r in RETAILERS if r in title.lower()), None)
                 if title_has_retailer: detected_retailer = title_has_retailer
 
-            # Subreddit Badge Header
+            # Compile description
             sub_badge = f"<div style='margin-bottom:8px;'><span style='background:#ff4500; color:#ffffff; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:600; display:inline-block;'>r/{sub}</span></div>"
-
             final_desc = f"{sub_badge}<div style='color:#f0f6fc; margin-bottom:10px; line-height: 1.5; white-space: pre-line;'>{ai_summary}</div>"
             if ai_items: final_desc += f"<div style='white-space: pre-line; color:#a8b2bd; font-family: monospace; margin-bottom:10px;'>{ai_items}</div>"
             final_desc += extracted_links_html
@@ -261,4 +277,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("Updated JSON successfully generated!")
+print("JSON-Structured AI successfully generated!")
