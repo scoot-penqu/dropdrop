@@ -1,314 +1,66 @@
 {
     "drops": [
         {
-            "title": "Looking for advice-sell or hold?",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T07:38:27+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/pcfbgye0j3jh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=fe0a9978c2358ada609c9ecf62ac642c3d5c987d",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vn4108/looking_for_advicesell_or_hold/",
-            "desc": "Looking for advice-sell or hold?"
-        },
-        {
-            "title": "From a holding perspective is buying CGC 10\u2019s a good call?",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T07:03:59+00:00",
-            "status": "live",
+            "title": "Radar Active: Waiting for verified drops...",
+            "price": "N/A",
+            "retailer": "DropDrop AI",
+            "date": "2026-08-13T15:06:50.626084+00:00",
+            "type": "SYSTEM",
+            "score": 0,
+            "comments": 0,
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vn3g1l/from_a_holding_perspective_is_buying_cgc_10s_a/",
-            "desc": "From a holding perspective is buying CGC 10\u2019s a good call?"
-        },
-        {
-            "title": "Managed to pick all these up for about $300, CGC or PSA?",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T06:21:37+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/s255ojxa53jh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=c09c193e688cd240ee0bb8f5e88451c5cb3ac0ce",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vn2p3e/managed_to_pick_all_these_up_for_about_300_cgc_or/",
-            "desc": "Managed to pick all these up for about $300, CGC or PSA?"
-        },
-        {
-            "title": "Question regarding Dragonite 151 master ball holo",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T05:26:06+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vn1oza/question_regarding_dragonite_151_master_ball_holo/",
-            "desc": "Question regarding Dragonite 151 master ball holo"
-        },
-        {
-            "title": "Rank these sealed items to invest in!",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T05:16:42+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vn1iqw/rank_these_sealed_items_to_invest_in/",
-            "desc": "Rank these sealed items to invest in!"
-        },
-        {
-            "title": "Caught a restock in the wild",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T04:57:34+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/y06y25yaq2jh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=7405c9640db973851bf634eb1d530e16c0341662",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vn15rw/caught_a_restock_in_the_wild/",
-            "desc": "Caught a restock in the wild"
-        },
-        {
-            "title": "Prismatic SPC + $20 for Ascended Heroes Posters (Lucario &amp; Gardevo...",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T03:30:27+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vmzhed/prismatic_spc_20_for_ascended_heroes_posters/",
-            "desc": "Prismatic SPC + $20 for Ascended Heroes Posters (Lucario &amp; Gardevoir) is this a good trade for me?"
-        },
-        {
-            "title": "Wondering why this isn't going for more and future prospective value.....",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T03:26:12+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/vbh6p430a2jh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=d188d3747a75a0ba00a794c2b722aef197f2a44c",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vmze8z/wondering_why_this_isnt_going_for_more_and_future/",
-            "desc": "Wondering why this isn't going for more and future prospective value..."
-        },
-        {
-            "title": "Walmart Pokemon drop 9p.m.",
-            "price": "Check Retailer Link",
-            "retailer": "Walmart",
-            "date": "2026-08-13T03:25:25+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmzdlw/walmart_pokemon_drop_9pm/",
-            "desc": "Walmart Pokemon drop 9p.m.<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1vmzdeo/walmart_pokemon_drop_9pm/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PokemonRestocks/comm...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmzdlw/walmart_pokemon_drop_9pm/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "Looking to grade some of my collection but feel overwhelmed, any sugge...",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T03:11:33+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/ygsbvuwd72jh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=ac8bb6cc95ce8ef13051de9dca2f20b798d9dffc",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vmz3dn/looking_to_grade_some_of_my_collection_but_feel/",
-            "desc": "Looking to grade some of my collection but feel overwhelmed, any suggestions?"
-        },
-        {
-            "title": "Phantasmal zard price?",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T02:43:58+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/z20bvl2h22jh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=16f3e283dada659c7ed632aef4174eab7e3a28d7",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vmyiyj/phantasmal_zard_price/",
-            "desc": "Phantasmal zard price?"
-        },
-        {
-            "title": "Charizard ex Special Collection is available at Walmart for $49.88 wit...",
-            "price": "$49.88",
-            "retailer": "Walmart",
-            "date": "2026-08-13T02:28:23+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/tiryw2xoz1jh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=1a35bff2db28652742ed75593d29e3fa9cc757c6",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmy6zw/charizard_ex_special_collection_is_available_at/",
-            "desc": "Charizard ex Special Collection is available at Walmart for $49.88 with almost no wait in queue<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://pokerestock.topdealalerts.com/productcard?sku=19594412970&amp;region=na&amp;company=walmart&amp;version=1' target='_blank' style='color: #3498db; text-decoration: none;'>https://pokerestock.topdealalerts.com/productcard?sku=19594412970&amp;region=na&amp;company=walmart&amp;version=1</a></li></ul></div>"
-        },
-        {
-            "title": "Are these Zamazenta and Zacian good pickups? They each just tripled in...",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-13T02:04:55+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/g7euvx6iv1jh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=6338b1b13d0fd009c9edd6bfa6ef62227bca24b5",
-            "source_link": "https://www.reddit.com/r/PokeInvesting/comments/1vmxpe8/are_these_zamazenta_and_zacian_good_pickups_they/",
-            "desc": "Are these Zamazenta and Zacian good pickups? They each just tripled in price"
-        },
-        {
-            "title": "Pitch Black Elite Trainer Box is available at Walmart for $60, Chariza...",
-            "price": "Check Retailer Link",
-            "retailer": "Walmart",
-            "date": "2026-08-13T01:24:25+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/zhgs1o3ao1jh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=d1425b47d41564e965b0723cfece144ae24e4a52",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmwtlc/pitch_black_elite_trainer_box_is_available_at/",
-            "desc": "Pitch Black Elite Trainer Box is available at Walmart for $60, Charizard special collection and more Pokemon is available.<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://pokerestock.app/productcard?sku=20161351456&amp;region=na&amp;company=walmart&amp;version=1' target='_blank' style='color: #3498db; text-decoration: none;'>https://pokerestock.app/productcard?sku=20161351456&amp;region=na&amp;company=walmart&amp;version=1</a></li></ul></div>"
-        },
-        {
-            "title": "Walmart Wednesday!",
-            "price": "Check Retailer Link",
-            "retailer": "Walmart",
-            "date": "2026-08-13T00:59:27+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/",
-            "desc": "Walmart Wednesday!<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comment...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "Pitch black Bundles up on amazon!",
-            "price": "Check Retailer Link",
-            "retailer": "Amazon",
-            "date": "2026-08-13T00:40:03+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmvtfc/pitch_black_bundles_up_on_amazon/",
-            "desc": "Pitch black Bundles up on amazon!<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vmvtfc/pitch_black_bundles_up_on_amazon/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "Pokemon Pitch Black Booster Bundles are available at Amazon for $31.99",
-            "price": "$31.99",
-            "retailer": "Amazon",
-            "date": "2026-08-13T00:24:11+00:00",
-            "status": "past",
-            "image": "https://preview.redd.it/rqwzor9jd1jh1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=4c8bbf41565d4740e6248545b750de3399a58d75",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmvgjd/pokemon_pitch_black_booster_bundles_are_available/",
-            "desc": "Pokemon Pitch Black Booster Bundles are available at Amazon for $31.99<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://pokerestock.topdealalerts.com/productcard?sku=B0GYTRYV7P&amp;region=na&amp;company=amazon&amp;version=1' target='_blank' style='color: #3498db; text-decoration: none;'>https://pokerestock.topdealalerts.com/productcard?sku=B0GYTRYV7P&amp;region=na&amp;company=amazon&amp;version=1</a></li></ul></div>"
-        },
-        {
-            "title": "Select Pokemon TCG Sealed Cases, Tins, and Boxes Near MSRP with Free S...",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-12T13:24:27+00:00",
-            "status": "live",
-            "image": "https://external-preview.redd.it/nASRELC0F2CSGOmFBqHm3JX3UFkovwTr3uN1qcsJxlE.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;s=de3db8df3cd30aeb494ddce4e03c13280f645787",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vme2iq/select_pokemon_tcg_sealed_cases_tins_and_boxes/",
-            "desc": "Select Pokemon TCG Sealed Cases, Tins, and Boxes Near MSRP with Free Shipping on eBay"
-        },
-        {
-            "title": "Dual preorder?",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-12T12:35:17+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmcw8m/dual_preorder/",
-            "desc": "Dual preorder?"
-        },
-        {
-            "title": "Upcoming Target Restocks!",
-            "price": "Check Retailer Link",
-            "retailer": "Target",
-            "date": "2026-08-12T12:32:14+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/sn7j8u4euxih1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=7bcfa99d544fc413c53a811ec4218d0eb9493165",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmctqt/upcoming_target_restocks/",
-            "desc": "Upcoming Target Restocks!<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmctqt/upcoming_target_restocks/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PokemonTCGRestocks/c...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vmctqt/upcoming_target_restocks/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "Ascended Heroes ex boxes are available starting today at Aldis for $24...",
-            "price": "$24.99",
-            "retailer": "Reddit",
-            "date": "2026-08-12T04:21:08+00:00",
-            "status": "live",
-            "image": "https://preview.redd.it/0u1wq7bwevih1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=480b621a706da6f30ad6aa3a693d593689b75441",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vm3vxg/ascended_heroes_ex_boxes_are_available_starting/",
-            "desc": "Ascended Heroes ex boxes are available starting today at Aldis for $24.99 each"
-        },
-        {
-            "title": "Make sure to enter this on Bestbuy! more invites going out soon!",
-            "price": "Check Retailer Link",
-            "retailer": "Bestbuy",
-            "date": "2026-08-11T20:56:46+00:00",
-            "status": "past",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Best_Buy_logo.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vltsfk/make_sure_to_enter_this_on_bestbuy_more_invites/",
-            "desc": "Make sure to enter this on Bestbuy! more invites going out soon!<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-booster-box-36-packs/JJG2TL8C7R' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.bestbuy.com/product/pokemon-tradi...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vltsfk/make_sure_to_enter_this_on_bestbuy_more_invites/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "What\u2019s going on with PKC???",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-11T18:14:46+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vlpbn4/whats_going_on_with_pkc/",
-            "desc": "What\u2019s going on with PKC???"
-        },
-        {
-            "title": "POTENTIAL TARGET DROP TONIGHT Midnight PST , 3am EST",
-            "price": "Check Retailer Link",
-            "retailer": "Target",
-            "date": "2026-08-10T18:18:50+00:00",
-            "status": "past",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Target_Corporation_logo_%28vector%29.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vkssyn/potential_target_drop_tonight_midnight_pst_3am_est/",
-            "desc": "POTENTIAL TARGET DROP TONIGHT Midnight PST , 3am EST<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/' target='_blank' style='color: #3498db; text-decoration: none;'>Target Drop Guide</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vkssyn/potential_target_drop_tonight_midnight_pst_3am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comment...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vkssyn/potential_target_drop_tonight_midnight_pst_3am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "POTENTIAL TARGET DROP TONIGHT midnight PST 3am EST",
-            "price": "Check Retailer Link",
-            "retailer": "Target",
-            "date": "2026-08-06T23:07:12+00:00",
-            "status": "past",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Target_Corporation_logo_%28vector%29.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vhjpuv/potential_target_drop_tonight_midnight_pst_3am_est/",
-            "desc": "POTENTIAL TARGET DROP TONIGHT midnight PST 3am EST<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vhjpuv/potential_target_drop_tonight_midnight_pst_3am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comment...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vhjpuv/potential_target_drop_tonight_midnight_pst_3am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "Pitch black booster bundle",
-            "price": "Check Retailer Link",
-            "retailer": "Reddit",
-            "date": "2026-08-06T07:00:23+00:00",
-            "status": "past",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgwu95/pitch_black_booster_bundle/",
-            "desc": "Pitch black booster bundle"
-        },
-        {
-            "title": "Walmart Wednesday",
-            "price": "Check Retailer Link",
-            "retailer": "Walmart",
-            "date": "2026-08-06T00:59:48+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vgpoce/walmart_wednesday/",
-            "desc": "Walmart Wednesday<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vgpoce/walmart_wednesday/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comment...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vgpoce/walmart_wednesday/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "TARGET DROP LIKELY TONIGHT MIDNIGHT PST , 3AM EST",
-            "price": "Check Retailer Link",
-            "retailer": "Target",
-            "date": "2026-08-04T01:29:35+00:00",
-            "status": "past",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Target_Corporation_logo_%28vector%29.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vewcg4/target_drop_likely_tonight_midnight_pst_3am_est/",
-            "desc": "TARGET DROP LIKELY TONIGHT MIDNIGHT PST , 3AM EST<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vewcg4/target_drop_likely_tonight_midnight_pst_3am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comment...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vewcg4/target_drop_likely_tonight_midnight_pst_3am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "Pitch Black ETB price drop on amazon 69.99",
-            "price": "Check Retailer Link",
-            "retailer": "Amazon",
-            "date": "2026-08-03T07:07:05+00:00",
-            "status": "live",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1ve64ew/pitch_black_etb_price_drop_on_amazon_6999/",
-            "desc": "Pitch Black ETB price drop on amazon 69.99<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1ve64ew/pitch_black_etb_price_drop_on_amazon_6999/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
-        },
-        {
-            "title": "Monthly Amazon / Informational post!",
-            "price": "Check Retailer Link",
-            "retailer": "Amazon",
-            "date": "2026-08-01T14:00:54+00:00",
-            "status": "past",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vco7gf/monthly_amazon_informational_post/",
-            "desc": "Monthly Amazon / Informational post!<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>\ud83d\udd17 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comments/1sgx6lx/target_drop_guide/</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vco7gf/monthly_amazon_informational_post/' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.reddit.com/r/PKMNTCGDeals/comment...</a></li><li style='margin-bottom: 6px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vco7gf/monthly_amazon_informational_post/' target='_blank' style='color: #3498db; text-decoration: none;'>[comments]</a></li></ul></div>"
+            "source_link": "#",
+            "desc": "Monitoring prioritized subreddits for new drops."
         }
     ],
     "news": [
         {
-            "title": "Radar active and monitoring TCG news.",
-            "source": "System",
-            "date": "Today",
-            "desc": "",
-            "link": "#",
-            "confidence": "-"
+            "title": "Restock: Pok\u00e9mon Trading Card Game: First Partner Illustration Collection\u2014S...",
+            "source": "x.com",
+            "date": "Recent",
+            "desc": "Restock: Pok\u00e9mon Trading Card Game: First Partner Illustration Collection\u2014Series 3 finderz.info/3S5zt8t #Ad #Pokemon #PokemonTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5TZ29jczQyV01aMWc3dDNLVU5aNGg3TGo5YUJWcWhBMlJTajdHQkV4NlBzMUJieUJHdTZpT1g4VmU3bkhBY3FVZWY2OEFrcGFHc1FKb1MzVWl6YlcwQzVSelp1RQ?oc=5",
+            "is_drop": "NO"
+        },
+        {
+            "title": "Our community has been absolutely crushing the Pokemon hunts lately. Seeing...",
+            "source": "x.com",
+            "date": "Recent",
+            "desc": "Our community has been absolutely crushing the Pokemon hunts lately. Seeing everyone share their finds is what it\u2019s all about. Want to keep up with Pok\u00e9mon TCG restocks, releases & product updates? \ud83d\udc49 poketcgtracker.com What\u2019s been your BEST in-store f - x.com",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5YTGZldlhMUTZXYzRWb2FqWi1Tcm1GLUpVTGpXQkllZm5sbnA1UUdCQTU1b0xiYl8tS2Z4bTctTHFhejc4RGsyaDh2QVhJNlc3dno1dTZNZ01iNllwT19iLThGWG5FYzA1LVNj?oc=5",
+            "is_drop": "NO"
+        },
+        {
+            "title": "Showed add to cart at the time our post was sent out and had stock loaded o...",
+            "source": "x.com",
+            "date": "Recent",
+            "desc": "Showed add to cart at the time our post was sent out and had stock loaded on the backend as we posted earlier. We don't control the stock numbers or how fast items sell out unfortunately. x.com/PokemonRestock\u2026 - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxZEdYbnQ4eG9sckhtLXVndkFFcFJWblhTZnNnSkF1Qk5JcDc0ZFJfOHdPT0FJUUR4U3NRMEFzQ05mNnBzYnNZRjNNM1lzVUtYSjZUR1RiWXZDT2xQTmwtZjhUbkZvX1U?oc=5",
+            "is_drop": "NO"
+        },
+        {
+            "title": "Restock: Pok\u00e9mon Trading Card Game: First Partner Illustration Collection S...",
+            "source": "x.com",
+            "date": "Recent",
+            "desc": "Restock: Pok\u00e9mon Trading Card Game: First Partner Illustration Collection Series 2 #Ad #Pokemon goto.target.com/MKoEZ2 - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsd0NkaHZSWTNMdDVscVJBWWUyUzl1eWFZY2FZTlJueW1HaVM1c1o1QWc1UWZFbW1zWjVZb1dldjNJTHV0QXRud3FjVHRhX1JodFkwUkxhbXN1YzB4UWZ0T3ZoQQ?oc=5",
+            "is_drop": "NO"
+        },
+        {
+            "title": "Ascended Heroes ex Boxes from ALDI\u2019s this morning! We saw a lot of successf...",
+            "source": "x.com",
+            "date": "Recent",
+            "desc": "Ascended Heroes ex Boxes from ALDI\u2019s this morning! We saw a lot of successful pickups today, let us know how your in store drop went! #pokemon #pokemontcg - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBvdENoaWRQbGNxRS0wZEdlNEcxYlBGQ0JZRU1lMW5BZWpPbV9iN0FYWVduRmxOYmhPUk0ySVNXdTh3aXVkNXpjSXpGTWJIX2ZiZjlEVU1DTUVja3lKQlByeXdvdHE?oc=5",
+            "is_drop": "NO"
+        },
+        {
+            "title": "TARGET DROP WATCH Pok\u00e9mon TCG: Scarlet & Violet\u2014Prismatic Evolutions Super-...",
+            "source": "x.com",
+            "date": "Recent",
+            "desc": "TARGET DROP WATCH Pok\u00e9mon TCG: Scarlet & Violet\u2014Prismatic Evolutions Super-Premium Collection 19,000+ units currently showing loaded on the backend along with a few other items! Online drop expected in a couple hours. Availability and timing can - x.com",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5TcHhHTFlzbTBJX2NoUXFkaUl4MnFiLXZUSTJ5aGNZWW44M3dfdVhUMENhQW9haEpVeUZmY1pqTUxybDB6Rk0xeHktdWtOVjAtZ05qRXMteHk5enJHM1BoazRMaC14S0pFZFJF?oc=5",
+            "is_drop": "NO"
         }
     ]
 }
