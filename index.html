@@ -82,9 +82,10 @@
     <div class="dashboard-container">
         <main>
             <div class="filters">
-                <button class="filter-btn active" onclick="filterDrops('upcoming')">Upcoming Drops</button>
-                <button class="filter-btn" onclick="filterDrops('live')">Active Deals</button>
-                <button class="filter-btn" onclick="filterDrops('past')">Past Deals</button>
+                <button class="filter-btn active" onclick="filterDrops('all')">All Active Deals</button>
+                <button class="filter-btn" onclick="filterDrops('today')">Added Today</button>
+                <button class="filter-btn" onclick="filterDrops('week')">This Week</button>
+                <button class="filter-btn" onclick="filterDrops('past')">Expired / Past</button>
                 <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; margin-left: auto;">🔄 Sync Latest Data</button>
             </div>
             <div class="drop-grid" id="dropGrid"></div>
@@ -106,7 +107,7 @@
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 allDrops = data.drops;
-                renderDrops('upcoming'); // Default to showing active drops
+                renderDrops('all'); // Default to showing active drops
                 renderRumors(data.rumors);
             } catch (error) {
                 console.error("Error loading data:", error);
@@ -117,12 +118,69 @@
             const container = document.getElementById('dropGrid');
             container.innerHTML = '';
             
-            const filtered = allDrops.filter(d => d.status === filter);
+            const now = new Date();
+            
+            // Apply the Time and Status Filters
+            const filtered = allDrops.filter(d => {
+                const dropDate = new Date(d.date);
+                const hoursDiff = (now - dropDate) / (1000 * 60 * 60);
+                
+                if (filter === 'past') return d.status === 'past';
+                
+                // For all other filters, hide past drops
+                if (d.status === 'past') return false; 
+                
+                if (filter === 'today') return hoursDiff <= 24;
+                if (filter === 'week') return hoursDiff <= 168; // 24 * 7
+                
+                return true; // 'all' active deals
+            });
 
             if (filtered.length === 0) {
-                container.innerHTML = `<p style="color: #8b949e; grid-column: 1/-1; text-align:center;">No ${filter} drops found.</p>`;
+                container.innerHTML = `<p style="color: #8b949e; grid-column: 1/-1; text-align:center;">No drops found for this filter.</p>`;
                 return;
             }
+
+            filtered.forEach(drop => {
+                const isPast = drop.status === 'past';
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.style.opacity = isPast ? '0.7' : '1'; 
+
+                // Determine button label based on source
+                let btnLabel = drop.retailer.includes('r/') ? '💬 View Thread' : '📰 View Article';
+
+                let badgeHTML = isPast ? `<span class="badge badge-past">EXPIRED / OOS</span>` : `<span class="badge badge-live">ACTIVE DEAL</span>`;
+                
+                // Format the date for display
+                let displayDate = new Date(drop.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+
+                card.innerHTML = `
+                    <div class="card-img-container">
+                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.src='https://via.placeholder.com/200x150?text=No+Thumbnail'">
+                    </div>
+                    <div class="card-body">
+                        <div class="tags">
+                            ${badgeHTML}
+                            <span class="badge badge-domain">${drop.retailer}</span>
+                        </div>
+                        <h2 class="card-title">${drop.title}</h2>
+                        <div class="price">${drop.price}</div>
+                        <div class="countdown">Found: ${displayDate}</div>
+                        
+                        <details style="margin-top: 10px; font-size: 0.85rem; color: #8b949e;">
+                            <summary style="cursor: pointer; outline: none; margin-bottom: 5px; color: #f1c40f;">View Description & Links</summary>
+                            <div style="line-height: 1.4;">${drop.desc}</div>
+                        </details>
+                        
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 1rem;">
+                            <a href="${drop.source_link}" target="_blank" class="buy-btn" style="flex: 1; background: #3498db; color: white;">${btnLabel}</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
 
             filtered.forEach(drop => {
                 const isPast = drop.status === 'past';
