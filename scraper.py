@@ -82,10 +82,14 @@ def call_gemini(prompt):
             response = model.generate_content(prompt)
             
         clean_text = response.text.strip()
-        if clean_text.startswith("
-http://googleusercontent.com/immersive_entry_chip/0
-http://googleusercontent.com/immersive_entry_chip/1
-return json.loads(clean_text)
+        
+        # Clean up markdown code blocks if the model outputs them
+        if clean_text.startswith("```json"):
+            clean_text = clean_text[7:-3].strip()
+        elif clean_text.startswith("```"):
+            clean_text = clean_text[3:-3].strip()
+            
+        return json.loads(clean_text)
     except Exception as e:
         print(f"SDK Error with {AVAILABLE_MODEL}: {e}")
         return None
