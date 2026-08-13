@@ -11,13 +11,13 @@
             --accent-purple: #9b59b6; --accent-orange: #e67e22; --accent-red: #e74c3c;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
         body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1500px; margin: auto; }
         
-        /* YOUR CUSTOM POKEBALL HEADER */
+        /* POKEBALL HEADER */
         header { text-align: center; margin-bottom: 1.5rem; }
-        header h1 { font-size: 2.2rem; color: var(--accent-yellow); margin-bottom: 0.5rem; }
-        header p { color: #8b949e; }
+        header h1 { font-size: 2.2rem; color: var(--accent-yellow); margin-bottom: 0.2rem; }
+        header p { color: #8b949e; font-size: 0.9rem; }
         .pokeball {
             display: inline-block; width: 0.8em; height: 0.8em; border-radius: 50%;
             background: linear-gradient(to bottom, #e74c3c 45%, #161b22 45%, #161b22 55%, #f0f6fc 55%);
@@ -28,93 +28,108 @@
             width: 0.25em; height: 0.25em; background: #f0f6fc; border-radius: 50%; border: 0.08em solid #161b22;
         }
         
-        /* THE AI INTEL BRIEF BANNER */
+        /* AI INTEL BRIEF BANNER */
         .intel-banner {
             background: linear-gradient(135deg, #1f2937, #111827);
             border: 1px solid #3b82f6;
             border-radius: 10px;
-            padding: 1.5rem;
+            padding: 1.25rem 1.5rem;
             margin-bottom: 2rem;
             position: relative;
-            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
-        .intel-banner h2 { font-size: 1.2rem; color: #3b82f6; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 8px;}
-        .intel-text { color: #e5e7eb; font-size: 0.95rem; line-height: 1.6; white-space: pre-line; }
+        .intel-banner h2 { font-size: 1.1rem; color: #3b82f6; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 8px;}
+        .intel-text { color: #e5e7eb; font-size: 0.9rem; line-height: 1.5; }
+        .intel-text ul { margin-top: 6px; padding-left: 20px; list-style-type: disc; }
+        .intel-text li { margin-bottom: 6px; color: #d1d5db; }
+        .intel-text b { color: #f0f6fc; }
 
-        .dashboard-container { display: grid; grid-template-columns: 1fr 300px 300px; gap: 1.5rem; }
-        @media (max-width: 1200px) { .dashboard-container { grid-template-columns: 1fr 1fr; } }
+        .dashboard-container { display: grid; grid-template-columns: 1fr 320px 320px; gap: 1.5rem; }
+        @media (max-width: 1250px) { .dashboard-container { grid-template-columns: 1fr 1fr; } }
         @media (max-width: 900px) { .dashboard-container { grid-template-columns: 1fr; } }
 
-        .filters { display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+        .filters { display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center; }
         .filter-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; transition: 0.2s; font-size: 0.85rem; }
         .filter-btn.active, .filter-btn:hover { background: var(--accent-yellow); color: #000; font-weight: bold; }
         
-        /* COMPRESSED HORIZONTAL DROP CARDS (DESKTOP) */
+        .sync-container { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+        .last-sync { font-size: 0.75rem; color: #8b949e; font-family: monospace; }
+        
+        /* HORIZONTAL DROP CARDS */
         .drop-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
         .card { 
             background: var(--surface); border: 1px solid var(--border); border-radius: 8px; 
-            display: flex; flex-direction: row; overflow: hidden; transition: transform 0.2s; 
+            display: flex; flex-direction: row; overflow: hidden; transition: border-color 0.2s; 
         }
+        .card:hover { border-color: #484f58; }
         .card-img-container { 
             width: 120px; min-width: 120px; background: #0d1117; display: flex; 
             align-items: center; justify-content: center; padding: 10px; border-right: 1px solid var(--border); 
         }
         .card-img { max-width: 100%; max-height: 100px; object-fit: contain; border-radius: 4px; }
-        .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center;}
+        .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;}
         
-        .card-header-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;}
-        .card-title { font-size: 1rem; line-height: 1.3; font-weight: 600; flex: 1; margin-right: 15px;}
+        .card-header-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;}
+        .card-title { font-size: 0.95rem; line-height: 1.3; font-weight: 600; flex: 1; margin-right: 15px;}
         .countdown { font-family: monospace; font-size: 0.75rem; color: var(--accent-yellow); text-align: right; white-space: nowrap;}
         
-        .badge { font-size: 0.65rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; margin-right: 5px;}
+        .badge { font-size: 0.65rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; margin-right: 5px; display: inline-block;}
         .badge-domain { background: var(--border); color: #fff; }
         
-        .buy-btn { display: inline-block; margin-top: 10px; background: var(--accent-yellow); color: #000; padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.8rem; width: fit-content;}
+        .buy-btn { display: inline-block; margin-top: 8px; background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.35rem 0.7rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.75rem; width: fit-content; transition: 0.2s;}
+        .buy-btn:hover { background: var(--border); }
         
         /* SIDEBAR RADARS */
         .radar-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; height: fit-content; }
         .radar-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; margin-bottom: 1rem; }
-        .radar-title { font-size: 1.1rem; color: #3498db; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;}
+        .radar-title { font-size: 1rem; color: #3498db; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;}
         
         .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 6px; padding: 0.8rem; margin-bottom: 0.8rem; }
         .news-source { font-size: 0.65rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.4rem; text-transform: uppercase; }
-        .news-title { font-size: 0.85rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.5rem; }
-        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.5; border-top: 1px dashed var(--border); padding-top: 6px; }
+        .news-title { font-size: 0.85rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.4rem; }
+        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 6px; margin-top: 4px; }
         .drop-alert { color: var(--accent-green); font-weight: bold; font-size: 0.65rem; display: inline-block; margin-bottom: 4px; }
 
-        /* 📱 MOBILE FIX: Flips cards back to vertical when screen is small */
+        /* MOBILE FIX */
         @media (max-width: 768px) {
             body { padding: 1rem; }
             .card { flex-direction: column; }
             .card-img-container { 
-                width: 100%; height: 160px; border-right: none; 
+                width: 100%; height: 140px; border-right: none; 
                 border-bottom: 1px solid var(--border); padding: 15px;
             }
-            .card-img { max-height: 140px; }
-            .card-header-row { flex-direction: column; margin-bottom: 12px; }
-            .card-title { margin-right: 0; margin-bottom: 8px; }
+            .card-img { max-height: 120px; }
+            .card-header-row { flex-direction: column; margin-bottom: 8px; }
+            .card-title { margin-right: 0; margin-bottom: 6px; }
             .countdown { text-align: left; }
-            .intel-banner { padding: 1.2rem; }
+            .intel-banner { padding: 1rem; }
+            .sync-container { margin-left: 0; width: 100%; justify-content: space-between; margin-top: 10px; }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
-        <p>DropDrop?</p>
+        <p>Pokémon TCG Drop & Restock Intelligence</p>
     </header>
 
     <div class="intel-banner" id="intelBanner">
-        <h2>Intel Brief</h2>
+        <h2>⚡ Market Intel Brief & Schedule</h2>
         <div class="intel-text" id="intelText">Warming up market radar...</div>
     </div>
 
     <div class="dashboard-container">
         <main>
             <div class="filters">
-                <button class="filter-btn active" onclick="filterDrops('all')">All Deals</button>
-                <button class="filter-btn" onclick="filterDrops('today')">Added Today</button>
-                <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; margin-left: auto;">🔄 Sync Latest Data</button>
+                <button class="filter-btn active" id="btn-all" onclick="filterDrops('all')">All Intel</button>
+                <button class="filter-btn" id="btn-online" onclick="filterDrops('ONLINE')">🌐 Online Drops</button>
+                <button class="filter-btn" id="btn-in-store" onclick="filterDrops('IN-STORE')">🏪 In-Store</button>
+                <button class="filter-btn" id="btn-unknown" onclick="filterDrops('UNKNOWN')">💬 Discussions</button>
+                
+                <div class="sync-container">
+                    <span class="last-sync" id="lastSyncTime">Checking for updates...</span>
+                    <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; border-color: var(--accent-blue);">🔄 Sync Latest</button>
+                </div>
             </div>
             <div class="drop-grid" id="dropGrid"></div>
         </main>
@@ -142,35 +157,55 @@
                 const response = await fetch('data.json?v=' + new Date().getTime());
                 const data = await response.json();
                 
-                // Load Intel Brief
-                if(data.intel_brief) {
-                    document.getElementById('intelText').innerText = data.intel_brief;
+                // Update Last Sync Time
+                const now = new Date();
+                document.getElementById('lastSyncTime').innerText = "Last updated: " + now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'});
+
+                // Render Intel Brief HTML
+                if (data.intel_brief) {
+                    document.getElementById('intelText').innerHTML = data.intel_brief;
                 }
 
                 allDrops = data.drops || [];
-                renderDrops('all'); 
+                
+                // Keep current filter active during refresh, default to 'all'
+                const activeFilterBtn = document.querySelector('.filters .filter-btn.active');
+                let currentFilter = 'all';
+                if(activeFilterBtn && activeFilterBtn.id.replace('btn-', '') !== 'all') {
+                    currentFilter = activeFilterBtn.id.replace('btn-', '').toUpperCase();
+                }
+                
+                renderDrops(currentFilter); 
                 renderNews(data.articles || [], 'newsFeed');
                 renderNews(data.tweets || [], 'xFeed');
             } catch (error) {
                 console.error("Error loading data:", error);
                 document.getElementById('dropGrid').innerHTML = `<p style="color: #e74c3c;">Error loading data.json.</p>`;
+                document.getElementById('lastSyncTime').innerText = "Sync failed.";
             }
+        }
+
+        function filterDrops(filter) {
+            // Update active button state
+            document.querySelectorAll('.filters .filter-btn').forEach(btn => {
+                if (btn.id === 'btn-' + filter.toLowerCase()) btn.classList.add('active');
+                else if (btn.id && btn.id.startsWith('btn-')) btn.classList.remove('active');
+            });
+            renderDrops(filter);
         }
 
         function renderDrops(filter) {
             const container = document.getElementById('dropGrid');
             container.innerHTML = '';
-            const now = new Date();
             
+            // Filter the drops based on the AI 'type' attribute
             const filtered = allDrops.filter(d => {
-                const dropDate = new Date(d.date || now);
-                const hoursDiff = isNaN(dropDate) ? 0 : (now - dropDate) / (1000 * 60 * 60);
-                if (filter === 'today') return hoursDiff <= 24;
-                return true; 
+                if (filter === 'all' || filter === 'ALL') return true;
+                return d.type === filter;
             });
 
             if (filtered.length === 0) {
-                container.innerHTML = `<p style="color: #8b949e;">No drops found for this filter.</p>`;
+                container.innerHTML = `<p style="color: #8b949e; padding: 1rem;">No drops found for this category.</p>`;
                 return;
             }
 
@@ -181,30 +216,37 @@
                 let typeBadgeHTML = '';
                 if (drop.type === 'ONLINE') typeBadgeHTML = `<span class="badge" style="background: var(--accent-blue); color: white;">🌐 ONLINE</span>`;
                 else if (drop.type === 'IN-STORE') typeBadgeHTML = `<span class="badge" style="background: var(--accent-orange); color: white;">🏪 IN-STORE</span>`;
+                else typeBadgeHTML = `<span class="badge" style="background: var(--border); color: white;">💬 INFO</span>`;
                 
                 let displayDate = "Recent";
                 try {
-                    const localDate = new Date(drop.date || now);
+                    const localDate = new Date(drop.date);
                     if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { weekday: 'short', hour: '2-digit', minute:'2-digit' });
                 } catch(e) {}
 
                 card.innerHTML = `
                     <div class="card-img-container">
-                        <img src="${drop.image}" alt="Img" class="card-img" onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=reddit.com&sz=256';">
+                        <img src="${drop.image}" alt="Retailer Image" class="card-img" onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=reddit.com&sz=256';">
                     </div>
                     <div class="card-body">
-                        <div class="card-header-row">
-                            <h2 class="card-title">${drop.title}</h2>
-                            <div class="countdown">🕒 ${displayDate}</div>
+                        <div>
+                            <div class="card-header-row">
+                                <h2 class="card-title">${drop.title}</h2>
+                                <div class="countdown">🕒 ${displayDate}</div>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                ${typeBadgeHTML}
+                                <span class="badge badge-domain">${drop.retailer || 'Store'}</span>
+                            </div>
+                            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+                                ${drop.desc || 'No description available.'}
+                            </div>
                         </div>
-                        <div style="margin-bottom: 6px;">
-                            ${typeBadgeHTML}
-                            <span class="badge badge-domain">${drop.retailer || 'Store'}</span>
+                        <div>
+                            <a href="${drop.source_link || '#'}" target="_blank" class="buy-btn">
+                                ${drop.source_link && drop.source_link.includes('reddit.com') ? '💬 Reddit Discussion' : '🔗 View Source'}
+                            </a>
                         </div>
-                        <div style="font-size: 0.85rem; color: #8b949e; line-height: 1.4;">
-                            ${drop.desc || 'No description available.'}
-                        </div>
-                        <a href="${drop.source_link || '#'}" target="_blank" class="buy-btn">💬 Source</a>
                     </div>
                 `;
                 container.appendChild(card);
@@ -213,7 +255,7 @@
 
         function renderNews(feedData, containerId) {
             const container = document.getElementById(containerId);
-            if(!container) return; 
+            if (!container) return; 
             if (feedData.length === 0) {
                 container.innerHTML = `<p style="color:#8b949e; font-size: 0.85rem;">No recent alerts found.</p>`;
                 return;
