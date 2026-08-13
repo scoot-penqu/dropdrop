@@ -26,8 +26,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          # We added the official Google AI SDK here!
-          pip install requests google-generativeai
+          pip install -U requests google-generativeai
 
       - name: Run Scraper Script
         run: python scraper.py
