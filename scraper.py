@@ -1,8 +1,11 @@
 import json
 import urllib.request
 import re
+import os
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
+
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 RETAILER_LOGOS = {
     'Target': 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Target_Corporation_logo_%28vector%29.svg',
@@ -17,8 +20,57 @@ RETAILER_LOGOS = {
 }
 
 RETAILERS = [k.lower() for k in RETAILER_LOGOS.keys() if k != 'Reddit']
-BANNED_WORDS = ['single', 'psa', 'cgc', 'slab', 'grading', 'card only', 'code', 'pulls', 'mail day']
 SUBREDDITS = ['PKMNTCGDeals', 'PokemonTCGRestocks', 'PokeInvesting']
+
+def evaluate_and_summarize_with_ai(title, content):
+    """
+    Asks Gemini to evaluate if a post is a real product drop. 
+    If NO -> Returns 'INVALID'
+    If YES -> Returns a clean 1-2 sentence summary.
+    """
+    if not GEMINI_API_KEY:
+        # Fallback if no API key is present
+        return "Valid", f"Deal post: {title}"
+        
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
+    
+    prompt = f"""
+    Analyze this Pokémon TCG Reddit post.
+    Title: "{title}"
+    Content: "{content[:1000]}"
+
+    Task 1: Is this post an announcement of an active product drop, preorder, restock, or price drop for sealed Pokémon TCG products at a major retailer (Target, Walmart, Amazon, Pokémon Center, Best Buy, GameStop, Sam's Club, Costco)? 
+    If it is a general question, discussion, meme, collection showcase, card pull, or off-topic, reply with EXACTLY the word: INVALID.
+    
+    Task 2: If it IS a valid drop/restock, write a punchy 1-sentence summary of the product and store. Do not use markdown asterisk formatting.
+
+    Format your exact response like this:
+    [STATUS]: VALID or INVALID
+    [SUMMARY]: Your 1 sentence summary here (if valid, otherwise leave blank)
+    """
+    
+    data = json.dumps({"contents": [{"parts":[{"text": prompt}]}]}).encode('utf-8')
+    req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
+    
+    try:
+        with urllib.request.urlopen(req) as response:
+            res_json = json.loads(response.read().decode())
+            ai_text = res_json['candidates'][0]['content']['parts'][0]['text'].strip()
+            
+            # Parse AI response
+            is_valid = "INVALID" not in ai_text.upper()
+            summary = ""
+            for line in ai_text.split('\n'):
+                if "[SUMMARY]:" in line:
+                    summary = line.replace("[SUMMARY]:", "").strip()
+            
+            if not summary and is_valid:
+                summary = title
+                
+            return is_valid, summary
+    except Exception as e:
+        print(f"AI Evaluation Error: {e}")
+        return True, title # Fallback to letting it pass if API glitches
 
 def fetch_rss_proxy(url):
     proxy_url = f"https://api.rss2json.com/v1/api.json?rss_url={url}"
@@ -41,13 +93,16 @@ def build_drops():
         items = fetch_rss_proxy(f'https://www.reddit.com/r/{sub}/new.rss')
         for post in items:
             title = post.get('title', '')
-            title_lower = title.lower()
             content_raw = post.get('content', '')
             source_link = post.get('link', '') 
             
-            # Skip obvious non-deals or questions
-            if '?' in title or any(w in title_lower for w in BANNED_WORDS): 
-                continue
+            # --- AI GATEKEEPER CHECK ---
+            clean_text_for_ai = re.sub('<[^<]+?>', ' ', content_raw).strip()
+            is_valid_drop, ai_summary = evaluate_and_summarize_with_ai(title, clean_text_for_ai)
+            
+            if not is_valid_drop:
+                print(f"Filtered out by AI: {title}")
+                continue # Trash the post, it's just noise/discussion!
                 
             extracted_image = None
             extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc;'>🔗 Verified Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
@@ -55,12 +110,10 @@ def build_drops():
             link_count = 0
             detected_retailer = "Reddit"
             
-            # Extract image if present in post
             img_match = re.search(r'<img[^>]+src=["\'](http[^"\']+(?:jpg|png|jpeg|gif)[^"\']*)["\']', content_raw, re.IGNORECASE)
             if img_match: 
                 extracted_image = img_match.group(1)
 
-            # Find external store links
             for match in re.finditer(r'<a[^>]+href=["\'](http[^"\']+)["\'][^>]*>(.*?)</a>', content_raw, re.IGNORECASE):
                 url = match.group(1)
                 link_text = re.sub(r'<[^>]+>', '', match.group(2)).strip()
@@ -77,19 +130,14 @@ def build_drops():
                     link_count += 1
                 
             extracted_links_html += "</ul></div>"
-            
             if link_count == 0:
                 extracted_links_html = ""
-                title_has_retailer = next((r.capitalize() for r in RETAILERS if r in title_lower), None)
-                if title_has_retailer:
-                    detected_retailer = title_has_retailer
-                else:
-                    detected_retailer = f"r/{sub}"
+                title_has_retailer = next((r.capitalize() for r in RETAILERS if r in title.lower()), None)
+                if title_has_retailer: detected_retailer = title_has_retailer
 
-            clean_desc = re.sub('<[^<]+?>', ' ', content_raw)[:200] + "..."
-            final_desc = clean_desc + extracted_links_html
+            final_desc = f"{ai_summary}{extracted_links_html}"
 
-            is_past = any(term in title_lower or term in content_raw.lower() for term in ['expired', 'out of stock', 'sold out', 'oos', 'dead'])
+            is_past = any(term in title.lower() or term in content_raw.lower() for term in ['expired', 'out of stock', 'sold out', 'oos', 'dead'])
             
             try:
                 raw_date = post.get('pubDate', '')[:25].strip()
@@ -100,8 +148,6 @@ def build_drops():
             
             found_price = extract_price(title)
             price_text = f"${found_price:.2f}" if found_price else "Check Retailer Link"
-            
-            # Smart image selector: use extracted image or fallback to clean retailer logo
             product_image = extracted_image if extracted_image else RETAILER_LOGOS.get(detected_retailer, RETAILER_LOGOS['Reddit'])
 
             drops.append({
@@ -115,17 +161,16 @@ def build_drops():
                 "desc": final_desc
             })
 
-    # Fail-safe placeholder if feeds are quiet
     if not drops:
         drops.append({
-            "title": "System Radar Active: Waiting for next live drop...",
+            "title": "System Radar Active: Waiting for next verified drop...",
             "price": "N/A",
-            "retailer": "DropDrop System",
+            "retailer": "DropDrop AI",
             "date": datetime.now(timezone.utc).isoformat(),
             "status": "live",
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
             "source_link": "https://reddit.com/r/PKMNTCGDeals",
-            "desc": "The dynamic discovery engine is running successfully. New deals will populate here automatically when posted."
+            "desc": "The AI bouncer is actively filtering out discussions and noise. Verified drops will appear here."
         })
 
     drops.sort(key=lambda x: x['date'], reverse=True)
@@ -161,4 +206,4 @@ def build_news():
 
 output_data = {"drops": build_drops(), "news": build_news()}
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("Pure dynamic scraper JSON successfully generated!")
+print("AI-Filtered JSON successfully generated!")
