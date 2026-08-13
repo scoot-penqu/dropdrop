@@ -105,7 +105,6 @@
             const now = new Date();
             
             const filtered = allDrops.filter(d => {
-                // Safely parse date, default to now if missing/corrupt
                 const dropDate = new Date(d.date || now);
                 const hoursDiff = isNaN(dropDate) ? 0 : (now - dropDate) / (1000 * 60 * 60);
                 
@@ -115,7 +114,7 @@
                 if (filter === 'today') return hoursDiff <= 24;
                 if (filter === 'week') return hoursDiff <= 168; 
                 
-                return true; // 'all' active deals
+                return true; 
             });
 
             if (filtered.length === 0) {
@@ -142,7 +141,7 @@
 
                 card.innerHTML = `
                     <div class="card-img-container">
-                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.src='https://via.placeholder.com/200x150?text=No+Thumbnail'">
+                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg';">
                     </div>
                     <div class="card-body">
                         <div class="tags">
@@ -172,9 +171,9 @@
             if(!container) return; 
             container.innerHTML = news.map(n => `
                 <div class="news-card">
-                    <<div class="news-source">
+                    <div class="news-source">
                         <span>${n.source}</span>
-                        <span>${new Date(n.date).toLocaleDateString(undefined, {month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit'})}</span>
+                        <span>${n.date}</span>
                     </div>
                     <a href="${n.link}" target="_blank" style="text-decoration:none;">
                         <div class="news-title">${n.title}</div>
