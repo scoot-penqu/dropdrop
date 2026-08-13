@@ -4,27 +4,35 @@ import re
 from datetime import datetime
 import xml.etree.ElementTree as ET
 
-# Trusted retailers
-RETAILERS = ['pokemoncenter', 'target', 'walmart', 'amazon', 'gamestop', 'samsclub', 'costco', 'bestbuy']
+# Trusted retailers and their official logos for fallbacks
+RETAILER_LOGOS = {
+    'Target': 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Target_Corporation_logo_%28vector%29.svg',
+    'Walmart': 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg',
+    'Amazon': 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
+    'Pokemoncenter': 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pok%C3%A9mon_Center_logo.svg/512px-Pok%C3%A9mon_Center_logo.svg.png',
+    'Gamestop': 'https://upload.wikimedia.org/wikipedia/commons/0/05/GameStop_Logo.svg',
+    'Bestbuy': 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Best_Buy_logo.svg',
+    'Reddit': 'https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg'
+}
+
+RETAILERS = [k.lower() for k in RETAILER_LOGOS.keys() if k != 'Reddit']
 BANNED_WORDS = ['single', 'psa', 'cgc', 'slab', 'grading', 'card only', 'code']
 
-# Subreddits to monitor
 SUBREDDITS = ['PKMNTCGDeals', 'PokemonTCGRestocks', 'PokeInvesting', 'PokemonTCG']
 
-# Hybrid Database for Official Product Matching
 KNOWN_PRODUCTS = [
     {
         "keywords": ["ascended heroes", "mega evolution tin"],
         "title": "Mega Evolution—Ascended Heroes Tin",
         "msrp": 21.99,
-        "image": "ascended_tin.jpg", # Assuming you uploaded this to github
+        "image": "ascended_tin.jpg", 
         "date": "2026-08-28T00:00:00"
     },
     {
         "keywords": ["30th anniversary", "celebration etb"],
         "title": "30th Anniversary Celebration ETB",
         "msrp": 49.99,
-        "image": "30th_etb.png", # Assuming you uploaded this to github
+        "image": "30th_etb.png",
         "date": "2026-09-16T10:00:00"
     }
 ]
@@ -40,159 +48,167 @@ def fetch_rss_proxy(url):
         print(f"Error fetching proxy RSS: {e}")
         return []
 
-def fetch_google_news():
-    """Fetches real-time articles and social indexings from Google News."""
-    # Searches Google for TCG restocks from the past 7 days
-    url = "https://news.google.com/rss/search?q=Pokemon+TCG+(restock+OR+preorder+OR+drop)+when:7d"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    articles = []
-    try:
-        with urllib.request.urlopen(req) as response:
-            root = ET.fromstring(response.read())
-            for item in root.findall('./channel/item')[:10]: # Top 10 results
-                articles.append({
-                    'title': item.find('title').text,
-                    'link': item.find('link').text,
-                    'pubDate': item.find('pubDate').text,
-                    'content': item.find('description').text or '',
-                    'source': item.find('source').text if item.find('source') is not None else 'Web Article'
-                })
-    except Exception as e:
-        print(f"Error fetching Google News: {e}")
-    return articles
-
 def extract_price(text):
     match = re.search(r'\$(\d+\.\d{2})', text)
     return float(match.group(1)) if match else None
 
-def process_items(items, source_label, drops_list):
-    """Core logic to extract links, descriptions, and MSRPs from any feed."""
-    for post in items:
-        title = post.get('title', '')
-        title_lower = title.lower()
-        content_raw = post.get('content', '')
-        source_link = post.get('link', '') 
-        
-        if any(w in title_lower for w in BANNED_WORDS):
-            continue
-            
-        # MULTI-LINK EXTRACTOR
-        extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'>"
-        extracted_links_html += f"<strong style='color:#f0f6fc;'>🔗 Extracted Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
-        
-        link_count = 0
-        detected_retailer = source_label
-        
-        for match in re.finditer(r'<a[^>]+href=["\'](http[^"\']+)["\'][^>]*>(.*?)</a>', content_raw, re.IGNORECASE):
-            url = match.group(1)
-            link_text = re.sub(r'<[^>]+>', '', match.group(2)).strip()
-            
-            if "reddit.com" in url or "google.com" in url:
-                continue
-                
-            for r in RETAILERS:
-                if r in url.lower():
-                    detected_retailer = r.capitalize()
-                    
-            if not link_text or link_text.lower() == '[link]':
-                link_text = url.split('?')[0][:45] + "..."
-                
-            extracted_links_html += f"<li style='margin-bottom: 6px;'><a href='{url}' target='_blank' style='color: #3498db; text-decoration: none;'>{link_text}</a></li>"
-            link_count += 1
-            
-        extracted_links_html += "</ul></div>"
-        
-        if link_count == 0:
-            extracted_links_html = ""
-            # Try to guess retailer from title if no links exist
-            for r in RETAILERS:
-                if r in title_lower:
-                    detected_retailer = r.capitalize()
-            
-        clean_desc = re.sub('<[^<]+?>', ' ', content_raw)[:150] + "..."
-        final_desc = clean_desc + extracted_links_html
-
-        is_past = any(term in title_lower or term in content_raw.lower() for term in ['expired', 'out of stock', 'sold out', 'oos', 'dead'])
-        
-        # Use ISO formatting for easier date filtering in javascript
-        try:
-            # Try to parse standard RSS date
-            date_obj = datetime.strptime(post.get('pubDate', '')[:25].strip(), "%a, %d %b %Y %H:%M:%S")
-            date_str = date_obj.isoformat()
-        except:
-            date_str = datetime.now().isoformat()
-        
-        product_image = "https://via.placeholder.com/300x180?text=Sealed+Product"
-        price_text = "Check Link for Price"
-        found_price = extract_price(title)
-        
-        for prod in KNOWN_PRODUCTS:
-            if any(kw in title_lower for kw in prod["keywords"]):
-                product_image = prod["image"]
-                if found_price:
-                    diff = found_price - prod["msrp"]
-                    if diff < -0.01:
-                        price_text = f"${found_price:.2f} (📉 ${abs(diff):.2f} UNDER MSRP)"
-                    elif diff > 0.01:
-                        price_text = f"${found_price:.2f} (📈 ${diff:.2f} OVER MSRP)"
-                    else:
-                        price_text = f"${found_price:.2f} (MSRP)"
-                else:
-                    price_text = f"MSRP: ${prod['msrp']:.2f}"
-                break
-        
-        if price_text == "Check Link for Price" and found_price:
-            price_text = f"${found_price:.2f}"
-
-        drops_list.append({
-            "title": title[:70] + "..." if len(title) > 70 else title,
-            "price": price_text,
-            "retailer": detected_retailer,
-            "date": date_str,
-            "status": "past" if is_past else "live",
-            "image": product_image,
-            "source_link": source_link, 
-            "desc": final_desc
-        })
-
 def build_drops():
+    """Scrapes Reddit for deals, extracts images, and cleans links."""
     drops = []
     
-    # 1. Scan Multiple Subreddits
     for sub in SUBREDDITS:
         items = fetch_rss_proxy(f'https://www.reddit.com/r/{sub}/new.rss')
-        process_items(items, f"r/{sub}", drops)
         
-    # 2. Scan Google News (Web Articles / Indexed Socials)
-    news_items = fetch_google_news()
-    process_items(news_items, "Web Article", drops)
-    
-    # Sort drops by newest first based on the ISO date we generated
+        for post in items:
+            title = post.get('title', '')
+            title_lower = title.lower()
+            content_raw = post.get('content', '')
+            source_link = post.get('link', '') 
+            
+            if any(w in title_lower for w in BANNED_WORDS):
+                continue
+                
+            extracted_image = None
+            extracted_links_html = "<div style='margin-top: 12px; padding-top: 10px; border-top: 1px solid #30363d;'>"
+            extracted_links_html += f"<strong style='color:#f0f6fc;'>🔗 Extracted Store Links:</strong><ul style='margin-top: 6px; padding-left: 18px;'>"
+            
+            link_count = 0
+            detected_retailer = "Reddit"
+            
+            # 1. Look for embedded images first
+            img_match = re.search(r'<img[^>]+src=["\'](http[^"\']+(?:jpg|png|jpeg|gif)[^"\']*)["\']', content_raw, re.IGNORECASE)
+            if img_match:
+                extracted_image = img_match.group(1)
+
+            # 2. Extract and sort links
+            for match in re.finditer(r'<a[^>]+href=["\'](http[^"\']+)["\'][^>]*>(.*?)</a>', content_raw, re.IGNORECASE):
+                url = match.group(1)
+                link_text = re.sub(r'<[^>]+>', '', match.group(2)).strip()
+                
+                # Check if the link is actually just an image file
+                if any(ext in url.lower() for ext in ['.jpg', '.png', '.jpeg', 'i.redd.it', 'imgur.com']):
+                    if not extracted_image:
+                        extracted_image = url
+                    continue # Do not list this as a store link
+                
+                # Skip self-referencing reddit links
+                if "reddit.com" in url or "google.com" in url:
+                    continue
+                    
+                # Identify Retailer
+                for r in RETAILERS:
+                    if r in url.lower():
+                        detected_retailer = r.capitalize()
+                        
+                if not link_text or link_text.lower() == '[link]':
+                    link_text = url.split('?')[0][:45] + "..."
+                    
+                extracted_links_html += f"<li style='margin-bottom: 6px;'><a href='{url}' target='_blank' style='color: #3498db; text-decoration: none;'>{link_text}</a></li>"
+                link_count += 1
+                
+            extracted_links_html += "</ul></div>"
+            
+            if link_count == 0:
+                extracted_links_html = ""
+                for r in RETAILERS:
+                    if r in title_lower:
+                        detected_retailer = r.capitalize()
+                
+            clean_desc = re.sub('<[^<]+?>', ' ', content_raw)[:150] + "..."
+            final_desc = clean_desc + extracted_links_html
+
+            is_past = any(term in title_lower or term in content_raw.lower() for term in ['expired', 'out of stock', 'sold out', 'oos', 'dead'])
+            
+            try:
+                date_obj = datetime.strptime(post.get('pubDate', '')[:25].strip(), "%a, %d %b %Y %H:%M:%S")
+                date_str = date_obj.isoformat()
+            except:
+                date_str = datetime.now().isoformat()
+            
+            # --- IMAGE SELECTION ENGINE ---
+            product_image = None
+            price_text = "Check Link for Price"
+            found_price = extract_price(title)
+            
+            # 1. Check Known Database
+            for prod in KNOWN_PRODUCTS:
+                if any(kw in title_lower for kw in prod["keywords"]):
+                    product_image = prod["image"]
+                    if found_price:
+                        diff = found_price - prod["msrp"]
+                        if diff < -0.01:
+                            price_text = f"${found_price:.2f} (📉 ${abs(diff):.2f} UNDER MSRP)"
+                        elif diff > 0.01:
+                            price_text = f"${found_price:.2f} (📈 ${diff:.2f} OVER MSRP)"
+                        else:
+                            price_text = f"${found_price:.2f} (MSRP)"
+                    else:
+                        price_text = f"MSRP: ${prod['msrp']:.2f}"
+                    break
+            
+            # 2. Use extracted Reddit image or Fallback to Retailer Logo
+            if not product_image:
+                product_image = extracted_image if extracted_image else RETAILER_LOGOS.get(detected_retailer, RETAILER_LOGOS['Reddit'])
+            
+            if price_text == "Check Link for Price" and found_price:
+                price_text = f"${found_price:.2f}"
+
+            drops.append({
+                "title": title[:70] + "..." if len(title) > 70 else title,
+                "price": price_text,
+                "retailer": f"r/{sub}" if detected_retailer == "Reddit" else detected_retailer,
+                "date": date_str,
+                "status": "past" if is_past else "live",
+                "image": product_image,
+                "source_link": source_link, 
+                "desc": final_desc
+            })
+
     drops.sort(key=lambda x: x['date'], reverse=True)
     return drops
 
-def build_rumors():
-    rumors = []
-    items = fetch_rss_proxy('https://www.pokebeach.com/feed')
-    for post in items[:6]:
-        rumors.append({
-            "title": post.get('title', '')[:65] + "...",
-            "source": "PokéBeach",
-            "date": "Recent",
-            "desc": "Official TCG news and leaks.",
-            "link": post.get('link', '#'),
-            "confidence": "⚡ TCG News"
-        })
-    if not rumors:
-        rumors.append({"title": "No recent TCG news detected", "source": "System", "date": "Today", "desc": "Radar active.", "link": "#", "confidence": "-"})
-    return rumors
+def build_news():
+    """Scrapes Google News, explicitly filtering out 'Pocket'."""
+    news_list = []
+    url = "https://news.google.com/rss/search?q=Pokemon+TCG+(restock+OR+preorder+OR+drop)+when:7d"
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    
+    try:
+        with urllib.request.urlopen(req) as response:
+            root = ET.fromstring(response.read())
+            for item in root.findall('./channel/item'):
+                title = item.find('title').text
+                desc = item.find('description').text or ''
+                
+                # Filter out the mobile game
+                if 'pocket' in title.lower() or 'pocket' in desc.lower():
+                    continue
+                    
+                news_list.append({
+                    "title": title[:75] + "...",
+                    "source": item.find('source').text if item.find('source') is not None else 'Web Article',
+                    "date": item.find('pubDate').text[:16], # Keep it short
+                    "desc": "Recent Web Article",
+                    "link": item.find('link').text,
+                    "confidence": "📰 News"
+                })
+                
+                if len(news_list) >= 6: # Cap at 6 articles
+                    break
+    except Exception as e:
+        print(f"Error fetching Google News: {e}")
+        
+    if not news_list:
+        news_list.append({"title": "No recent TCG news detected", "source": "System", "date": "Today", "desc": "Radar active.", "link": "#", "confidence": "-"})
+        
+    return news_list
 
 # Generate the JSON
 output_data = {
     "drops": build_drops(),
-    "rumors": build_rumors()
+    "news": build_news() # Renamed from rumors to news
 }
 
 with open('data.json', 'w') as f:
     json.dump(output_data, f, indent=4)
-print("Multi-Source JSON successfully generated!")
+print("Smart Link & Image JSON successfully generated!")
