@@ -45,7 +45,7 @@ def build_drops():
             content_raw = post.get('content', '')
             source_link = post.get('link', '') 
             
-            # Skip obvious non-deals
+            # Skip obvious non-deals or questions
             if '?' in title or any(w in title_lower for w in BANNED_WORDS): 
                 continue
                 
@@ -55,7 +55,7 @@ def build_drops():
             link_count = 0
             detected_retailer = "Reddit"
             
-            # Extract image if present
+            # Extract image if present in post
             img_match = re.search(r'<img[^>]+src=["\'](http[^"\']+(?:jpg|png|jpeg|gif)[^"\']*)["\']', content_raw, re.IGNORECASE)
             if img_match: 
                 extracted_image = img_match.group(1)
@@ -84,7 +84,6 @@ def build_drops():
                 if title_has_retailer:
                     detected_retailer = title_has_retailer
                 else:
-                    # Allow general community deal posts if they don't have specific links
                     detected_retailer = f"r/{sub}"
 
             clean_desc = re.sub('<[^<]+?>', ' ', content_raw)[:200] + "..."
@@ -92,7 +91,6 @@ def build_drops():
 
             is_past = any(term in title_lower or term in content_raw.lower() for term in ['expired', 'out of stock', 'sold out', 'oos', 'dead'])
             
-            # Format timestamp safely
             try:
                 raw_date = post.get('pubDate', '')[:25].strip()
                 date_obj = datetime.strptime(raw_date, "%Y-%m-%d %H:%M:%S")
@@ -102,6 +100,8 @@ def build_drops():
             
             found_price = extract_price(title)
             price_text = f"${found_price:.2f}" if found_price else "Check Retailer Link"
+            
+            # Smart image selector: use extracted image or fallback to clean retailer logo
             product_image = extracted_image if extracted_image else RETAILER_LOGOS.get(detected_retailer, RETAILER_LOGOS['Reddit'])
 
             drops.append({
@@ -115,8 +115,7 @@ def build_drops():
                 "desc": final_desc
             })
 
-    # --- FAIL-SAFE FALLBACK ---
-    # If Reddit returns nothing, inject a placeholder card so the screen is never blank
+    # Fail-safe placeholder if feeds are quiet
     if not drops:
         drops.append({
             "title": "System Radar Active: Waiting for next live drop...",
@@ -126,7 +125,7 @@ def build_drops():
             "status": "live",
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg",
             "source_link": "https://reddit.com/r/PKMNTCGDeals",
-            "desc": "The scraper is running successfully on GitHub Actions. New deals from Target, Walmart, and Amazon will populate here automatically when posted."
+            "desc": "The dynamic discovery engine is running successfully. New deals will populate here automatically when posted."
         })
 
     drops.sort(key=lambda x: x['date'], reverse=True)
@@ -162,4 +161,4 @@ def build_news():
 
 output_data = {"drops": build_drops(), "news": build_news()}
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("JSON successfully generated with fail-safe!")
+print("Pure dynamic scraper JSON successfully generated!")
