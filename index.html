@@ -17,7 +17,6 @@
         header h1 { font-size: 2.2rem; color: var(--accent-yellow); margin-bottom: 0.5rem; }
         header p { color: #8b949e; }
         
-        /* 3-COLUMN GRID SYSTEM */
         .dashboard-container { display: grid; grid-template-columns: 1fr 280px 280px; gap: 1.5rem; }
         @media (max-width: 1100px) { .dashboard-container { grid-template-columns: 1fr; } }
         
@@ -56,14 +55,7 @@
         .news-card { background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 0.8rem; margin-bottom: 0.8rem; position: relative; overflow: hidden; }
         .news-source { font-size: 0.7rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.4rem; text-transform: uppercase; }
         .news-title { font-size: 0.9rem; font-weight: bold; color: #f0f6fc; line-height: 1.3; margin-bottom: 0.5rem; }
-        /* Update news-desc class in your <style> tag */
-.news-desc {
-    color: var(--text-muted, #a0aec0);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-top: 8px;
-    white-space: pre-line; /* Allows line breaks from AI summaries to display naturally */
-}
+        .news-desc { font-size: 0.8rem; color: #a8b2bd; line-height: 1.4; border-top: 1px dashed var(--border); padding-top: 5px; }
         .drop-alert { color: var(--accent-green); font-weight: bold; font-size: 0.7rem; display: inline-block; margin-bottom: 5px; }
     </style>
 </head>
@@ -151,9 +143,10 @@
                     if (!isNaN(localDate)) displayDate = localDate.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit' });
                 } catch(e) {}
 
+                // Safely injecting the new Google Favicon fallback instead of Wikipedia
                 card.innerHTML = `
                     <div class="card-img-container">
-                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/3/36/Reddit_logo.svg';">
+                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=reddit.com&sz=256';">
                     </div>
                     <div class="card-body">
                         <div class="tags">
@@ -187,7 +180,6 @@
                 return;
             }
 
-            // Force sort by Exact Date, newest on top!
             feedData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
             container.innerHTML = feedData.map(n => {
