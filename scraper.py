@@ -3,12 +3,12 @@ import urllib.request
 import urllib.parse
 import re
 import os
+import time
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# --- BULLETPROOF GOOGLE LOGO SERVERS ---
 RETAILER_LOGOS = {
     'Target': 'https://www.google.com/s2/favicons?domain=target.com&sz=256',
     'Walmart': 'https://www.google.com/s2/favicons?domain=walmart.com&sz=256',
@@ -45,7 +45,6 @@ def is_spam(title, content, link):
     return False
 
 def call_gemini(prompt):
-    """Helper function to call Gemini API and return the JSON object."""
     if not GEMINI_API_KEY: return None
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     data = json.dumps({
@@ -89,7 +88,6 @@ def evaluate_drop_with_ai(title, content, comments_text):
     return True, "UNKNOWN", title, ""
 
 def evaluate_news_with_ai(title, content):
-    """Forces Gemini to extract prices and exact times from news/tweets."""
     clean_body = ' '.join(re.sub(r'<[^>]+>', ' ', content).split())[:1000]
     prompt = f"""
     Analyze this Pokémon TCG news/tweet.
@@ -110,7 +108,6 @@ def evaluate_news_with_ai(title, content):
     res = call_gemini(prompt)
     if res:
         summary = res.get("summary", title)
-        # Append price/time if found and not already in the summary
         if res.get("price") != "N/A" and res.get("price") not in summary:
             summary += f" | 💰 {res.get('price')}"
         if res.get("time") != "N/A" and res.get("time") not in summary:
@@ -119,10 +116,7 @@ def evaluate_news_with_ai(title, content):
     return "NO", title
 
 def generate_global_intel_brief(news_items):
-    """Reads ALL gathered news/tweets and writes a single overarching summary."""
-    if not news_items or not GEMINI_API_KEY: return "Gathering data for next intel brief..."
-    
-    # Combine the top 15 news headlines/summaries to feed to Gemini
+    if not news_items or not GEMINI_API_KEY: return "Radar currently clear. Monitoring active markets..."
     context = "\n".join([f"- {item['title']}: {item['desc']}" for item in news_items[:15]])
     
     prompt = f"""
@@ -141,8 +135,8 @@ def generate_global_intel_brief(news_items):
     }}
     """
     res = call_gemini(prompt)
-    if res: return res.get("brief", "Monitoring active markets...")
-    return "Monitoring active markets..."
+    if res: return res.get("brief", "Radar currently clear. Monitoring active markets...")
+    return "Radar currently clear. Monitoring active markets..."
 
 def fetch_rss_proxy(url):
     req = urllib.request.Request(f"https://api.rss2json.com/v1/api.json?rss_url={url}", headers={'User-Agent': 'Mozilla/5.0'})
@@ -157,7 +151,6 @@ def build_drops():
         items = fetch_rss_proxy(f'https://www.reddit.com/r/{sub}/new.rss')
         for post in items:
             title, content_raw, source_link, guid = post.get('title', ''), post.get('content', ''), post.get('link', ''), post.get('guid', '')
-            
             if is_spam(title, content_raw, source_link): continue
                 
             extracted_links_html = "<div style='margin-top: 8px; padding-top: 8px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>🛒 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'>"
@@ -215,54 +208,48 @@ def build_drops():
     drops.sort(key=lambda x: x['date'], reverse=True)
     return drops
 
-def fetch_google_news(queries, source_type):
-    """Iterates through multiple granular search queries and aggregates results."""
+def fetch_google_news(query, source_type):
     news_list = []
     seen_links = set()
-    
-    for query in queries:
-        url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=en-US&gl=US&ceid=US:en"
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        try:
-            with urllib.request.urlopen(req) as response:
-                root = ET.fromstring(response.read())
-                for item in root.findall('./channel/item')[:4]: # Top 4 per granular query
-                    title = item.find('title').text
-                    link = item.find('link').text
-                    desc = item.find('description').text or ''
-                    if 'pocket' in title.lower() or link in seen_links: continue
-                    seen_links.add(link)
-                    
-                    is_drop, ai_summary = evaluate_news_with_ai(title, desc)
-                    
-                    try:
-                        raw_date = item.find('pubDate').text[:25].strip()
-                        iso_date = datetime.strptime(raw_date, "%a, %d %b %Y %H:%M:%S").isoformat() + "Z"
-                    except: iso_date = datetime.now(timezone.utc).isoformat()
-                    
-                    news_list.append({
-                        "title": title[:70] + "...", "source": source_type, "date": iso_date,
-                        "desc": ai_summary, "link": link, "is_drop": is_drop
-                    })
-        except: pass
+    url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=en-US&gl=US&ceid=US:en"
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
+    try:
+        with urllib.request.urlopen(req) as response:
+            root = ET.fromstring(response.read())
+            for item in root.findall('./channel/item')[:8]: # Grab top 8 from the mega query
+                title = item.find('title').text
+                link = item.find('link').text
+                desc = item.find('description').text or ''
+                if 'pocket' in title.lower() or link in seen_links: continue
+                seen_links.add(link)
+                
+                is_drop, ai_summary = evaluate_news_with_ai(title, desc)
+                
+                try:
+                    raw_date = item.find('pubDate').text[:25].strip()
+                    iso_date = datetime.strptime(raw_date, "%a, %d %b %Y %H:%M:%S").isoformat() + "Z"
+                except: iso_date = datetime.now(timezone.utc).isoformat()
+                
+                news_list.append({
+                    "title": title[:70] + "...", "source": source_type, "date": iso_date,
+                    "desc": ai_summary, "link": link, "is_drop": is_drop
+                })
+    except Exception as e:
+        print(f"Google Search Blocked ({source_type}): {e}")
     
     news_list.sort(key=lambda x: x['date'], reverse=True)
-    return news_list[:10] # Return Top 10 aggregated
+    return news_list
 
 def build_news():
-    # Targeted Granular Queries
-    base_query = "Pokemon TCG (restock OR preorder OR drop)"
-    granular_queries = [
-        "Prismatic evolutions restock",
-        "Ascended heroes drop target walmart",
-        "30th celebrations pokemon drops news"
-    ]
+    # ONE mega-query replacing 8 separate queries to prevent Google 429 Bans
+    master_query = 'Pokemon TCG (restock OR preorder OR drop OR "Prismatic Evolutions" OR "Ascended Heroes" OR "30th Celebrations")'
     
-    web_queries = [f"{q} -site:twitter.com -site:x.com when:3d" for q in [base_query] + granular_queries]
-    x_queries = [f"{q} (site:twitter.com OR site:x.com) when:3d" for q in [base_query] + granular_queries]
+    web_query = f"{master_query} -site:twitter.com -site:x.com when:3d"
+    x_query = f"{master_query} (site:twitter.com OR site:x.com) when:3d"
     
-    articles = fetch_google_news(web_queries, "Google News")
-    tweets = fetch_google_news(x_queries, "X / Twitter")
+    articles = fetch_google_news(web_query, "Google News")
+    time.sleep(2) # Enforce a 2-second sleep so Google doesn't ban us
+    tweets = fetch_google_news(x_query, "X / Twitter")
     
     intel_brief = generate_global_intel_brief(articles + tweets)
     
@@ -272,4 +259,4 @@ output_data = {"drops": build_drops()}
 output_data.update(build_news())
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
-print("Granular AI Engine successfully generated!")
+print("Rate-Limit-Proof AI Engine successfully generated!")
