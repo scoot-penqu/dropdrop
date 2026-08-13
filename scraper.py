@@ -114,12 +114,18 @@ def evaluate_news_with_ai(title, content):
     Title: "{title}"
     Content: "{clean_body}"
     
-    Task: Is this an actionable product restock, upcoming drop announcement, or preorder?
-    If yes, summarize in 1 concise sentence. Include price or date/time if mentioned.
+    Task: Categorize and summarize this post.
+    Categories to choose from:
+    - RESTOCK: Actionable product restock, live deal, drop announcement, or preorder.
+    - NEWS: Official announcements, global releases, rules.
+    - LEAK: Unofficial leaks, early card reveals, set rumors.
+    - OTHER: General chatter, irrelevant.
+
+    SUMMARY RULES: Write 1 concise sentence. Include price or date/time if mentioned.
 
     Return valid JSON ONLY:
     {{
-        "is_drop": "YES" or "NO",
+        "category": "RESTOCK", "NEWS", "LEAK", or "OTHER",
         "summary": "Concise summary with price and release date if available.",
         "price": "Extracted price or 'N/A'",
         "time": "Extracted time/date or 'N/A'"
@@ -132,15 +138,14 @@ def evaluate_news_with_ai(title, content):
             summary += f" | 💰 {res.get('price')}"
         if res.get("time") != "N/A" and res.get("time") not in summary:
             summary += f" | 🕒 {res.get('time')}"
-        return res.get("is_drop", "NO").upper(), summary
-    return "NO", title
+        return res.get("category", "OTHER").upper(), summary
+    return "OTHER", title
 
 def generate_global_intel_brief(drops, news_items):
     if not drops and not news_items: 
         return "<b>⚡ Intel Brief:</b><br>Radar currently clear. Monitoring active markets..."
         
     context_lines = []
-    # Feed the AI the current Reddit Drops so it knows what is actively restocking!
     for item in drops[:10]:
         clean_desc = re.sub(r'<[^>]+>', ' ', item['desc']).strip()
         context_lines.append(f"[ACTIVE REDDIT DROP] {item['title']} | Date: {item['date']} | Details: {clean_desc}")
@@ -254,7 +259,8 @@ def process_single_news_item(item, source_type):
     desc = item.find('description').text or ''
     if 'pocket' in title.lower() or is_spam(title, desc, link): return None
     
-    is_drop, ai_summary = evaluate_news_with_ai(title, desc)
+    category, ai_summary = evaluate_news_with_ai(title, desc)
+    
     try:
         raw_date = item.find('pubDate').text[:25].strip()
         iso_date = datetime.strptime(raw_date, "%a, %d %b %Y %H:%M:%S").isoformat() + "Z"
@@ -262,18 +268,18 @@ def process_single_news_item(item, source_type):
     
     return {
         "title": title[:70] + "...", "source": source_type, "date": iso_date,
-        "desc": ai_summary, "link": link, "is_drop": is_drop
+        "desc": ai_summary, "link": link, "category": category
     }
 
 def fetch_google_news(query, source_type):
     news_list = []
     seen_links = set()
     url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=en-US&gl=US&ceid=US:en"
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     try:
         with urllib.request.urlopen(req) as response:
             root = ET.fromstring(response.read())
-            items = root.findall('./channel/item')[:8]
+            items = root.findall('./channel/item')[:12] # Grab a few extra since we filter deeply
             with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
                 futures = []
                 for item in items:
@@ -292,7 +298,11 @@ def fetch_google_news(query, source_type):
 def build_news(drops_data):
     master_query = 'Pokemon TCG (restock OR preorder OR drop OR "Prismatic Evolutions" OR "30th Anniversary")'
     web_query = f"{master_query} -site:twitter.com -site:x.com when:3d"
-    x_query = f"{master_query} (site:twitter.com OR site:x.com) when:3d"
+    
+    # Target specific Twitter/X accounts to force Google to find the newest posts
+    drop_accounts = '("PokemonDealsTCG" OR "TCGTRACKER" OR "PokemonTCGDrops" OR "PokeTCGAlerts" OR "PokemonRestocks" OR "CardPurchases" OR "TCGRestockAlerts")'
+    news_accounts = '("pokebeach" OR "PokeGuardian" OR "PokemonTCG")'
+    x_query = f'({drop_accounts} OR {news_accounts}) (site:twitter.com OR site:x.com) when:1d'
     
     articles = fetch_google_news(web_query, "Google News")
     tweets = fetch_google_news(x_query, "X / Twitter")
@@ -305,8 +315,11 @@ print("🚀 Starting High-Speed Data Scrape...")
 start_time = time.time()
 
 drops_output = build_drops()
-output_data = {"drops": drops_output}
-output_data.update(build_news(drops_output)) # Passes the Reddit drops to the news/intel builder!
+output_data = {
+    "last_run": datetime.now(timezone.utc).isoformat(), # Added tracking timestamp here
+    "drops": drops_output
+}
+output_data.update(build_news(drops_output))
 
 with open('data.json', 'w') as f: json.dump(output_data, f, indent=4)
 
