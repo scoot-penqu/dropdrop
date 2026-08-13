@@ -1,15 +1,12 @@
 {
-    "drops": [
+    "drops": [],
+    "rumors": [
         {
-            "title": "Mega Evolution\u2014Ascended Heroes Tin",
-            "price": "$21.99 (MSRP)",
-            "retailer": "Pok\u00e9mon Center / Target / Walmart",
-            "date": "2026-08-28T00:00:00",
-            "type": "online & in-store",
-            "status": "confirmed",
-            "image": "https://images.pokemontcg.io/me1/1_hires.png",
-            "link": "https://www.pokemon.com/us/pokemon-tcg"
+            "title": "No recent rumors found.",
+            "source": "System",
+            "date": "Today",
+            "desc": "Radar is quiet.",
+            "confidence": "-"
         }
-    ],
-    "rumors": []
+    ]
 }
