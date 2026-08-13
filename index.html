@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéDrop - Discovery Radar</title>
+    <title>DropDrop - Discovery Radar</title>
     <style>
         :root {
             --bg: #0b0e14; --surface: #161b22; --border: #30363d; --text: #f0f6fc;
             --accent-yellow: #f1c40f; --accent-blue: #3498db; --accent-green: #2ecc71;
             --accent-purple: #9b59b6; --accent-orange: #e67e22; --accent-red: #e74c3c;
         }
-
+/* Custom Pokéball Letter 'O' */
+        .pokeball {
+            display: inline-block;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, #e74c3c 45%, #161b22 45%, #161b22 55%, #f0f6fc 55%);
+            border: 0.08em solid #f0f6fc;
+            position: relative;
+            vertical-align: -0.05em;
+            margin: 0 0.05em;
+        }
+        .pokeball::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0.25em;
+            height: 0.25em;
+            background: #f0f6fc;
+            border-radius: 50%;
+            border: 0.08em solid #161b22;
+        }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1400px; margin: auto; }
         header { text-align: center; margin-bottom: 2rem; }
@@ -53,7 +76,7 @@
 </head>
 <body>
     <header>
-        <h1>⚡ PokéDrop Discovery Radar</h1>
+        <h1>⚡ Dr<span class="pokeball"></span>pDr<span class="pokeball"></span>p</h1>
         <p>Auto-scraping reliable retailers for MSRP drops & recent restocks.</p>
     </header>
     <div class="dashboard-container">
