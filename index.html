@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéDrop - Tracker & Leak Radar</title>
+    <title>PokéDrop - Discovery Radar</title>
     <style>
         :root {
-            --bg: #0b0e14;
-            --surface: #161b22;
-            --border: #30363d;
-            --text: #f0f6fc;
-            --accent-yellow: #f1c40f;
-            --accent-blue: #3498db;
-            --accent-green: #2ecc71;
-            --accent-purple: #9b59b6;
-            --accent-orange: #e67e22;
+            --bg: #0b0e14; --surface: #161b22; --border: #30363d; --text: #f0f6fc;
+            --accent-yellow: #f1c40f; --accent-blue: #3498db; --accent-green: #2ecc71;
+            --accent-purple: #9b59b6; --accent-orange: #e67e22; --accent-red: #e74c3c;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         body { background-color: var(--bg); color: var(--text); padding: 1.5rem; max-width: 1400px; margin: auto; }
         header { text-align: center; margin-bottom: 2rem; }
         header h1 { font-size: 2.2rem; color: var(--accent-yellow); margin-bottom: 0.5rem; }
@@ -36,20 +30,19 @@
         
         .tags { display: flex; gap: 0.4rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
         .badge { font-size: 0.7rem; padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; }
-        .badge-confirmed { background: var(--accent-green); color: #000; }
-        .badge-online { background: var(--accent-blue); color: #fff; }
-        .badge-instore { background: var(--accent-purple); color: #fff; }
+        .badge-live { background: var(--accent-green); color: #000; }
+        .badge-past { background: var(--accent-red); color: #fff; }
+        .badge-domain { background: var(--accent-blue); color: #fff; }
         
-        .card-title { font-size: 1.1rem; margin-bottom: 0.4rem; }
-        .price { color: var(--accent-yellow); font-size: 1rem; font-weight: bold; margin-bottom: 0.5rem; }
-        .retailer { font-size: 0.85rem; color: #8b949e; margin-bottom: 0.8rem; }
-        .countdown { margin-top: auto; font-family: monospace; font-size: 0.85rem; background: #0d1117; padding: 0.4rem; border-radius: 6px; text-align: center; color: var(--accent-yellow); border: 1px solid #21262d; }
+        .card-title { font-size: 1rem; margin-bottom: 0.4rem; line-height: 1.3; }
+        .price { color: var(--accent-yellow); font-size: 0.95rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .retailer { font-size: 0.85rem; color: #8b949e; margin-bottom: 0.8rem; text-transform: capitalize; }
+        .countdown { margin-top: auto; font-family: monospace; font-size: 0.8rem; background: #0d1117; padding: 0.4rem; border-radius: 6px; text-align: center; color: #8b949e; border: 1px solid #21262d; }
         .buy-btn { display: block; margin-top: 0.8rem; text-align: center; background: var(--accent-yellow); color: #000; padding: 0.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
         
         .radar-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; height: fit-content; }
         .radar-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; margin-bottom: 1rem; }
         .radar-title { font-size: 1.1rem; color: var(--accent-orange); display: flex; align-items: center; gap: 0.5rem; }
-        .radar-badge { background: var(--accent-orange); color: #000; font-size: 0.65rem; padding: 0.2rem 0.4rem; border-radius: 10px; font-weight: bold; }
         
         .rumor-card { background: #0d1117; border: 1px dashed var(--border); border-radius: 8px; padding: 0.8rem; margin-bottom: 0.8rem; }
         .rumor-source { font-size: 0.75rem; color: #8b949e; display: flex; justify-content: space-between; margin-bottom: 0.3rem; }
@@ -60,26 +53,21 @@
 </head>
 <body>
     <header>
-        <h1>⚡ PokéDrop Dashboard</h1>
-        <p>Live tracking for verified TCG drops & speculation feed.</p>
+        <h1>⚡ PokéDrop Discovery Radar</h1>
+        <p>Auto-scraping reliable retailers for MSRP drops & recent restocks.</p>
     </header>
     <div class="dashboard-container">
         <main>
             <div class="filters">
-        <button class="filter-btn active" onclick="filterDrops('all')">All Drops</button>
-        <button class="filter-btn" onclick="filterDrops('online')">Online Only</button>
-        <button class="filter-btn" onclick="filterDrops('in-store')">In-Store</button>
-        
-        <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; margin-left: auto;">
-            🔄 Sync Latest Data
-        </button>
-    </div>
+                <button class="filter-btn active" onclick="filterDrops('live')">Active Drops</button>
+                <button class="filter-btn" onclick="filterDrops('past')">Recent / Past Drops</button>
+                <button class="filter-btn" onclick="loadLiveData()" style="background: var(--accent-blue); color: white; margin-left: auto;">🔄 Sync Latest Data</button>
+            </div>
             <div class="drop-grid" id="dropGrid"></div>
         </main>
         <aside class="radar-panel">
             <div class="radar-header">
-                <div class="radar-title">📡 Rumor Radar</div>
-                <span class="radar-badge">UNCONFIRMED</span>
+                <div class="radar-title">📡 Leak Radar</div>
             </div>
             <div id="rumorFeed"></div>
         </aside>
@@ -93,10 +81,10 @@
                 const response = await fetch('data.json');
                 const data = await response.json();
                 allDrops = data.drops;
-                renderDrops('all');
+                renderDrops('live'); // Default to showing active drops
                 renderRumors(data.rumors);
             } catch (error) {
-                console.error("Error loading live drop data:", error);
+                console.error("Error loading data:", error);
             }
         }
 
@@ -104,64 +92,49 @@
             const container = document.getElementById('dropGrid');
             container.innerHTML = '';
             
-            const filtered = allDrops.filter(d => {
-                if (filter === 'online') return d.type.includes('online');
-                if (filter === 'in-store') return d.type.includes('in-store');
-                return true;
-            });
+            // Filter out items based on status (live vs past)
+            const filtered = allDrops.filter(d => d.status === filter);
+
+            if (filtered.length === 0) {
+                container.innerHTML = `<p style="color: #8b949e; grid-column: 1/-1; text-align:center;">No ${filter} drops found in the recent scan.</p>`;
+                return;
+            }
 
             filtered.forEach(drop => {
+                const isPast = drop.status === 'past';
                 const card = document.createElement('div');
                 card.className = 'card';
+                card.style.opacity = isPast ? '0.7' : '1'; // Dim past drops slightly
+
                 card.innerHTML = `
                     <div class="card-img-container">
-                        <img src="${drop.image}" alt="${drop.title}" class="card-img" onerror="this.src='https://via.placeholder.com/200x150?text=TCG+Artwork'">
+                        <img src="${drop.image}" alt="Product Image" class="card-img" onerror="this.src='https://via.placeholder.com/200x150?text=No+Thumbnail'">
                     </div>
                     <div class="card-body">
                         <div class="tags">
-                            <span class="badge badge-confirmed">${drop.status}</span>
-                            <span class="badge ${drop.type.includes('online') ? 'badge-online' : 'badge-instore'}">${drop.type}</span>
+                            <span class="badge ${isPast ? 'badge-past' : 'badge-live'}">${isPast ? 'EXPIRED / OOS' : 'ACTIVE DROP'}</span>
+                            <span class="badge badge-domain">${drop.retailer}</span>
                         </div>
                         <h2 class="card-title">${drop.title}</h2>
                         <div class="price">${drop.price}</div>
-                        <div class="retailer">📍 ${drop.retailer}</div>
-                        <div class="countdown" data-date="${drop.date}">Calculating...</div>
-                        <a href="${drop.link}" target="_blank" class="buy-btn">Retailer Link</a>
+                        <div class="countdown">Found: ${new Date(drop.date).toLocaleDateString()}</div>
+                        <a href="${drop.link}" target="_blank" class="buy-btn" style="${isPast ? 'background: #8b949e;' : ''}">View on ${drop.retailer.split('.')[0]}</a>
                     </div>
                 `;
                 container.appendChild(card);
             });
-            updateCountdowns();
         }
 
         function renderRumors(rumors) {
             const container = document.getElementById('rumorFeed');
             container.innerHTML = rumors.map(r => `
                 <div class="rumor-card">
-                    <div class="rumor-source">
-                        <span>${r.source}</span>
-                        <span>${r.date}</span>
-                    </div>
+                    <div class="rumor-source"><span>${r.source}</span></div>
                     <div class="rumor-title">${r.title}</div>
                     <div class="rumor-desc">${r.desc}</div>
                     <div class="rumor-confidence">${r.confidence}</div>
                 </div>
             `).join('');
-        }
-
-        function updateCountdowns() {
-            document.querySelectorAll('.countdown').forEach(elem => {
-                const dropTime = new Date(elem.getAttribute('data-date')).getTime();
-                const diff = dropTime - new Date().getTime();
-                if (diff < 0) {
-                    elem.innerHTML = "🚨 DROP IS LIVE / PAST";
-                    elem.style.color = "#2ecc71";
-                    return;
-                }
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                elem.innerHTML = `⏳ Drop in: ${days}d ${hours}h`;
-            });
         }
 
         function filterDrops(type) {
@@ -170,7 +143,6 @@
             renderDrops(type);
         }
 
-        setInterval(updateCountdowns, 60000);
         loadLiveData();
     </script>
 </body>
