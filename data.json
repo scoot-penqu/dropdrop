@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-08-19T07:18:09.931071+00:00",
+    "last_run": "2026-08-19T07:33:05.737828+00:00",
     "drops": [
         {
             "title": "Amazon Pok\u00e9mon Restock | Pok\u00e9mon TCG: Mega Evolution\u2014Ascended Her...",
@@ -35,6 +35,17 @@
             "sub": "PokemonDropNotify"
         },
         {
+            "title": "Drop Notifications",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-08-19T05:01:06+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vscrv0/drop_notifications/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Drop Notifications</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vscrv0/drop_notifications/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
+        },
+        {
             "title": "Shopify Pok\u00e9mon Restock | Pokemon Destined Rivals Booster Box cas...",
             "price": "Check Details",
             "retailer": "Reddit",
@@ -66,17 +77,6 @@
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1vs9du3/amazon_pok%C3%A9mon_restock_pok%C3%A9mon_tcg_mega_forces/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Amazon Pok\u00e9mon Restock | Pok\u00e9mon TCG: Mega Forces Tin \u2014 $49.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/gp/offer-listing/B0H4Y35H1J/dropnotify?tag=thetrainerscollective-20' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/gp/offer-listing/...</a></li></ul></div>",
             "sub": "PokemonDropNotify"
-        },
-        {
-            "title": "New Ascended Heroes ETB + Poke Ball Bundle Coming to Sam\u2019s Club i...",
-            "price": "Check Details",
-            "retailer": "Reddit",
-            "date": "2026-08-19T01:42:37+00:00",
-            "type": "UNKNOWN",
-            "image": "https://i.redd.it/pfkrqn6yk8kh1.jpeg",
-            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vs8n2g/new_ascended_heroes_etb_poke_ball_bundle_coming/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 New Ascended Heroes ETB + Poke Ball Bundle Coming to Sam\u2019s Club in September!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vs8n2g/new_ascended_heroes_etb_poke_ball_bundle_coming/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonTCGRestocks"
         },
         {
             "title": "Amazon Pok\u00e9mon Restock | Pok\u00e9mon TCG: Mega Evolution\u2014Pitch Black ...",
@@ -117,7 +117,7 @@
             "retailer": "Samsclub",
             "date": "2026-08-18T19:08:10+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ddchzwoim6kh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=7c5df255c833b839514d83c9fd61223207e987ba",
+            "image": "https://i.redd.it/ddchzwoim6kh1.png",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vrys1h/sams_club_ascended_heroes_etb_pok%C3%A9_ball_bundle/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 \ud83d\udea8Sam\u2019s Club Ascended Heroes ETB + Pok\u00e9 Ball Bundle Coming Fall 2026!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://goto.samsclub.com/QYb9Mo' target='_blank' style='color: #3498db; text-decoration: none;'>https://goto.samsclub.com/QYb9Mo...</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -172,7 +172,7 @@
             "retailer": "Reddit",
             "date": "2026-08-17T15:46:54+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/n84o9kjqhyjh1.png",
+            "image": "https://preview.redd.it/n84o9kjqhyjh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=1bac3b484e1e6caa97c3a6014da5efbbb1efab74",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vqw1ap/pokemon_center_queue_is_live/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is Live!!!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1vqw1ap/pokemon_center_queue_is_live/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -183,7 +183,7 @@
             "retailer": "Reddit",
             "date": "2026-08-17T15:44:09+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/r114xt9bhyjh1.jpeg",
+            "image": "https://preview.redd.it/r114xt9bhyjh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=1aa973bcf18c17f59c048b51e2f566b9270f34a2",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vqvyjo/pokemon_center_queue_is_now_live_pokemon_30th/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is now live. Pokemon 30th Celebration ex boxes may drop based on release schedule</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vqvyjo/pokemon_center_queue_is_now_live_pokemon_30th/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -194,7 +194,7 @@
             "retailer": "Reddit",
             "date": "2026-08-17T15:42:03+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ljgjla3ugyjh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e81c86e34c57d4ec7e8eadfbfa6ae8b9b8e75d69",
+            "image": "https://i.redd.it/ljgjla3ugyjh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vqvwjk/pokemon_center_queue_is_live/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is Live!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vqvwjk/pokemon_center_queue_is_live/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -207,7 +207,7 @@
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=pokemoncenter.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vqvwck/pokemon_center_queue_is_up/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1192' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1195</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1191</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1193</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1195' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1192</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1193' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1191' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1194' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1196' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1196</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1194</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1191' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1195' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1192</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1192' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1193</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1193' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1194' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1196' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1191</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1194</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1195</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1196</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -227,7 +227,7 @@
             "retailer": "Reddit",
             "date": "2026-08-16T16:54:59+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/1dind2c1prjh1.jpeg",
+            "image": "https://preview.redd.it/1dind2c1prjh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=990b26879fe9a7e29d1d53fdfd332a489dcbecb6",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vq26f6/why_did_this_card_go_up_so_much/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Why did this card go up so much?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1vq26f6/why_did_this_card_go_up_so_much/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -249,7 +249,7 @@
             "retailer": "Reddit",
             "date": "2026-08-15T16:52:30+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/2d8i0yiojkjh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3ef92a8079385c1cb80ba1595e950ab34edf52d6",
+            "image": "https://i.redd.it/2d8i0yiojkjh1.jpeg",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vp7tes/white_flair_etb_8499/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 White Flair ETB - 84.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1vp7tes/white_flair_etb_8499/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -304,7 +304,7 @@
             "retailer": "Target",
             "date": "2026-08-13T19:55:35+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/469xztx657jh1.png",
+            "image": "https://preview.redd.it/469xztx657jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=3938525ae8f4baa6fe38aa0a812ed5093b5ef2b5",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vnlgg3/pokemon_30th_anniversary_elite_trainer_box/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Anniversary Elite Trainer Box Expected Target Drop Tonight</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vnlgg3/pokemon_30th_anniversary_elite_trainer_box/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -452,10 +452,18 @@
             "category": "OTHER"
         },
         {
+            "title": "\ud83d\udea8 POKENOTIFY APP LAUNCH GIVEAWAY \ud83d\udea8 To celebrate the launch of the free...",
+            "source": "Google News",
+            "date": "2026-08-18T21:00:47Z",
+            "desc": "\ud83d\udea8 POKENOTIFY APP LAUNCH GIVEAWAY \ud83d\udea8 To celebrate the launch of the free PokeNotify App on iOS + Android, we\u2019re giving a couple collectors a Pok\u00e9mon 151 Elite Trainer Box & 151 Booster Bundle! \ud83d\udd25 \ud83d\udccc HOW TO ENTER: - FOLLOW @PokeNotify @thec - instagram.com",
+            "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05WXNaSzB6TGhPdTFUV0d1dTdYNUlIekt4RU1CUWJXS1I4QWpsXzBOQVhTVTM5Z2t1LVhrTkNXZkFzbDhiUWRsMVhtTFhIb0pkZlE?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "\u2018Pok\u00e9mon\u2019 Fans Are Giving The 30th Anniversary\u2019s \u201cUgly\u201d Cards A Second...",
             "source": "Google News",
             "date": "2026-08-18T16:14:44Z",
-            "desc": "\u2018Pok\u00e9mon\u2019 Fans Are Giving The 30th Anniversary\u2019s \u201cUgly\u201d Cards A Second Chance - polygon.com",
+            "desc": "\u2018Pok\u00e9mon\u2019 Fans Are Giving The 30th Anniversary\u2019s \u201cUgly\u201d Cards A Second Chance - Polygon.com",
             "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSVhKWHlGbHdKb1VqTEJrZmJvdXd4RENiT2VHb2xpM0x2QXJYT0JFengxTjZhNDR3Qll4TXhQSWlFNlM1RmRWeTVfQ04yUHo4M3RjOVF1dE9waEZTQXZBaDVENk0tUGRydUhWOTlVOXlhVnc2RU0zYUR4a2RsMl9MeW9abE43ZElL?oc=5",
             "category": "OTHER"
         },
@@ -479,7 +487,7 @@
             "title": "Scarlet & Violet-Prismatic Evolutions Pok\u00e9mon Center Elite Trainer Box...",
             "source": "Google News",
             "date": "2026-08-17T18:40:47Z",
-            "desc": "Scarlet & Violet-Prismatic Evolutions Pok\u00e9mon Center Elite Trainer Box, Card Sleeves & Eevee Figure Bundle - Pokemon Center",
+            "desc": "Scarlet & Violet-Prismatic Evolutions Pok\u00e9mon Center Elite Trainer Box, Card Sleeves & Eevee Figure Bundle - Pok\u00e9mon Center",
             "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQZ29NdHV1OE0yNmNYVF9UZUVXX3FZVDVJSDBndDRIQXdXbXB4OVF0azVVYzV3Sm9CT1BCUC0xdEI1WVRLelRzRVIza1N4dmJ2TWhtTFBVSVJrVFBSeGtmSHk3eFQ4SnBmNU9lNHZSM0ZVQVRtZUJDeW85SU8yTG91RnBKaFl0SW0zSlFXaFVyRmZQYmdveHZJWEp1QzYzVGt1UHktZ1VQeXlZejNxMDF4VnB4ZWNPTHdVNVNWbE51YlhiUVpDQ05CTXVTcU1LSnZzQXhLUEhfOHg4Z3lWM0JhUlJVWkRUTjYyczVVcHdtV2R5SGFSZ09nQU1yQ3JneEE?oc=5",
             "category": "OTHER"
         },
@@ -487,7 +495,7 @@
             "title": "Pok\u00e9mon TCG: Scarlet & Violet-Prismatic Evolutions Surprise Box & Bind...",
             "source": "Google News",
             "date": "2026-08-17T18:11:55Z",
-            "desc": "Pok\u00e9mon TCG: Scarlet & Violet-Prismatic Evolutions Surprise Box & Binder Bundle - Pokemon Center",
+            "desc": "Pok\u00e9mon TCG: Scarlet & Violet-Prismatic Evolutions Surprise Box & Binder Bundle - Pok\u00e9mon Center",
             "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sQXo1RkgxUENYWEp4eXF2SXBuYm1lcWxtc212eC00eF8zRklsSHJhbkRnSmhvWUxDZXVzU01qVDhhU2w4RkNFSEtzZldFbWI4cURvZVEwNWpza2lO?oc=5",
             "category": "OTHER"
         },
@@ -495,7 +503,7 @@
             "title": "The Pok\u00e9mon Center just dropped a bunch of rare ETBs for TCG sets ever...",
             "source": "Google News",
             "date": "2026-08-17T16:22:11Z",
-            "desc": "The Pok\u00e9mon Center just dropped a bunch of rare ETBs for TCG sets everyone wants - polygon.com",
+            "desc": "The Pok\u00e9mon Center just dropped a bunch of rare ETBs for TCG sets everyone wants - Polygon.com",
             "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObWtIb2hwaXdJT1dUTXUzOGZJeTZ5RVlMWVQxMDZjTEtIMGE1VU1UUlF1bG9senJqa3RrcHlyMWdpTG5WS1hYVHl2eTIzSDd3VUg2aGNkZVhqNHkteWJ3NVAwMzNpVGsyTmJyblV6STloTlZ4cmlJLTYtOFZpVVh3M3AyX3kwQXRYLWJRRTZ3LXhhcWROQ0F1amdtbw?oc=5",
             "category": "OTHER"
         },
@@ -503,7 +511,7 @@
             "title": "Artist Philip Gefaell Crafts Custom 18K Gold Ash Charizard Ring for Po...",
             "source": "Google News",
             "date": "2026-08-17T12:30:49Z",
-            "desc": "Artist Philip Gefaell Crafts Custom 18K Gold Ash Charizard Ring for Pok\u00e9mon's 30th Anniversary - hypebeast.com",
+            "desc": "Artist Philip Gefaell Crafts Custom 18K Gold Ash Charizard Ring for Pok\u00e9mon's 30th Anniversary - Hypebeast",
             "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQ3RFU1Z5SVk1cnYyR1dSaGZzTi1lYVpFRk5KWXB3QnBycFY3cGNwTzRJRnE2MzU5RHFlVEZmV3ZaNUF6bEdqWnNsTmpOa2lPc1RLUVEyQUZ3b1hIOU9xWHdZRFY5MnI4NnVJNUF0TjJCRlVUdU5fREEwM1NvMzFXLTNIVmh2dkxuZVFxakdJZlZaS0dsM0VzRFNpRDhHbU5fRU4zUXR2ZEJZeDZQY2hZ?oc=5",
             "category": "OTHER"
         },
@@ -511,8 +519,16 @@
             "title": "\u2018The kids were right\u2019: 30 years of Pok\u00e9mon, from school-wide bans to m...",
             "source": "Google News",
             "date": "2026-08-17T07:16:00Z",
-            "desc": "\u2018The kids were right\u2019: 30 years of Pok\u00e9mon, from school-wide bans to multimillion-dollar trading cards - The Guardian",
+            "desc": "\u2018The kids were right\u2019: 30 years of Pok\u00e9mon, from school-wide bans to multimillion-dollar trading cards - theguardian.com",
             "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLUVmb0FEbHNZX1NnU3ZUUk9kblR3dUNXWlZ3Tm4zeXBoNFhYcm9uejhRQjk5YXEwVkpkZHZoaGxVcW1zeDVNeTFqcHN4aHkwcm95eXk2a0JvemdfaWdXRXItR2lxRlZfaHRBcC1yVl9RZFdORmJLZ3VrTDRJYll6UFNqTURYWXV2N29yajdabw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Standings: WORLDS OF DOOM! 2026! DAY TWO! - Limitless Online Tournamen...",
+            "source": "Google News",
+            "date": "2026-08-16T15:27:16Z",
+            "desc": "Standings: WORLDS OF DOOM! 2026! DAY TWO! - Limitless Online Tournament Platform",
+            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sNFBsRmdUUnRzb3V3RVZpM0ptSnZSamw1aTQ5a09Oc2lVRGdsMnlUbmMtUFd6dXhKSlRqTG1veDdUOWV4MmQycHJyZk14WDY2Zk9wZVI5TXZSckJqQ2RCT2JPdTRxbkpiTVI0cWcxdHJXY0QyUV9MN1M2SmNYQQ?oc=5",
             "category": "OTHER"
         },
         {
@@ -522,31 +538,31 @@
             "desc": "First Pokemon 30th Anniversary TCG Card Sells For An Eye-Watering Sum - TheGamer",
             "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOV0RKS3JlX21mcjJ2aXhrY0I1NFVEOHRpczZkSnQ0cFNaWW5wTk1BOUFNdEluTVZpeXhqTGRhbF9ZVFFnUmlhQ2RRX3VZVEo0WEluald0YVF5bGhXOTloX0tSemhzU0I0VG9MMkc1RnNXcnJYOUY4aGJWQ1Y0cjQ2UQ?oc=5",
             "category": "OTHER"
-        },
-        {
-            "title": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - Pokemon Center...",
-            "source": "Google News",
-            "date": "2026-07-15T23:14:49Z",
-            "desc": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - Pokemon Center",
-            "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbl9ZTVllNkN1TUFHSlgyd29nYWVweV8yTWswUTlTSElLdFNkckZGdzg2VHE3bjEzak1zY3BtMjcxWEZabXdjSW5meFlCaEUtcVN0cV9oa0ZfMzFWa2tXNFZEX3V1NHdfQUQzN2tzYkxoQkNBSlNOaklPZ3N1dXNkNzhwOEMzc1BHb29DeFRmcVpiQ0JSRlRnblgwUDVyN251SG5GOExtVERRX2tkSXlrMldn?oc=5",
-            "category": "OTHER"
         }
     ],
     "tweets": [
+        {
+            "title": "Pokemon Trading Card Game: Mega Evolution Chaos Rising Elite Trainer B...",
+            "source": "X / Twitter",
+            "date": "2026-08-18T09:53:12Z",
+            "desc": "Pokemon Trading Card Game: Mega Evolution Chaos Rising Elite Trainer Box howl.link/txfs921wc5mra #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXM0hwOWpPdlRFb20wVlJtWFQzTGI0MWZxRElKYnhFOUZiU05QSF80RUoweWl2M1FHNWpJNTQ3cHVkNC1WdXRZRnVybm1SNURjZXNqSnZMN3hraHpTVHlOZnA3NktEdkhBMEFsd3ln?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon SV 8.5 Prismatic Evolutions Super Premium Collection howl.link...",
+            "source": "X / Twitter",
+            "date": "2026-08-18T09:51:24Z",
+            "desc": "Pokemon SV 8.5 Prismatic Evolutions Super Premium Collection howl.link/2zqj8rfk7iuwg #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfOHE0ZVJvd3A1SFRrdF8zc3FDZC16SF9sZ0Qtai1qMUtlTUFRZ3dWTTNZRVA0X0JzVDhkdUItdnE2czVLekNlZzJfNmtGZjFDd0hwSXlpNGJ0SmM0V3NlQXdpanNFdjY1R1F0TTJn?oc=5",
+            "category": "OTHER"
+        },
         {
             "title": "thank you :D - x.com...",
             "source": "X / Twitter",
             "date": "2026-08-18T09:50:01Z",
             "desc": "thank you :D - x.com",
             "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB6OXhvcXVuaDd5ZzVZS2FTRldNTGROMmw3aHowWmZxYlZPaEJCVHdFalB4LURRNVJzZ2wwblpyY2kwZ1JXUS16ODd3eGRwMVJ0bEVZQ24taWRXVmZ4?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "I think should just stop posting for Target till the get this bot situ...",
-            "source": "X / Twitter",
-            "date": "2026-08-18T07:17:14Z",
-            "desc": "I think should just stop posting for Target till the get this bot situation under control. Cause nobody wins from these announcements maybe like 1% if that - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VY08zZW9YeVFXRkNqWjhBX2VDeU1sZU8weUNUSmRmeDFjV25ONEJtYUoyejdFR0UwZGVCby1EM3o4SWVkcXJtLTJ1ZkpxM19FRUZPcFBJT1JRQUJX?oc=5",
             "category": "OTHER"
         },
         {
@@ -579,14 +595,6 @@
             "date": "2026-08-17T16:02:54Z",
             "desc": "Exclusive Prismatic Evolutions ETB, Destined Rivals & More Bundles up at Pokemon Center! \ud83d\udd25 Prismatic Evolutions ETB: pokemoncenter.com/product/BUNDLE\u2026 Destined Rivals ETB: pokemoncenter.com/product/BUNDLE\u2026 Brilliant Stars ETB: pokemoncent - x.com",
             "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE52SW41cjd4eUJHMElUN0NhR0V2QkYxU2wzbW5BRHNIMHNzOW5BU1lidmNoT05Ua3dwZjZ5SFdfdDFnRHEyVUFyT05mcW5hOWlkcmxzTUMzdTg5T2pvcnZLRkZlZHE3Vms?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "I got refreshed 3 times already. Showing 15 hours \ud83d\ude2d Am I cooked??? - x...",
-            "source": "X / Twitter",
-            "date": "2026-08-17T16:01:54Z",
-            "desc": "I got refreshed 3 times already. Showing 15 hours \ud83d\ude2d Am I cooked??? - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8ta1gtQ01sZ2tCQU1lRWxlSV9mVDJudzBDZVN5MnBqNTJhclRSY1NuRWdNMmVRdDlIRlhqZDktZ1dpWEs3aFlybHg5VmtyVllySl9tVjRUZjNVaXBj?oc=5",
             "category": "OTHER"
         },
         {
