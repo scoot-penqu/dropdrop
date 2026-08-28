@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-08-28T01:31:43.654433+00:00",
+    "last_run": "2026-08-28T01:48:04.249411+00:00",
     "drops": [
         {
             "title": "$20 dr etb",
@@ -7,7 +7,7 @@
             "retailer": "Reddit",
             "date": "2026-08-28T00:08:38+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/5blqv6jfc0mh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=caf63ed4ba3aca314f9a2beb5e2bee1483a49bb2",
+            "image": "https://i.redd.it/5blqv6jfc0mh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1w0b1bh/20_dr_etb/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 $20 dr etb</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1w0b1bh/20_dr_etb/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -62,7 +62,7 @@
             "retailer": "Target",
             "date": "2026-08-27T21:09:46+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/sr3s7snigzlh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=d98eaead58aa397cae0d0344544cdc1921190b4a",
+            "image": "https://i.redd.it/sr3s7snigzlh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w06m6s/ascended_heroes_and_mega_forces_tins_are_expected/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Ascended Heroes and Mega Forces tins are expected to drop tonight at Target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w06m6s/ascended_heroes_and_mega_forces_tins_are_expected/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -112,15 +112,169 @@
             "sub": "PokemonTCGRestocks"
         },
         {
+            "title": "WALMART WEDNESDAY LINKS",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-08-27T00:57:37+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vzff26/walmart_wednesday_links/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 WALMART WEDNESDAY LINKS</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vzff26/walmart_wednesday_links/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
             "title": "Ascended Heroes Tins are expected to drop tonight at Walmart, wit...",
             "price": "Check Details",
             "retailer": "Walmart",
             "date": "2026-08-26T10:42:30+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/p59jda4p7plh1.jpeg",
+            "image": "https://preview.redd.it/p59jda4p7plh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=430d36ac0b9a3d1351a56db6f716c1d1dab3aa19",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vyti1x/ascended_heroes_tins_are_expected_to_drop_tonight/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Ascended Heroes Tins are expected to drop tonight at Walmart, with other possible Pokemon drops</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vyti1x/ascended_heroes_tins_are_expected_to_drop_tonight/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
+        },
+        {
+            "title": "Chaos rising etbs in stock",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-08-26T08:59:29+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vyrmt7/chaos_rising_etbs_in_stock/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Chaos rising etbs in stock</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vyrmt7/chaos_rising_etbs_in_stock/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch B...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T09:48:33+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxv8sn/amazon_pokemon_restock_alert_pokemon_tcg_mega/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch Black Elite Trainer Box - $69.95</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0GYVHLP4L?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0GYVHLP4L...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON HAS PITCH BLACK ETBS",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T07:51:54+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vxtab3/amazon_has_pitch_black_etbs/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON HAS PITCH BLACK ETBS</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vxtab3/amazon_has_pitch_black_etbs/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch B...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T07:44:32+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxt5xn/amazon_pokemon_restock_alert_pokemon_tcg_mega/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch Black Elite Trainer Box - $69.95</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0GYVHLP4L?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0GYVHLP4L...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch B...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T06:50:19+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxs8kg/amazon_pokemon_restock_alert_pokemon_tcg_mega/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch Black Elite Trainer Box - $69.95</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0GYVHLP4L?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0GYVHLP4L...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch B...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T06:09:57+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxrjjt/amazon_pokemon_restock_alert_pokemon_tcg_mega/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch Black Elite Trainer Box - $69.95</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0GYVHLP4L?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0GYVHLP4L...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Ascende...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T06:05:32+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxrgt6/amazon_pokemon_restock_alert_pokemon_tcg_mega/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Ascended Heroes Tin - $39.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0H6DTXPK1?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0H6DTXPK1...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Scarlet &amp; Violet\u2014P...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T06:01:36+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxre85/amazon_pokemon_restock_alert_pokemon_tcg_scarlet/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Scarlet &amp; Violet\u2014Prismatic Evolutions Super-Premium Collection - $199.49</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0DYR8D7YC?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0DYR8D7YC...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Scarlet &amp; Violet\u2014P...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T05:33:27+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxqvzh/amazon_pokemon_restock_alert_pokemon_tcg_scarlet/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Scarlet &amp; Violet\u2014Prismatic Evolutions Super-Premium Collection - $199.49</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0DYR8D7YC?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0DYR8D7YC...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: First Partner Illustra...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T05:22:15+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxqoog/amazon_pokemon_restock_alert_pokemon_tcg_first/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: First Partner Illustration Collection\u2014Series 3 - $38.81</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0H2JVZYZZ?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0H2JVZYZZ...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Ascende...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T05:14:01+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxqjc8/amazon_pokemon_restock_alert_pokemon_tcg_mega/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Ascended Heroes Tin - $39.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0H6DTXPK1?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0H6DTXPK1...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: First Partner Illustra...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-08-25T04:19:26+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1vxpixc/amazon_pokemon_restock_alert_pokemon_tcg_first/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: First Partner Illustration Collection\u2014Series 3 - $38.83</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0H2JVZYZZ?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0H2JVZYZZ...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "EXPECTED TARGET DROP TONIGHT! Midnight PST / 3 AM EST",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-08-24T22:38:33+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vxhwj8/expected_target_drop_tonight_midnight_pst_3_am_est/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 EXPECTED TARGET DROP TONIGHT! Midnight PST / 3 AM EST</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vxhwj8/expected_target_drop_tonight_midnight_pst_3_am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
         },
         {
             "title": "Pokemon Destined Rivals Elite Trainer Box is available at Amazon",
@@ -139,7 +293,7 @@
             "retailer": "Walmart",
             "date": "2026-08-22T03:32:09+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/t3dordg5jukh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=c5bda8ff8266a13606543e064babba5b1aa54ed6",
+            "image": "https://i.redd.it/t3dordg5jukh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vv1cgq/change_to_walmart_drops/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Change to Walmart drops</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vv1cgq/change_to_walmart_drops/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -161,10 +315,76 @@
             "retailer": "Reddit",
             "date": "2026-08-21T15:28:24+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/mwcb0ri2yqkh1.jpeg",
+            "image": "https://preview.redd.it/mwcb0ri2yqkh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=fb0f81cf58251399f1475a29df40f9588be08373",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1vujjbs/restock_friday/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Restock Friday</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1vujjbs/restock_friday/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
+        },
+        {
+            "title": "TARGET EXPECTED DROP TONIGHT MIDNIGHT PST /3Am EST",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-08-21T00:09:15+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vu0lju/target_expected_drop_tonight_midnight_pst_3am_est/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 TARGET EXPECTED DROP TONIGHT MIDNIGHT PST /3Am EST</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vu0lju/target_expected_drop_tonight_midnight_pst_3am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "Walmart Tonight 9PM EST",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-08-20T00:51:55+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vt4pb2/walmart_tonight_9pm_est/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Tonight 9PM EST</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vt4pb2/walmart_tonight_9pm_est/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "Expected Target drop tonight at MIDNIGHT PST 3am EST",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-08-18T01:43:01+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vrbi4n/expected_target_drop_tonight_at_midnight_pst_3am/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Expected Target drop tonight at MIDNIGHT PST 3am EST</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vrbi4n/expected_target_drop_tonight_at_midnight_pst_3am/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "Pokemon Center Queue is up!",
+            "price": "Check Details",
+            "retailer": "Pokemoncenter",
+            "date": "2026-08-17T15:41:51+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=pokemoncenter.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vqvwck/pokemon_center_queue_is_up/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1195</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1193' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1194' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1192</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1191</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1196' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1192' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1193</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1194</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1191' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1196</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/BUNDLE1195' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/BU...</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "30TH ANNIVERSARY LIKELY TONIGHT ON TARGET Midnight pst , 3am EST",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-08-13T21:09:06+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vnnfbe/30th_anniversary_likely_tonight_on_target/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30TH ANNIVERSARY LIKELY TONIGHT ON TARGET Midnight pst , 3am EST</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vnnfbe/30th_anniversary_likely_tonight_on_target/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "Walmart Wednesday!",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-08-13T00:59:27+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Wednesday!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1vmw9bz/walmart_wednesday/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
         }
     ],
     "articles": [
@@ -283,14 +503,6 @@
             "category": "OTHER"
         },
         {
-            "title": "Destined Rivals Elite Trainer Boxes, Pitch Black Elite Trainer Boxes, ...",
-            "source": "X / Twitter",
-            "date": "2026-08-27T01:00:06Z",
-            "desc": "Destined Rivals Elite Trainer Boxes, Pitch Black Elite Trainer Boxes, Ascended Heroes Tins and More Live on Walmart! Destined Rivals Elite Trainer Box buff.ly/bYJ6qaO Pitch Black 3 Pack Blister buff.ly/b7Pr6OP Pitch Black Elite Trainer Box buff.ly/pT4Ewex C - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1TUEhJWmZ4N3VMWE9qaE5GZndIazQ5dHY5TWk4dDV1c1BuUGl4RDBxNXZROU5xVnRBNU5DQnVxcGJmbVptNkdObUd5MzVIQUw0MzMzOXdINXR5bmRNalJrMVR1Yw?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Prismatic Evolutions ETB, Destined Rivals, Ascended Heroes Tins & More...",
             "source": "X / Twitter",
             "date": "2026-08-27T00:55:28Z",
@@ -318,16 +530,16 @@
             "title": "Pokemon TCG Drops Expected Today at Walmart 6PM PT / 9PM ET We will po...",
             "source": "X / Twitter",
             "date": "2026-08-26T21:07:07Z",
-            "desc": "Pokemon TCG Drops Expected Today at Walmart 6PM PT / 9PM ET We will post when all products are confirmed. For reference, 30th Celebration Early Links + Last Week's Walmart Wednesday Drops: 30th Celebration Early Links All: https://t.co/ERCuVw2VFl - x.com",
-            "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VOWFjOTE4b053U1pQdWl4MVRCMGlLTkRrN1RlY0Z0MUJmTGVKdzR3ZlJJbnNFUnZUanl6YnZvQVNpdElHZ3Jnd1RIMkp0RDZ4Rk9ib0Nka05vQTBvZXl2akZEaDVfSTF4akVHZzMzSUNYZw?oc=5",
+            "desc": "Pokemon TCG Drops Expected Today at Walmart 6PM PT / 9PM ET We will post when all products are confirmed. For reference, 30th Celebration Early Links + Last Week's Walmart Wednesday Drops: 30th Celebration Early Links All: bit.ly/4xjn403 Elite Traine - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GSmxwTml6emxnNlMwWXR2X2k1dm9NRTZ1MXR1SlVwMkUwb3hKYWlUM0tTakE4ckQ5aXRja2FiUnphaF9kNnRhVXlFM1lUdVRQNTlaT1NMRU5LSm9MTW9MZldpOU81alk?oc=5",
             "category": "OTHER"
         },
         {
             "title": "Pokemon TCG Drops Expected Today at Walmart 6PM PT / 9PM ET We will po...",
             "source": "X / Twitter",
             "date": "2026-08-26T21:07:07Z",
-            "desc": "Pokemon TCG Drops Expected Today at Walmart 6PM PT / 9PM ET We will post when all products are confirmed. For reference, 30th Celebration Early Links + Last Week's Walmart Wednesday Drops: 30th Celebration Early Links All: bit.ly/4xjn403 Elite Traine - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GSmxwTml6emxnNlMwWXR2X2k1dm9NRTZ1MXR1SlVwMkUwb3hKYWlUM0tTakE4ckQ5aXRja2FiUnphaF9kNnRhVXlFM1lUdVRQNTlaT1NMRU5LSm9MTW9MZldpOU81alk?oc=5",
+            "desc": "Pokemon TCG Drops Expected Today at Walmart 6PM PT / 9PM ET We will post when all products are confirmed. For reference, 30th Celebration Early Links + Last Week's Walmart Wednesday Drops: 30th Celebration Early Links All: https://t.co/ERCuVw2VFl - x.com",
+            "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VOWFjOTE4b053U1pQdWl4MVRCMGlLTkRrN1RlY0Z0MUJmTGVKdzR3ZlJJbnNFUnZUanl6YnZvQVNpdElHZ3Jnd1RIMkp0RDZ4Rk9ib0Nka05vQTBvZXl2akZEaDVfSTF4akVHZzMzSUNYZw?oc=5",
             "category": "OTHER"
         },
         {
@@ -336,6 +548,14 @@
             "date": "2026-08-26T20:02:23Z",
             "desc": "\ud83d\udcab Free PokemonXP & Pokemon Worlds 2026 Coin with $50+ Purchases at Pokemon Center! Click \"Enjoy Pokemon\" on the cart page and use code \"COIN26US\" - x.com",
             "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vWDZLUF9mdlVkRnV4dVhGVkJqMEV0a0VRWDJ3eGRVM1R6ZEV1N1F0VjdrdW85bkZ4UVBqQkJTclFWdk82OG42YmVrYmhKM2hYVEFNY1dJVU9MR0o1V2RHd3ZrWQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Prismatic Evolutions Booster Bundle is up at Target! \u27a1\ufe0f https://t.co/f...",
+            "source": "X / Twitter",
+            "date": "2026-08-26T07:59:31Z",
+            "desc": "Prismatic Evolutions Booster Bundle is up at Target! \u27a1\ufe0f https://t.co/fVaZ2CveYH #PokemonTCG #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lRjg5b29Wb2RabERkaXRON0xfWXVYeFotSktMbnBCdDB1VHVFUjZMY0R1UHdERGpRTDVJZExEY2dILVhmajdITFRIRXZXazlCdHBaYThSam9XOUNHaGVYNVBHTkFZY3c?oc=5",
             "category": "OTHER"
         },
         {
