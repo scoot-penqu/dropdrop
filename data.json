@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-09-01T22:31:12.981860+00:00",
+    "last_run": "2026-09-01T22:37:00.719988+00:00",
     "drops": [
         {
             "title": "Pok\u00e9mon 30th Anniversary Celebration ETB Giveaway! (12 Hours Left...",
@@ -7,7 +7,7 @@
             "retailer": "Reddit",
             "date": "2026-09-01T15:50:32+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/mx0ze5wzjxmh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8dec1a756c143d113768bf11ad7de631d952f8f0",
+            "image": "https://i.redd.it/mx0ze5wzjxmh1.png",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1w4fvzm/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pok\u00e9mon 30th Anniversary Celebration ETB Giveaway! (12 Hours Left!)</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1w4fvzm/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -18,7 +18,7 @@
             "retailer": "Reddit",
             "date": "2026-08-30T21:06:05+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/01v3hjhfukmh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e32e9129d16aad076a1eaeb2c759ab5ac7db9ea8",
+            "image": "https://i.redd.it/01v3hjhfukmh1.png",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1w2tfxl/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pok\u00e9mon 30th Anniversary Celebration ETB Giveaway!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1w2tfxl/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -122,19 +122,11 @@
             "category": "OTHER"
         },
         {
-            "title": "Major Pok\u00e9mon price drop: Mega Evolution Pitch Black Elite Trainer Box...",
+            "title": "Armored Mewtwo returns to Pok\u00e9mon Go after six years - Mashable...",
             "source": "Google News",
-            "date": "2026-09-01T20:13:53Z",
-            "desc": "Major Pok\u00e9mon price drop: Mega Evolution Pitch Black Elite Trainer Box is close to market price at Amazon - Mashable",
-            "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUEFxaGs3SERtVnVCenExUVFNR0ZQbHlTMHI1cVRtWXRxTndoMklxcWIxbGZ1VjFadDhJT1lZWVAzTlBLMDRSYlVDb2tXR1UwYUxDT2NmWmExaW5pOEh3aFFNU05SVS1tV1V2NXBGZGh4NEpjcE5EaEI4b2FQVDVLdUc4MlAzRHlQZnc?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Rare Pok\u00e9mon TCG deal: Scarlet and Purple Prismatic Evolutions Elite T...",
-            "source": "Google News",
-            "date": "2026-09-01T17:42:11Z",
-            "desc": "Rare Pok\u00e9mon TCG deal: Scarlet and Purple Prismatic Evolutions Elite Trainer Set dips under $200 - Mashable",
-            "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWVU4Y0poZFlYMzJuRG1tazVleUd2eUVlS1NVUElmZWhhUWE0bHoybUh5X05iM29tczR6RldRbF9ZRHhKZi1SMmdxMU5kdHhram8wbXRvWDBIMkNVRFdJcHVLQzQwb1N4NlpJWERHZjFDRE1qTENvNkxBUnRpNmxKMmcwck9XYVotMDRTM2FqaGxFZjB1QXk2cS13TWFObjhs?oc=5",
+            "date": "2026-09-01T09:11:15Z",
+            "desc": "Armored Mewtwo returns to Pok\u00e9mon Go after six years - Mashable",
+            "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sa0lWdzBwY0lNRTlSUHdRc05NWU9tWlNob1JPUV9RY1l2aFJMWkRYeTg0bjBRNkdwQ3Y0dGpOVUtGOTdmcjZ4RVRhTm1jdURhSGhac2FVc2FLdFc3Zzh1NnQ0bkRTblUyam1aYzJuT2o5OUZ3?oc=5",
             "category": "OTHER"
         },
         {
@@ -181,7 +173,7 @@
             "title": "Pok\u00e9mon TCG Debacle Is Getting So Bad Walmart Is Resorting To A Lotter...",
             "source": "Google News",
             "date": "2026-08-31T17:45:09Z",
-            "desc": "Pok\u00e9mon TCG Debacle Is Getting So Bad Walmart Is Resorting To A Lottery - kotaku.com",
+            "desc": "Pok\u00e9mon TCG Debacle Is Getting So Bad Walmart Is Resorting To A Lottery - Kotaku",
             "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWWl3LW1WU255eG9oVm1sTG9xUXdlODBqcGFvczQ2ekx1Y21oZU4tcmxHTU5qaDJReE1TSTdHRndPX2NDVG5xQmo4aW40Sng4X1V4SmJQaDZvcS05OEhlNGZGd3d6NTZsTHhmYVplcC0tMEpBMERxaDBxTTNJbVdLY3F0czlILVZCT2dRYUZia2hlUTNpT0E5TFZsNA?oc=5",
             "category": "OTHER"
         },
@@ -191,6 +183,14 @@
             "date": "2026-08-31T15:22:06Z",
             "desc": "Walmart Is Selling Hot Pok\u00e9mon Card Sets in a New and Improved Way - Polygon.com",
             "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa1FISzVoUVR5NjdpSHhmU25mQi1rT1BDWmx6eE5kVlRCZGkxS2RpOGdpMy0yS1JKNkhGODJ5MW1CQi05Z3dKRXpEdGNQX25xaDdhS0hYV3czRU52YzVlZWJnMkY3SGpncnltWE8waDBEdWZrSmlfRlEzRFJTc2t1X2FLQUhMUFc2YkE?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pok\u00e9mon Is Getting a TCG-Focused Anime Feature Film - Hypebeast...",
+            "source": "Google News",
+            "date": "2026-08-31T10:34:40Z",
+            "desc": "Pok\u00e9mon Is Getting a TCG-Focused Anime Feature Film - Hypebeast",
+            "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdldFMDRnbWlBYktrWi1YSzRkNTJ6dk1KVUg1SVRNYUVFUE1zM3BxZUszVUFQWW9hcWFGei14Y0RDRk9zZVFjTlRLM0ZVdGE2Z19Fd1ViSUR6UzFIUDVvVTI3U0dBS0t0VzliRGRGZ2NOMUVabk9uVk1SVjExWEI0Y0RFV0J4Z05rUGs2SmtaZ05WNTc4?oc=5",
             "category": "OTHER"
         },
         {
@@ -300,11 +300,11 @@
             "category": "OTHER"
         },
         {
-            "title": "High Quality look at Mega Rayquaza, Darkrai, Greninja and Zygarde Mega...",
+            "title": "Prismatic Evolutions ETB Walmart Drawing Opens Tonight at 6PM PT / 9PM...",
             "source": "X / Twitter",
-            "date": "2026-08-31T13:04:01Z",
-            "desc": "High Quality look at Mega Rayquaza, Darkrai, Greninja and Zygarde Mega Attack Rares Coming Soon! \ud83d\udcab #Pokemon #PokemonTCG - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1TWXdCWGVXQkMyaXh0eWp2bTIybjUxZ2cyNHFJN0RQVmJodDFaMHR4NG80UzA2bEFMam9xLU5aWFpZVmppbHJ0bE4yXzdMbUdETmZsUzF0RUMyem9aLTRNZEMtdW1uZ1U?oc=5",
+            "date": "2026-08-31T19:03:07Z",
+            "desc": "Prismatic Evolutions ETB Walmart Drawing Opens Tonight at 6PM PT / 9PM ET! \u2728 \u27a1\ufe0f https://t.co/DghvGryvW4 Entries are free and open for a limited time. Save your preferred payment + delivery info ahead of time. If selected, you\u2019ll receive a confirmation email - x.com",
+            "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1KaGM4VTJ6VXBEcUpWNXEtZ0ExOG9HYWdaWnpCLWlIaThmbHgycG5aem1rdU1RcDh2MzRRVWRac1FSV2lSNmNCRUk3T0FXN0pwTVhpMnhXR3Q1M01kY3VtaWVKNERMRDRqTTJrMmhkS0xVQQ?oc=5",
             "category": "OTHER"
         }
     ],
