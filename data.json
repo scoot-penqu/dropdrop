@@ -1,6 +1,17 @@
 {
-    "last_run": "2026-09-06T03:33:47.754207+00:00",
+    "last_run": "2026-09-06T03:48:39.032405+00:00",
     "drops": [
+        {
+            "title": "Vending Machine Times",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-09-06T02:32:26+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1w8jrx0/vending_machine_times/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Vending Machine Times</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1w8jrx0/vending_machine_times/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
         {
             "title": "Amazon Pok\u00e9mon Restock | Pok\u00e9mon TCG: Mega Evolution\u2014Pitch Black ...",
             "price": "Check Details",
@@ -51,7 +62,7 @@
             "retailer": "Amazon",
             "date": "2026-09-05T20:40:51+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/hbreavfvirnh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=7f6c3d3f07f9ba90ec20d34bec5baaa0424015cd",
+            "image": "https://i.redd.it/hbreavfvirnh1.png",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1w8bx0q/pok%C3%A9mon_30th_anniversary_amazon_pricing_psa_check/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pok\u00e9mon 30th Anniversary Amazon Pricing PSA: Check the Price Per Pack Before You Buy</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1w8bx0q/pok%C3%A9mon_30th_anniversary_amazon_pricing_psa_check/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonDropNotify"
@@ -73,7 +84,7 @@
             "retailer": "Walmart",
             "date": "2026-09-05T19:58:26+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/ig3y676mbrnh1.png",
+            "image": "https://preview.redd.it/ig3y676mbrnh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=eaa88df020bc7aa9f49c015ed3971cf2f4864f50",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1w8atu5/walmart_draw_data_analysis_777_responses/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Draw Data Analysis: 777 Responses</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1w8atu5/walmart_draw_data_analysis_777_responses/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonDropNotify"
@@ -167,17 +178,6 @@
             "sub": "PokemonTCGRestocks"
         },
         {
-            "title": "Lowe\u2019s this am Ithaca",
-            "price": "Check Details",
-            "retailer": "Reddit",
-            "date": "2026-09-05T15:14:14+00:00",
-            "type": "UNKNOWN",
-            "image": "https://preview.redd.it/l0zstseaxpnh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0c2409eaca90a152e8584bc2f9661299f4398455",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1w83dx3/lowes_this_am_ithaca/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Lowe\u2019s this am Ithaca</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1w83dx3/lowes_this_am_ithaca/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonRestocks"
-        },
-        {
             "title": "Below MSRP Drops - $159 Chaos Rising Box and $156 Perfect Order B...",
             "price": "Check Details",
             "retailer": "Reddit",
@@ -205,7 +205,7 @@
             "retailer": "Reddit",
             "date": "2026-09-04T21:09:53+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/6jt8dyrsjknh1.png?width=576&amp;format=png&amp;auto=webp&amp;s=1259431aae2e901e56a33563369ac15f1fea8767",
+            "image": "https://preview.redd.it/6jt8dyrsjknh1.png?width=576&amp;format=png&amp;auto=webp&amp;s=1259431aae2e901e56a33563369ac15f1fea8767</a></p>",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1w7gzvy/prismatic_spc_and_etb_lottery_coming_september/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Prismatic SPC , and ETB lottery coming September 9th at 2,:00pm PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1w7gzvy/prismatic_spc_and_etb_lottery_coming_september/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -249,7 +249,7 @@
             "retailer": "Reddit",
             "date": "2026-09-04T14:21:02+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/5l2y6vmuiinh1.jpeg",
+            "image": "https://preview.redd.it/5l2y6vmuiinh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=83c13ffc416767f5f15ebf828859cb3e3e5f128f",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w75s03/this_is_what_they_have_in_stock_at_the_pok%C3%A9mon/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 This is what they have in stock at the Pok\u00e9mon Center in Okinawa, Japan</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w75s03/this_is_what_they_have_in_stock_at_the_pok%C3%A9mon/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -260,7 +260,7 @@
             "retailer": "Reddit",
             "date": "2026-09-04T01:35:56+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/6gpgpdudqenh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=a3f1eb836ef7ea39055e4aff2754670c4348f468",
+            "image": "https://i.redd.it/6gpgpdudqenh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6ql6b/5_below/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 5 Below</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6ql6b/5_below/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -271,7 +271,7 @@
             "retailer": "Reddit",
             "date": "2026-09-03T23:14:59+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/xlsw5cn81enh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=381417e2f47d7dded30e0b593a8bd08d3780eb69",
+            "image": "https://i.redd.it/xlsw5cn81enh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6nfsc/im_a_fan_of_the_raffle_system/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 I'm a fan of the raffle system</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6nfsc/im_a_fan_of_the_raffle_system/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -348,7 +348,7 @@
             "retailer": "Reddit",
             "date": "2026-09-01T23:47:38+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ja599ic7wzmh1.png?width=900&amp;format=png&amp;auto=webp&amp;s=cd130aa81106eb5e80e984b98bd9312f5af02c21</a></p>",
+            "image": "https://preview.redd.it/ja599ic7wzmh1.png?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=3744d723d9fa417253617232e63a83e464ccb4dc",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1w4tyg9/30th_anniversary_etb_giveaway/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30TH ANNIVERSARY ETB GIVEAWAY</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1w4tyg9/30th_anniversary_etb_giveaway/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -359,7 +359,7 @@
             "retailer": "Reddit",
             "date": "2026-09-01T15:50:32+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/mx0ze5wzjxmh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8dec1a756c143d113768bf11ad7de631d952f8f0",
+            "image": "https://i.redd.it/mx0ze5wzjxmh1.png",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1w4fvzm/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pok\u00e9mon 30th Anniversary Celebration ETB Giveaway! (12 Hours Left!)</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1w4fvzm/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -477,11 +477,11 @@
     ],
     "articles": [
         {
-            "title": "Pok\u00e9mon display case restock! - facebook.com...",
+            "title": "Prismatic Evolutions Binder With Cutouts Prismatic Evolutions \u2013 Pok\u00e9mo...",
             "source": "Google News",
-            "date": "2026-09-05T00:23:13Z",
-            "desc": "Pok\u00e9mon display case restock! - facebook.com",
-            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbTdGZlRMbEVIcGFNbThRMXc0WWRqOWNJRC1mZ0Rwb085TWY0eWl4Z01xU0puMjY0Ql9KLUh0cmdwTnh0ODdWdktxY3l3OFFhZzQ4UlpyZVdNclRyaGcwaWFWQ256Y2RMQzc3RW5fdUFEb0s1OXlCTmlrNDU2LUUwX2NBU2RHd2tIMV9wSnRVa0hrYi1WYk5COTJtT244b3c?oc=5",
+            "date": "2026-09-05T08:40:14Z",
+            "desc": "Prismatic Evolutions Binder With Cutouts Prismatic Evolutions \u2013 Pok\u00e9mon TCG Click And Collectables \u2013 Tagged \"Binder Collection\" - lesaviateurs.fr",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DNG1DSjdHUHZFVGxMN2VhS2xkNnFHUHM2SkVPYmpQbVVXM0hIVDdHb3QwWnFCUTJCSmtGRWQ4X2ttM3ZOX24tdU8ydHFmODlBZVVSUFNaMGtmNms4VExlOE9IcktWZw?oc=5",
             "category": "OTHER"
         },
         {
@@ -498,6 +498,14 @@
             "date": "2026-09-04T17:35:09Z",
             "desc": "\"30th Anniversary\" Binder Collections Delayed Until December - PokeBeach",
             "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbWp3cjVBbjNzWDVqeGc0MTJoR3BnNWUyYTVoNWZJNXNKZWF3bjlqb3d4QlRXRVV0Q25xTlg3Z2dzZm16V0lpZ3hkQlJpMmQ4Yy1pdmhIS0dOY2pQSlpwaUMwODlrcHNPRXgtaHFCeTVxOHYtUl9Fb3oyT0lZNXg5R3NLamgtNWpwRVZvRjIxTkRaRFFHZERn?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Great news! We now have some Pok\u00e9mon back in stock \ud83c\udf89. It's always exci...",
+            "source": "Google News",
+            "date": "2026-09-04T14:07:07Z",
+            "desc": "Great news! We now have some Pok\u00e9mon back in stock \ud83c\udf89. It's always exciting to find what you're looking for again, and we're happy to help make your collection even better! - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPY25rRVFsM2pZYV9jbTdaUFMzRERtZmNZZ01xbFMwZVVIUTVoVTFsODEtMV9ZYVI3S0FzMU85cFpHZnJyb1psMVlvYlZBSUpoZTdzMW52TlVOR05iOXJvTWhIT3JqcHpjUHMzTUNxelVmNGZkX1pyRnNXSW1mRmNacXI1clhPTmdlVlJUMzVSNFRUUmdVVVpubnI5bGpjQmdWb0MtMlA5eFI3Nk95WE51eHk4WFNzbExLMGRxYXNyR1NGdGxKUWFBTVhSM0lxa1hvdjRHdXhLNFpFWFJYNnpv?oc=5",
             "category": "OTHER"
         },
         {
@@ -530,14 +538,6 @@
             "date": "2026-09-03T13:15:35Z",
             "desc": "catch the latest pokemon tcg drop at five below on 9/12!\u2728 - facebook.com",
             "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT18xVXFZQUg1b1BxMDNOSHNtZDEtaWJTM2F4OTVLZjVnbE5pMUdTQUZzUm9makl1VnREUDVaOWV3WUgtS1NGX2FOYlJpSHdjMFFadmNLaFptaTZfNldGQzdjRHZkMjZVS1pPeTFfN2JJa2p4V3RPZGkyWW5HWGs1OU9JMUY3Q1lNOVlEazhldlJxN0VraDN1WVM1VGJ0ZnFZSnpWUFVUQ1J6b1pVbGxfSkhpUQ?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "TCG Drop Incoming!!!\ud83d\udc40 Available from tomorrow morning we will have a s...",
-            "source": "Google News",
-            "date": "2026-09-03T13:03:44Z",
-            "desc": "TCG Drop Incoming!!!\ud83d\udc40 Available from tomorrow morning we will have a small drop of Pokemon TCG Destined Rivals ETB's and MTG The Hobbit Gift Bundles. These will be limited to 1 per customer as usual. Queue up before 9:30 to be in with a chance to gra - facebook.com",
-            "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOG1hVHNpUktzUWhyaTFnb0FFajc0MnI5Z0RPaFhkYklBLUFtTFVlcHlmUjlNNTZMQnZneXRDNW9FV3BTNUV1dHRzMVY5bGRfc3dzODl1c2JJMi1SYkhfaFF5b1NEb0VHMU1SU2o4bmhKZnpwZzZpLW1kNl80ejlZOGFXTFJnNmtzOGdJd1gwSEJ5SzBSeVF5V19QbjlDSDN4cWtFdzhBZTh2U2NuX25EZmZxMWpfZ0V6eTUzeGFoYzd6dVBUY0RiSGRBX3ROdU1UdDVVcQ?oc=5",
             "category": "OTHER"
         },
         {
