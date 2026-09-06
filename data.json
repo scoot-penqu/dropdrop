@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-09-06T19:31:06.117838+00:00",
+    "last_run": "2026-09-06T19:46:03.021495+00:00",
     "drops": [
         {
             "title": "I take it they are no longer doing Walmart Wednesdays?",
@@ -18,7 +18,7 @@
             "retailer": "Reddit",
             "date": "2026-09-05T00:22:24+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/e2ahm6gfhlnh1.png",
+            "image": "https://preview.redd.it/e2ahm6gfhlnh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2aedb3f29354eaea86db22f61122fb613d52258e",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7llgz/below_msrp_drops_159_chaos_rising_box_and_156/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Below MSRP Drops - $159 Chaos Rising Box and $156 Perfect Order Box</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7llgz/below_msrp_drops_159_chaos_rising_box_and_156/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -122,14 +122,6 @@
             "category": "OTHER"
         },
         {
-            "title": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Espe...",
-            "source": "Google News",
-            "date": "2026-09-06T15:22:32Z",
-            "desc": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Espe - Yume Cards Inc.",
-            "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbUhtTlVOZF9tXzB3Y2hTSHBuQ2RFMVhRbnMzdXNyYldQb0NDdS1NOC1RSjZnNVc1QVNoQXo1ZjB6Mkl2RVM3dDNqMjk1SlF2UkVOY0Y1Ym1xNEdhS1VGaXJkek05WGVKem9IUm5QY1l6dEFIY2Z2TXptNzJwc0tXRGZOVkZJckFIVGM1dzluczBlWEFYazg3eFZiSFk2c1JoU210SHRfZEQteDV2UDhGQi1fVQ?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Crazy Pok\u00e9mon TCG Deck Wins with ONE Basic Pok\u00e9mon! This Deck is Geniu...",
             "source": "Google News",
             "date": "2026-09-06T12:15:01Z",
@@ -138,10 +130,18 @@
             "category": "OTHER"
         },
         {
-            "title": "Standings: Rare Candy Club Showdown #42 (50 CODES) - Limitless Online ...",
+            "title": "Eb Games Pokemon Pearl Preorder JUST ANNOUNCED! ? Pok\u00e9mon TCG Scarlet ...",
+            "source": "Google News",
+            "date": "2026-09-06T07:23:03Z",
+            "desc": "Eb Games Pokemon Pearl Preorder JUST ANNOUNCED! ? Pok\u00e9mon TCG Scarlet Violet Journey Together Is Coming 28 March! Preorder Here! - internationalcompetitionnetwork.org",
+            "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlBBZkRKMTlFb2d5Q3VuVzA2eTNYT3FQYl9kdUVtTU0yOTNsaXhTTDdHTTdyMHI2VUc0Q1dPUzFsX0pyOXpYY1JJQl9lZjRVUDdUbWVsaGVEOFFsb3ExclQ0LXRtckJ3Q0JKR3VrdEJIX0tjaFBSMTB5bTg4ZzM4T3FVd3U?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Standings: Rare Candy Club Showdown #42 (50 CODES) - play.limitlesstcg...",
             "source": "Google News",
             "date": "2026-09-05T00:39:41Z",
-            "desc": "Standings: Rare Candy Club Showdown #42 (50 CODES) - Limitless Online Tournament Platform",
+            "desc": "Standings: Rare Candy Club Showdown #42 (50 CODES) - play.limitlesstcg.com",
             "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQS2ZHOE9TZ3ZueU05aEZJblprV2J3RDNaU2Q0UEljRXJtemlQZG1hVEhwdzlELXU3clZ6eXY0YVBVekRQOEpGTnhwTmxwcXcxNHF2V0huYTdUdklPMmM5aVBJM0RwZ0FQN21BdGhlT05LSzVNSHM4SXpoYTBzSTgzMQ?oc=5",
             "category": "OTHER"
         },
@@ -186,10 +186,10 @@
             "category": "OTHER"
         },
         {
-            "title": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - Pokemon Center...",
+            "title": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - pokemoncenter.com...",
             "source": "Google News",
             "date": "2026-07-15T21:37:16Z",
-            "desc": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - Pokemon Center",
+            "desc": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - pokemoncenter.com",
             "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVcXNmWG1YRk1LZXJIWHI0cWdpNGg3U21CbE9maFZjZ1BoUC0zak5IUE5RRzJqR1lyb0VETFpYQlRHekFrbHI4VnRMdDhDNHVjejNmOW1GT1AwejNoaHI0?oc=5",
             "category": "OTHER"
         },
@@ -288,19 +288,27 @@
             "source": "X / Twitter",
             "date": "2026-09-05T04:38:11Z",
             "desc": "Morpeko Art Rare also Officially Revealed from 30th Celebration! \u2728 #Pokemon #PokemonTCG - x.com",
-            "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1BNlBOcHBHSjZQYXNuYkZBSjhWWjNaUTFXLUpSZS1SZkRJREpSMWQ3VVpRZVYzcXFsZTBMX09FZTJHNGlkOWhyUmc2NGwwRkFZY0JfdW9kOXNCazhobXdYMEhiLXNTdEVIcG9rNlA2VnlNM21MNlBBUg?oc=5",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FbE5IR0Y1M1NzTnN6Qk9DdE1vYmRhNnllOThYQjMwSlY4bmpqcHRudm4tQmdfQ25wRWJiYWJkMjhUNFVzd1FNbno1RjVuTkRtTmpaUG90NHFoaDRFTXFPSDc2RW16cGc?oc=5",
             "category": "OTHER"
         },
         {
-            "title": "Morpeko Art Rare also Officially Revealed from 30th Celebration! \u2728 #Po...",
+            "title": "Delta Reign Early Links and Autobuy Setup Links - Releasing November 6...",
             "source": "X / Twitter",
-            "date": "2026-09-05T04:38:11Z",
-            "desc": "Morpeko Art Rare also Officially Revealed from 30th Celebration! \u2728 #Pokemon #PokemonTCG - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FbE5IR0Y1M1NzTnN6Qk9DdE1vYmRhNnllOThYQjMwSlY4bmpqcHRudm4tQmdfQ25wRWJiYWJkMjhUNFVzd1FNbno1RjVuTkRtTmpaUG90NHFoaDRFTXFPSDc2RW16cGc?oc=5",
+            "date": "2026-09-05T02:38:42Z",
+            "desc": "Delta Reign Early Links and Autobuy Setup Links - Releasing November 6th\ud83d\udd25 \ud83d\udce6Amazon ETB https://t.co/5xO1SLm8td Autobuy Setup https://t.co/dnS1IEMk3n Booster Box https://t.co/1EvbJogyJN Autobuy Setup https://t.co/xzrF7A7x6X Booster Bundle https://t.co - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hYnQ3eXlKR242T3AxVDQ0eWV3UFVhMXJHV3VvdmJoaWdFTG1CeU56YmJheFNGSnZUX0FQRGJMRWxwWFhGTnNyaTVMWDBHcENjSFFHakNhd19CcTRyRU9TMkYxN3dTSVk?oc=5",
             "category": "OTHER"
         }
     ],
     "pokebeach": [
+        {
+            "title": "Ruling - language cards - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-06T12:02:37Z",
+            "desc": "Ruling - language cards - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPcGtWMmdoeG5kSmk4MFptdkFCUjFOaGZjNUFGN2xsNXZYT0JRRmp5Y0tNN0xtZlI5NlBObnpvaVd2OXh0N1NuLUl2cmRmY3BoSVhQVjRmSzltTXlvMGxENVJtekw4U1hfNVdGVXVlcE0?oc=5",
+            "category": "OTHER"
+        },
         {
             "title": "Maushold, Morpeko, Salamence ex, Sylveon ex, and More Illustration Rar...",
             "source": "PokeBeach",
@@ -331,14 +339,6 @@
             "date": "2026-09-03T00:03:31Z",
             "desc": "Standard - Mega Lucario/Zygarde/Barbaracle - PokeBeach",
             "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1hHOGkwQzIzeHN3V1hWcjQzdG5LLWNReUl5WDFxNGhiNENldW1FSEpFUzRhcXBFbl9vanBZMVRlQnpiNmR0UHRLbE51X01rRmU2WWxTN0s0bXh1QU5ucU0yV1cydjlTQVBiZVRYR2dDQjJ2VnBhN1dROS1WVDR5aXFiN1d3dWU0VDVwUkdZaw?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Discussion - What happened to Mega Blastoise? - PokeBeach...",
-            "source": "PokeBeach",
-            "date": "2026-09-01T02:42:10Z",
-            "desc": "Discussion - What happened to Mega Blastoise? - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLU9uWElIQ0RHUjc1bEViUkk0LUdiT2xZcmtUcTZNNXdGX2tSZmtYSW1BejJTNTI5WEhLRzd5ZXRINDhEcTgzMzZtS3Zxc0RydVkzNDdvNU05ekdMajN6MFdBZ3V4a1FsQkItd1dLMDdBUFdIZVBlaW5BaHRlS3dGTG1iQzVocTg?oc=5",
             "category": "OTHER"
         },
         {
