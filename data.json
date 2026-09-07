@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-09-07T14:31:04.297597+00:00",
+    "last_run": "2026-09-07T14:40:48.621420+00:00",
     "drops": [
         {
             "title": "I take it they are no longer doing Walmart Wednesdays?",
@@ -84,7 +84,7 @@
             "retailer": "Reddit",
             "date": "2026-09-03T23:14:59+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/xlsw5cn81enh1.jpeg",
+            "image": "https://preview.redd.it/xlsw5cn81enh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=381417e2f47d7dded30e0b593a8bd08d3780eb69",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6nfsc/im_a_fan_of_the_raffle_system/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 I'm a fan of the raffle system</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6nfsc/im_a_fan_of_the_raffle_system/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -106,7 +106,7 @@
             "retailer": "Walmart",
             "date": "2026-09-02T23:20:54+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/kou70mvdx6nh1.jpeg",
+            "image": "https://preview.redd.it/kou70mvdx6nh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=7837a68b4719fdba042742f1adbe96561ca5f5a3",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w5qm9s/pokemon_prismatic_evolutions_elite_trainer_box/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Prismatic Evolutions Elite Trainer Box draw results are going out at Walmart again</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w5qm9s/pokemon_prismatic_evolutions_elite_trainer_box/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -130,26 +130,18 @@
             "category": "OTHER"
         },
         {
-            "title": "Pok\u00e9mon 30th Celebration - Best Booster Boxes...",
+            "title": "Pok\u00e9mon 30th Celebration - bestboosterboxes.co.uk...",
             "source": "Google News",
             "date": "2026-09-06T20:50:04Z",
-            "desc": "Pok\u00e9mon 30th Celebration - Best Booster Boxes",
+            "desc": "Pok\u00e9mon 30th Celebration - bestboosterboxes.co.uk",
             "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tYkNPcEtzOTkwY3FNLVg1NUNkUWRqYmdZelNWZWZWVmJ2MHJsUXNGUEVqLXU1bEttQVFyM2FQdVR1U1RRdm1LcEIzQWEwN2xpdGRsUk9yNF9ldzBQTlJIUjlxQlF2X01jeTZmcm9n?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Pokemon TCG Prismatic Evolutions ETB Elite Trainer Box Brand New Facto...",
-            "source": "Google News",
-            "date": "2026-09-06T18:31:31Z",
-            "desc": "Pokemon TCG Prismatic Evolutions ETB Elite Trainer Box Brand New Factory - www.abacusparenteral.com",
-            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQzdrT2NtdDB6VkVaWEE4WXphNGdNTEIxWXVreThnanhPYlI1ZTkxSE1DMFVubFBsY3RRUlRtb1pjN2pPdlY5ZTVWdmI0Qy1rbFhsQlU2aE56bjlYQmROaVpQNEhwbDB1VWVUUkkxZnRKMHpVSG1xUWRvY3ZFSko0UmIxRmlNMWM?oc=5",
             "category": "OTHER"
         },
         {
             "title": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Espe...",
             "source": "Google News",
             "date": "2026-09-06T15:22:32Z",
-            "desc": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Espe - Yume Cards Inc.",
+            "desc": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Espe - yumecards.ca",
             "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbUhtTlVOZF9tXzB3Y2hTSHBuQ2RFMVhRbnMzdXNyYldQb0NDdS1NOC1RSjZnNVc1QVNoQXo1ZjB6Mkl2RVM3dDNqMjk1SlF2UkVOY0Y1Ym1xNEdhS1VGaXJkek05WGVKem9IUm5QY1l6dEFIY2Z2TXptNzJwc0tXRGZOVkZJckFIVGM1dzluczBlWEFYazg3eFZiSFk2c1JoU210SHRfZEQteDV2UDhGQi1fVQ?oc=5",
             "category": "OTHER"
         },
@@ -157,7 +149,7 @@
             "title": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Boos...",
             "source": "Google News",
             "date": "2026-09-06T15:00:18Z",
-            "desc": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Booster Box 30thC [S-Chinese] - Yume Cards Inc.",
+            "desc": "(Preorder September 23-28th) Pokemon 30th Anniversary Celebration Booster Box 30thC [S-Chinese] - yumecards.ca",
             "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTlhpWV9GM0VVRWV2Y3dLUkhYdWxrX2preXpVNFFXMUNPOURtU3J6eUxFakxUbnEzc1Nqb0JDNXd3MXRfVU9GVGE5eWZmbUJJbVFGUU56Nk5SWGxBLUZKQ1BTbFZFcGRFeDUzaXV6WkMzTk9uZVBONnZQUUJIa21sT2I4VGlFaTFCWXg5bzBvREJlTnNoOUdMVWl4Y1UtNUE?oc=5",
             "category": "OTHER"
         },
@@ -167,6 +159,14 @@
             "date": "2026-09-06T07:23:03Z",
             "desc": "Eb Games Pokemon Pearl Preorder JUST ANNOUNCED! ? Pok\u00e9mon TCG Scarlet Violet Journey Together Is Coming 28 March! Preorder Here! - www.internationalcompetitionnetwork.org",
             "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlBBZkRKMTlFb2d5Q3VuVzA2eTNYT3FQYl9kdUVtTU0yOTNsaXhTTDdHTTdyMHI2VUc0Q1dPUzFsX0pyOXpYY1JJQl9lZjRVUDdUbWVsaGVEOFFsb3ExclQ0LXRtckJ3Q0JKR3VrdEJIX0tjaFBSMTB5bTg4ZzM4T3FVd3U?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Prismatic Evolutions Binder With Cutouts Pokemon TCG: Scarlet Violet P...",
+            "source": "Google News",
+            "date": "2026-09-06T02:18:52Z",
+            "desc": "Prismatic Evolutions Binder With Cutouts Pokemon TCG: Scarlet Violet Prismatic Evolutions Binder Collection Pack Play Arena - cryotrucks.com",
+            "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU3M1QTZjLVZFODRuMXhLMUY2bGp1elZGWXk0UmYwZFZTS3hOU3hfRHBXOExjcTBKVU5SOUJqeTNCb3lLSFJZbzhkNEZVVGM4QWI1SGFwcGFKT19HRFU4cHN4VHhWNk41TDAwb1B0QXlaZmpOdU52MGlxU1NHN3NGTQ?oc=5",
             "category": "OTHER"
         },
         {
@@ -189,7 +189,7 @@
             "title": "Pokemon Chinese 30th Celebration Card Prices | Holo, Rare, & Graded Ca...",
             "source": "Google News",
             "date": "2026-09-04T23:12:39Z",
-            "desc": "Pokemon Chinese 30th Celebration Card Prices | Holo, Rare, & Graded Cards - PriceCharting",
+            "desc": "Pokemon Chinese 30th Celebration Card Prices | Holo, Rare, & Graded Cards - pricecharting.com",
             "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE82VGNoRXM1Z1VHdlByUTdZYU4wejVjYVpGT083R3V4dVFLZG54RFdfOUlnUFlsaGN4aGMyQkZ2YS1iNlhHTDAxVUQyb05kdkx4SVBha2NFRFhDSy12Rmtid0h3d3d6Z2w0NmFmX0tUZUhSZ0JNUzl2dEtR?oc=5",
             "category": "OTHER"
         },
@@ -211,6 +211,14 @@
         }
     ],
     "tweets": [
+        {
+            "title": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collecti...",
+            "source": "X / Twitter",
+            "date": "2026-09-06T23:28:24Z",
+            "desc": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collection - $26.99 https://t.co/vYDwXl21Uz #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1iZy1QenlkWVNySmthdHNNRDV4WTU0UnROcUhmalNzdVVjc2JxRVdQM1p2NGN5THVVZGJ0YkZPbEhoZmhuNlZzOENMNmpod1EzRl9zcmVzNjJYU25tbVNtTUNyWQ?oc=5",
+            "category": "OTHER"
+        },
         {
             "title": "@infma5 Looks like it was revealed! https://t.co/5fayb491ao - x.com...",
             "source": "X / Twitter",
@@ -252,22 +260,6 @@
             "category": "OTHER"
         },
         {
-            "title": "@CactusZack3 No exact date is confirmed, but we'll post as soon as the...",
-            "source": "X / Twitter",
-            "date": "2026-09-06T01:17:46Z",
-            "desc": "@CactusZack3 No exact date is confirmed, but we'll post as soon as there is a queue or any TCG drops as always! - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ObXV1NkQzeU5pdWRpbVoyWnUtYjZpYmQ5TkJqREFnWkZfMk9Qd3d4R0trekVpRUVEUzJZQjU4OHBMd2NFQ2psM1AtUE1tTUpkSmstQnJKb3dzc2FrNjVaakIyelU0c2s?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "@TheDadLife Agreed! Really nice to see all the cards in high quality! ...",
-            "source": "X / Twitter",
-            "date": "2026-09-06T00:50:57Z",
-            "desc": "@TheDadLife Agreed! Really nice to see all the cards in high quality! - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE43Q3Zod1Y2SE5SNTlYNXQ5ZXRtNXRqY2dUVTBjYjcwX1RzRDRFamZhS3RObGFhbmpyX3lDWGpDT3ktMVQzV2swUlhhWFZ1cU1ndjR0eEJWZVBfamRLR3JhMjk1czF4a2c?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Pokemon TCG Restocks & News (@PokemonRestocks) on X - x.com...",
             "source": "X / Twitter",
             "date": "2026-09-05T21:50:58Z",
@@ -276,11 +268,11 @@
             "category": "OTHER"
         },
         {
-            "title": "May go in/out of stock! 30th Celebration Poster Collection also availa...",
+            "title": "30th Celebration Knock Out Collection with Preorder Price Guarantee on...",
             "source": "X / Twitter",
-            "date": "2026-09-05T19:46:02Z",
-            "desc": "May go in/out of stock! 30th Celebration Poster Collection also available with Preorder Price guarantee, you'll pay the lowest price offered by the end of release day when the item ships! https://t.co/EHFga3P4Gy - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1FUE9TUUR4VzVLNllmQzY0NE14NHk4YXRtWkRHVXB5eHJGcDBmeU5WZ3ZlejF1SFFUc3UxY2NCdG4zcWFDaVBRbllWN0k2THZfTjlzNnFrZ09XZTBLNUtxQ0FXaHRuUE0?oc=5",
+            "date": "2026-09-05T19:11:56Z",
+            "desc": "30th Celebration Knock Out Collection with Preorder Price Guarantee on Amazon (Over MSRP) \u27a1\ufe0f https://t.co/PxzPOwdwO7 Sold and shipped by Amazon. #PokemonTCG #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zUzR4bGlQdE9lU2lERHhpZWthMzBxd1A3a3RfOVU4dEE3MjlKRS03cl9YQy1kTXBraGNLRmF2ODV4d1BpczN5TFdqeDZBRHgxc1RjdW5ndHU3aEw4VEtkck9LSmdlYWs?oc=5",
             "category": "OTHER"
         },
         {
@@ -300,11 +292,19 @@
             "category": "OTHER"
         },
         {
-            "title": "Sylveon, Toxtricity, Fuecoco and Alolan Exeggutor Illustration Rares O...",
+            "title": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collecti...",
             "source": "X / Twitter",
-            "date": "2026-09-05T17:22:06Z",
-            "desc": "Sylveon, Toxtricity, Fuecoco and Alolan Exeggutor Illustration Rares Officially Revealed from 30th Celebration! \u2728 #Pokemon #PokemonTCG - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91ZVNUV05fZmhDYkhTVl84QzhOeEx1cFRuclZuZTZTU1hSZTd3Z3RQT3YwNnRBYTdQM1lXdU5WNFJobFl0NDFCNnF0bUxwT3QyelU1MGNHU21MMzFfNEFhdURGUmpqMlk?oc=5",
+            "date": "2026-09-05T18:58:35Z",
+            "desc": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collection - $44.95 https://t.co/KzhVIfJQrq #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9SNXJrQjFTOWVjNjBJd1pwcFZLYi1PaFF0SGprLWU5TTFzZWg5X09UUkFiUHFBRUk0MW1MdzNhdzBUdXptNkV6QXdIWHJNd1RHMnlUZm94OFZFc0JKS21VTkZ2SQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon Trading Card Game: Mega Evolution Chaos Rising Elite Trainer B...",
+            "source": "X / Twitter",
+            "date": "2026-09-05T17:19:56Z",
+            "desc": "Pokemon Trading Card Game: Mega Evolution Chaos Rising Elite Trainer Box https://t.co/Vv41N3nAv5 #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBJODVDeVhPX0hydm12WGxseno0SGdHX1UxNUl3SENrN1Z4dXBVd2JjQ2t5Yjg1ZUIyc01TcWYwUGc0REVTNTdfc0tIZ2ZIN3B3em12dXQ2S1A2MWxTUFJXZTlkOA?oc=5",
             "category": "OTHER"
         }
     ],
@@ -318,11 +318,11 @@
             "category": "OTHER"
         },
         {
-            "title": "CrispyMike - PokeBeach...",
+            "title": "Pok\u00e9Beach - PokeBeach...",
             "source": "PokeBeach",
-            "date": "2026-09-05T18:46:10Z",
-            "desc": "CrispyMike - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zVmVaSDd3bkdSajVSS29aLTNjZHNsRHBWbUdIQ0k2MmtJak92SFhzLW1odWplRklfYVY0SkwzLWRpOFk2eWtsdE0ycDRNQW16NDNhQ0FmZHJ2LVdfX3F1Q1NwMkJMNW1PWU9Z?oc=5",
+            "date": "2026-09-05T16:50:32Z",
+            "desc": "Pok\u00e9Beach - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9qTHIydXAwQzZVRlpLb3R1Q1hjR0hPM1NXandPNktoSldvYjFoS1QxRUNKdG0wLWRkUld5aUZpa0Y0X080Nk1jdQ?oc=5",
             "category": "OTHER"
         },
         {
@@ -358,11 +358,11 @@
             "category": "OTHER"
         },
         {
-            "title": "princejarie - PokeBeach...",
+            "title": "HannahR - PokeBeach...",
             "source": "PokeBeach",
-            "date": "2026-09-02T04:32:07Z",
-            "desc": "princejarie - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vcUNsTU85Z2tuYkQwMW8ta1FUd3J6WDY0b2EzdGZtcFo4Z09xck0tdW5jR0dKenFFbEVKb3E4UU5QS3pvZDZhay1hdUlNdzA5dU55Y1BRQk90QS1aU2FWcHl6WEc1R0FkWTA2Mg?oc=5",
+            "date": "2026-09-02T20:29:36Z",
+            "desc": "HannahR - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBZVWhETGcxU0U3N09OazF6TGR3VTVBb2ZCY2tYWm1RaVN3Q3g5SmRwR211dGRvT19obk1XTmRmV29id0R4TGV6S2J5ODd3ZmE1S3pVd0RDT1VVcnFuWnZUemRfdUF0aTQ?oc=5",
             "category": "OTHER"
         },
         {
