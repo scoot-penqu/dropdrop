@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-09-07T08:17:24.993328+00:00",
+    "last_run": "2026-09-07T08:26:29.867604+00:00",
     "drops": [
         {
             "title": "30th stock has arrived at Target",
@@ -7,7 +7,7 @@
             "retailer": "Target",
             "date": "2026-09-07T00:01:25+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/c0z7sfd9oznh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e566b9d48c80b02b71b9426f340bab94f08dec99",
+            "image": "https://i.redd.it/c0z7sfd9oznh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1w9cexy/30th_stock_has_arrived_at_target/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th stock has arrived at Target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1w9cexy/30th_stock_has_arrived_at_target/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -95,7 +95,7 @@
             "retailer": "Reddit",
             "date": "2026-09-03T23:14:59+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/xlsw5cn81enh1.jpeg",
+            "image": "https://preview.redd.it/xlsw5cn81enh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=381417e2f47d7dded30e0b593a8bd08d3780eb69",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6nfsc/im_a_fan_of_the_raffle_system/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 I'm a fan of the raffle system</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w6nfsc/im_a_fan_of_the_raffle_system/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -233,8 +233,291 @@
             "sub": "pokemonrestockr"
         }
     ],
-    "articles": [],
-    "tweets": [],
-    "pokebeach": [],
+    "articles": [
+        {
+            "title": "Just when you thought it was gone\u2026Pokemon gift with purchase returns t...",
+            "source": "Google News",
+            "date": "2026-09-07T04:31:01Z",
+            "desc": "Just when you thought it was gone\u2026Pokemon gift with purchase returns tomorrow! \ud83d\udc40\ud83e\udd73 Limited stock available! - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPOHBBN3FybU5SU3pXWlFmb2xpQkxtcGxvT2lOYjN2ZmhhVmUzRFQ3akZSNFRSWkY2RFZIeGRNcnRNTG9BR3NLOFdfR0VjaThiMU9XMFZ6M3Q1dW81bWZZZjNwOTB4MzlYdmp3YldsVThwSWhMTW5haHpZMGYzSjZEQWhzTlVkLXVCQW5ic2YtRmYtMlF6Y2k3eHN6NDJ2WVpBdlgxZi1rNFhqX3plTEFvTkZtMFBvczFSdnpQWUNhR0c3c2RvY21RQ0k3QmY0NGdpMHhQX21saw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Customer reviews for Pok\u00e9mon TCG: Scarlet & Violet\u2014Prismatic Evolution...",
+            "source": "Google News",
+            "date": "2026-09-06T21:52:26Z",
+            "desc": "Customer reviews for Pok\u00e9mon TCG: Scarlet & Violet\u2014Prismatic Evolutions Super-Premium Collection - Sam's Club",
+            "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYUhFbVc5SmNYYmxKLXpyLTUyclZBVkVWSExQWFhmek9WeFBONUtkRUs5WlZheS1HQ1VYY3g5QlJCZDlObUNQUWZUNTV2WTNJWUlpMGdGZnFjOUZGTUpfRy0yaUVIZjBYdW9WN1pvUlMzeUp3bGRneWFxWEx3WXprc3BrcDNjR0hocjFIUQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pok\u00e9mon 30th Celebration - Best Booster Boxes...",
+            "source": "Google News",
+            "date": "2026-09-06T20:50:04Z",
+            "desc": "Pok\u00e9mon 30th Celebration - Best Booster Boxes",
+            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tYkNPcEtzOTkwY3FNLVg1NUNkUWRqYmdZelNWZWZWVmJ2MHJsUXNGUEVqLXU1bEttQVFyM2FQdVR1U1RRdm1LcEIzQWEwN2xpdGRsUk9yNF9ldzBQTlJIUjlxQlF2X01jeTZmcm9n?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon TCG Prismatic Evolutions ETB Elite Trainer Box Brand New Facto...",
+            "source": "Google News",
+            "date": "2026-09-06T18:31:31Z",
+            "desc": "Pokemon TCG Prismatic Evolutions ETB Elite Trainer Box Brand New Factory - www.abacusparenteral.com",
+            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQzdrT2NtdDB6VkVaWEE4WXphNGdNTEIxWXVreThnanhPYlI1ZTkxSE1DMFVubFBsY3RRUlRtb1pjN2pPdlY5ZTVWdmI0Qy1rbFhsQlU2aE56bjlYQmROaVpQNEhwbDB1VWVUUkkxZnRKMHpVSG1xUWRvY3ZFSko0UmIxRmlNMWM?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "[PREORDER SHIP BY 9/18/26] (S-Chinese) Pok\u00e9mon TCG: Slakoth Chengdu Gy...",
+            "source": "Google News",
+            "date": "2026-09-06T09:24:38Z",
+            "desc": "[PREORDER SHIP BY 9/18/26] (S-Chinese) Pok\u00e9mon TCG: Slakoth Chengdu Gym Stamped Promo Card - Rare Candy",
+            "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN0gzdXJaMWlsS3FCdkpxVVNKaG80bFFaaUFnZVFueTNGQzhobmlvN0JXUEFLWXBJZ19hOUpFYWNxUDFJMl9LaUJ0b2NsWDY4UmpUQnN0d0RMQWJRdU94WXpDQm9JNzhkeTV6LWtqYlNXWGUwbXFCQUxSOENsNnJreEZIVDVuaERBeUVzaGh2eWstSUNjN0tzb0VsTGVqUmloRzFmYnVwcmc1WGJjOGllbVowWS14NVZhUjgyVU56Tmd2VUdaRFJZaDg5dEU3Zw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Eb Games Pokemon Pearl Preorder JUST ANNOUNCED! ? Pok\u00e9mon TCG Scarlet ...",
+            "source": "Google News",
+            "date": "2026-09-06T07:23:03Z",
+            "desc": "Eb Games Pokemon Pearl Preorder JUST ANNOUNCED! ? Pok\u00e9mon TCG Scarlet Violet Journey Together Is Coming 28 March! Preorder Here! - www.internationalcompetitionnetwork.org",
+            "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlBBZkRKMTlFb2d5Q3VuVzA2eTNYT3FQYl9kdUVtTU0yOTNsaXhTTDdHTTdyMHI2VUc0Q1dPUzFsX0pyOXpYY1JJQl9lZjRVUDdUbWVsaGVEOFFsb3ExclQ0LXRtckJ3Q0JKR3VrdEJIX0tjaFBSMTB5bTg4ZzM4T3FVd3U?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon 30th Anniversary First Partner Card Set Vol. 2 (Chinese) : Col...",
+            "source": "Google News",
+            "date": "2026-09-05T22:00:13Z",
+            "desc": "Pokemon 30th Anniversary First Partner Card Set Vol. 2 (Chinese) : Collectibles & Fine Art - Amazon.com",
+            "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE52aVFzUFZmM2EtMXRfLUxrbnpfQ0VNZGoxbnVoWmlDQ3NESUtPelFtMmRoZGlvaWVSek5TaXg3TUpwOFBKbFdFcUdLeHc?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Prismatic Evolutions Binder With Cutouts Prismatic Evolutions \u2013 Pok\u00e9mo...",
+            "source": "Google News",
+            "date": "2026-09-05T08:40:14Z",
+            "desc": "Prismatic Evolutions Binder With Cutouts Prismatic Evolutions \u2013 Pok\u00e9mon TCG Click And Collectables \u2013 Tagged \"Binder Collection\" - lesaviateurs.fr",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DNG1DSjdHUHZFVGxMN2VhS2xkNnFHUHM2SkVPYmpQbVVXM0hIVDdHb3QwWnFCUTJCSmtGRWQ4X2ttM3ZOX24tdU8ydHFmODlBZVVSUFNaMGtmNms4VExlOE9IcktWZw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pok\u00e9mon display case restock! - facebook.com...",
+            "source": "Google News",
+            "date": "2026-09-05T00:23:13Z",
+            "desc": "Pok\u00e9mon display case restock! - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbTdGZlRMbEVIcGFNbThRMXc0WWRqOWNJRC1mZ0Rwb085TWY0eWl4Z01xU0puMjY0Ql9KLUh0cmdwTnh0ODdWdktxY3l3OFFhZzQ4UlpyZVdNclRyaGcwaWFWQ256Y2RMQzc3RW5fdUFEb0s1OXlCTmlrNDU2LUUwX2NBU2RHd2tIMV9wSnRVa0hrYi1WYk5COTJtT244b3c?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon Chinese 30th Celebration Card Prices | Holo, Rare, & Graded Ca...",
+            "source": "Google News",
+            "date": "2026-09-04T23:12:39Z",
+            "desc": "Pokemon Chinese 30th Celebration Card Prices | Holo, Rare, & Graded Cards - PriceCharting",
+            "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE82VGNoRXM1Z1VHdlByUTdZYU4wejVjYVpGT083R3V4dVFLZG54RFdfOUlnUFlsaGN4aGMyQkZ2YS1iNlhHTDAxVUQyb05kdkx4SVBha2NFRFhDSy12Rmtid0h3d3d6Z2w0NmFmX0tUZUhSZ0JNUzl2dEtR?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "\"30th Anniversary\" Binder Collections Delayed Until December - PokeBea...",
+            "source": "Google News",
+            "date": "2026-09-04T17:35:09Z",
+            "desc": "\"30th Anniversary\" Binder Collections Delayed Until December - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbWp3cjVBbjNzWDVqeGc0MTJoR3BnNWUyYTVoNWZJNXNKZWF3bjlqb3d4QlRXRVV0Q25xTlg3Z2dzZm16V0lpZ3hkQlJpMmQ4Yy1pdmhIS0dOY2pQSlpwaUMwODlrcHNPRXgtaHFCeTVxOHYtUl9Fb3oyT0lZNXg5R3NLamgtNWpwRVZvRjIxTkRaRFFHZERn?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - Pokemon Center...",
+            "source": "Google News",
+            "date": "2026-07-15T21:37:16Z",
+            "desc": "30th Celebration Pok\u00e9mon Center Elite Trainer Box - Pokemon Center",
+            "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVcXNmWG1YRk1LZXJIWHI0cWdpNGg3U21CbE9maFZjZ1BoUC0zak5IUE5RRzJqR1lyb0VETFpYQlRHekFrbHI4VnRMdDhDNHVjejNmOW1GT1AwejNoaHI0?oc=5",
+            "category": "OTHER"
+        }
+    ],
+    "tweets": [
+        {
+            "title": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collecti...",
+            "source": "X / Twitter",
+            "date": "2026-09-06T23:28:24Z",
+            "desc": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collection - $26.99 https://t.co/vYDwXl21Uz #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1iZy1QenlkWVNySmthdHNNRDV4WTU0UnROcUhmalNzdVVjc2JxRVdQM1p2NGN5THVVZGJ0YkZPbEhoZmhuNlZzOENMNmpod1EzRl9zcmVzNjJYU25tbVNtTUNyWQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "@infma5 Looks like it was revealed! https://t.co/5fayb491ao - x.com...",
+            "source": "X / Twitter",
+            "date": "2026-09-06T02:55:26Z",
+            "desc": "@infma5 Looks like it was revealed! https://t.co/5fayb491ao - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9oRV9Qbmo4TmpVU3FBTGdPdnotZUhoaU9HaWxfM1dGMUpDb3J0djgxNlpJb0lzaU1lY19TTEtqb1ZwYXNuYXRlZWtfRERfM3JqM28yeUxYYkhvQTVvMGJ2cXZNRGVybDQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Corrected view of the Legendary birds connecting artwork! \ud83d\udd25 - x.com...",
+            "source": "X / Twitter",
+            "date": "2026-09-06T01:48:47Z",
+            "desc": "Corrected view of the Legendary birds connecting artwork! \ud83d\udd25 - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ScDE4d0F3QUtzUnBFTGZna2l4RVBBUUt4YWlNOWFEazdROUtmdDhLZHl6eFNvVDcwck4wbEJyeGZ2aFpRTFIxWmZmcVY1ZnllU0g3XzRKV0p4RG9HRmJta1VzWHQtbzA?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Jirachi ex Special Illustration Rare Officially Revealed from 30th Cel...",
+            "source": "X / Twitter",
+            "date": "2026-09-06T01:35:46Z",
+            "desc": "Jirachi ex Special Illustration Rare Officially Revealed from 30th Celebration! \u2728 #Pokemon #PokemonTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81aUlQVzZfRlZsTy10VzNndTVGZF9zR2VyYXBDS0Z5SS1IRDJhTVk5aWtmejR2bHdhM0F5SVVSVmRNNVBTQUFJeElBVTVnQ2dLeGJ3U2YxeUhSMUtBaVNDV3NuLUFDS3M?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Moltres, Articuno, and Zapdos Illustration Rares Officially Revealed f...",
+            "source": "X / Twitter",
+            "date": "2026-09-06T01:34:04Z",
+            "desc": "Moltres, Articuno, and Zapdos Illustration Rares Officially Revealed for 30th Celebration\u26a1\ufe0f The set of 3 forms a connected art between the cards #Pokemon #PokemonTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lUzJuOUdSeDNsZ2tTaVlZeUFuQXI1VFBtSFVQdDY3d0RvMmdYTFZQUzlaZEw0UURFSmdyV2NKY3o1b2hwajRXYnE1TnNBaENUNUtKOWgxVDRQM2dqU3g3OExCdGFSN2c?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Articuno, Zapdos & Moltres Illustration Rares with Connecting Artwork ...",
+            "source": "X / Twitter",
+            "date": "2026-09-06T01:23:20Z",
+            "desc": "Articuno, Zapdos & Moltres Illustration Rares with Connecting Artwork Officially Revealed from 30th Celebration! \u2728 #Pokemon #PokemonTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kMXpyaDFySVRxcGVqXzRhdnRCRVI3SzBuVHMtbTI5M016QlhkOE40Y05FcS16Q1RsMFl5TmJHRUh3RXJLbUN0VWdpaGNLUkZmWDNMcm9wbENReGl3Q2JjcExiVTR6REU?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon TCG Restocks & News (@PokemonRestocks) on X - x.com...",
+            "source": "X / Twitter",
+            "date": "2026-09-05T21:50:58Z",
+            "desc": "Pokemon TCG Restocks & News (@PokemonRestocks) on X - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1oSzZZNUhpX2prb0FvVDlVb295bGIzU3IwOVhaZWEzSUFwRHhPcjlTSjdFdXRMX0VQS2dwS3gxNW1NZF95eGhlbzdqZ0Y5Zw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "30th Celebration Knock Out Collection with Preorder Price Guarantee on...",
+            "source": "X / Twitter",
+            "date": "2026-09-05T19:11:56Z",
+            "desc": "30th Celebration Knock Out Collection with Preorder Price Guarantee on Amazon (Over MSRP) \u27a1\ufe0f https://t.co/PxzPOwdwO7 Sold and shipped by Amazon. #PokemonTCG #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zUzR4bGlQdE9lU2lERHhpZWthMzBxd1A3a3RfOVU4dEE3MjlKRS03cl9YQy1kTXBraGNLRmF2ODV4d1BpczN5TFdqeDZBRHgxc1RjdW5ndHU3aEw4VEtkck9LSmdlYWs?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "30th Celebration Knockout Collection going in and out of stock on Amaz...",
+            "source": "X / Twitter",
+            "date": "2026-09-05T19:10:50Z",
+            "desc": "30th Celebration Knockout Collection going in and out of stock on Amazon https://t.co/kYQFW01kVS Over MSRP but has Preorder Price Guarantee, for those interested #Pokemon #AD - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE10SFNKa29mQVByQl9XRWNwZ19jdk9NTFNMUkNNNmJaWE1VTkNjbEdOMDNQZElyeldUWjNPWGwxOTZjam5fMWNLaHlMaFUtdTF1TFZYWWpaY1FnY0NZOU5fWDFwcG1TZXc?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collecti...",
+            "source": "X / Twitter",
+            "date": "2026-09-05T18:58:35Z",
+            "desc": "Back in Stock on Amazon! Pok\u00e9mon TCG: 30th Celebration Poster Collection - $44.95 https://t.co/KzhVIfJQrq #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9SNXJrQjFTOWVjNjBJd1pwcFZLYi1PaFF0SGprLWU5TTFzZWg5X09UUkFiUHFBRUk0MW1MdzNhdzBUdXptNkV6QXdIWHJNd1RHMnlUZm94OFZFc0JKS21VTkZ2SQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Sylveon, Toxtricity, Fuecoco and Alolan Exeggutor Illustration Rares O...",
+            "source": "X / Twitter",
+            "date": "2026-09-05T17:22:06Z",
+            "desc": "Sylveon, Toxtricity, Fuecoco and Alolan Exeggutor Illustration Rares Officially Revealed from 30th Celebration! \u2728 #Pokemon #PokemonTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91ZVNUV05fZmhDYkhTVl84QzhOeEx1cFRuclZuZTZTU1hSZTd3Z3RQT3YwNnRBYTdQM1lXdU5WNFJobFl0NDFCNnF0bUxwT3QyelU1MGNHU21MMzFfNEFhdURGUmpqMlk?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon Trading Card Game: Mega Evolution Chaos Rising Elite Trainer B...",
+            "source": "X / Twitter",
+            "date": "2026-09-05T17:19:56Z",
+            "desc": "Pokemon Trading Card Game: Mega Evolution Chaos Rising Elite Trainer Box https://t.co/Vv41N3nAv5 #Pokemon #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBJODVDeVhPX0hydm12WGxseno0SGdHX1UxNUl3SENrN1Z4dXBVd2JjQ2t5Yjg1ZUIyc01TcWYwUGc0REVTNTdfc0tIZ2ZIN3B3em12dXQ2S1A2MWxTUFJXZTlkOA?oc=5",
+            "category": "OTHER"
+        }
+    ],
+    "pokebeach": [
+        {
+            "title": "Ruling - language cards - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-06T12:02:37Z",
+            "desc": "Ruling - language cards - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBPcGtWMmdoeG5kSmk4MFptdkFCUjFOaGZjNUFGN2xsNXZYT0JRRmp5Y0tNN0xtZlI5NlBObnpvaVd2OXh0N1NuLUl2cmRmY3BoSVhQVjRmSzltTXlvMGxENVJtekw4U1hfNVdGVXVlcE0?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Maushold, Morpeko, Salamence ex, Sylveon ex, and More Illustration Rar...",
+            "source": "PokeBeach",
+            "date": "2026-09-05T04:40:32Z",
+            "desc": "Maushold, Morpeko, Salamence ex, Sylveon ex, and More Illustration Rares Revealed from \"30th Celebration!\" - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYkVrOHVzVWJPRGVhdkZ3SjFibVR5Vmxyalh4VWlsOG1jQUpDS3Q2dlRabUpXaTFXLXl4aEtSWndSX1J0OHpTa2Y1NzROQk90UGR2T2xlQnpEY0tidkp4VXZ1STJOelZ5alZsWlhpVS0xTTloSDR0c2llQlZmVmZmMVk5QmFMVFlaVGtjN2h5R2Vhc0Z1ZFE?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "RJP2608 - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-04T20:23:59Z",
+            "desc": "RJP2608 - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04VWlOSTh6Q1drVmY0bTI2X3huajBHZjlnNVZEcTBNVzBKTVpjd3ZRd2ZaMEtGLUV5RUJPc3Z1cjJKOG9NX2k0VUNmNENCal9uNVBhVXh5aVFESWFuOGY2elI2dHloNXc?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "\"30th Anniversary\" Binder Collections Delayed Until December - PokeBea...",
+            "source": "PokeBeach",
+            "date": "2026-09-04T17:35:09Z",
+            "desc": "\"30th Anniversary\" Binder Collections Delayed Until December - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbWp3cjVBbjNzWDVqeGc0MTJoR3BnNWUyYTVoNWZJNXNKZWF3bjlqb3d4QlRXRVV0Q25xTlg3Z2dzZm16V0lpZ3hkQlJpMmQ4Yy1pdmhIS0dOY2pQSlpwaUMwODlrcHNPRXgtaHFCeTVxOHYtUl9Fb3oyT0lZNXg5R3NLamgtNWpwRVZvRjIxTkRaRFFHZERn?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "\"2027 Latin America International Championships\" Competitor Swag and R...",
+            "source": "PokeBeach",
+            "date": "2026-09-04T17:09:48Z",
+            "desc": "\"2027 Latin America International Championships\" Competitor Swag and Registration Dates Revealed! - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQ2ZGNTIyaldOOWs3UlotZmhFZjB4cDBXTUEzNENfSTFfTEQyTVBDYkJUNFplMm5EMDl4X0stSU5fMUtfM2VTWVVFY0tfdDFsOXdzdnJCRFIzeFhzNUtBSGhPZ1FYM3Y5QlNXcDlQZmdxNHpzLTNKZXhqelNqWWRkSDBRaTNGSlZBUWFldG5ENzFqTWl5UzdvclgtT2NhY1pGSkx5c0kwbGQtcjlYS18zY3N3RkMtS0dzR3BZdEk0UWdIOTZTSThv?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Standard - Mega Lucario/Zygarde/Barbaracle - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-03T00:03:31Z",
+            "desc": "Standard - Mega Lucario/Zygarde/Barbaracle - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1hHOGkwQzIzeHN3V1hWcjQzdG5LLWNReUl5WDFxNGhiNENldW1FSEpFUzRhcXBFbl9vanBZMVRlQnpiNmR0UHRLbE51X01rRmU2WWxTN0s0bXh1QU5ucU0yV1cydjlTQVBiZVRYR2dDQjJ2VnBhN1dROS1WVDR5aXFiN1d3dWU0VDVwUkdZaw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "HannahR - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-02T20:29:36Z",
+            "desc": "HannahR - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBZVWhETGcxU0U3N09OazF6TGR3VTVBb2ZCY2tYWm1RaVN3Q3g5SmRwR211dGRvT19obk1XTmRmV29id0R4TGV6S2J5ODd3ZmE1S3pVd0RDT1VVcnFuWnZUemRfdUF0aTQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Krabby2717 - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-01T04:34:15Z",
+            "desc": "Krabby2717 - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jX01UTXZyUW51dHJqY3ZpaXAyTDExWjU0VDRXNVNVOUxtUkFWYkxWUTlSLVVZci1hTXJuNnFuVWZNWTVVaVlCd2VpclNoUFNScUVGY3pFMG1OYjM0VnBWa1UtOXJsTlhHNGVv?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Discussion - What happened to Mega Blastoise? - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-01T02:42:10Z",
+            "desc": "Discussion - What happened to Mega Blastoise? - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLU9uWElIQ0RHUjc1bEViUkk0LUdiT2xZcmtUcTZNNXdGX2tSZmtYSW1BejJTNTI5WEhLRzd5ZXRINDhEcTgzMzZtS3Zxc0RydVkzNDdvNU05ekdMajN6MFdBZ3V4a1FsQkItd1dLMDdBUFdIZVBlaW5BaHRlS3dGTG1iQzVocTg?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Water Pok\u00e9mon Master, Author at PokeBeach - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2015-05-17T17:37:19Z",
+            "desc": "Water Pok\u00e9mon Master, Author at PokeBeach - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xSzNaLWQxcHFtV0k0T183X2IyM2JJS1E2ZUNjalpkNHVIVDZHSF9hNDh1SklCS1ZERjM2Wm1ac3gzWGY4akxGQnRtYk40X00?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pok\u00e9Beach.com: Pok\u00e9mon TCG, Games, and Anime - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2015-02-05T03:09:03Z",
+            "desc": "Pok\u00e9Beach.com: Pok\u00e9mon TCG, Games, and Anime - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5UQk5IZnRpOGc3ZC1TX2NBNnRIWGo0TGtmQkNtRk4wbGh5TEhsNnFVRG4zVnpneVVuZXhBb1JLUQ?oc=5",
+            "category": "OTHER"
+        }
+    ],
     "intel_brief": "<b>\u26a1 Intel Brief:</b><br>Radar currently clear."
 }
