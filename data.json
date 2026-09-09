@@ -1,6 +1,17 @@
 {
-    "last_run": "2026-09-09T17:18:01.788536+00:00",
+    "last_run": "2026-09-09T17:33:08.042562+00:00",
     "drops": [
+        {
+            "title": "PokeRestock",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-09-09T17:09:48+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wbrmlu/pokerestock/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 PokeRestock</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wbrmlu/pokerestock/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
+        },
         {
             "title": "Amazon Pok\u00e9mon Restock | Pok\u00e9mon TCG: First Partner Illustration ...",
             "price": "Check Details",
@@ -55,6 +66,17 @@
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wbl6zy/starting_sept_16th_certain_walmarts_is_moving_all/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Starting Sept 16th certain Walmart\u2019s is moving all TCG behind the tobacco checkout lane.</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wbl6zy/starting_sept_16th_certain_walmarts_is_moving_all/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
+        },
+        {
+            "title": "Prismatic Evolutions Super Premium Collection and Pokemon Prismat...",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-09-09T11:55:13+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/u65drbkfhhoh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cacf056cc550db3d4824adc01b65c4767957b71b",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wbjgig/prismatic_evolutions_super_premium_collection_and/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Prismatic Evolutions Super Premium Collection and Pokemon Prismatic ETB draw opens today at Walmart</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wbjgig/prismatic_evolutions_super_premium_collection_and/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
         },
         {
             "title": "Walmart Wednesday Is Tonight at 9 PM ET: Last Weeks Drop Destined...",
@@ -123,6 +145,17 @@
             "sub": "PokemonDropNotify"
         },
         {
+            "title": "Walmart Canada Pok\u00e9mon 30th Anniversary listings are showing \u2014 pr...",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-09-08T21:28:21+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/pelyw9ml6doh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=aae2b1168d2cac7d160c5689fa69bb589a19094f",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wb1rfo/walmart_canada_pok%C3%A9mon_30th_anniversary_listings/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Canada Pok\u00e9mon 30th Anniversary listings are showing \u2014 prices &amp; purchase limits</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wb1rfo/walmart_canada_pok%C3%A9mon_30th_anniversary_listings/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
+        },
+        {
             "title": "Amazon 30th ETB lottery!!!",
             "price": "Check Details",
             "retailer": "Amazon",
@@ -139,10 +172,32 @@
             "retailer": "Amazon",
             "date": "2026-09-08T17:49:54+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/52uw5mlp3coh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e72d8a8efb0ff3a541267d28f2b584a92249b919",
+            "image": "https://i.redd.it/52uw5mlp3coh1.png",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1wavkp2/pok%C3%A9mon_30th_celebration_etb_amazon_raffle_is/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 \ud83c\udf89 Pok\u00e9mon 30th Celebration ETB - Amazon Raffle is LIVE Request an Invite!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/Pok%C3%A9mon-TCG-Celebration-Elite-Trainer/dp/B0H78BB9TY?tag=emeraldalerts-20' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/Pok%C3%A9mon-TCG-...</a></li></ul></div>",
             "sub": "pokemonrestockr"
+        },
+        {
+            "title": "Pokemon 30th Celebration Elite Trainer Box is now available to pr...",
+            "price": "Check Details",
+            "retailer": "Amazon",
+            "date": "2026-09-08T13:37:07+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/o2acd2apuaoh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=71661abca22733998c7d93eb7a7f7b8e23c60279",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1waon45/pokemon_30th_celebration_elite_trainer_box_is_now/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Elite Trainer Box is now available to pre order at Amazon via invite request</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1waon45/pokemon_30th_celebration_elite_trainer_box_is_now/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
+        },
+        {
+            "title": "Pokemon 30th Celebration orders from Pokemon Center are getting c...",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-09-07T21:17:27+00:00",
+            "type": "UNKNOWN",
+            "image": "https://i.redd.it/ku7l6x3xz5oh1.jpeg",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wa4rfy/pokemon_30th_celebration_orders_from_pokemon/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration orders from Pokemon Center are getting canceled</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wa4rfy/pokemon_30th_celebration_orders_from_pokemon/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
         },
         {
             "title": "Amazon Has Pitch black Booster boxes up for 186$",
@@ -163,8 +218,30 @@
             "type": "UNKNOWN",
             "image": "https://external-preview.redd.it/08tV7lkY0NR9yM0RJ-3rHvLVwC7yliXKppnEPtILB0A.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=6433ad31202493bfca5093b5f850b7f4c98abea9",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1w8ayo5/chaos_rising_etb_still_available_at_target/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Chaos rising etb still available at target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/pok-233-mon-trading-card-game-mega-evolution-chaos-rising-elite-trainer-box/-/A-95267143' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/pok-233-mon-tra...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/pok-233-mon-trading-card-game-mega-evolution-chaos-rising-elite-trainer-box/-/A-95267143</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/pok-233-mon-tra...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Chaos rising etb still available at target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/pok-233-mon-trading-card-game-mega-evolution-chaos-rising-elite-trainer-box/-/A-95267143</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/pok-233-mon-tra...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/pok-233-mon-trading-card-game-mega-evolution-chaos-rising-elite-trainer-box/-/A-95267143' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/pok-233-mon-tra...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "I take it they are no longer doing Walmart Wednesdays?",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-09-05T16:14:59+00:00",
+            "type": "UNKNOWN",
+            "image": "https://i.redd.it/7zzg1et48qnh1.jpeg",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w84y8s/i_take_it_they_are_no_longer_doing_walmart/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 I take it they are no longer doing Walmart Wednesdays?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w84y8s/i_take_it_they_are_no_longer_doing_walmart/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
+        },
+        {
+            "title": "Below MSRP Drops - $159 Chaos Rising Box and $156 Perfect Order B...",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-09-05T00:22:24+00:00",
+            "type": "UNKNOWN",
+            "image": "https://i.redd.it/e2ahm6gfhlnh1.png",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7llgz/below_msrp_drops_159_chaos_rising_box_and_156/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Below MSRP Drops - $159 Chaos Rising Box and $156 Perfect Order Box</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7llgz/below_msrp_drops_159_chaos_rising_box_and_156/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
         },
         {
             "title": "End of the week round up , some items still in stock for once!",
@@ -183,10 +260,32 @@
             "retailer": "Reddit",
             "date": "2026-09-04T21:09:53+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/6jt8dyrsjknh1.png?width=576&amp;format=png&amp;auto=webp&amp;s=1259431aae2e901e56a33563369ac15f1fea8767",
+            "image": "https://preview.redd.it/6jt8dyrsjknh1.png?width=140&amp;height=140&amp;auto=webp&amp;s=a1eed89847d0239444ee90aa325e77ef807e9a9d",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1w7gzvy/prismatic_spc_and_etb_lottery_coming_september/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Prismatic SPC , and ETB lottery coming September 9th at 2,:00pm PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1w7gzvy/prismatic_spc_and_etb_lottery_coming_september/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "Is it possible to get resealed ETB from target online?",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-09-04T20:32:12+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/eh07dyz3dknh1.jpg?width=140&amp;height=124&amp;auto=webp&amp;s=4bd363617062523afeb1805558f7482be5e09c70",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7fzp1/is_it_possible_to_get_resealed_etb_from_target/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Is it possible to get resealed ETB from target online?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7fzp1/is_it_possible_to_get_resealed_etb_from_target/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
+        },
+        {
+            "title": "Prismatic Evolutions Super Premium Collection and Pokemon Prismat...",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-09-04T20:31:32+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/a83u2plzcknh1.jpg?width=140&amp;height=94&amp;auto=webp&amp;s=ab8e93f22cd093c47562080f4292385bf27f1924",
+            "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7fz2a/prismatic_evolutions_super_premium_collection_and/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Prismatic Evolutions Super Premium Collection and Pokemon Prismatic ETB will be available at Walmart via draw on September 9</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1w7fz2a/prismatic_evolutions_super_premium_collection_and/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonTCGRestocks"
         },
         {
             "title": "Costco Ascended Heroes ETBs \u2013 Only $42.99!\ud83d\udd25",
@@ -194,7 +293,7 @@
             "retailer": "Costco",
             "date": "2026-09-03T21:51:27+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/s7z94y26mdnh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=d842307ca39d5df67ba4f0fb158d2244f334f294",
+            "image": "https://i.redd.it/s7z94y26mdnh1.png",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1w6ldid/costco_ascended_heroes_etbs_only_4299/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Costco Ascended Heroes ETBs \u2013 Only $42.99!\ud83d\udd25</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1w6ldid/costco_ascended_heroes_etbs_only_4299/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -260,7 +359,7 @@
             "retailer": "Reddit",
             "date": "2026-09-01T15:50:32+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/mx0ze5wzjxmh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8dec1a756c143d113768bf11ad7de631d952f8f0",
+            "image": "https://i.redd.it/mx0ze5wzjxmh1.png",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1w4fvzm/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pok\u00e9mon 30th Anniversary Celebration ETB Giveaway! (12 Hours Left!)</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1w4fvzm/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -271,7 +370,7 @@
             "retailer": "Reddit",
             "date": "2026-08-30T21:06:05+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/01v3hjhfukmh1.png",
+            "image": "https://preview.redd.it/01v3hjhfukmh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e32e9129d16aad076a1eaeb2c759ab5ac7db9ea8",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1w2tfxl/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pok\u00e9mon 30th Anniversary Celebration ETB Giveaway!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1w2tfxl/pok%C3%A9mon_30th_anniversary_celebration_etb_giveaway/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -515,19 +614,19 @@
             "category": "OTHER"
         },
         {
+            "title": "New Comfy Cuddlers Pokemon Plushes at Pokemon Center https://t.co/cNXf...",
+            "source": "X / Twitter",
+            "date": "2026-09-08T16:22:44Z",
+            "desc": "New Comfy Cuddlers Pokemon Plushes at Pokemon Center https://t.co/cNXfGwHz3V - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UMW5SRElESGtvTHltc0xZcHE2T0RobDE0TnVrLTA0WTV5Nk8xd21zVkJSWUZ1ajVMdzJlbG1PUmVsYXZ0TXU2c0hvZzlHdXRxVGNJMWZ5c2tacWI2eEw2YjhaOHlQX0U?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "Confirmed Pokemon TCG Invite Drops This Week: 30th Celebration ETB, Pr...",
             "source": "X / Twitter",
             "date": "2026-09-08T15:06:49Z",
             "desc": "Confirmed Pokemon TCG Invite Drops This Week: 30th Celebration ETB, Prismatic Evolutions SPC and ETB - All Links\u200d\u2728 30th Celebration Elite Trainer Box on Amazon (Invites Open Now) \u27a1\ufe0fhttps://t.co/POTAnJtdDm Prismatic Evolutions Super Premium Collec - x.com",
             "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8yTURveGtlOFRrM3lEM3ByQkRxLTdzeldiUjgya21lcXdHZXJuMGNKd0UzeWpnbXBXdk9iTmZLMWc3R0JCYTMwZ19kZjNDSEFkQkwwTzhhQzdJeWc0ZExxVWtiMl9qaGM?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "30th Celebration ETB up at Amazon for Invite Request!\u26a1\ufe0f 30th Celebrati...",
-            "source": "X / Twitter",
-            "date": "2026-09-08T14:10:11Z",
-            "desc": "30th Celebration ETB up at Amazon for Invite Request!\u26a1\ufe0f 30th Celebration Elite Trainer Box \u27a1\ufe0fhttps://t.co/POTAnJtdDm All Amazon 30th Celebration Links: 30th Celebration Ultra Premium Collection https://t.co/SE0GVmTUIg Auto-Buy Setup https://t.co/MJOP - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NTzd3bnkwaVdrc1NiX3hFYnRoSXhWZHlzazNhU24zd0NUN3g4eVlFRlBpZzhmZVowb01BODQ0RjhycHVtNW1CMTd0X1BqaHFEbEFpdEtsZW5lUE11UGkyNXluYXpfVzg?oc=5",
             "category": "OTHER"
         },
         {
@@ -549,19 +648,19 @@
             "category": "OTHER"
         },
         {
-            "title": "onemoresong - PokeBeach...",
-            "source": "PokeBeach",
-            "date": "2026-09-07T07:18:50Z",
-            "desc": "onemoresong - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xUzlNSUdlT0diWDV4V0o3dGZCVlVrY1dGLUJrLUJFMUYzamNGMEh1cGt5ZnRPV2xobEFoZXI2Y0ZBbFF3WW1Wc2VWdlJTYUlxR0NZS2M3SDhfSngzRk5iYXFzd0FfX1F3THVZUg?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Garmin-Lone - PokeBeach...",
             "source": "PokeBeach",
             "date": "2026-09-07T07:18:50Z",
             "desc": "Garmin-Lone - PokeBeach",
             "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ESkc3YlNqb0ZDblZnSXRvUnlJcHZ6dE1mWDFOQWNzSDZGWTEwUHJfNk5WT1R1cW5SZ2ZDX0p1NEJoUElKekt2UVVGNW1xN0xfYXpnTWFWU3A1enUxY0xNOUY1S1JpZkMyU1BOWg?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "onemoresong - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-07T07:18:50Z",
+            "desc": "onemoresong - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xUzlNSUdlT0diWDV4V0o3dGZCVlVrY1dGLUJrLUJFMUYzamNGMEh1cGt5ZnRPV2xobEFoZXI2Y0ZBbFF3WW1Wc2VWdlJTYUlxR0NZS2M3SDhfSngzRk5iYXFzd0FfX1F3THVZUg?oc=5",
             "category": "OTHER"
         },
         {
