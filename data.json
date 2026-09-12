@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-09-12T22:18:05.166341+00:00",
+    "last_run": "2026-09-12T22:33:08.688334+00:00",
     "drops": [
         {
             "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: 30th Celebration Poste...",
@@ -315,7 +315,7 @@
             "retailer": "Target",
             "date": "2026-09-10T22:36:03+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/5kir3oblsroh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=96cfe67abc6848a6f48b8218227cb5ce2010fa79",
+            "image": "https://i.redd.it/5kir3oblsroh1.png",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wcy5ls/pokemon_30th_celebration_booster_bundle_battle/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Booster Bundle, Battle Decks, and more expected to drop tonight at Target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wcy5ls/pokemon_30th_celebration_booster_bundle_battle/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -337,7 +337,7 @@
             "retailer": "Reddit",
             "date": "2026-09-10T14:05:30+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/9vc8dcrk9poh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=63f2b9e1ed14250dd49917a7d7396560ba01eec0",
+            "image": "https://i.redd.it/9vc8dcrk9poh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wck6yk/prismatic_evolutions_super_premium_collection_and/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Prismatic Evolutions Super Premium Collection and Pokemon Prismatic ETB draw results are going out</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wck6yk/prismatic_evolutions_super_premium_collection_and/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -452,6 +452,14 @@
             "category": "OTHER"
         },
         {
+            "title": "Prismatic Pokemon Center New Releases Pok\u00e9mon Trading Card Game: Scarl...",
+            "source": "Google News",
+            "date": "2026-09-12T09:56:30Z",
+            "desc": "Prismatic Pokemon Center New Releases Pok\u00e9mon Trading Card Game: Scarlet Violet Prismatic Evolutions - cosmosscholars.com",
+            "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OWDFBZW8xeVNCamY2VFF1ZVZFeDY2aVdOZU41QUoyeDFnXzZWanRIcnZ4ZUs1aXlaQUtZTjFSS0IxQS10N2wyVVZnWnJoVjVkbFNyR3ZkRm4wSG5jNWUzTmk1aUJpcUhRellhRkhsOVdVNm5qUTVv?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "Pok\u00e9mon TCG: 30th Celebration Booster Box (Simplified Chinese) - X-Pla...",
             "source": "Google News",
             "date": "2026-09-12T05:35:05Z",
@@ -484,6 +492,14 @@
             "category": "OTHER"
         },
         {
+            "title": "the wait is over! new pokemon cards drop sept 12th. be there! \u2728 #fiveb...",
+            "source": "Google News",
+            "date": "2026-09-11T11:04:22Z",
+            "desc": "the wait is over! new pokemon cards drop sept 12th. be there! \u2728 #fivebelow - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTTZteU9PRWdwQ2YyMi00VXVfNmNHUFVvYkprZzI0T0lPa3hOZWhoR1FvUUI5ZHByMVZtZTYzQXowNm96X0I2OEFsN1dZZVN1YkZXSERacE1pWWgtdDFEeGNQWUgtV20tZWRORnJJVWJRdXNyejB6QklLSTFranMyV2JRdWdma2syUDV0SGpXTjJ5Ulp6ei1hNy1oa19hd3hKQlNteFoxa3Y2NDkxS18xOUl1OU95MGk5SjdKNEVCMy0yZDF1MWc?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "Target's Next Pok\u00e9mon TCG Restock Could Be Happening Sooner Than You T...",
             "source": "Google News",
             "date": "2026-09-11T00:00:00Z",
@@ -500,14 +516,6 @@
             "category": "OTHER"
         },
         {
-            "title": "Prismatic Evolutions Booster Bundle Pokemon TCG HEAVY - 160.00 Grams -...",
-            "source": "Google News",
-            "date": "2026-09-10T18:01:51Z",
-            "desc": "Prismatic Evolutions Booster Bundle Pokemon TCG HEAVY - 160.00 Grams - Same Day - ebay.com",
-            "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yUDdzS3RPeC0wakdZV25FYzRZV0FEdndFZE9FQ1FxUlFwSEw5UWFkQ2JGdmdzekN5S2FhR2xJbUo0bzBEd3lHV2o3c0tkdw?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Pok\u00e9mon TCG Prismatic Evolutions Booster Bundle Box 6 Booster Packs En...",
             "source": "Google News",
             "date": "2026-09-10T18:00:21Z",
@@ -521,14 +529,6 @@
             "date": "2026-09-10T16:59:44Z",
             "desc": "'If The World Suffered an Apocalypse Tomorrow, The Global Currency Would Be Pok\u00e9mon Cards,' Collector and Venture Capitalist Claims - IGN",
             "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQcEtTM2ltcUUzNHdPWXRtWGc1RDBvd1VWMHh6eDc3dkp0V2VBWWVWeDZoMUptNElGdmpCNTd6eUdRZTVsRHpWdVA2alp5X1hRQXZKNkVybFdwMkQ5UFZ2ZXQzRm9HTmo5UFpYbktDRTQ5TE1MNnhFRkEyNldab181RUdTM2YzZzdqT1ZNV3pTeFc4a2cxdnNQcXoySjJtSlMtRlpYR1Z0WUREMFVLTllrX1RVYjBzRXlCME5ONV93YUNjaWQ0Vi1HUnNxbFFnaGVvejNhS19mMnNJcmNlQ2Z2b1pmdEJ0QzJ2aTRUbg?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Owala Just Dropped 2 Special-Edition Halloween FreeSip Bottles at Targ...",
-            "source": "Google News",
-            "date": "2026-09-09T22:30:00Z",
-            "desc": "Owala Just Dropped 2 Special-Edition Halloween FreeSip Bottles at Target With the Spookiest Designs - SheKnows",
-            "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPckF5VkVNUVRtNmZmVVI1T19LWTg0VkFKSGpwamZQZ2pGSVFiQTh5X2ZkVHVVbUJyRFFmZ1kwZmJJOUlUX25NSTNEOC1JNmZ2azViRWpiWlVDQjREejYweDBRdC1jWlJBWHVHUGN2TV9hRkQtZE12QXlrQ0IzZUNnbVJNalVYN0JqTFdpU0d3?oc=5",
             "category": "OTHER"
         },
         {
