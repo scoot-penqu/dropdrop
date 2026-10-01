@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-10-01T07:32:13.650582+00:00",
+    "last_run": "2026-10-01T07:45:24.749093+00:00",
     "drops": [
         {
             "title": "SCORED ON WALMART! DRAWING WINNERS HAVE BEEN ANNOUNCED!",
@@ -18,7 +18,7 @@
             "retailer": "Reddit",
             "date": "2026-10-01T04:35:41+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/pmoublj2bssh1.jpeg",
+            "image": "https://preview.redd.it/pmoublj2bssh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b2d45518899aa0b3396b9a4b71b0c91d729ac9e2",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wuq8h1/guys_i_won_my_first_drawing/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Guys I won my first drawing!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wuq8h1/guys_i_won_my_first_drawing/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -29,7 +29,7 @@
             "retailer": "Reddit",
             "date": "2026-10-01T04:12:37+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/qt9ovacy6ssh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=8d77b78585fecbf3adace63ea16014b277e50b0e",
+            "image": "https://i.redd.it/qt9ovacy6ssh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wupton/won_the_draw_hot_damn/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Won the draw! Hot Damn!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wupton/won_the_draw_hot_damn/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -73,7 +73,7 @@
             "retailer": "Walmart",
             "date": "2026-10-01T03:13:28+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/njvjdvfewrsh1.jpeg",
+            "image": "https://preview.redd.it/njvjdvfewrsh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=abe85033120311ebe8559634e33bb0326c886bb0",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wuopjz/caught_my_first_walmart_w/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Caught my first Walmart W</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wuopjz/caught_my_first_walmart_w/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -84,7 +84,7 @@
             "retailer": "Reddit",
             "date": "2026-10-01T03:11:10+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/1x7eenqzvrsh1.jpeg",
+            "image": "https://preview.redd.it/1x7eenqzvrsh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=61ae15429fc9c82a1009275e37e38a300f224b38",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wuonzk/welp/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Welp.</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wuonzk/welp/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -189,17 +189,6 @@
             "sub": "PokemonDropNotify"
         },
         {
-            "title": "Target Pok\u00e9mon Restock | Magic: The Gathering 3 Packs MTG Draft B...",
-            "price": "Check Details",
-            "retailer": "Target",
-            "date": "2026-09-30T22:54:03+00:00",
-            "type": "UNKNOWN",
-            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
-            "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1wujcq9/target_pok%C3%A9mon_restock_magic_the_gathering_3/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Pok\u00e9mon Restock | Magic: The Gathering 3 Packs MTG Draft Booster Pack Lot MTG Mystery Booster 2 [High Stock] \u2014 $79.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1wujcq9/target_pok%C3%A9mon_restock_magic_the_gathering_3/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonDropNotify"
-        },
-        {
             "title": "Target Pok\u00e9mon Restock | Magic: The Gathering 6 Packs MTG Draft B...",
             "price": "Check Details",
             "retailer": "Target",
@@ -208,6 +197,17 @@
             "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1wujcqe/target_pok%C3%A9mon_restock_magic_the_gathering_6/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Pok\u00e9mon Restock | Magic: The Gathering 6 Packs MTG Draft Booster Pack Lot MTG Mystery Booster 2 [High Stock] \u2014 $129.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1wujcqe/target_pok%C3%A9mon_restock_magic_the_gathering_6/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonDropNotify"
+        },
+        {
+            "title": "Target Pok\u00e9mon Restock | Magic: The Gathering 3 Packs MTG Draft B...",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-09-30T22:54:03+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1wujcq9/target_pok%C3%A9mon_restock_magic_the_gathering_3/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Pok\u00e9mon Restock | Magic: The Gathering 3 Packs MTG Draft Booster Pack Lot MTG Mystery Booster 2 [High Stock] \u2014 $79.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1wujcq9/target_pok%C3%A9mon_restock_magic_the_gathering_3/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonDropNotify"
         },
         {
@@ -238,7 +238,7 @@
             "retailer": "Walmart",
             "date": "2026-09-30T21:19:28+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/4bfvks865qsh1.png",
+            "image": "https://preview.redd.it/4bfvks865qsh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=49df4c1bdd17b1e7aab9ecbea3526ee97a9fd5cf",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Walmart Drawing Is Live for the next hour</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -271,7 +271,7 @@
             "retailer": "Reddit",
             "date": "2026-09-30T20:55:18+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/wpc3sxmp4msh1.png?width=786&amp;format=png&amp;auto=webp&amp;s=d544cc83ccf083e1141e764f711af71d6cd39627",
+            "image": "https://preview.redd.it/wpc3sxmp4msh1.png?width=786&amp;format=png&amp;auto=webp&amp;s=d544cc83ccf083e1141e764f711af71d6cd39627</a></p>",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wugjva/30th_lottery_live_now/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th Lottery live now</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wugjva/30th_lottery_live_now/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -317,7 +317,7 @@
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=pokemoncenter.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wu8fgt/pokemon_center_queue_is_up/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -381,7 +381,7 @@
             "retailer": "Reddit",
             "date": "2026-09-30T00:45:21+00:00",
             "type": "UNKNOWN",
-            "image": "https://external-preview.redd.it/xQoks1SM0u8hkZZRwPluKKZ2rhJS9fIsle0zsVci00c.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=d3355d4dad4ff5e2c13edf8596a2be97b9805b87",
+            "image": "https://preview.redd.it/uruk9edw0ksh1.png?width=1280&amp;format=png&amp;auto=webp&amp;s=9b427f4a273fc9127eab5497fc234ba5c83635c9",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wtr6gl/pokemon_center_drop_likely_tomorrow/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 POKEMON CENTER DROP LIKELY TOMORROW!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wtr6gl/pokemon_center_drop_likely_tomorrow/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -403,7 +403,7 @@
             "retailer": "Target",
             "date": "2026-09-29T20:07:49+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/720bzvkbnish1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=d891665a5b1e9c32d6d02d9768645db0ed02cecf",
+            "image": "https://external-preview.redd.it/dukWpQypTcrYXh4z6hA2EWtkYKk_FewysNmh5UUJ8BQ.jpeg?width=140&amp;height=140&amp;auto=webp&amp;s=2096e38f0d133c445fda682806a532ff79063f82",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wtknjk/target_drop_schedule_midnight_pdt_3am_edt_good/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Drop schedule Midnight PDT , 3AM EDT Good luck!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wtknjk/target_drop_schedule_midnight_pdt_3am_edt_good/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -414,7 +414,7 @@
             "retailer": "Walmart",
             "date": "2026-09-29T13:56:31+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/k7dcltzatgsh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=4148912b9779b7ef4af2798cdfca8fffdbd2a408",
+            "image": "https://i.redd.it/k7dcltzatgsh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wtasug/pokemon_30th_celebration_booster_bundle_mini_tin/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Booster Bundle, mini tin display, and more will be available at Walmart tomorrow via draw request</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wtasug/pokemon_30th_celebration_booster_bundle_mini_tin/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -436,7 +436,7 @@
             "retailer": "Reddit",
             "date": "2026-09-29T03:34:33+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/06uyv614qdsh1.png?width=140&amp;height=74&amp;auto=webp&amp;s=81717b7d7097eac140f58e9b56ccaf1f5ce2abd7",
+            "image": "https://preview.redd.it/06uyv614qdsh1.png?width=786&amp;format=png&amp;auto=webp&amp;s=4ebe4a3decd016250b22d4a2df4d9c9186bb62ef</a></p>",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wszkkv/30th_lottery_coming_this_wednesday_2pm_pdt5pm_pdt/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th Lottery coming this Wednesday! 2PM PDT/5PM PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wszkkv/30th_lottery_coming_this_wednesday_2pm_pdt5pm_pdt/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -447,7 +447,7 @@
             "retailer": "Reddit",
             "date": "2026-09-28T17:20:11+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ixahp1apoash1.png?width=578&amp;format=png&amp;auto=webp&amp;s=a4fe31b0e2e82b8052b98d81c89604968042dfbb</a></p>",
+            "image": "https://preview.redd.it/ixahp1apoash1.png?width=578&amp;format=png&amp;auto=webp&amp;s=a4fe31b0e2e82b8052b98d81c89604968042dfbb",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wskqle/delta_reign_has_loaded_on_pokemon_center_keep_an/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Delta Reign Has loaded on Pokemon center ,keep an eye out for a queue in the near future!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wskqle/delta_reign_has_loaded_on_pokemon_center_keep_an/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -458,7 +458,7 @@
             "retailer": "Target",
             "date": "2026-09-27T22:17:06+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/i0o2oshs05sh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b28d74f08cce5566eb6bdd0862fb9701c9865922",
+            "image": "https://i.redd.it/i0o2oshs05sh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wrxdeq/pokemon_30th_celebration_draw_may_be_coming_soon/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration draw may be coming soon to Target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wrxdeq/pokemon_30th_celebration_draw_may_be_coming_soon/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -482,7 +482,7 @@
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wpmd0s/target_drop_tonight_midnight_pdt_3am_pdt/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 TARGET DROP TONIGHT MIDNIGHT PDT 3AM PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 TARGET DROP TONIGHT MIDNIGHT PDT 3AM PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -502,7 +502,7 @@
             "retailer": "Walmart",
             "date": "2026-09-23T20:55:06+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/at7wabfyrbrh1.png?width=1778&amp;format=png&amp;auto=webp&amp;s=206217310fc0a7b056d9d74da77c465a0b62ef20</a></p>",
+            "image": "https://preview.redd.it/at7wabfyrbrh1.png?width=140&amp;height=34&amp;auto=webp&amp;s=a180c78be8d99dbde2d853ec4076e79df97c9c62",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wohyxu/30th_lottery_on_walmart_live_for_the_next_hour/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th Lottery on Walmart LIVE FOR THE NEXT HOUR!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wohyxu/30th_lottery_on_walmart_live_for_the_next_hour/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -513,7 +513,7 @@
             "retailer": "Walmart",
             "date": "2026-09-23T01:36:12+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/4xp6c9beb6rh1.png?width=1778&amp;format=png&amp;auto=webp&amp;s=8544c64e4706490292730bacabe79e9d9cac734c</a></p>",
+            "image": "https://preview.redd.it/4xp6c9beb6rh1.png?width=1778&amp;format=png&amp;auto=webp&amp;s=8544c64e4706490292730bacabe79e9d9cac734c",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wnse8h/30th_lottery_on_walmart_tomorrow_sep_23_200pm_pdt/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th Lottery on Walmart Tomorrow! Sep 23, 2:00pm PDT Dont miss out , only a 1 hour window to enter!!!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wnse8h/30th_lottery_on_walmart_tomorrow_sep_23_200pm_pdt/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -524,7 +524,7 @@
             "retailer": "Target",
             "date": "2026-09-22T20:41:23+00:00",
             "type": "UNKNOWN",
-            "image": "https://external-preview.redd.it/dukWpQypTcrYXh4z6hA2EWtkYKk_FewysNmh5UUJ8BQ.jpeg?width=140&amp;height=140&amp;auto=webp&amp;s=2096e38f0d133c445fda682806a532ff79063f82",
+            "image": "https://preview.redd.it/x50c85l3v4rh1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=395e685fa0ac87b977a6926dade023d5effd6f76</a></p>",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wnlcnz/target_drop_tonight_30th_midnight_pdt_3_am_est/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Drop tonight 30th! Midnight PDT , 3 Am EST</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wnlcnz/target_drop_tonight_30th_midnight_pdt_3_am_est/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
