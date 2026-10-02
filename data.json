@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-10-02T12:15:24.178674+00:00",
+    "last_run": "2026-10-02T12:30:26.339900+00:00",
     "drops": [
         {
             "title": "Pok\u00e9mon plushy",
@@ -18,7 +18,7 @@
             "retailer": "Reddit",
             "date": "2026-10-02T08:08:26+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/9fvdyy1jh0th1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=aac95f83d1e17d048407df12be00f31912dbda8a",
+            "image": "https://i.redd.it/9fvdyy1jh0th1.png",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wvo4ds/anyone_else_get_hit_with_this/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Anyone else get hit with this?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wvo4ds/anyone_else_get_hit_with_this/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -29,7 +29,7 @@
             "retailer": "Target",
             "date": "2026-10-02T07:42:51+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/2mnbm9edd0th1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=4d25b8109cc2fbd0b942a2c582fd40131e7e9eea",
+            "image": "https://i.redd.it/2mnbm9edd0th1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wvnqgg/damn_target_pokemon_30/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Damn target - Pokemon 30</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wvnqgg/damn_target_pokemon_30/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -51,7 +51,7 @@
             "retailer": "Walmart",
             "date": "2026-09-30T21:19:28+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/4bfvks865qsh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=49df4c1bdd17b1e7aab9ecbea3526ee97a9fd5cf",
+            "image": "https://i.redd.it/4bfvks865qsh1.png",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Walmart Drawing Is Live for the next hour</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -258,6 +258,14 @@
             "category": "OTHER"
         },
         {
+            "title": "Thanks to @PokemonRestocks for the heads up - x.com...",
+            "source": "X / Twitter",
+            "date": "2026-10-01T13:49:28Z",
+            "desc": "Thanks to @PokemonRestocks for the heads up - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE94U3VnRjhYRjA2dG5VM0tDY1B0cDROSHptVGxrMHhLRDByNDY5a0NDNmN5UXlWZ0dpOVYtdjFwMmd0RUxzbWFIaVFKU0VIWGdfRmF4cVZJMXF1SmhWRWZlaQ?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "20 Minutes Left Until 30th Celebration Drawings Close at Walmart\u26a1\ufe0f All...",
             "source": "X / Twitter",
             "date": "2026-09-30T21:40:32Z",
@@ -279,14 +287,6 @@
             "date": "2026-09-30T20:01:53Z",
             "desc": "Under 1 Hour until 30th Celebration Walmart Drawings! Be sure to have all information ready ahead of time to enter for all drawings. Entries will likely go out tomorrow 10/1! https://t.co/4Om8yTp9cg - x.com",
             "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IeVFiR0hQOHdfWDU1VVc1b09KamVvbWFYRW9lMG9Tdk84LXR4TE1rRmJOd3Z2RVhVZVRxWjRSbXZ3X2NVeXZDeXUyR1BIZ2RiWHVlZnVTYnlkSVhjVFRKUmUwRUMwYms?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "30th Celebration Booster Bundles, Mini Tin Display, Knock Out Collecti...",
-            "source": "X / Twitter",
-            "date": "2026-09-30T19:11:09Z",
-            "desc": "30th Celebration Booster Bundles, Mini Tin Display, Knock Out Collections & More Walmart Drawings Open Today at 2PM PT / 5PM ET! \u2728 \u27a1\ufe0f https://t.co/ypacWqVSMu Entries may only be open for 1 hour, so save your preferred payment + delivery info ahead - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1odHRELUNpaEtwX2ttNXEwNFBlM3BmS1VVQVY3d00zMkR5MUd0ZUVNUlhSbElBZnZBclEwOXg2ZDJJNEszeElka3N4eUY2VVZHODNRdTRuNmZHNXlEVGkwMFg1Ulp4cms?oc=5",
             "category": "OTHER"
         },
         {
