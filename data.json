@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-10-02T20:30:25.910445+00:00",
+    "last_run": "2026-10-02T20:45:28.379274+00:00",
     "drops": [
         {
             "title": "Amazon Pok\u00e9mon Restock | Pok\u00e9mon TCG: Mega Evolution\u2014Pitch Black ...",
@@ -29,7 +29,7 @@
             "retailer": "Reddit",
             "date": "2026-10-02T16:03:26+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/abbfhyhou2th1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=9ecd043afe333c40c8c3e1288618f3c9b7495494",
+            "image": "https://i.redd.it/abbfhyhou2th1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wvxnjg/got_some_luck_after_getting_washed_on_initial/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Got some luck after getting washed on initial release</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wvxnjg/got_some_luck_after_getting_washed_on_initial/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -200,17 +200,6 @@
             "sub": "pokemonrestockr"
         },
         {
-            "title": "TARGET POKEMON RESTOCK ALERT: Pokemon Hop's Zacian EX Box - $24.9...",
-            "price": "Check Details",
-            "retailer": "Target",
-            "date": "2026-10-02T08:21:54+00:00",
-            "type": "UNKNOWN",
-            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
-            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1wvobju/target_pokemon_restock_alert_pokemon_hops_zacian/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 TARGET POKEMON RESTOCK ALERT: Pokemon Hop's Zacian EX Box - $24.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1wvobju/target_pokemon_restock_alert_pokemon_hops_zacian/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "pokemonrestockr"
-        },
-        {
             "title": "AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch B...",
             "price": "Check Details",
             "retailer": "Amazon",
@@ -219,6 +208,17 @@
             "image": "https://www.google.com/s2/favicons?domain=amazon.com&sz=256",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1wvobjo/amazon_pokemon_restock_alert_pokemon_tcg_mega/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 AMAZON POKEMON RESTOCK ALERT: Pokemon TCG: Mega Evolution\u2014Pitch Black Elite Trainer Box - $69.95</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.amazon.com/dp/B0GYVHLP4L?tag=restockr-external-20&amp;m=ATVPDKIKX0DER' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.amazon.com/dp/B0GYVHLP4L...</a></li></ul></div>",
+            "sub": "pokemonrestockr"
+        },
+        {
+            "title": "TARGET POKEMON RESTOCK ALERT: Pokemon Hop's Zacian EX Box - $24.9...",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-10-02T08:21:54+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
+            "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1wvobju/target_pokemon_restock_alert_pokemon_hops_zacian/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 TARGET POKEMON RESTOCK ALERT: Pokemon Hop's Zacian EX Box - $24.99</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/pokemonrestockr/comments/1wvobju/target_pokemon_restock_alert_pokemon_hops_zacian/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "pokemonrestockr"
         },
         {
@@ -332,6 +332,17 @@
             "sub": "PKMNTCGDeals"
         },
         {
+            "title": "Monthly Informational and Q/A Mega thread!",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-10-01T14:00:54+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wv0806/monthly_informational_and_qa_mega_thread/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Informational and Q/A Mega thread!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
             "title": "Monthly Discord unban form and Q&amp;A thread",
             "price": "Check Details",
             "retailer": "Reddit",
@@ -340,17 +351,6 @@
             "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wv07zt/monthly_discord_unban_form_and_qa_thread/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Discord unban form and Q&amp;A thread</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wv07zt/monthly_discord_unban_form_and_qa_thread/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PKMNTCGDeals"
-        },
-        {
-            "title": "Monthly Informational and Q/A Mega thread!",
-            "price": "Check Details",
-            "retailer": "Walmart",
-            "date": "2026-10-01T14:00:54+00:00",
-            "type": "UNKNOWN",
-            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wv0806/monthly_informational_and_qa_mega_thread/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Informational and Q/A Mega thread!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -370,7 +370,7 @@
             "retailer": "Walmart",
             "date": "2026-09-30T21:19:28+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/4bfvks865qsh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=49df4c1bdd17b1e7aab9ecbea3526ee97a9fd5cf",
+            "image": "https://i.redd.it/4bfvks865qsh1.png",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Walmart Drawing Is Live for the next hour</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -405,7 +405,7 @@
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=pokemoncenter.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wu8fgt/pokemon_center_queue_is_up/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -425,7 +425,7 @@
             "retailer": "Reddit",
             "date": "2026-09-30T00:45:21+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/uruk9edw0ksh1.png?width=1280&amp;format=png&amp;auto=webp&amp;s=9b427f4a273fc9127eab5497fc234ba5c83635c9</a></p>",
+            "image": "https://external-preview.redd.it/xQoks1SM0u8hkZZRwPluKKZ2rhJS9fIsle0zsVci00c.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=d3355d4dad4ff5e2c13edf8596a2be97b9805b87",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wtr6gl/pokemon_center_drop_likely_tomorrow/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 POKEMON CENTER DROP LIKELY TOMORROW!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wtr6gl/pokemon_center_drop_likely_tomorrow/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -491,7 +491,7 @@
             "retailer": "Reddit",
             "date": "2026-09-28T17:20:11+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ixahp1apoash1.png?width=578&amp;format=png&amp;auto=webp&amp;s=a4fe31b0e2e82b8052b98d81c89604968042dfbb</a></p>",
+            "image": "https://external-preview.redd.it/xQoks1SM0u8hkZZRwPluKKZ2rhJS9fIsle0zsVci00c.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=d3355d4dad4ff5e2c13edf8596a2be97b9805b87",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wskqle/delta_reign_has_loaded_on_pokemon_center_keep_an/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Delta Reign Has loaded on Pokemon center ,keep an eye out for a queue in the near future!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wskqle/delta_reign_has_loaded_on_pokemon_center_keep_an/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -502,7 +502,7 @@
             "retailer": "Target",
             "date": "2026-09-27T22:17:06+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/i0o2oshs05sh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b28d74f08cce5566eb6bdd0862fb9701c9865922",
+            "image": "https://i.redd.it/i0o2oshs05sh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wrxdeq/pokemon_30th_celebration_draw_may_be_coming_soon/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration draw may be coming soon to Target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wrxdeq/pokemon_30th_celebration_draw_may_be_coming_soon/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -523,7 +523,7 @@
         {
             "title": "The Pok\u00e9mon 30th Celebration Elite Trainer Box is under market price \u2014...",
             "source": "Google News",
-            "date": "2026-10-02T16:14:01Z",
+            "date": "2026-10-02T19:50:12Z",
             "desc": "The Pok\u00e9mon 30th Celebration Elite Trainer Box is under market price \u2014 buy for $89.99 on Amazon - Mashable",
             "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMTI2X082RFp0RU81MW9LQ1lKTkFyUWw3Vi1hN28yVUdiTl8xSGlVLUJZTDVEWGphaVZBUmVsQjlXLVc1cXprYWxjX2wyblhQVGF6TWdTWXgzWmNhR3RFOFRlY1UzYzJzVkZFMTA2TkdVUmRySTh4TENGZ0pMcFZMUld0aUREdzc0Qkg4OVNR?oc=5",
             "category": "OTHER"
@@ -631,14 +631,6 @@
             "source": "X / Twitter",
             "date": "2026-10-02T17:19:30Z",
             "desc": "Bundle print quality a little sus. @PokemonDealsTCG - x.com",
-            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBtZUYtSF9DSmtoQ2lLc0MtNFRWS3J0bDdDdGZsQkVyWVhueTJ5cm9rV1czQkM5TUM0LWwwVDBrNDF3R2JqQ0FISGZqOTZpZURDQWxNWEJGSmxPMkNISlQzNFRiby1pbkg5Zm9F?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Bundle print quality a little sus. @PokemonDealsTCG - x.com...",
-            "source": "X / Twitter",
-            "date": "2026-10-02T17:19:30Z",
-            "desc": "Bundle print quality a little sus. @PokemonDealsTCG - x.com",
             "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8xVGF2SVhYQ0RTNlh1RjJrNmZoR0M0c2JmZVlLUXVCbGk1U0xES1lzOWRQQk9NdTFiNFNvZlhjSERjaWlIcmhYYlk2Z3BVckN6T1Y4MTNLZERYNURzcl9RRUZaVUMzemttZVV3?oc=5",
             "category": "OTHER"
         },
@@ -648,6 +640,14 @@
             "date": "2026-10-02T17:19:30Z",
             "desc": "Bundle print quality a little sus. @PokemonDealsTCG - x.com",
             "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uOTdGNUR0ZTc4bkNvUUdfc1Z1bFR4X0VyM19CTG9Md1ZmZ3hTdzR6NVFsVS1mbG9hcXlYRTRyUXU0YnUzdUpSTmJrRTlQVkRsZFhsVWdSQ01CYWhPLU1UcWJkWmhSR184VDFJ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Bundle print quality a little sus. @PokemonDealsTCG - x.com...",
+            "source": "X / Twitter",
+            "date": "2026-10-02T17:19:30Z",
+            "desc": "Bundle print quality a little sus. @PokemonDealsTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBtZUYtSF9DSmtoQ2lLc0MtNFRWS3J0bDdDdGZsQkVyWVhueTJ5cm9rV1czQkM5TUM0LWwwVDBrNDF3R2JqQ0FISGZqOTZpZURDQWxNWEJGSmxPMkNISlQzNFRiby1pbkg5Zm9F?oc=5",
             "category": "OTHER"
         },
         {
@@ -675,6 +675,14 @@
             "category": "OTHER"
         },
         {
+            "title": "30th Celebration Booster Bundles, ETB, Mini Tins & More Target Drops P...",
+            "source": "X / Twitter",
+            "date": "2026-10-02T00:49:54Z",
+            "desc": "30th Celebration Booster Bundles, ETB, Mini Tins & More Target Drops Possible Tonight at 12AM PT / 3AM ET! \u2728 ETB: https://t.co/VMWQ7ZdJ1Q Booster Bundle: https://t.co/wVlZJ5tQq2 Mini Tin: https://t.co/l8IB12tCxA Poster Collection: https://t.co/FRJs7WSAZ - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfWE8tZ05sel85TFhhZDlLclJockNiTFVYemdfTWFrUTlKOGV2a2QwYUVhZF94amlGbnVPX3czWjRMWFYtd0lxMFlMblNHUkVNeVFZcDJ6ODNFMEZBTURJenJ4clI4QXc?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "\ud83d\udcab Upcoming 30th Anniversary Target Online Drops! New backend stock upd...",
             "source": "X / Twitter",
             "date": "2026-10-01T23:51:29Z",
@@ -688,14 +696,6 @@
             "date": "2026-10-01T15:52:09Z",
             "desc": "Pokemon x European Space Agency Plush, TCG Accessories & Apparel also up at Pokemon Center! \ud83d\ude80 https://t.co/nGUHo7mNtu #Pokemon #PokemonTCG - x.com",
             "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE04UWhjcFdWMHJXNjBkYVEyeEcwRENscEFjRlN5RktiMGp4Y3R6dFlXbDJ5NFRFN2dNRF95U3ZEeEJ1UEkwN2NtLTZobXdJbVlsQjJ3cTdkSWtMNUFuTUtEYXo3bE5QTk9zZDFpRnYtY3FyQQ?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Pokemon x European Space Agency Plush, TCG Accessories & Apparel also ...",
-            "source": "X / Twitter",
-            "date": "2026-10-01T15:52:09Z",
-            "desc": "Pokemon x European Space Agency Plush, TCG Accessories & Apparel also up at Pokemon Center! \ud83d\ude80 https://t.co/nGUHo7mNtu #Pokemon #PokemonTCG - x.com",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNRHBqTmd0TGdmbkc1Q2loUmhDZVRZQVZRRndaU2wtM0M1ZDhxanJRUnpIN1NwelRmVGtfZmhBbUk2UkljbHdVeEVlUGlEbU1vZHljMFk2TEN6VUhuNXZJQjVqVzA1ZDQ?oc=5",
             "category": "OTHER"
         },
         {
