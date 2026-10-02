@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-10-02T08:45:29.278972+00:00",
+    "last_run": "2026-10-02T09:00:27.922901+00:00",
     "drops": [
         {
             "title": "Anyone else get hit with this?",
@@ -18,7 +18,7 @@
             "retailer": "Reddit",
             "date": "2026-10-02T07:41:20+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/c1o00td0d0th1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=7c5e4add44ab7a49c16436e17597975331d43274",
+            "image": "https://i.redd.it/c1o00td0d0th1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1wvnpoq/this_blows/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 This blows\u2026</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1wvnpoq/this_blows/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -40,7 +40,7 @@
             "retailer": "Target",
             "date": "2026-10-01T23:51:06+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/xwes7nt41ysh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=77ccf4eba9bbb40ed058e65f34d4323e9a26753c",
+            "image": "https://i.redd.it/xwes7nt41ysh1.png",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1wvf14r/target_pok%C3%A9mon_drop_tomorrow_60k_30th_celebration/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Pok\u00e9mon Drop Tomorrow: 60K+ 30th Celebration Booster Bundles + 20K+ ETBs Loaded</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1wvf14r/target_pok%C3%A9mon_drop_tomorrow_60k_30th_celebration/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonDropNotify"
@@ -112,17 +112,6 @@
             "sub": "PokemonDropNotify"
         },
         {
-            "title": "Monthly Informational and Q/A Mega thread!",
-            "price": "Check Details",
-            "retailer": "Walmart",
-            "date": "2026-10-01T14:00:54+00:00",
-            "type": "UNKNOWN",
-            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
-            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wv0806/monthly_informational_and_qa_mega_thread/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Informational and Q/A Mega thread!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li></ul></div>",
-            "sub": "PKMNTCGDeals"
-        },
-        {
             "title": "Monthly Discord unban form and Q&amp;A thread",
             "price": "Check Details",
             "retailer": "Reddit",
@@ -131,6 +120,17 @@
             "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wv07zt/monthly_discord_unban_form_and_qa_thread/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Discord unban form and Q&amp;A thread</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wv07zt/monthly_discord_unban_form_and_qa_thread/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PKMNTCGDeals"
+        },
+        {
+            "title": "Monthly Informational and Q/A Mega thread!",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-10-01T14:00:54+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wv0806/monthly_informational_and_qa_mega_thread/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Informational and Q/A Mega thread!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -293,7 +293,7 @@
             "retailer": "Walmart",
             "date": "2026-09-30T21:19:28+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/4bfvks865qsh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=49df4c1bdd17b1e7aab9ecbea3526ee97a9fd5cf",
+            "image": "https://i.redd.it/4bfvks865qsh1.png",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Walmart Drawing Is Live for the next hour</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wuh5ix/pokemon_30th_celebration_walmart_drawing_is_live/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -328,7 +328,7 @@
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=pokemoncenter.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wu8fgt/pokemon_center_queue_is_up/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon Center Queue is up</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10438-112</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10446-120</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li><li style='margin-bottom: 3px;'><a href='https://www.pokemoncenter.com/product/10-10439-109</a>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.pokemoncenter.com/product/10...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -348,7 +348,7 @@
             "retailer": "Reddit",
             "date": "2026-09-30T00:45:21+00:00",
             "type": "UNKNOWN",
-            "image": "https://external-preview.redd.it/xQoks1SM0u8hkZZRwPluKKZ2rhJS9fIsle0zsVci00c.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=d3355d4dad4ff5e2c13edf8596a2be97b9805b87",
+            "image": "https://preview.redd.it/uruk9edw0ksh1.png?width=1280&amp;format=png&amp;auto=webp&amp;s=9b427f4a273fc9127eab5497fc234ba5c83635c9",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wtr6gl/pokemon_center_drop_likely_tomorrow/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 POKEMON CENTER DROP LIKELY TOMORROW!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wtr6gl/pokemon_center_drop_likely_tomorrow/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -370,7 +370,7 @@
             "retailer": "Target",
             "date": "2026-09-29T20:07:49+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/720bzvkbnish1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=d891665a5b1e9c32d6d02d9768645db0ed02cecf</a></p>",
+            "image": "https://preview.redd.it/720bzvkbnish1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=d891665a5b1e9c32d6d02d9768645db0ed02cecf",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wtknjk/target_drop_schedule_midnight_pdt_3am_edt_good/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Drop schedule Midnight PDT , 3AM EDT Good luck!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wtknjk/target_drop_schedule_midnight_pdt_3am_edt_good/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -403,7 +403,7 @@
             "retailer": "Reddit",
             "date": "2026-09-29T03:34:33+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/06uyv614qdsh1.png?width=140&amp;height=74&amp;auto=webp&amp;s=81717b7d7097eac140f58e9b56ccaf1f5ce2abd7",
+            "image": "https://preview.redd.it/06uyv614qdsh1.png?width=786&amp;format=png&amp;auto=webp&amp;s=4ebe4a3decd016250b22d4a2df4d9c9186bb62ef</a></p>",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wszkkv/30th_lottery_coming_this_wednesday_2pm_pdt5pm_pdt/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th Lottery coming this Wednesday! 2PM PDT/5PM PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wszkkv/30th_lottery_coming_this_wednesday_2pm_pdt5pm_pdt/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -414,7 +414,7 @@
             "retailer": "Reddit",
             "date": "2026-09-28T17:20:11+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ixahp1apoash1.png?width=578&amp;format=png&amp;auto=webp&amp;s=a4fe31b0e2e82b8052b98d81c89604968042dfbb</a></p>",
+            "image": "https://preview.redd.it/ixahp1apoash1.png?width=578&amp;format=png&amp;auto=webp&amp;s=a4fe31b0e2e82b8052b98d81c89604968042dfbb",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wskqle/delta_reign_has_loaded_on_pokemon_center_keep_an/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Delta Reign Has loaded on Pokemon center ,keep an eye out for a queue in the near future!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wskqle/delta_reign_has_loaded_on_pokemon_center_keep_an/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -425,7 +425,7 @@
             "retailer": "Target",
             "date": "2026-09-27T22:17:06+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/i0o2oshs05sh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b28d74f08cce5566eb6bdd0862fb9701c9865922",
+            "image": "https://i.redd.it/i0o2oshs05sh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1wrxdeq/pokemon_30th_celebration_draw_may_be_coming_soon/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration draw may be coming soon to Target</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1wrxdeq/pokemon_30th_celebration_draw_may_be_coming_soon/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -449,7 +449,7 @@
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wpmd0s/target_drop_tonight_midnight_pdt_3am_pdt/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 TARGET DROP TONIGHT MIDNIGHT PDT 3AM PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 TARGET DROP TONIGHT MIDNIGHT PDT 3AM PDT</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892076</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1011483414</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10114834...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892067' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644665</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644667</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1012644666' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10126446...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-1010892065</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-10108920...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/moo/A-1011483413' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/moo/A-101148341...</a></li><li style='margin-bottom: 3px;'><a href='https://www.target.com/p/sora/A-95120834' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.target.com/p/sora/A-95120834...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -464,8 +464,291 @@
             "sub": "PokemonTCGRestocks"
         }
     ],
-    "articles": [],
-    "tweets": [],
-    "pokebeach": [],
+    "articles": [
+        {
+            "title": "Target's new system might see more collectors score Pok\u00e9mon's hyped 30...",
+            "source": "Google News",
+            "date": "2026-10-01T23:45:11Z",
+            "desc": "Target's new system might see more collectors score Pok\u00e9mon's hyped 30th anniversary TCG set | ICYMI, read more. \ud83d\udd3b - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS2RKUldha1VJNU5xUGdWWVlnZk9jbTJkU195ekFfUWlVblpTRTYycDBUR0hNSnNvbjlneWNCYWdnRU42WHhuR1lhUFpRTDdCcmhlQl9KSXFFRkk0TC1Kc1Y5aE91RGlkWjNjUW55YTF2czVDUWdtR3ZERkNtNDlPUWhrMFh4Wmd5TWxlcmhxZGNIOHkxRmdPQ0lZMUNoT01FNEFDUGI0QTRZUE4xY29fa29oNmV2S0lHTWw1Z2J2NEZFZFlhZERUVmlrbjJ2TVU5NGlNZ1NtWWJ3Zw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "'Pok\u00e9mon' Will Surprise Fans With the TCG's First Valentine's Day Set ...",
+            "source": "Google News",
+            "date": "2026-10-01T19:30:11Z",
+            "desc": "'Pok\u00e9mon' Will Surprise Fans With the TCG's First Valentine's Day Set - polygon.com",
+            "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZ1NlN2NLX3hsMENTeTF6MjFwakxLM0J1bmZMdVFQQlozeFN3OFlxdU01c2FoY3dFZTl2cVoyQUN4QmV0RUpFb1B0bUVXb3hhdC04U3QwSXhlMG9hanhKMzNWR2hqekN0T2tTYmlmek1SWjhGSFBYT0N4VkwzYzBJeUxLU251R3pncHc?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! - PokeBeach...",
+            "source": "Google News",
+            "date": "2026-10-01T18:16:22Z",
+            "desc": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSHQxakVmUE9JcEh5cU5iaEhSTkp4VmZoSmZJOE01WXF1MmxkTDExQm9lZnd0dmY0TVZ1U1c4Wk1NZlBCSXRBQ2Z1ajJNYTgxQnRlSTJ1cGZWUExOMW9UaW5uWFMzZUptSGtxSWx0dzl0YkZSZUJzZ0NhZkltTUIzeC1FcFBzSXdjRXFweGNzMA?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pok\u00e9mon's 30th Anniversary TCG Is Getting A Huge New Drop, But There's...",
+            "source": "Google News",
+            "date": "2026-10-01T17:36:18Z",
+            "desc": "Pok\u00e9mon's 30th Anniversary TCG Is Getting A Huge New Drop, But There's A Catch - polygon.com",
+            "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeURBcEtQTGF2M1JEQUhVQVlIMVltMWJqUUJsbDBKdjhqcWZoR0M1UWVJZEcwNUR1U0RKY2p1ckwyY2t3Zkg4N1NYMUhfQS1fNnRwWXNZZ1JrSlVIQUJ0NUdiMVc2eDlBUk44MjhMU01xRmstOEE2SHk0OU52aTF3Q3prZFNyR1VURXFPWGs3bjlTVFlXQWZxOHln?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "\u26a1\ud83c\udf89 Pok\u00e9mon 30th Anniversary: The Trading Card Game new drop 2nd Octobe...",
+            "source": "Google News",
+            "date": "2026-10-01T15:23:52Z",
+            "desc": "\u26a1\ud83c\udf89 Pok\u00e9mon 30th Anniversary: The Trading Card Game new drop 2nd October at Smyths Toys! \ud83c\udfb4 \u26a0\ufe0f Stock will be extremely limited. To help as many collectors as possible access these items, the following in-store purchase limits will apply while stocks last: - instagram.com",
+            "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBYdXZONlY1aUZDY3l5MDVObkQxVjZhdUxfcFRyX2ZRQUZ1M3h3dWF4QkFFU0R5NENFUFlJRnhaZV9LYlVQbGo1RndFNGVEamVObnc?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "WHEN YOU HIT THE RESTOCK OF ALL RESTOCKS! Toy Hunting & Pokemon - YouT...",
+            "source": "Google News",
+            "date": "2026-10-01T15:00:01Z",
+            "desc": "WHEN YOU HIT THE RESTOCK OF ALL RESTOCKS! Toy Hunting & Pokemon - YouTube",
+            "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE55dFhlSE5mQ3phRFVGT1pDZGdvSmE5b005aG9NQjNHSlk4cVM0U29UYXJoa01FZXBTLXJaUk95c2I0cXdlbTlYeEYtaHJwQjAtRWF4UjRR?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "FOR EXTRA CLARIFICATION: The Wednesday 7th October pre-order date is f...",
+            "source": "Google News",
+            "date": "2026-10-01T14:36:42Z",
+            "desc": "FOR EXTRA CLARIFICATION: The Wednesday 7th October pre-order date is for those who have pre-ordered with us before OR have come to an official Pokemon TCG event with us. You do not have to have done both in order to be able to come on Wednesd - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNbURtTVRoX0d1OGtabWxEd3hIVGtUZDRKVXlfeGkyMzl5ZlVVY2RRN24zcTBwVnlwSGVDY1JmOW5xcDZPQW5RTUM5VXh3M1pSVzhteVZZRjRob0JpdHAzUWcxbWZHdjdwYVhEM1ROMEpzWk1IZGxNZ3RSdEFmVk9Campubk5URlY3Z0kzdG9nQjVCRVJQY0ZEZEtIUTRHWXRpazZjR3A0OTBvN1EzTGVkM0J2OTFMd2w5dHZld01kTWQzbUpldElZRlM2R1hudDNFZmFGMERjbS00c19FU0E?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Latest Pokemon TCG drop dates for 30th Celebration, Delta Reign, Japan...",
+            "source": "Google News",
+            "date": "2026-09-30T17:53:03Z",
+            "desc": "Latest Pokemon TCG drop dates for 30th Celebration, Delta Reign, Japanese cards - The Olympian",
+            "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LNFZOZUJFVktfd0NmcFBRc09ZWEZSTXdsUW1YT2V2SlZKVGk0SlIzZEEycy12bld6UTRwTHlINHhZek1sbnM5aEJ1RzJWUVV2cmJXNmxzZm5XUVRYZFpseFBMMXg?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "TPC begins presale for the set releasing after the Pok\u00e9mon 30th annive...",
+            "source": "Google News",
+            "date": "2026-09-30T16:15:03Z",
+            "desc": "TPC begins presale for the set releasing after the Pok\u00e9mon 30th anniversary collection, Delta Reign, and it includes ETBs and Booster Bundles | Read more! \ud83d\udd3b - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOQWtVa3EwbGs2QzN2UExjUi1NZFRUSDRqeTh0Y0szYnBGTXE3cTlzYnBJTmtmZEYxMm5vYkdpcjZOZm1pWVFJU3pYQ25PWnE2aDhLVzdJQ3ZTQjFzZ2JaTDVaelF3dGkzel95T2U0VUY0SDMyd2I0T0tuVml3b0xWdXRwMFdQdVNQdE9VbUhwazg4UXJKc2tPNFlveHBmZ3BxWlhYNVZ2OF9DUl9hbGxVZFlNTG1RUWYzdlRNZTJmSUxCQS00djNFdGlzTGEzOE1WSTVieHU3ZENTdw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "The Pok\u00e9mon Center opens pre-orders for next big TCG set - polygon.com...",
+            "source": "Google News",
+            "date": "2026-09-30T16:01:29Z",
+            "desc": "The Pok\u00e9mon Center opens pre-orders for next big TCG set - polygon.com",
+            "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON0pVU3ZJaWhma0thRkVkV1BwdXE0NDhUbGtNVmNONjREOEFVRE9lcHVhb2QycnVUcnBYZHZPTW9LbktRSzJJZjc4ZUVoLUlPVFloN185QnpBZFlzWGQxNHBYTmFlTFlSRS1QMy1fVEZ3N2J2cmNPOXRZMm1Bakh4RjRTb0RjcF9xSUYwRw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "DjsPokeCenter Pokemon Prismatic Evolutions Booster Bundle + Surprise B...",
+            "source": "Google News",
+            "date": "2026-09-30T02:27:54Z",
+            "desc": "DjsPokeCenter Pokemon Prismatic Evolutions Booster Bundle + Surprise Box Bundle (Sam's Club) - Shop - Shop",
+            "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMHVtWFlwUTc3QXN5RVRSUnRJWXI2b2E4S3o3cDJwZjh1OE5TR25UVUNTQmxVZU1YalhLLW9weHBybHoyQXByOTJydkZoajVLbmNuSXNCMWFaWm40M3VsUk10M2lxNllkZ29IUUd0bnJWN2NyelpHeWU4TmM4YmZ0UTNqM1ZHbUdfSEJkekZ1RTliQW84c3VzcmZmZWljVU02d3ZENWsxaktUaXdfRGNBQ2pfeEc?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Did Scalpers Ruin Target\u2019s Pokemon 30th Anniversary Celebration Family...",
+            "source": "Google News",
+            "date": "2026-09-29T18:10:02Z",
+            "desc": "Did Scalpers Ruin Target\u2019s Pokemon 30th Anniversary Celebration Family Event? - YouTube",
+            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1fMHN0TWc5YldOZDhvaFJ0SGs2b2xSN3VKZU5EMmFoRDdOVEdQblRVeHpNOTV3Vmc1YW1UZy1CbWpvMHdjUkp2YUFCMlViQmh1U3dJdg?oc=5",
+            "category": "OTHER"
+        }
+    ],
+    "tweets": [
+        {
+            "title": "\ud83d\udcab Upcoming 30th Anniversary Target Online Drops! New backend stock upd...",
+            "source": "X / Twitter",
+            "date": "2026-10-01T23:51:29Z",
+            "desc": "\ud83d\udcab Upcoming 30th Anniversary Target Online Drops! New backend stock updates on the following items, with 30th Anniversary Booster Bundles & Mini Tins officially scheduled to drop tomorrow, its likely we'll see these drop on Target tonight around the typical - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1SSGN4ZExNamFCTjJHVHR3VlF0WG13ajhSaWlidFhZMmFDRGg3TTZ3QXZWalkyemlBcHVkOXhiUUtaRGg0aGtYOXlWVk8xYWd3YldxUXAxXzdrOG9fczJURDlNRQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon x European Space Agency Plush, TCG Accessories & Apparel also ...",
+            "source": "X / Twitter",
+            "date": "2026-10-01T15:52:09Z",
+            "desc": "Pokemon x European Space Agency Plush, TCG Accessories & Apparel also up at Pokemon Center! \ud83d\ude80 https://t.co/nGUHo7mNtu #Pokemon #PokemonTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE51MFFPNEhwdFdMdmt2Wm5mZi1xMVFEa2NJRWN2N3RWN0V4TGxjWU5vZm81QXpFLTVHdXJmbTZwVUlSSkV2NFA2bU5WSEtKT0lROHFxN1Q1WHRJNXBuWDktZVFFc2w4akYtSVZRMm9DbjM1QQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "20 Minutes Left Until 30th Celebration Drawings Close at Walmart\u26a1\ufe0f All...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T21:40:32Z",
+            "desc": "20 Minutes Left Until 30th Celebration Drawings Close at Walmart\u26a1\ufe0f All Drawings: \u27a1\ufe0fhttps://t.co/dmUirOXhbn To confirm your entry is in, check the drawing page - it should show \"Entry Submitted\" Direct Product Links: 30th Celebration Mini Tin Display (10 Ti - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94VGF1NE41cDR4VkZObE5YcEUtRDAxUTQwdmRzdnlhejM0LVE5VTJxajVaVnJXQm80ZEVWbzV2Z0JOQW1MNHVPXy1tMWdhTjVGOGg0bWVCb1l5MlVKc1IwWXNBaE1WMms?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "30th Celebration Walmart Drawings Open in 30 Minutes: https://t.co/dmU...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T20:30:10Z",
+            "desc": "30th Celebration Walmart Drawings Open in 30 Minutes: https://t.co/dmUirOXhbn All Drawings (Live at 2PM PT / 5PM ET) \u27a1\ufe0fhttps://t.co/dmUirOXhbn Drawings will likely only be open for 1 hour - closing at 3PM Pacific / 6PM Eastern\u23f0 Direct Links: 30th Celebra - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UQnd5ejI5RXViVjNjQ3lSX3R5TElha2pjRUpXTHBKRmFnX1RkbXRLaGRabmZhSEh5RXAtS2pQMzVHVHFDUEI5R0FUekdRTHR6eGpRZHR6Wm5IQ19PMFhISm9pMUs1UTg?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Under 1 Hour until 30th Celebration Walmart Drawings! Be sure to have ...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T20:01:53Z",
+            "desc": "Under 1 Hour until 30th Celebration Walmart Drawings! Be sure to have all information ready ahead of time to enter for all drawings. Entries will likely go out tomorrow 10/1! https://t.co/4Om8yTp9cg - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IeVFiR0hQOHdfWDU1VVc1b09KamVvbWFYRW9lMG9Tdk84LXR4TE1rRmJOd3Z2RVhVZVRxWjRSbXZ3X2NVeXZDeXUyR1BIZ2RiWHVlZnVTYnlkSVhjVFRKUmUwRUMwYms?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "30th Celebration Booster Bundles, Mini Tin Display, Knock Out Collecti...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T19:11:09Z",
+            "desc": "30th Celebration Booster Bundles, Mini Tin Display, Knock Out Collections & More Walmart Drawings Open Today at 2PM PT / 5PM ET! \u2728 \u27a1\ufe0f https://t.co/ypacWqVSMu Entries may only be open for 1 hour, so save your preferred payment + delivery info ahead - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1odHRELUNpaEtwX2ttNXEwNFBlM3BmS1VVQVY3d00zMkR5MUd0ZUVNUlhSbElBZnZBclEwOXg2ZDJJNEszeElka3N4eUY2VVZHODNRdTRuNmZHNXlEVGkwMFg1Ulp4cms?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "All Delta Reign Preorders look to be sold out now at Pok\u00e9mon Center, c...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T18:01:30Z",
+            "desc": "All Delta Reign Preorders look to be sold out now at Pok\u00e9mon Center, congrats if you scored! We\u2019ll post any other important drops, restocks or updates! \ud83d\udd14 - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBRQVhnbS01NGpuUnVfdWwxUXRZTnFLNnpWcTY4Z1Q5cTBZSTlVb0VyMmZUMjh4NHFGVmFwbThOb2pocmItMFpJb0ZHVm94bjFGeElCa2FBUWxOd3YtT014STYtM0t5VVE?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "\u2728\ufe0f Delta Reign Booster Boxes & Booster Bundles Still Available on Poke...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T17:24:12Z",
+            "desc": "\u2728\ufe0f Delta Reign Booster Boxes & Booster Bundles Still Available on Pokemon Center! ETBs Appear to be OOS now Delta Reign Booster Bundle (Limit 1) https://t.co/qcvxN8CmIU Delta Reign Booster Box (Limit 1) https://t.co/ZPtuxoeV92 #Pokemon - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0tQnJKaFhzRGJOblNTd0Z4Y3JFNUdPd2U4anRTU2pSN1ZKQ3ZoUmtWQkFmSUdULXhmVlJILXh0S1IxZnVGV0JRQ3NIRU9pbU9ULUw4NnZZcGhxVWh2MHlwdUlLaw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Delta Reign ETB, Booster Box & Booster Bundle going up at Pokemon Cent...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T16:01:29Z",
+            "desc": "Delta Reign ETB, Booster Box & Booster Bundle going up at Pokemon Center! \ud83d\udcab ETB: https://t.co/oK5yWDw7mJ Booster Box: https://t.co/0LpsY1iZeZ Booster Bundle: https://t.co/0lZcFufEma Only use the direct links above once you're through the queue! Good l - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxTENDRk8zcUZxVzc1LUJyUVFJeHYzMjBhSi1jd0tselJNcGFEZGxmM0hPcDJKcElsaXNHM0FESkRWQVBuMTE2dVlXMXZETG1lQzQ2ZmxQdmpUVlNoS2piVjRKZHpXNUk?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon Center Queue is Live! We'll post any new Pokemon TCG drops or ...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T15:46:20Z",
+            "desc": "Pokemon Center Queue is Live! We'll post any new Pokemon TCG drops or restocks! https://t.co/Ng8gtVMadL #Pokemon #PokemonTCG - x.com",
+            "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9nVnMtQTgzTEZxTUdhYzhkMnQtQjAtUFB4dkd5N2t4bG1NeXFmQ3Zxelp0Nlp6QXdRNDRSQy1jcUhvQjlscTduTUtXckdFV1haQ0xoV0djSkw1Q1VucjV1VHk5dHJpQXhpbGd2emRBNnU0UQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "30th Celebration Tin is up at Target! \u27a1\ufe0f https://t.co/SK1rC36SYc #Poke...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T09:33:43Z",
+            "desc": "30th Celebration Tin is up at Target! \u27a1\ufe0f https://t.co/SK1rC36SYc #PokemonTCG #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hNG9oX3FOVDdqODJHVGNiT2paX01tLTFxbzJQUzFOVWJnRlFwdGZ1R1FiZWZfZmNyM0d0MnNmS3RxTHAxb2hiUWFQbnU1TnBRVnFZNkhOVC1pNFotZF9IQ0lERU13aHc?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "30th Celebration Sylveon ex Box is up at Target! \u27a1\ufe0f https://t.co/6I9eU...",
+            "source": "X / Twitter",
+            "date": "2026-09-30T09:22:39Z",
+            "desc": "30th Celebration Sylveon ex Box is up at Target! \u27a1\ufe0f https://t.co/6I9eUdpdbL #PokemonTCG #ad - x.com",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8xNWFoandmRHp0TVFBZzFBZURXYUs3dG5VbG5md3NSN05fUlFjZGJBWjZBQlJ2Rk9OVHlGM2d1N3RfWjB4WmFRQUkyT25YUnFUbmVZd2QzOGNNalNVaDJWdHdFVlRaRW8?oc=5",
+            "category": "OTHER"
+        }
+    ],
+    "pokebeach": [
+        {
+            "title": "30+ Pokemon European Space Agency and Other TCG Accessories Released o...",
+            "source": "PokeBeach",
+            "date": "2026-10-02T04:02:39Z",
+            "desc": "30+ Pokemon European Space Agency and Other TCG Accessories Released on Pokemon Center! - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNV2lFZXE4dkplMFFhMGZtS0FQWlc1bHNrMHJWNlo1cklTeXQtMGh6aC1UazRJZUl0UTRnRjVteVJNNDdMRnhndVdQenJNaGlhdE1nU3hLc29vWW9uWUd2VzIzYnFicnRFT2pWcHE2SjF1YUZmMlBWeGxPX3dwWlA2WjJTZzFjUm1YVDEzaHJ6NkwyaDA1VzdGZ3l4WkhxM1VPQWg3WXAtTV9Rc0FGdENsU3lCWng0cDI0bVRj?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-10-01T18:16:22Z",
+            "desc": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSHQxakVmUE9JcEh5cU5iaEhSTkp4VmZoSmZJOE01WXF1MmxkTDExQm9lZnd0dmY0TVZ1U1c4Wk1NZlBCSXRBQ2Z1ajJNYTgxQnRlSTJ1cGZWUExOMW9UaW5uWFMzZUptSGtxSWx0dzl0YkZSZUJzZ0NhZkltTUIzeC1FcFBzSXdjRXFweGNzMA?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! | Page 2 - Poke...",
+            "source": "PokeBeach",
+            "date": "2026-10-01T18:14:12Z",
+            "desc": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! | Page 2 - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSDh1QUFDQUktZGVxel9WbWRZZUxxMlFTeGFjS0NteWtDVGgxa2ZsWTg4MFNoaGFLcjk2X0xFQ1hvSjdqaENTa0xKSFhPTXlGeXliWWRSNlo4WXdOM3pGMFNOZnQ3U2hFR3ZWbERrU2VuN3BHOU91R0psRE94UGlSVU55UzJDQzBsdDlvdWk2bzNYb1FEOGYwYi1MdzlKRDd4bC1Xb1dqQnRVVDN1TldaREo1YXdZVms?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Carpe Diem \u2013 Seizing Opportunity in the Pokemon TCG - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-30T17:02:43Z",
+            "desc": "Carpe Diem \u2013 Seizing Opportunity in the Pokemon TCG - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA3anRHbjB4VWRZb2ZwWnd1YmJXUkx1VUZFSnBlTXM1djRLZi1jbExuWDRuZnB3UXBpX19uR1FhS1A4Y3dFRjhQdVlKZw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "\"Delta Reign\" Preorders Now Live on Pokemon Center! - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-30T16:07:43Z",
+            "desc": "\"Delta Reign\" Preorders Now Live on Pokemon Center! - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdmY4ampVWVAzTGNjekQ2Y0ZaMlNyLTNRaS05TkhxVzhhdmFyNFV2Sm1FbHJBRkh2dVVNS3ZtUlAzbTNEZndCUGExR2pEc25WZmFWdmhiM1JwRnpwVU14NEtGMTg5cGE3MXBxT2xkMExHbFg1ZlpqeU1lTGdMMjN5TXZuS2xPN256M0E?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Standard - mew ex box - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-29T03:36:16Z",
+            "desc": "Standard - mew ex box - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBSdk52S3BMazBRRUF5Vl94Vzk4X2lEejBydzZ0Ui02WDJMTEpjeF82cEpabmE0UFRvS3BOUmVURkRmNldGM1lRNjBEbk5Iei1fUmlqTjR1TE1PSDJZRGo5d1JXb09UbVJ5aU54VEhqbWo4Wm8?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "\"Delta Reign\" Prerelease Promos and More English Cards Revealed! - Pok...",
+            "source": "PokeBeach",
+            "date": "2026-09-28T21:02:57Z",
+            "desc": "\"Delta Reign\" Prerelease Promos and More English Cards Revealed! - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUmNBR1U0S094Sk1qVk1rcXktYjYzNkE3UUp4VzJURzhTU0Niak1vVTJQZVdiRmZFeUl6YUtGekEwR2UzRTRXOUdZMkJhWHpmTjEwcjltMUZBMGtaQnFXUHhabnhNazUxeWpSUTFUUURqYnVtUmxZVEwzdzlwRWNSR3JZMTg2bDk5N3dfdjE1ajByUVpRTDllUHZXcw?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "McDonald's Pokemon TCG Promotion to Launch in November for 30th Annive...",
+            "source": "PokeBeach",
+            "date": "2026-09-28T02:06:52Z",
+            "desc": "McDonald's Pokemon TCG Promotion to Launch in November for 30th Anniversary! - PokeBeach - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZUI0N3A4X01NZWVnODlINUdITmNZcFFlQl9GN0xUeDBZTkZSQWp6WVV2R1dlYzdqdVctM09DZnc0dXR4WEFzUjZqeXZ3ZG5DZXJqY2RQV2tCYXVzNUNVUExCLUhPN0FteDVPaFUweFdqZUZZNlNmZC1ieHlNX1FKU29DWnotcFl2TE8wVjNXS2JWWmhDZUdBeEtQWnpJY080VDhYaWE4ZldueEZF?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Standard - Mega Starmie ex #21 how valuable is it?? - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-26T21:40:50Z",
+            "desc": "Standard - Mega Starmie ex #21 how valuable is it?? - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV0wyUFZ2WFlUR19qemFqNFpkSmgwa2RwUGpIV1dVZnRUZzNrNXU3ejlKUGdWbFVhcHgyeHdUeHJpR2NHNDdMZ2VpOHkyNlA1Wi1ZcTFSLUhZdXBsTkMzVm5uRkRSck5BQkpyeTYxVnlmVnlwQWVjcDlacjBINi1zS0JFeXlzQzNDYWpaR3hYLUlzZjJjSDFF?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Upgrades People, Upgrades! \u2014 Fixing Mega Excadrill - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-09-25T17:00:13Z",
+            "desc": "Upgrades People, Upgrades! \u2014 Fixing Mega Excadrill - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE03Q25td2JnX2ZiQjlEZEFocWVZQ2JZRVZUT3RfSXpFOUdydG5KUlQ0ak1vY09tcjR4S2NKT3ZHUXAxRU1YZm5xdndYUQ?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pok\u00e9Beach.com: Pok\u00e9mon TCG, Games, and Anime - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2015-02-05T03:09:03Z",
+            "desc": "Pok\u00e9Beach.com: Pok\u00e9mon TCG, Games, and Anime - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5UQk5IZnRpOGc3ZC1TX2NBNnRIWGo0TGtmQkNtRk4wbGh5TEhsNnFVRG4zVnpneVVuZXhBb1JLUQ?oc=5",
+            "category": "OTHER"
+        }
+    ],
     "intel_brief": "<b>\u26a1 Intel Brief:</b><br>Radar currently clear."
 }
