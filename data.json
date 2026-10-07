@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-10-07T21:00:31.562731+00:00",
+    "last_run": "2026-10-07T21:15:26.527868+00:00",
     "drops": [
         {
             "title": "My disappointment is immeasureable",
@@ -84,7 +84,7 @@
             "retailer": "Amazon",
             "date": "2026-10-07T11:53:17+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/j84ihidga1uh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=06ceaaf4f47778ac16fe99c6c6aa60e73bde767d",
+            "image": "https://i.redd.it/j84ihidga1uh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1wzuihl/amazon_prime_big_deal_days_final_day_for_pok%C3%A9mon/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Amazon Prime Big Deal Days: Final Day for Pok\u00e9mon, TCG Accessories, Tech &amp; More</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1wzuihl/amazon_prime_big_deal_days_final_day_for_pok%C3%A9mon/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonDropNotify"
@@ -128,7 +128,7 @@
             "retailer": "Walmart",
             "date": "2026-10-06T21:24:49+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/zpud1ajljuth1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2d0e25fa7dc69d962b60032f5839fd5683d7409e",
+            "image": "https://i.redd.it/zpud1ajljuth1.png",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1wzernk/walmart_pok%C3%A9mon_drawings_oct_78_30th_celebration/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Pok\u00e9mon Drawings Oct. 7\u20138: 30th Celebration ETB, Prismatic Evolutions ETB, Mini Tins &amp; Booster Bundles</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1wzernk/walmart_pok%C3%A9mon_drawings_oct_78_30th_celebration/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonDropNotify"
@@ -444,14 +444,6 @@
             "category": "OTHER"
         },
         {
-            "title": "Collecting - I don't care anymore... - PokeBeach...",
-            "source": "PokeBeach",
-            "date": "2026-10-05T14:00:46Z",
-            "desc": "Collecting - I don't care anymore... - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDUm1oTkFROTZtSmxDUkhsQ2JwTlNIYlR5bFEybDZ6SVRCU1VybXRNa25PSjIwcXlNekFRaWFKUERQNEw0aml1elJxYjExUFo1VUhENmczZWhRZXJmaE0weEVyYUZnRy1rSzRabFRuQU9oQ3hzZThWS0lGdnlnVG8?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Unlimited Possibilities \u2014 Exploring Mew ex - PokeBeach...",
             "source": "PokeBeach",
             "date": "2026-10-02T17:02:40Z",
@@ -473,6 +465,14 @@
             "date": "2026-10-01T18:16:41Z",
             "desc": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! - PokeBeach",
             "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSHQxakVmUE9JcEh5cU5iaEhSTkp4VmZoSmZJOE01WXF1MmxkTDExQm9lZnd0dmY0TVZ1U1c4Wk1NZlBCSXRBQ2Z1ajJNYTgxQnRlSTJ1cGZWUExOMW9UaW5uWFMzZUptSGtxSWx0dzl0YkZSZUJzZ0NhZkltTUIzeC1FcFBzSXdjRXFweGNzMA?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-10-01T18:14:12Z",
+            "desc": "Pokemon to Release First-Ever Valentine\u2019s Day TCG Set! - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcnV6LWd4R3owUk9KSFhKLWdLckpoU2s2RHhVRllpSjFjNENhalBncDBNVDlEeDA3anRMcXRtdXdFYlVmVkkzZDNBcWlTY1gxM1BuSTl3X3YtR3JzZ1Q0YnZodDlvWnVIczdfME82c1piZ0pmWkFkWVRFQnpFa2gzNHBidU9XbjhmYzY3akVEdWM5Q21UWjZ3MzI3WEtkS0ZhazVtaFJINlNFblQ2OW01LTJldUx6eUk?oc=5",
             "category": "OTHER"
         },
         {
