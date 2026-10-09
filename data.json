@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-10-09T08:15:24.203767+00:00",
+    "last_run": "2026-10-09T08:30:27.556500+00:00",
     "drops": [
         {
             "title": "Amazon Pok\u00e9mon Restock | Pok\u00e9mon TCG: First Partner Illustration ...",
@@ -40,7 +40,7 @@
             "retailer": "Reddit",
             "date": "2026-10-09T04:15:28+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/s44o5q0raduh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=180dd709ab6747cc5f2bba0256dd9639976b4e62",
+            "image": "https://i.redd.it/s44o5q0raduh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x1brx3/vons_for_the_win/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Vons for the win</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x1brx3/vons_for_the_win/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -183,7 +183,7 @@
             "retailer": "Target",
             "date": "2026-10-08T21:37:39+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/jg0p9z3lbbuh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2dd3d703ac3bb11dec41dde051ca34da42985d2f",
+            "image": "https://i.redd.it/jg0p9z3lbbuh1.png",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1x13l6a/target_pok%C3%A9mon_drop_30th_upcs_mew_mewtwo_figure/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target Pok\u00e9mon Drop: 30th UPCs, Mew &amp; Mewtwo Figure Collections + Delta Reign Preorders Loaded for Oct. 9</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonDropNotify/comments/1x13l6a/target_pok%C3%A9mon_drop_30th_upcs_mew_mewtwo_figure/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonDropNotify"
@@ -411,6 +411,14 @@
     ],
     "articles": [
         {
+            "title": "Pok\u00e9mon Trading Card Game: Mega Evolution\u2014Delta Reign Booster Display ...",
+            "source": "Google News",
+            "date": "2026-10-09T08:27:39Z",
+            "desc": "Pok\u00e9mon Trading Card Game: Mega Evolution\u2014Delta Reign Booster Display - Target",
+            "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA1V2doUTJ1VXU0SGZsWGxackNZOFJlQUlfSlh4eTNaSW9QSjJvc3RoLXU1RWNKMDFLeWxOTUR1LUhiVUNkNkVfVHBfZWh3Zw?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "Pok\u00e9mon Trading Card Game: 30th Celebration Figure Collection- Mew - T...",
             "source": "Google News",
             "date": "2026-10-09T07:44:46Z",
@@ -443,14 +451,6 @@
             "category": "OTHER"
         },
         {
-            "title": "Pokemon Pack Availability - Reddit...",
-            "source": "Google News",
-            "date": "2026-10-08T12:34:11Z",
-            "desc": "Pokemon Pack Availability - Reddit",
-            "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbzR5UDRzanlVYXlMVXVBUk1MLWpMNTZEdS1QZ1dULUZqc09EQk0xS0JXMG0wb1RiUEo1M1JhdFQycVhiVzVucTNWTVN4bGppb2RVb056eXRHejhPYUxoQ3huTUo1ZTExSXlZY1ZCQXZsT19BWXk4ZVl0YnpsQjRaclRNNlh4UQ?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Philippine game store requires customers to answer trivia before buyin...",
             "source": "Google News",
             "date": "2026-10-08T10:27:56Z",
@@ -464,14 +464,6 @@
             "date": "2026-10-07T14:58:15Z",
             "desc": "Amazon Restocks Rare Pok\u00e9mon TCG Sets for Prime Day - IGN",
             "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOV1dITFgyVXdIN1dvRWVqdm1veUpCQzJWTzFaWmZUbEpnbzU0OERadzVzZ2RaUVBCbHRYVmViMGREMzZpQTNCQVdyVnRaY3dpLUV2VGpFZ3JrSWVQaC11Y3BmUjhzOE5ZWmsySEZqd3F6VDI4dmdHdWhzMFJUN09vS2Nha2dsQQ?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Pok\u00e9mon Chinese 30th Anniversary Celebration Booster Pack - Pok\u00e9TCG...",
-            "source": "Google News",
-            "date": "2026-10-07T14:04:36Z",
-            "desc": "Pok\u00e9mon Chinese 30th Anniversary Celebration Booster Pack - Pok\u00e9TCG",
-            "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMEtvWWR1OTIyYlJKWEFnZTBxcW5LNUY1WTdWb1ptelhwNFRvbW5RUS1SRjNRVC0wcU1XcFFSYXR0NnZyMnYzNXNkZkNnM3NDaDdSclFVcVdNa2h5MEo4eGx3cWxFc0NlZWZGR2MwUy1zT3c3cWk5R0hScUhRYXRTczdhMVlqRGc5WFlBNWRB?oc=5",
             "category": "OTHER"
         },
         {
@@ -549,6 +541,14 @@
             "category": "OTHER"
         },
         {
+            "title": "@gooky1234 Drawings are live now! https://t.co/9EWA9TWJnA - X...",
+            "source": "X / Twitter",
+            "date": "2026-10-08T16:05:49Z",
+            "desc": "@gooky1234 Drawings are live now! https://t.co/9EWA9TWJnA - X",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5oVWExbFJEN3prYjFzckx2WlUwekw0RlR3Y2pDRmlJTXd4TUxxeGFwb1ZjSVRVeEJFdlJSZ1dCTXBTM1lfcXNJTEZvUURPbzJtQ2xrbkpieDZnYzBlRnU2anJRSXNlSGM?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "30th Celebration, Prismatic Evolutions & More Walmart Drawings Live So...",
             "source": "X / Twitter",
             "date": "2026-10-08T15:53:10Z",
@@ -578,14 +578,6 @@
             "date": "2026-10-08T14:59:37Z",
             "desc": "Under 1 Hour until 30th Celebration, Prismatic Evolutions Figure Collection, First Partner Series 3 Collection & More Drawings at Walmart! \ud83c\udf89 All Walmart Drawings: \u27a1\ufe0f https://t.co/yjdjaQM0sU Direct Links 30th Celebration Booster Bundle 2-Pack: https://t.co/wy - X",
             "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzYnMtUnA5NTZyMzZuNWxTWU5fU0c4ZmFtbTB2WWI5dmlPcm5sTlMyMWF3cFMxelNaclYxRnppVmdveHYyek1qZUdzcEUtakIzMGRHa01YWEJIR0IzWEFTY1ZoMk1BWUk?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "@alex39902441 Yes, results starting to go out now! https://t.co/Wf11V5...",
-            "source": "X / Twitter",
-            "date": "2026-10-08T02:49:55Z",
-            "desc": "@alex39902441 Yes, results starting to go out now! https://t.co/Wf11V5lmjQ - X",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fTl9UZFI1a3BzRzN4QTNjc1VUZVBod3I2eXU2Tld6YkJiOFVyXzdUbVdlcjQxcUYwTW9XT3FOTjc2c0tTckcxUU5sZUNERlY0dE4xVzdwY21Td1Q3WHpDdm9qbzJzYjA?oc=5",
             "category": "OTHER"
         },
         {
