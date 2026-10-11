@@ -1,6 +1,17 @@
 {
-    "last_run": "2026-10-11T19:15:24.061192+00:00",
+    "last_run": "2026-10-11T19:30:25.167949+00:00",
     "drops": [
+        {
+            "title": "Costco drop confusion",
+            "price": "Check Details",
+            "retailer": "Costco",
+            "date": "2026-10-11T15:04:32+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=costco.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x3agyc/costco_drop_confusion/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Costco drop confusion</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x3agyc/costco_drop_confusion/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
         {
             "title": "Costco Pok\u00e9mon 30th Anniversary UPCs Loaded: Day &amp; Night Ultr...",
             "price": "Check Details",
@@ -9,8 +20,41 @@
             "type": "UNKNOWN",
             "image": "https://i.redd.it/bkx17hgqluuh1.png",
             "source_link": "https://www.reddit.com/r/PokemonDropNotify/comments/1x39leo/costco_pok%C3%A9mon_30th_anniversary_upcs_loaded_day/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Costco Pok\u00e9mon 30th Anniversary UPCs Loaded: Day &amp; Night Ultra-Premium Collections Expected Online + In Store</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.costco.com/.product.2007501.html' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.costco.com/.product.2007501....</a></li><li style='margin-bottom: 3px;'><a href='https://www.costco.com/.product.2007500.html' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.costco.com/.product.2007500....</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Costco Pok\u00e9mon 30th Anniversary UPCs Loaded: Day &amp; Night Ultra-Premium Collections Expected Online + In Store</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.costco.com/.product.2007500.html' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.costco.com/.product.2007500....</a></li><li style='margin-bottom: 3px;'><a href='https://www.costco.com/.product.2007501.html' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.costco.com/.product.2007501....</a></li></ul></div>",
             "sub": "PokemonDropNotify"
+        },
+        {
+            "title": "Found Myself in a Line",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-10-11T13:20:54+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/4l9mw43w9uuh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=fd8c47a72409b0882315aed05b2352f37fbaf3b6",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x382p0/found_myself_in_a_line/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Found Myself in a Line</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x382p0/found_myself_in_a_line/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
+        {
+            "title": "Why so everyone complaining so much?",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-10-11T11:54:45+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x36boc/why_so_everyone_complaining_so_much/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Why so everyone complaining so much?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x36boc/why_so_everyone_complaining_so_much/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
+        {
+            "title": "How long does Walmart take to ship from raffle wins?",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-10-11T10:10:49+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x34iwp/how_long_does_walmart_take_to_ship_from_raffle/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 How long does Walmart take to ship from raffle wins?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x34iwp/how_long_does_walmart_take_to_ship_from_raffle/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
         },
         {
             "title": "Walmart Drawing",
@@ -22,6 +66,61 @@
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1x30ykm/walmart_drawing/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Drawing</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1x30ykm/walmart_drawing/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
+        },
+        {
+            "title": "Walmart raffle opening time!!!! Muchas gracias papi!",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-10-11T05:57:44+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/fg4srzat2suh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=54dfdcd12e9edb3a0e7b92c28161507703249ad4",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x30e87/walmart_raffle_opening_time_muchas_gracias_papi/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart raffle opening time!!!! Muchas gracias papi!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x30e87/walmart_raffle_opening_time_muchas_gracias_papi/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
+        {
+            "title": "Discord Pok\u00e9mon SAM\u2019S Fresno?",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-10-11T05:37:53+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x302g9/discord_pok%C3%A9mon_sams_fresno/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Discord Pok\u00e9mon SAM\u2019S Fresno?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x302g9/discord_pok%C3%A9mon_sams_fresno/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
+        {
+            "title": "Walmart raffle",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-10-11T05:07:50+00:00",
+            "type": "UNKNOWN",
+            "image": "https://preview.redd.it/yv149h6xtruh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=92e7df8cdaadbe8f1da4f340f6ac787c3576f7fc",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x2zkdf/walmart_raffle/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart raffle</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x2zkdf/walmart_raffle/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
+        {
+            "title": "30th booster bundle with only 3 packs?!?!",
+            "price": "Check Details",
+            "retailer": "Reddit",
+            "date": "2026-10-11T04:17:21+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x2yoea/30th_booster_bundle_with_only_3_packs/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th booster bundle with only 3 packs?!?!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x2yoea/30th_booster_bundle_with_only_3_packs/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
+        {
+            "title": "Walmart lotto",
+            "price": "Check Details",
+            "retailer": "Walmart",
+            "date": "2026-10-11T01:55:48+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x2w1o5/walmart_lotto/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart lotto</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x2w1o5/walmart_lotto/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
         },
         {
             "title": "Bowling green ky",
@@ -150,7 +249,7 @@
             "retailer": "Reddit",
             "date": "2026-10-08T19:59:01+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/6au8h4k6uauh1.jpeg",
+            "image": "https://preview.redd.it/6au8h4k6uauh1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=bb4141983264cde2c2541a3cfebc55522bb70df6",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1x112be/pokemon_30th_celebration_elite_trainer_box_draw/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Elite Trainer Box Draw Results Going Out</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1x112be/pokemon_30th_celebration_elite_trainer_box_draw/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -172,7 +271,7 @@
             "retailer": "Walmart",
             "date": "2026-10-08T16:39:08+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ur5cukfiu9uh1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=6144eacca6c071edf8f5d17f5b38608061cbbcf7",
+            "image": "https://i.redd.it/ur5cukfiu9uh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1x0vs7j/pokemon_30th_celebration_booster_bundles_and_more/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Pokemon 30th Celebration Booster Bundles and more live in Walmart drawing - ends in 20 minutes</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1x0vs7j/pokemon_30th_celebration_booster_bundles_and_more/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -183,7 +282,7 @@
             "retailer": "Walmart",
             "date": "2026-10-08T15:55:10+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/unh1dt58vyth1.png?width=829&amp;format=png&amp;auto=webp&amp;s=967dcfe3aed41f45ae89f5d6e78fc071d0c7e63b</a></p>",
+            "image": "https://preview.redd.it/unh1dt58vyth1.png?width=140&amp;height=77&amp;auto=webp&amp;s=47535dd47a0024dcbfa6c5a551bc0889f9df01ff",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1x0uml6/walmart_lottery_live_for_the_next_hour/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart lottery live for the next hour!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1x0uml6/walmart_lottery_live_for_the_next_hour/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -194,7 +293,7 @@
             "retailer": "Walmart",
             "date": "2026-10-07T20:55:26+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/vp266xzatyth1.png?width=786&amp;format=png&amp;auto=webp&amp;s=d83bfb58334123e48f15ba424d8f62ee61df9f42</a></p>",
+            "image": "https://preview.redd.it/vp266xzatyth1.png?width=140&amp;height=78&amp;auto=webp&amp;s=4eff13729e5cc936dd229428a15410641b2a8de7",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1x082bo/walmart_lottery_live_for_the_next_hour/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Lottery Live for the next hour</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1x082bo/walmart_lottery_live_for_the_next_hour/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -326,7 +425,7 @@
             "retailer": "Reddit",
             "date": "2026-09-30T20:55:18+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/wpc3sxmp4msh1.png?width=140&amp;height=74&amp;auto=webp&amp;s=af9633fc26679f44812c14c5ba47713e722e37e3",
+            "image": "https://preview.redd.it/wpc3sxmp4msh1.png?width=786&amp;format=png&amp;auto=webp&amp;s=d544cc83ccf083e1141e764f711af71d6cd39627</a></p>",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1wugjva/30th_lottery_live_now/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 30th Lottery live now</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1wugjva/30th_lottery_live_now/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -339,6 +438,14 @@
             "date": "2026-10-11T18:20:49Z",
             "desc": "Best Pok\u00e9mon TCG deal: the 30th Celebration Booster Bundle gets a 15% price drop at Walmart - Mashable",
             "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTXMtUklQREpYTVB0eGtSYTlobkNRTjlLSnhWTzEyYmxhV3ZqM2wxbHRlVHA4ckVXY1VZR1NkU2JQOGZ5Y2k5R1pXa09zVko0UnM3M3NRUGlRS1M2ZFVIMW4zdHF5c0h2eDY1SHBGV2JkczVJOWdNVUFqMExTRjVxSHpqb1NJMTA?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "Pok\u00e9mon TCG Delta Reign Booster Bundle preorders are live on Amazon \u2014 ...",
+            "source": "Google News",
+            "date": "2026-10-11T17:56:02Z",
+            "desc": "Pok\u00e9mon TCG Delta Reign Booster Bundle preorders are live on Amazon \u2014 and they're under market price - Mashable",
+            "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbFNyVEpRSWxvcnh4TDFxTEViS3pCZWJSbXBZU01TNUwyN2ctY0NnWml4WnN6czcxVXNKVGdrMUhrMGI4Y1VpT0VfSkZmNFAybE1NbldvdGFiY3dCNWlkb25IOTlkdE4zZGtScjNQWFI2VnFxWngzbnJBYVgtelZ3VmI2emtuLU84R1JkaFRfUC1WelE?oc=5",
             "category": "OTHER"
         },
         {
@@ -419,14 +526,6 @@
             "date": "2026-10-09T07:19:39Z",
             "desc": "Pok\u00e9mon Trading Card Game: Mega Evolution\u2014Delta Reign Three-Booster Blister - Target",
             "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5OOVh6d0RheEZ6OVQ3YVoxT1hoQ0ZuQlVzOUNhQ251czJNZFRtMXVvZ1dVaVladGNPbGEyTFhXUlliQk03Q2dfZGJwMmNudw?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Pok\u00e9mon TCG Delta Reign Booster Bundle preorders are live on Amazon \u2014 ...",
-            "source": "Google News",
-            "date": "2026-10-08T10:18:57Z",
-            "desc": "Pok\u00e9mon TCG Delta Reign Booster Bundle preorders are live on Amazon \u2014 and they're under market price - Mashable",
-            "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbFNyVEpRSWxvcnh4TDFxTEViS3pCZWJSbXBZU01TNUwyN2ctY0NnWml4WnN6czcxVXNKVGdrMUhrMGI4Y1VpT0VfSkZmNFAybE1NbldvdGFiY3dCNWlkb25IOTlkdE4zZGtScjNQWFI2VnFxWngzbnJBYVgtelZ3VmI2emtuLU84R1JkaFRfUC1WelE?oc=5",
             "category": "OTHER"
         }
     ],
