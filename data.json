@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-10-20T14:45:26.896202+00:00",
+    "last_run": "2026-10-20T15:00:36.763013+00:00",
     "drops": [
         {
             "title": "Walmart Drawing (Wed 10/21 @ 2PM PDT)",
@@ -62,7 +62,7 @@
             "retailer": "Reddit",
             "date": "2026-10-19T20:05:44+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/hg09dlredhwh1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=68f93a1feee44c0eea2205df159f80126482c386",
+            "image": "https://i.redd.it/hg09dlredhwh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xa7i18/scored_a_30th_etb_at_ross/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Scored a 30th ETB at Ross!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xa7i18/scored_a_30th_etb_at_ross/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -73,7 +73,7 @@
             "retailer": "Reddit",
             "date": "2026-10-19T18:09:36+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/mh1tkknosgwh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=16606703d2f83c9ca641e5c73ae47fdd2355cdae",
+            "image": "https://i.redd.it/mh1tkknosgwh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xa4bb6/dg_restocks/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 DG Restocks</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xa4bb6/dg_restocks/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -95,7 +95,7 @@
             "retailer": "Reddit",
             "date": "2026-10-19T15:27:28+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/dcgrjhfrzfwh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=9a191eeb636e7968355e7b88363449972beb2d25",
+            "image": "https://i.redd.it/dcgrjhfrzfwh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1x9zxmd/back_in_stock_but_unavailable/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 back in stock but unavailable?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1x9zxmd/back_in_stock_but_unavailable/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
@@ -154,6 +154,14 @@
             "category": "OTHER"
         },
         {
+            "title": "\ud83d\udd25 POK\u00c9MON RESTOCK ALERT! \ud83d\udd25 \ud83d\udea8 Fresh restock just landed! \ud83d\udea8 We've got Po...",
+            "source": "Google News",
+            "date": "2026-10-19T05:34:35Z",
+            "desc": "\ud83d\udd25 POK\u00c9MON RESTOCK ALERT! \ud83d\udd25 \ud83d\udea8 Fresh restock just landed! \ud83d\udea8 We've got Pok\u00e9mon goodies back on the shelves, including booster packs, ETBs, collection boxes, tins and more! \ud83d\udc40\u26a1\ufe0f \ud83d\udd25 Plenty of awesome sets to choose from \ud83c\udf81 Perfect for collectors, players - Facebook",
+            "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSzB2Z0hSUHpqRTFNWm5acnM1WDU0V0E5RjdtR1hPb09UWGxyaUlLVy1kdlpuZWR1eEE5amtHakRDUGpjd0lLUjQyU0NmRVJPMWwzR1hrQi1FOUo5dGtVb1FQTVFBaXZvbXBOT0k0eDVaOWppd2thZGs4aFZDNWtobmFQT1pmMWRfRkNPX2xzNDNkdUgtRzlmMEZVdUl5TUw4MFBBTWxIcnp4VzZMcklfRTZITTRULXBGdGZBUV9IVUVyNFBrQ2RZM2Jkc2dvS0Z3a2tjZWZTSXdUeHNrQ3VRV3hUZw?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "I Opened the LAST 5 Pokemon 30th Anniversary Promo Sets! (GIVEAWAY) \ud83d\udd25 ...",
             "source": "Google News",
             "date": "2026-10-18T08:00:02Z",
@@ -175,14 +183,6 @@
             "date": "2026-10-18T01:46:39Z",
             "desc": "Pok\u00e9mon - 1 Box - Pok\u00e9mon TCG 30th Anniversary \u2013Greninja EX tin - Catawiki",
             "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMl8tRDlPdEpKSWZEU1NTU2drdVAxY3AxVFRBYVBfcVcxZ3hqVmViZHN4RFZVWGp0a01SLXZkSzdhV1pISW9McFFVTE9Gb1FaQVJmZm54LXlKMWVXZnJ2S1RBa0syWDBCR3hEcWtoWjJWaG9tTEVmekczMTVFbVpGSXV4YjBGeTFKRVZCUXlENmp1UGVwbjhMaUk4Xy1rR00?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "Pok\u00e9mon TCG and Santa Cruz launch 30-design skateboard deck collection...",
-            "source": "Google News",
-            "date": "2026-10-17T22:35:53Z",
-            "desc": "Pok\u00e9mon TCG and Santa Cruz launch 30-design skateboard deck collection - pokemonblog.com",
-            "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORnBZYU1fUDhENW5UZTVSS3ZNanc1MUZhRHlNZFdBd2Exa3ZudHNNNVpzNTVuWUxrVEYwME1VQk0zQTE2WWxxNGFSN1pyVGpLNW9ZSFBaWWhoenlNcnpJWEdWQVlNRWU2Q1VfRUtTeVBJRV9yOFk3Y0x2YTEyMGlqeGMxVlJJWVNsb1B5M2VnS1FGdWVmZUdYUG04eGhoMkNCemQ0Yl9Ob3Rqdw?oc=5",
             "category": "OTHER"
         },
         {
@@ -212,6 +212,14 @@
             "category": "OTHER"
         },
         {
+            "title": "@Mzullo292 We\u2019ll post if there are any other updates to the drawings b...",
+            "source": "X / Twitter",
+            "date": "2026-10-20T00:34:50Z",
+            "desc": "@Mzullo292 We\u2019ll post if there are any other updates to the drawings before they go live! - X",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kVUV2MEhIbTFYRUQ1Qm1zSW5CeWpaQTNOd1VuaDc2TFY5Nm50Q0FkSlV5eGlTWWNTU2V1Tjd4ZUdsUG5LcjZ2MGVPVjB3SnYwemRzS0Fod0xJVlpmR204dE9rNFNjMUE?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "30th Celebration Booster Bundles, Destined Rivals, Unova Poster Collec...",
             "source": "X / Twitter",
             "date": "2026-10-20T00:26:54Z",
@@ -233,14 +241,6 @@
             "date": "2026-10-19T15:31:13Z",
             "desc": "Prismatic Evolutions ETB Invites Open at Best Buy! Direct Link & All Info! \u26a1\ufe0f \u27a1\ufe0f https://t.co/4C0aOjEsqW If selected, you'll be notified by email and on the Best Buy app with 24 hours to purchase once the event is live. If not selected, you'll stay on the list for a fut - X",
             "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jR1ZfZUJDaF9pTkF0V0hKTUVoRTdYSWNWTGxGdFlFQVRPOHc1a2pFLUFVc3BSSG5yTWNKb05hUGEwbW1tYmJSZzRpQnBUX0l1RGgxYThkTXFjYU9HSXZYX0NZVFVncEU?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "As mentioned: try Mobile Browser, Best Buy App, PC, or copy / paste th...",
-            "source": "X / Twitter",
-            "date": "2026-10-19T15:30:49Z",
-            "desc": "As mentioned: try Mobile Browser, Best Buy App, PC, or copy / paste the product link into an incognito or private browser if needed. Invites should be open for a while, they may just take time to load onto the site for some. Seeing many getting requests in! Best l - X",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1VWxTWWZ0NFBKejRSNURoYnFLVVJGZ2hCLXF1N3RpWnVXenFuenAta2tDUXhCTTNGQWFKamdyN0FLdDVxZFVmNzNuTy0zS0p4TGw4MVpMMEJSTkVPeDFqY2Rja0VVNFU?oc=5",
             "category": "OTHER"
         },
         {
@@ -302,14 +302,6 @@
             "category": "OTHER"
         },
         {
-            "title": "DirkDirk - PokeBeach...",
-            "source": "PokeBeach",
-            "date": "2026-10-17T20:44:13Z",
-            "desc": "DirkDirk - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0wLXhLRWhCX2g3T2djUUllNGlVaEtVZTV1REYtUFpMOEplLXVrUTlNbmxlTHBUNlJoXzA2WFVHdHpzYm1MdDh2b3JSVDBOeTc0THlFNzY5ay1LNFU1cTZYX0ZLeXpkV1Jz?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "Exclusive N\u2019s Plan and Hilda to Release in China for \u201cBlack Bolt\u201d and ...",
             "source": "PokeBeach",
             "date": "2026-10-17T01:11:34Z",
@@ -363,6 +355,14 @@
             "date": "2026-10-16T05:12:38Z",
             "desc": "Mega Dragonite ex, Mega Gengar ex, and Mega Feraligatr ex \"Special Deck Set\" Revealed for November - PokeBeach",
             "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdjJlX2NyVkZzMW0xeDBQLW5oZ3prbFhxYmV4SVpxSFdiYmVYUjVJaElaUUs2MGppS2dVWXMzUEdqa1lscngzTTJNZFZfeVhyUmVtSVh4YWVnbDZPY0c1VVUtUEZEQlJ6MUNMVkpMeXV3VDctRzJOXzF1MW51OWdfd3JyeWdJZU5aNFR2UFRNazRIYTlSUW03SGlEQWZaQjlvNlJNLUhiR1J1OGtyVFFvajdFM1IwcGExWmJYd2pqa0U3S3pHd3JB?oc=5",
+            "category": "OTHER"
+        },
+        {
+            "title": "OscoBusco - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-10-14T22:31:38Z",
+            "desc": "OscoBusco - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5na0FYRjk4M0NsbUc0cTMxOHM0bUY4Z0JxV0lUMC0tV0RiUlFHc0dtc2NJU0lMVXU0SHBSbWZOR2JOQXhKRHJORTA5NVdhV0tycUVwc3VZU09fRVdiOUdBcS1NNThyRHkwdmc?oc=5",
             "category": "OTHER"
         },
         {
