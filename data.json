@@ -1,59 +1,26 @@
 {
-    "last_run": "2026-11-04T09:00:31.485732+00:00",
+    "last_run": "2026-11-04T09:15:28.034045+00:00",
     "drops": [
         {
-            "title": "In store restocks",
+            "title": "Target drop",
+            "price": "Check Details",
+            "retailer": "Target",
+            "date": "2026-11-04T08:20:16+00:00",
+            "type": "UNKNOWN",
+            "image": "https://www.google.com/s2/favicons?domain=target.com&sz=256",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xnivsl/target_drop/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Target drop</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xnivsl/target_drop/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
+            "sub": "PokemonRestocks"
+        },
+        {
+            "title": "Stock Tracker - Inland Empire",
             "price": "Check Details",
             "retailer": "Reddit",
-            "date": "2026-11-04T02:07:02+00:00",
+            "date": "2026-11-04T04:57:29+00:00",
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xnc3se/in_store_restocks/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 In store restocks</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xnc3se/in_store_restocks/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonRestocks"
-        },
-        {
-            "title": "Possible GERMAN PKC drop tomorrow",
-            "price": "Check Details",
-            "retailer": "Reddit",
-            "date": "2026-11-04T01:54:48+00:00",
-            "type": "UNKNOWN",
-            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xnbunn/possible_german_pkc_drop_tomorrow/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Possible GERMAN PKC drop tomorrow</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xnbunn/possible_german_pkc_drop_tomorrow/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonRestocks"
-        },
-        {
-            "title": "Walmart the new LCS",
-            "price": "Check Details",
-            "retailer": "Walmart",
-            "date": "2026-11-04T00:16:17+00:00",
-            "type": "UNKNOWN",
-            "image": "https://preview.redd.it/sme4dc7snhzh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=22c57163753e22af76d90f1455de02c6d7ef5bb0",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xn9rfb/walmart_the_new_lcs/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart the new LCS</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xn9rfb/walmart_the_new_lcs/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonRestocks"
-        },
-        {
-            "title": "Be sure to look for the display at your local Walmart",
-            "price": "Check Details",
-            "retailer": "Walmart",
-            "date": "2026-11-03T23:19:43+00:00",
-            "type": "UNKNOWN",
-            "image": "https://preview.redd.it/a2zxyutodhzh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=993e3dc4fcf2de6aa8f9a17771901f5068234846",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xn8hai/be_sure_to_look_for_the_display_at_your_local/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Be sure to look for the display at your local Walmart</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xn8hai/be_sure_to_look_for_the_display_at_your_local/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonRestocks"
-        },
-        {
-            "title": "Walmart Drawing (Wednesday 11/4 @ 2PM PST)",
-            "price": "Check Details",
-            "retailer": "Walmart",
-            "date": "2026-11-03T22:39:44+00:00",
-            "type": "UNKNOWN",
-            "image": "https://i.redd.it/bckulonj6hzh1.png",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xn7jf6/walmart_drawing_wednesday_114_2pm_pst/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Walmart Drawing (Wednesday 11/4 @ 2PM PST)</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li></ul></div>",
+            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xnfgfm/stock_tracker_inland_empire/",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Stock Tracker - Inland Empire</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xnfgfm/stock_tracker_inland_empire/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonRestocks"
         },
         {
@@ -66,17 +33,6 @@
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1xn6ymz/silver_springrockville_maryland/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Silver spring/rockville Maryland</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1xn6ymz/silver_springrockville_maryland/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
-        },
-        {
-            "title": "Silver spring/rockville Maryland",
-            "price": "Check Details",
-            "retailer": "Reddit",
-            "date": "2026-11-03T22:15:36+00:00",
-            "type": "UNKNOWN",
-            "image": "https://i.redd.it/ggnsy8192hzh1.jpeg",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xn6yfk/silver_springrockville_maryland/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Silver spring/rockville Maryland</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xn6yfk/silver_springrockville_maryland/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonRestocks"
         },
         {
             "title": "Lumiose City mini tin display sealed on sale for $89.99 @ our sho...",
@@ -95,21 +51,10 @@
             "retailer": "Walmart",
             "date": "2026-11-03T20:53:10+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/72szhsxcngzh1.png?width=140&amp;height=39&amp;auto=webp&amp;s=3065779b60d77b920a40dd6062503d8f483df971",
+            "image": "https://preview.redd.it/72szhsxcngzh1.png?width=1685&amp;format=png&amp;auto=webp&amp;s=6a1cf67bb2f715955fab11f69820f6e772e7f570</a></p>",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1xn4u60/massive_walmart_lottery_announced_upc_and_delta/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 MASSIVE Walmart lottery announced! UPC AND DELTA</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1xn4u60/massive_walmart_lottery_announced_upc_and_delta/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
-        },
-        {
-            "title": "St. Louis restock discord?",
-            "price": "Check Details",
-            "retailer": "Reddit",
-            "date": "2026-11-03T20:18:39+00:00",
-            "type": "UNKNOWN",
-            "image": "https://www.google.com/s2/favicons?domain=reddit.com&sz=256",
-            "source_link": "https://www.reddit.com/r/PokemonRestocks/comments/1xn3xrn/st_louis_restock_discord/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 St. Louis restock discord?</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonRestocks/comments/1xn3xrn/st_louis_restock_discord/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
-            "sub": "PokemonRestocks"
         },
         {
             "title": "Pokemon 30th Celebration UPC, Delta Reign ETB and more part of th...",
@@ -161,7 +106,7 @@
             "retailer": "Target",
             "date": "2026-11-02T18:50:22+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/ka7zodpmw8zh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=8c205b27e8b04584e914952a59a1010270e32076",
+            "image": "https://i.redd.it/ka7zodpmw8zh1.jpeg",
             "source_link": "https://www.reddit.com/r/PokemonTCGRestocks/comments/1xm5u8k/first_target_drawing_is_live_now/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 First Target Drawing is LIVE NOW</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PokemonTCGRestocks/comments/1xm5u8k/first_target_drawing_is_live_now/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PokemonTCGRestocks"
@@ -185,7 +130,7 @@
             "type": "UNKNOWN",
             "image": "https://www.google.com/s2/favicons?domain=walmart.com&sz=256",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1xl57tk/monthly_informational_and_qa_mega_thread/",
-            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Informational and Q/A Mega thread!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li></ul></div>",
+            "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 Monthly Informational and Q/A Mega thread!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw</a></p>' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li><li style='margin-bottom: 3px;'><a href='https://www.walmart.com/shop/collectibles/draw' target='_blank' style='color: #3498db; text-decoration: none;'>https://www.walmart.com/shop/collectible...</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
         },
         {
@@ -271,7 +216,7 @@
             "retailer": "Walmart",
             "date": "2026-10-27T06:35:36+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/mkfr5qjvfyxh1.png?width=276&amp;format=png&amp;auto=webp&amp;s=1a7e991bd44780ca2a16076662c77c30885abaeb",
+            "image": "https://i.redd.it/n5o19xnwfyxh1.png",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1xgl7mu/walmart_lottery_announced_for_october_28th_at_2pm/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 WALMART LOTTERY ANNOUNCED FOR OCTOBER 28TH AT 2PM PDY</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1xgl7mu/walmart_lottery_announced_for_october_28th_at_2pm/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -304,7 +249,7 @@
             "retailer": "Walmart",
             "date": "2026-10-23T18:45:38+00:00",
             "type": "UNKNOWN",
-            "image": "https://preview.redd.it/m7l5d2omi9xh1.png?width=275&amp;format=png&amp;auto=webp&amp;s=b67e4c30df5a6afeab3daa839532248efd8b4225</a></p>",
+            "image": "https://preview.redd.it/m7l5d2omi9xh1.png?width=275&amp;format=png&amp;auto=webp&amp;s=b67e4c30df5a6afeab3daa839532248efd8b4225",
             "source_link": "https://www.reddit.com/r/PKMNTCGDeals/comments/1xdmggn/walmart_lottery_october_26th_prismatic_bundles/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 WALMART LOTTERY OCTOBER 26th! Prismatic bundles</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://www.reddit.com/r/PKMNTCGDeals/comments/1xdmggn/walmart_lottery_october_26th_prismatic_bundles/' target='_blank' style='color: #3498db; text-decoration: none;'>\ud83d\udcac Reddit Discussion Thread</a></li></ul></div>",
             "sub": "PKMNTCGDeals"
@@ -359,7 +304,7 @@
             "retailer": "Walmart",
             "date": "2026-09-23T20:51:14+00:00",
             "type": "UNKNOWN",
-            "image": "https://i.redd.it/ne47rf7vybrh1.png",
+            "image": "https://preview.redd.it/ne47rf7vybrh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=c32eb0e2fc856733fcac6a8c3c11275de426b017",
             "source_link": "https://www.reddit.com/r/pokemonrestockr/comments/1wohveg/walmart_pok%C3%A9mon_drawing_live_in_10_mins/",
             "desc": "<div style='color:#a8b2bd; line-height: 1.4; font-size: 0.8rem; margin-bottom:6px;'>\u2728 \ud83d\udea8Walmart Pok\u00e9mon Drawing LIVE in 10 MINS!</div><div style='margin-top: 6px; padding-top: 6px; border-top: 1px solid #30363d;'><strong style='color:#f0f6fc; font-size: 0.8rem;'>\ud83d\uded2 Links:</strong><ul style='margin-top: 4px; padding-left: 14px; font-size: 0.8rem;'><li style='margin-bottom: 3px;'><a href='https://goto.walmart.com/c/6477652/1398372/16662?sourceid=imp_000011112222333344&amp;veh=aff&amp;u=https%3A%2F%2Fwww.walmart.com%2Fshop%2Fcollectibles%2Fdraw' target='_blank' style='color: #3498db; text-decoration: none;'>https://goto.walmart.com/c/6477652/13983...</a></li></ul></div>",
             "sub": "pokemonrestockr"
@@ -460,7 +405,7 @@
             "source": "Google News",
             "date": "2026-11-03T12:44:58Z",
             "desc": "Prismatic Evolutions Ogre's Mask Pok\u00e9mon TCG Cards Ogre's Mask 118/131 \u00b7 Prismatic Evolutions Pok\u00e9mon Card - bionaturashoes",
-            "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5kQ3NPUzZFd2QwemJkd1NPMDN1QU5HUGlvcTJrOGZhMWtsbFVGN2hwLTdabkw5QVBwRlY5aHBWS09kZVZkR1VmdW9vZ0E4Zy1pYklqNEVjbHFYbzQ1d0RhUVFR?oc=5",
+            "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5sOWZfZWZiTEQtMS1yc2xIbFJhZ1VVVVJWOHdSenoxYjRodElYTlYxMC1yVjFHY3M4cXctTUVRYzk0TnZoaEt4bGxhNm9SNlh4UkdKdEJEcnRnRnA4QW9GR2lB?oc=5",
             "category": "OTHER"
         },
         {
@@ -480,11 +425,11 @@
             "category": "OTHER"
         },
         {
-            "title": "We teamed up with @thepokelytics to help you stay ahead of Pok\u00e9mon dro...",
+            "title": "We have a limited supply of 30th anniversary Pokemon cards! Available ...",
             "source": "Google News",
-            "date": "2026-11-02T15:12:07Z",
-            "desc": "We teamed up with @thepokelytics to help you stay ahead of Pok\u00e9mon drops! \ud83d\udd14\ud83d\udd25 Get personalized alerts for the products, stores, and locations you care about - including online and local in-store restocks. Try PokeNotify FREE and start catching drops before t - Facebook",
-            "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZnBGRU54a2pUS3NPZW9iRTB6Skdia2VFcHhkU2R3RTU1cThKVVp1MWxydDBtcllDdnFVM0g1X2VrV0t6WkpPbVZVUUtWN2tieDBHY0RXdW0wNjNuX1d4NDNsQW02VGdiMlJJeDlGWWdBMXcxQmNzRjNxUC1UcVBSemxXQVdkcTVwemVSNEJHRnlITHZxeVdLRkxRNTZvLUc2Z3l4RUx3Y3BOb0NNd0Q1Ym9QOXJiQlY4R2k3UUhUU3lqZlp6M2J0T1Y4aElDWFBEUmhwUXZhYWtnWmE0Tng0Zw?oc=5",
+            "date": "2026-11-03T00:15:21Z",
+            "desc": "We have a limited supply of 30th anniversary Pokemon cards! Available at the service desk. Limit 1 box and 1 tin per customer. walmart.onelink.me/UIev/WalmartLocal - Facebook",
+            "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQREJtTUswUUpVVnhndVF3aVVCY2FhZEZQWVpROTdWYTBwYVFFODZEUHlub2ZMRnlnZy12MHlXaU1vYXVkaGlUMk9RSDNWYUdISlRsdVRwek4zcVVjWnpoVUtpQ3E2dEE2ZTZGWnBLeVBpZW5HNDFLdFpIOTBxbFIzX0NhSDZ2elBnOFJkbkR3ZDIxM1hqemJhUTdkRnFxY3Q4RS1ISmN1UG5HeElhbC1rejR5SUJvVDRzMFA1dWVaSkdQMVllNjlOY0JXTVliTkQyd251RHlDdw?oc=5",
             "category": "OTHER"
         },
         {
@@ -497,6 +442,14 @@
         }
     ],
     "tweets": [
+        {
+            "title": "30th Celebration Battle Deck Umbreon ex is up at Target! \u27a1\ufe0f https://t....",
+            "source": "X / Twitter",
+            "date": "2026-11-04T08:41:12Z",
+            "desc": "30th Celebration Battle Deck Umbreon ex is up at Target! \u27a1\ufe0f https://t.co/vZl2fwZ4Uj #PokemonTCG #ad - X",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nd0pPMmd6TUVVU2dsTE5DcmJlQlpUWEFzNERMb29RNDBwVWh1ajBKaEZ2bE9ic0c0OVBzSDVXMHp6Rk45OVVLN0QwU3BkVE91dUc0VDhYR1ZGejMydk1Zc18wVUZzejA?oc=5",
+            "category": "OTHER"
+        },
         {
             "title": "30th Celebration Battle Deck Espeon ex is up at Target! \u27a1\ufe0f https://t.c...",
             "source": "X / Twitter",
@@ -546,14 +499,6 @@
             "category": "OTHER"
         },
         {
-            "title": "@Jayson8383 Glad to see the drawings starting to go live! We'll post a...",
-            "source": "X / Twitter",
-            "date": "2026-11-02T16:26:27Z",
-            "desc": "@Jayson8383 Glad to see the drawings starting to go live! We'll post any new drawings or updates! \ud83e\udd73 - X",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05ejI5TlduZmlJOXhkUkc5aGh5OThNNkdqSFZWdWRGRmphbkhPNmpULUZqYWpRczlYR0VKZC1ld0ZzZmd3ajNWRXVoN0pzcVJBSTM4V0ltOG5QTjM5X3ltNDBMYkdaSTQ?oc=5",
-            "category": "OTHER"
-        },
-        {
             "title": "@nuggetssgangttv Thanks for adding that here! Definitely is working ri...",
             "source": "X / Twitter",
             "date": "2026-11-02T15:39:09Z",
@@ -596,6 +541,14 @@
     ],
     "pokebeach": [
         {
+            "title": "Jacob4799t - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-11-04T07:31:21Z",
+            "desc": "Jacob4799t - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTWmtBVTA3bllOZU0wa3c1c0RWQXFVc3NrV0tndzFxSTZUUzFqc1B2a2lNVFRVc0lIajRVaUdkNjNPdHJFNVVjMER2eEFuTTR5a0dhWE45NWNEUWZ1X1ZBck5rc3JuYk8yZm1z?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "All Mega Evolution Cards Now Known Ahead of Final MEGA Set, Several Ma...",
             "source": "PokeBeach",
             "date": "2026-11-04T00:19:34Z",
@@ -617,14 +570,6 @@
             "date": "2026-11-02T23:28:20Z",
             "desc": "Bronzeydoobles - PokeBeach",
             "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE91dW5iYy0yM0EtUVRwRnAwUUw1TjRXLXFVYmVVN25wN1dua1BEdVEtSEJjZG15Tzh3dnhuUGN2ejR3b1BYUnNpTmo0Z21xY2xpdUZGa204bTk0TVBIOExMRDlZb3VKVGxWMGtQc2w2cFU?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "SparklePanda - PokeBeach...",
-            "source": "PokeBeach",
-            "date": "2026-11-02T07:29:08Z",
-            "desc": "SparklePanda - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE84SU5QVEI1QUxVbmw0SF9WYkIyQzNOWGpPMGJ5dlA4M3hEbUc0OVlvclZMOEpKMVlKTm03Q1FsQmNyYVkzaGw5OWM2LUNTcTlCT0lIdFcwOGppUGZjSk92ZGUtbmpXc0ljaWc0eFJn?oc=5",
             "category": "OTHER"
         },
         {
