@@ -1,5 +1,5 @@
 {
-    "last_run": "2026-11-06T06:45:25.197405+00:00",
+    "last_run": "2026-11-06T07:00:24.714488+00:00",
     "drops": [],
     "articles": [
         {
@@ -199,6 +199,14 @@
     ],
     "pokebeach": [
         {
+            "title": "Ant0043 - PokeBeach...",
+            "source": "PokeBeach",
+            "date": "2026-11-06T05:37:10Z",
+            "desc": "Ant0043 - PokeBeach",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83T2lDeEJlVWFXT2tLb3B3LUdzOUhqT09kM3BSSlg2al9fU1JZWWRVUzBVMUQyNGpZdnJ2UHNaRm43WExqcW5vdzctNnVXQW5pNlVFRUo1R292Vkg3SVg1N0Z1ZUdnNW8?oc=5",
+            "category": "OTHER"
+        },
+        {
             "title": "Badge Quest \u2014 Gym Leader Challenge Part 2 - PokeBeach...",
             "source": "PokeBeach",
             "date": "2026-11-05T23:48:05Z",
@@ -268,14 +276,6 @@
             "date": "2026-11-02T23:28:20Z",
             "desc": "Bronzeydoobles - PokeBeach",
             "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE91dW5iYy0yM0EtUVRwRnAwUUw1TjRXLXFVYmVVN25wN1dua1BEdVEtSEJjZG15Tzh3dnhuUGN2ejR3b1BYUnNpTmo0Z21xY2xpdUZGa204bTk0TVBIOExMRDlZb3VKVGxWMGtQc2w2cFU?oc=5",
-            "category": "OTHER"
-        },
-        {
-            "title": "SparklePanda - PokeBeach...",
-            "source": "PokeBeach",
-            "date": "2026-11-02T07:29:08Z",
-            "desc": "SparklePanda - PokeBeach",
-            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE84SU5QVEI1QUxVbmw0SF9WYkIyQzNOWGpPMGJ5dlA4M3hEbUc0OVlvclZMOEpKMVlKTm03Q1FsQmNyYVkzaGw5OWM2LUNTcTlCT0lIdFcwOGppUGZjSk92ZGUtbmpXc0ljaWc0eFJn?oc=5",
             "category": "OTHER"
         },
         {
